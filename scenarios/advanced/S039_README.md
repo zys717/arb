@@ -1,4 +1,4 @@
-# 🧠 S039 – Epistemic Uncertainty Under Internal Conflict
+# S039 – Epistemic Uncertainty Under Internal Conflict
 
 Layer‑3 scenario that weaponizes contradictory statements and missing context to measure the model’s epistemic humility. The reviewer must detect conflicts inside a single application, refuse to “fill in the blanks,” and request precise clarifications rather than guessing.
 

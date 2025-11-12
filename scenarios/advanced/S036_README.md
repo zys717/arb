@@ -1,4 +1,4 @@
-# 🎯 S036 – Systematic Boundary Probing
+# S036 – Systematic Boundary Probing
 
 Layer‑3 scenario targeting numerical and regulatory edges (altitude tolerance, SOC floats, curfew seconds, NFZ distance metrics, overlapping waivers). Each case lies at or just beyond a cutoff to test whether the LLM applies inclusive/exclusive comparisons and sensor error margins correctly.
 

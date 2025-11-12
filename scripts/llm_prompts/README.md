@@ -1,106 +1,103 @@
 # LLM Prompt Templates
 
-本模块包含用于 AirSim-RuleBench LLM验证的专用prompt构建器。
+This module contains dedicated prompt builders for AirSim-RuleBench LLM validation.
 
-## 📁 模块结构
+## Module Structure
 
 ```
 llm_prompts/
-├── __init__.py              # 模块入口，导出所有prompt构建器
-├── base_prompt.py           # 通用工具函数（NFZ格式化等）
-├── nfz_prompt.py           # S001-S008, S015-S016 (NFZ/障碍物)
-├── altitude_prompt.py      # S006-S008 (高度限制)
-├── speed_prompt.py         # S009-S010 (速度限制)
-├── vlos_prompt.py          # S013-S014 (视距要求)
-├── time_prompt.py          # S011-S012 (时间限制)
-├── payload_prompt.py       # S017 (载重与投放)
-├── multi_drone_prompt.py   # S018 (多机协同)
-├── airspace_prompt.py      # S019 (空域分类)
-└── timeline_prompt.py      # S020 (审批时限)
+ __init__.py # Module entry point, exports all prompt builders
+ base_prompt.py # Common utility functions (NFZ formatting, etc.)
+ nfz_prompt.py # S001-S008, S015-S016 (NFZ/Obstacles)
+ altitude_prompt.py # S006-S008 (Altitude limits)
+ speed_prompt.py # S009-S010 (Speed limits)
+ vlos_prompt.py # S013-S014 (Line-of-sight requirements)
+ time_prompt.py # S011-S012 (Time restrictions)
+ payload_prompt.py # S017 (Payload and drop)
+ multi_drone_prompt.py # S018 (Multi-drone coordination)
+ airspace_prompt.py # S019 (Airspace classification)
+ timeline_prompt.py # S020 (Approval timeline)
 ```
 
-## 🎯 设计原则
+## Design Principles
 
-### 1. 模块化
-- 每个场景类型独立文件
-- 便于维护和扩展
-- 减少主脚本复杂度
+### 1. Modularity
+- Independent file for each scenario type
+- Easy to maintain and extend
+- Reduces main script complexity
 
-### 2. 一致性
-所有prompt构建器遵循统一接口：
+### 2. Consistency
+All prompt builders follow a unified interface:
 ```python
 def build_xxx_prompt(start, end, test_case_description: str,
-                     scenario_config: Dict, test_case_obj: Any = None) -> str:
-    """返回格式化的LLM prompt字符串"""
+ scenario_config: Dict, test_case_obj: Any = None) -> str:
+ """Returns formatted LLM prompt string"""
 ```
 
-### 3. 专业化
-- 每个prompt包含场景特定的规则和检查逻辑
-- 明确的输出格式要求（JSON）
-- 详细的分步分析指导
+### 3. Specialization
+- Each prompt contains scenario-specific rules and checking logic
+- Clear output format requirements (JSON)
+- Detailed step-by-step analysis guidance
 
-## 📊 使用示例
+## Usage Examples
 
-### 导入prompt构建器
+### Import prompt builders
 ```python
 from llm_prompts import build_nfz_prompt, build_payload_prompt
 
-# 构建NFZ场景prompt
+# Build NFZ scenario prompt
 prompt = build_nfz_prompt(
-    start=start_pos,
-    end=end_pos,
-    nfzs=nfz_configs,
-    test_case_description="TC1_SimpleGeofence",
-    scenario_config=config,
-    test_case_obj=test_case
+ start=start_pos,
+ end=end_pos,
+ nfzs=nfz_configs,
+ test_case_description="TC1_SimpleGeofence",
+ scenario_config=config,
+ test_case_obj=test_case
 )
 ```
 
-### 添加新场景类型
-1. 在 `classify_scenario()` 中添加场景ID映射
-2. 创建新的 `xxx_prompt.py` 文件
-3. 在 `__init__.py` 中导出新函数
-4. 在主脚本 `check_compliance_llm()` 中添加调用
+### Add new scenario type
+1. Add scenario ID mapping in `classify_scenario()`
+2. Create new `xxx_prompt.py` file
+3. Export new function in `__init__.py`
+4. Add invocation in main script `check_compliance_llm()`
 
-## 📈 代码统计
+## Code Statistics
 
-- **总文件**: 11个 (.py)
-- **总代码**: ~1650行
-- **平均文件大小**: ~150行
-- **最大文件**: payload_prompt.py (231行)
-- **最小文件**: base_prompt.py (40行)
+- Total files: 11 (.py)
+- Total lines: ~1650
+- Average file size: ~150 lines
+- Largest file: payload_prompt.py (231 lines)
+- Smallest file: base_prompt.py (40 lines)
 
-## 🔄 版本历史
+## Version History
 
 ### v1.0 (2025-11-01)
-- 初始重构：从单文件 (2077行) 拆分为模块化结构
-- 提取9种场景类型的prompt构建器
-- 代码精简65%，提升可维护性
+- Initial refactoring: split from single file (2077 lines) to modular structure
+- Extracted 9 scenario type prompt builders
+- Code reduced by 65%, improved maintainability
 
-## 📝 维护指南
+## Maintenance Guide
 
-### 修改现有Prompt
-直接编辑对应的 `xxx_prompt.py` 文件
+### Modify existing prompt
+Directly edit corresponding `xxx_prompt.py` file
 
-### 调试Prompt
-在prompt文件中修改后，无需重启Python，重新导入即可：
+### Debug prompt
+After modifying prompt file, no need to restart Python, just reload:
 ```python
 import importlib
 import llm_prompts.nfz_prompt
 importlib.reload(llm_prompts.nfz_prompt)
 ```
 
-### 测试单个Prompt
+### Test single prompt
 ```bash
 python3 -c "
 from llm_prompts import build_nfz_prompt
-# 测试代码...
+# Test code...
 "
 ```
 
----
-
-**作者**: AirSim-RuleBench Team  
-**日期**: 2025-11-01  
-**版本**: 1.0
-
+Author: AirSim-RuleBench Team 
+Date: 2025-11-01 
+Version: 1.0

@@ -1,4 +1,4 @@
-# ⚠️ S031 – Semantic & Ethical Dependency Cascade (v8)
+# S031 – Semantic & Ethical Dependency Cascade (v8)
 
 Layer‑3 now borrows the nasty elements that gave us low accuracy in S024–S030: bilingual clauses with timestamp precedence, caregiver revocations, privacy clause gaps, rumor vs NOTAM conflicts, conditional permits, and ambiguous UTM feeds. Every test case forces the LLM to reconcile disagreeing sources instead of just crunching numbers. Target accuracy: **≈35 %**.
 
@@ -33,11 +33,11 @@ Layer‑3 now borrows the nasty elements that gave us low accuracy in S024–S03
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/advanced/S031_medical_nested_conditionals.jsonc \
-  --ground-truth ground_truth/S031_violations.json \
-  --output reports/S031_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/advanced/S031_medical_nested_conditionals.jsonc \
+ --ground-truth ground_truth/S031_violations.json \
+ --output reports/S031_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Reviewer Heuristics

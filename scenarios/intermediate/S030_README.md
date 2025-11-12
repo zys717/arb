@@ -1,4 +1,4 @@
-# 🎯 S030 Scenario – UTM Dynamic Scheduling
+# S030 Scenario – UTM Dynamic Scheduling
 
 ## Motivation
 2024–2025 UTM research highlights AI/LLM use in real-time conflict resolution. S030 pushes Gemini to act as a city-level UTM dispatcher managing medical, commercial, and inspection drones under changing wind/NFZ/charging constraints.
@@ -29,11 +29,11 @@
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/intermediate/S030_dynamic_utm.jsonc \
-  --ground-truth ground_truth/S030_violations.json \
-  --output reports/S030_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/intermediate/S030_dynamic_utm.jsonc \
+ --ground-truth ground_truth/S030_violations.json \
+ --output reports/S030_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Success Criteria

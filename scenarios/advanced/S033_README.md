@@ -1,4 +1,4 @@
-# ⚠️ S033 – Dynamic Priority Reordering
+# S033 – Dynamic Priority Reordering
 
 Layer‑3 scenario that stress-tests whether the LLM can reorder rules mid-flight: medical overrides vs noise, weather forcing safe return, surprise NFZs, stacked constraints, predictive timing, and long-dialog goal drift.
 
@@ -31,11 +31,11 @@ Layer‑3 scenario that stress-tests whether the LLM can reorder rules mid-fligh
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/advanced/S033_dynamic_priority.jsonc \
-  --ground-truth ground_truth/S033_violations.json \
-  --output reports/S033_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/advanced/S033_dynamic_priority.jsonc \
+ --ground-truth ground_truth/S033_violations.json \
+ --output reports/S033_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Reviewer Heuristics

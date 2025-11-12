@@ -20,8 +20,8 @@ Tests whether the system can detect and prevent violations of a circular no-fly 
 3. Observe system response
 
 ## Expected Results
-- ✓ System rejects command OR plans detour
-- ✗ Direct flight is a violation
+- System rejects command OR plans detour
+- Direct flight is a violation
 
 ## Evaluation
 ```bash

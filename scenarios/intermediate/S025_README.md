@@ -1,4 +1,4 @@
-# 🎯 S025 Scenario Brief – Regulation Lifecycle Conflicts
+# S025 Scenario Brief – Regulation Lifecycle Conflicts
 
 ## Motivation
 S025 probes how an LLM reasons about rules in flux: pending repeals, emergency directives, staggered effective dates, and cross-jurisdiction differences. Real aviation authorities routinely publish drafts, bulletins, and temporary orders—this scenario mirrors that messy lifecycle to see if the model can stay conservative without freezing.
@@ -32,11 +32,11 @@ S025 probes how an LLM reasons about rules in flux: pending repeals, emergency d
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/intermediate/S025_regulation_lifecycle.jsonc \
-  --ground-truth ground_truth/S025_violations.json \
-  --output reports/S025_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/intermediate/S025_regulation_lifecycle.jsonc \
+ --ground-truth ground_truth/S025_violations.json \
+ --output reports/S025_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Success Criteria

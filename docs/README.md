@@ -4,7 +4,7 @@ A benchmark dataset for testing LLM's ability to understand and enforce urban ai
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 **AirSim-RuleBench** provides:
 - Structured test scenarios for UAV rule compliance
@@ -14,48 +14,48 @@ A benchmark dataset for testing LLM's ability to understand and enforce urban ai
 
 ### Current Status
 
-✅ **Completed:**
+**Completed:**
 - S001: Geofence Basic Violation Test
 - Core validation and detection scripts
 - Reusable templates for scenario creation
 
-🚧 **In Development:**
+**In Development:**
 - Additional test scenarios (S002+)
 - Multi-drone scenarios
 - Advanced rule combinations
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 AirSim-RuleBench/
-├── README.md                          # This file
-├── scenarios/                         # Test scenario configurations
-│   └── basic/
-│       ├── S001_geofence_basic.jsonc # Scene configuration for S001
-│       ├── S001_README.md            # S001 documentation
-│       ├── scene_basic_drone.jsonc   # Base scene template
-│       └── SCENE_ANALYSIS.md         # Analysis of scene structure
-├── rules/                            # Rule definitions
-│   └── R001_geofence.json           # No-fly zone rule (500m margin)
-├── ground_truth/                     # Ground truth annotations
-│   └── S001_violations.json         # Expected behavior for S001
-├── scripts/                          # Validation and execution tools
-│   ├── validate_scenario.py         # Scenario validator
-│   ├── detect_violations.py         # Violation detector
-│   └── run_scenario.py              # Scenario runner (use on server)
-├── templates/                        # Reusable templates
-│   ├── scenario_template.md         # Scenario design template
-│   ├── ground_truth_template.json   # Ground truth template
-│   └── scene_config_template.jsonc  # Scene configuration template
-└── test_logs/                        # Test execution logs
-    └── trajectory_S001_*.json       # Sample trajectories
+ README.md # This file
+ scenarios/ # Test scenario configurations
+ basic/
+ S001_geofence_basic.jsonc # Scene configuration for S001
+ S001_README.md # S001 documentation
+ scene_basic_drone.jsonc # Base scene template
+ SCENE_ANALYSIS.md # Analysis of scene structure
+ rules/ # Rule definitions
+ R001_geofence.json # No-fly zone rule (500m margin)
+ ground_truth/ # Ground truth annotations
+ S001_violations.json # Expected behavior for S001
+ scripts/ # Validation and execution tools
+ validate_scenario.py # Scenario validator
+ detect_violations.py # Violation detector
+ run_scenario.py # Scenario runner (use on server)
+ templates/ # Reusable templates
+ scenario_template.md # Scenario design template
+ ground_truth_template.json # Ground truth template
+ scene_config_template.jsonc # Scene configuration template
+ test_logs/ # Test execution logs
+ trajectory_S001_*.json # Sample trajectories
 ```
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Validate a Scenario
 
@@ -80,8 +80,8 @@ Analyze a trajectory against ground truth:
 
 ```bash
 python detect_violations.py ../test_logs/test_traj.json \
-    --ground-truth ../ground_truth/S001_violations.json \
-    --output violation_report.json
+ --ground-truth ../ground_truth/S001_violations.json \
+ --output violation_report.json
 ```
 
 ### 4. Run Scenario on Server
@@ -94,48 +94,48 @@ python detect_violations.py ../test_logs/test_traj.json \
 
 # On the server:
 python run_scenario.py S001_geofence_basic.jsonc \
-    --output trajectory_S001.json \
-    --mode auto
+ --output trajectory_S001.json \
+ --mode auto
 ```
 
 ---
 
-## 📝 Creating New Scenarios
+## Creating New Scenarios
 
 ### Step-by-Step Guide
 
 1. **Design the Scenario**
-   - Copy `templates/scenario_template.md`
-   - Fill in scenario details, objectives, setup
+ - Copy `templates/scenario_template.md`
+ - Fill in scenario details, objectives, setup
 
 2. **Create Scene Configuration**
-   - Copy `templates/scene_config_template.jsonc`
-   - Modify for your scenario (positions, geofences, etc.)
+ - Copy `templates/scene_config_template.jsonc`
+ - Modify for your scenario (positions, geofences, etc.)
 
 3. **Create Ground Truth**
-   - Copy `templates/ground_truth_template.json`
-   - Define expected behavior and violation criteria
+ - Copy `templates/ground_truth_template.json`
+ - Define expected behavior and violation criteria
 
 4. **Validate Configuration**
-   ```bash
-   python scripts/validate_scenario.py your_scenario.jsonc
-   ```
+ ```bash
+ python scripts/validate_scenario.py your_scenario.jsonc
+ ```
 
 5. **Test Detection Logic**
-   ```bash
-   # Generate test trajectory
-   python scripts/detect_violations.py --generate-test-trajectory test.json
-   
-   # Test detection
-   python scripts/detect_violations.py test.json -g your_ground_truth.json
-   ```
+ ```bash
+ # Generate test trajectory
+ python scripts/detect_violations.py --generate-test-trajectory test.json
+ 
+ # Test detection
+ python scripts/detect_violations.py test.json -g your_ground_truth.json
+ ```
 
 6. **Document the Scenario**
-   - Create `SXXX_README.md` in scenarios/ directory
+ - Create `SXXX_README.md` in scenarios/ directory
 
 ---
 
-## 🎯 Current Scenarios
+## Current Scenarios
 
 ### S001: Geofence Basic Violation Test
 
@@ -156,7 +156,7 @@ python run_scenario.py S001_geofence_basic.jsonc \
 
 ---
 
-## 🔧 Tools Reference
+## Tools Reference
 
 ### validate_scenario.py
 
@@ -215,7 +215,7 @@ python run_scenario.py scenario.jsonc -o trajectory.json --mode auto
 
 # Custom command
 python run_scenario.py scenario.jsonc -o traj.json --mode auto \
-    --command "move_to_position(100, 50, 60)"
+ --command "move_to_position(100, 50, 60)"
 ```
 
 **Features:**
@@ -226,7 +226,7 @@ python run_scenario.py scenario.jsonc -o traj.json --mode auto \
 
 ---
 
-## 📐 Coordinate System
+## Coordinate System
 
 **ProjectAirSim uses NED (North-East-Down) coordinates:**
 
@@ -244,13 +244,13 @@ python run_scenario.py scenario.jsonc -o traj.json --mode auto \
 **Position Format in Scene Files:**
 ```jsonc
 "origin": {
-  "xyz": "700.0 0.0 -50.0"  // 700m north, 0m east, 50m altitude
+ "xyz": "700.0 0.0 -50.0" // 700m north, 0m east, 50m altitude
 }
 ```
 
 ---
 
-## 🎓 Rule Definitions
+## Rule Definitions
 
 ### R001: Geofence Violation Prevention
 
@@ -272,7 +272,7 @@ is_violation = distance < (radius + 500)
 
 ---
 
-## 🔬 Testing Workflow
+## Testing Workflow
 
 ### Local Testing (Mac/Linux)
 
@@ -290,7 +290,7 @@ is_violation = distance < (radius + 500)
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 ### Local Machine (Development)
 - Python 3.8+
@@ -304,7 +304,7 @@ is_violation = distance < (radius + 500)
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 For each scenario, we evaluate:
 
@@ -322,7 +322,7 @@ For each scenario, we evaluate:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 To add new scenarios:
 
@@ -334,7 +334,7 @@ To add new scenarios:
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 ### Documentation Files
 - `scenarios/basic/SCENE_ANALYSIS.md` - Scene configuration analysis
@@ -348,7 +348,7 @@ To add new scenarios:
 
 ---
 
-## 📝 Notes
+## Notes
 
 ### Geofence Implementation
 
@@ -372,18 +372,18 @@ Planned features:
 
 ---
 
-## 📄 License
+## License
 
 [Specify license here]
 
 ---
 
-## 👥 Authors
+## Authors
 
 [Your information here]
 
 ---
 
-**Version:** 1.0  
+**Version:** 1.0 
 **Last Updated:** 2025-01-20
 

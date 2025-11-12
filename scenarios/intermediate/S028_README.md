@@ -1,4 +1,4 @@
-# 🎯 S028 Scenario – Dynamic Priority Shift
+# S028 Scenario – Dynamic Priority Shift
 
 ## Motivation
 Mid-flight, UAVs may receive new mission priorities (P1 life-saving, P2 SAR support, P3 logistics). Literature highlights real deployments (medical drones in Africa, START/SALT triage) and failure modes (priority inversion, IASMS “in-time” safety). S028 probes whether an LLM can re-order tasks while obeying physical and regulatory constraints.
@@ -29,11 +29,11 @@ Mid-flight, UAVs may receive new mission priorities (P1 life-saving, P2 SAR supp
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/intermediate/S028_dynamic_priority.jsonc \
-  --ground-truth ground_truth/S028_violations.json \
-  --output reports/S028_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/intermediate/S028_dynamic_priority.jsonc \
+ --ground-truth ground_truth/S028_violations.json \
+ --output reports/S028_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Success Criteria

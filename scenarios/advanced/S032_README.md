@@ -1,4 +1,4 @@
-# ⚠️ S032 – Pragmatic Ambiguity & Regulatory Intent
+# S032 – Pragmatic Ambiguity & Regulatory Intent
 
 Layer‑3 scenario that removes numeric math and instead forces the LLM to resolve vague legal language (“near”, “appropriate”, “necessary”, “reasonable hours”) using pragmatic inference and regulatory intent. Target accuracy: **≤35 %** (gemini-friendly but very hard).
 
@@ -31,11 +31,11 @@ Layer‑3 scenario that removes numeric math and instead forces the LLM to resol
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/advanced/S032_pragmatic_ambiguity.jsonc \
-  --ground-truth ground_truth/S032_violations.json \
-  --output reports/S032_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/advanced/S032_pragmatic_ambiguity.jsonc \
+ --ground-truth ground_truth/S032_violations.json \
+ --output reports/S032_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Reviewer Heuristics

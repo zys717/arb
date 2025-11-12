@@ -1,4 +1,4 @@
-# 🎯 S029 Scenario – Phased Conditional Approval
+# S029 Scenario – Phased Conditional Approval
 
 ## Motivation
 Some UAV programs can’t be flat approved or rejected: regulators require progressive phases (similar to FAA progressive inspections). Literature shows LLMs struggle with multi-step conditional logic, so S029 checks whether the model can design and enforce Phase1→Phase2→Phase3 approvals with measurable criteria.
@@ -29,11 +29,11 @@ Some UAV programs can’t be flat approved or rejected: regulators require progr
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/intermediate/S029_phased_conditional.jsonc \
-  --ground-truth ground_truth/S029_violations.json \
-  --output reports/S029_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/intermediate/S029_phased_conditional.jsonc \
+ --ground-truth ground_truth/S029_violations.json \
+ --output reports/S029_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Success Criteria

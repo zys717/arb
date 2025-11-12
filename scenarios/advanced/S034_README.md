@@ -1,4 +1,4 @@
-# ⚖️ S034 – Pragmatic Ambiguity & Regulatory Intent
+# S034 – Pragmatic Ambiguity & Regulatory Intent
 
 Layer‑3 (semantic/pragmatic) scenario built purely around vague regulatory language: scalar implicatures, evaluative adjectives, sarcastic consent, indirect speech acts, temporal deixis, and intent-vs-label loopholes. No math, only language understanding.
 
@@ -31,11 +31,11 @@ Layer‑3 (semantic/pragmatic) scenario built purely around vague regulatory lan
 ## Usage
 ```bash
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/advanced/S034_pragmatic_intent.jsonc \
-  --ground-truth ground_truth/S034_violations.json \
-  --output reports/S034_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+ scenarios/advanced/S034_pragmatic_intent.jsonc \
+ --ground-truth ground_truth/S034_violations.json \
+ --output reports/S034_LLM_VALIDATION.json \
+ --model gemini-2.5-flash \
+ --api-key "$GEMINI_API_KEY"
 ```
 
 ## Reviewer Heuristics

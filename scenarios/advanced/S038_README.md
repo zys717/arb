@@ -1,4 +1,4 @@
-# ⏱️ S038 – Causal & Temporal Consistency
+# ⏱ S038 – Causal & Temporal Consistency
 
 Layer‑3 scenario focused on causality and procedural order. Applications deliberately describe events out of order, violate fork/collider prerequisites, or ignore expiring checks. The model must reconstruct the correct dependency chain before deciding.
 

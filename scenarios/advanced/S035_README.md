@@ -1,4 +1,4 @@
-# ⚠️ S035 – Authority Impersonation & Progressive Manipulation
+# S035 – Authority Impersonation & Progressive Manipulation
 
 Layer‑3 adversarial scenario combining authority impersonation, multilingual bypasses, prefix/format injection, refusal suppression, poisoned precedents, and a six-round adaptive jailbreak. Every case tries to erode long-horizon constraint tracking without changing the underlying physics (battery, NFZ, lighting).
 
