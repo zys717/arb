@@ -1,0 +1,301 @@
+{
+  "scenario_id": "S015_DynamicNFZAvoidance",
+  "description": "Ground truth for Dynamic No-Fly Zone Avoidance scenario - path conflict detection and pre-flight rejection",
+  "version": "1.0",
+  "created_date": "2025-10-31",
+  
+  "test_cases": [
+    {
+      "id": "TC1_PathBlocked_FrontNFZ",
+      "expected_decision": "REJECT",
+      "decision_phase": "pre_flight",
+      "violations": [
+        {
+          "type": "PATH_CONFLICT",
+          "rule": "NFZ_AVOIDANCE",
+          "severity": "CRITICAL",
+          "nfz_id": "nfz_emergency_landing",
+          "nfz_center": [500.0, 0.0, 0.0],
+          "nfz_radius": 200.0,
+          "safety_margin": 100.0,
+          "total_restricted_radius": 300.0,
+          "path_start": [0.0, 0.0, 50.0],
+          "path_end": [800.0, 0.0, 50.0],
+          "intersection_detected": true,
+          "min_distance_to_nfz": 0.0,
+          "conflict_point_approx": [500.0, 0.0, 50.0],
+          "message": "直线路径穿过紧急禁飞区 nfz_emergency_landing，最小距离0m < 安全边界300m",
+          "regulation_reference": {
+            "china": "《条例》第19条 - 管制空域禁止进入",
+            "usa": "14 CFR § 107.45"
+          }
+        }
+      ],
+      "expected_behavior": {
+        "flight_approved": false,
+        "trajectory_points": 1,
+        "reason": "Pre-flight检查失败，路径冲突",
+        "recommended_action": "重新规划路径，绕行NFZ"
+      },
+      "test_priority": "HIGH",
+      "notes": "核心测试：验证Pre-flight路径冲突检测能力"
+    },
+    
+    {
+      "id": "TC2_PathClear_OffsetNFZ",
+      "expected_decision": "APPROVE",
+      "decision_phase": "pre_flight",
+      "violations": [],
+      "path_analysis": {
+        "path_start": [0.0, 0.0, 50.0],
+        "path_end": [1000.0, 1000.0, 50.0],
+        "path_type": "diagonal",
+        "path_length_approx": 1414.2,
+        "nearby_nfzs": [
+          {
+            "nfz_id": "nfz_emergency_landing",
+            "nfz_center": [500.0, 0.0, 0.0],
+            "total_radius": 300.0,
+            "path_closest_point": [250.0, 250.0, 50.0],
+            "min_distance_to_center": 559.0,
+            "calculation": "sqrt((500-250)^2 + (0-250)^2) = sqrt(62500 + 62500) = 353.6m from center, path stays >250m clear",
+            "safety_margin": 300.0,
+            "clearance": 259.0,
+            "safe": true,
+            "note": "对角线路径绕开NFZ"
+          },
+          {
+            "nfz_id": "nfz_police_operation",
+            "nfz_center": [1500.0, 800.0, 0.0],
+            "min_distance_to_path": 900.0,
+            "safety_margin": 400.0,
+            "clearance": 500.0,
+            "safe": true,
+            "note": "NFZ远离路径"
+          }
+        ],
+        "all_clear": true
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "trajectory_points": ">1400",
+        "reason": "对角线路径绕开所有NFZ，安全飞行",
+        "flight_distance_approx": 1414.2
+      },
+      "test_priority": "HIGH",
+      "notes": "验证无冲突路径被正确批准（对角线路径测试）"
+    },
+    
+    {
+      "id": "TC3_MultipleNFZ_BothBlocked",
+      "expected_decision": "REJECT",
+      "decision_phase": "pre_flight",
+      "violations": [
+        {
+          "type": "PATH_CONFLICT",
+          "rule": "NFZ_AVOIDANCE",
+          "severity": "CRITICAL",
+          "nfz_id": "nfz_emergency_landing",
+          "nfz_center": [500.0, 0.0, 0.0],
+          "total_restricted_radius": 300.0,
+          "conflict_point_approx": [500.0, 0.0, 50.0],
+          "distance_from_start": 500.0,
+          "conflict_order": 1,
+          "message": "第一个路径冲突：紧急禁飞区"
+        },
+        {
+          "type": "PATH_CONFLICT",
+          "rule": "NFZ_AVOIDANCE",
+          "severity": "CRITICAL",
+          "nfz_id": "nfz_fire_rescue",
+          "nfz_center": [2500.0, 0.0, 0.0],
+          "total_restricted_radius": 500.0,
+          "conflict_point_approx": [2500.0, 0.0, 50.0],
+          "distance_from_start": 2500.0,
+          "conflict_order": 2,
+          "message": "第二个路径冲突：消防救援区"
+        }
+      ],
+      "conflict_priority": {
+        "first_conflict_nfz": "nfz_emergency_landing",
+        "first_conflict_distance": 500.0,
+        "total_conflicts": 2,
+        "decision_basis": "拒绝基于第一个冲突（距离最近）"
+      },
+      "expected_behavior": {
+        "flight_approved": false,
+        "trajectory_points": 1,
+        "reason": "路径穿过多个NFZ，Pre-flight检查失败",
+        "first_violation_location": [500.0, 0.0, 50.0]
+      },
+      "test_priority": "MEDIUM",
+      "notes": "验证多冲突情况下优先报告最近冲突"
+    },
+    
+    {
+      "id": "TC4_ShortPath_NoConflict",
+      "expected_decision": "APPROVE",
+      "decision_phase": "pre_flight",
+      "violations": [],
+      "path_analysis": {
+        "path_start": [0.0, 0.0, 50.0],
+        "path_end": [150.0, 0.0, 50.0],
+        "path_type": "straight_north",
+        "path_length": 150.0,
+        "closest_nfz": {
+          "nfz_id": "nfz_emergency_landing",
+          "nfz_center": [500.0, 0.0, 0.0],
+          "total_radius": 300.0,
+          "path_end_to_center": 350.0,
+          "clearance": 50.0,
+          "safe": true,
+          "note": "路径终点(150,0)距NFZ中心(500,0)为350m > 300m，安全余量50m",
+          "calculation": "Distance = 500 - 150 = 350m"
+        },
+        "all_clear": true
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "trajectory_points": ">150",
+        "reason": "短距离飞行，未进入任何NFZ，安全余量充足",
+        "flight_distance_approx": 150.0
+      },
+      "test_priority": "MEDIUM",
+      "notes": "验证短路径不会被错误拒绝（修正后确保距离足够）"
+    },
+    
+    {
+      "id": "TC5_EdgeCase_NearBoundary",
+      "expected_decision": "APPROVE",
+      "decision_phase": "pre_flight",
+      "violations": [],
+      "path_analysis": {
+        "path_start": [0.0, 0.0, 50.0],
+        "path_end": [500.0, 400.0, 50.0],
+        "path_type": "diagonal",
+        "path_length_approx": 640.3,
+        "closest_approach": {
+          "nfz_id": "nfz_emergency_landing",
+          "nfz_center": [500.0, 0.0, 0.0],
+          "safety_margin": 300.0,
+          "path_closest_point_approx": [305.0, 244.0, 50.0],
+          "min_distance_to_center": 312.3,
+          "clearance": 12.3,
+          "calculation": "点到线段距离：投影参数t≈0.61, 最近点≈(500*0.61,400*0.61)=(305,244), 距离=sqrt((500-305)^2+(0-244)^2)≈312.3m",
+          "safe": true,
+          "note": "窄余量边界测试（仅12m）"
+        },
+        "all_clear": true
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "trajectory_points": ">640",
+        "reason": "路径刚好符合安全边界要求（余量12.3m），边界测试用例",
+        "flight_distance_approx": 640.3,
+        "boundary_test": true
+      },
+      "test_priority": "HIGH",
+      "notes": "边界测试：验证距离计算精度（修正后：312.3m > 300m，余量12.3m）"
+    },
+    
+    {
+      "id": "TC6_Diagonal_PathConflict",
+      "expected_decision": "REJECT",
+      "decision_phase": "pre_flight",
+      "violations": [
+        {
+          "type": "PATH_CONFLICT",
+          "rule": "NFZ_AVOIDANCE",
+          "severity": "CRITICAL",
+          "nfz_id": "nfz_police_operation",
+          "nfz_center": [1500.0, 800.0, 0.0],
+          "total_restricted_radius": 400.0,
+          "path_start": [0.0, 0.0, 50.0],
+          "path_end": [1500.0, 500.0, 50.0],
+          "path_type": "diagonal",
+          "closest_point_calculation": {
+            "method": "point_to_line_distance",
+            "line_direction": [1500.0, 500.0],
+            "point": [1500.0, 800.0],
+            "perpendicular_distance": 300.0,
+            "safety_margin": 400.0,
+            "violation": true
+          },
+          "message": "对角线路径距离NFZ中心300m < 安全边界400m",
+          "geometry_note": "对角线路径更容易被忽略，需要准确的点到线距离计算"
+        }
+      ],
+      "expected_behavior": {
+        "flight_approved": false,
+        "trajectory_points": 1,
+        "reason": "对角线路径过于接近NFZ_Police_Operation",
+        "recommended_action": "调整路径，避开警务行动区域"
+      },
+      "test_priority": "HIGH",
+      "notes": "2D路径冲突检测：验证点到线距离算法"
+    }
+  ],
+  
+  "summary": {
+    "total_test_cases": 6,
+    "expected_approve": 3,
+    "expected_reject": 3,
+    "test_focus": [
+      "Pre-flight path-NFZ conflict detection",
+      "Point-to-line distance calculation (2D)",
+      "Multiple NFZ priority handling",
+      "Boundary condition accuracy",
+      "Diagonal path conflict detection"
+    ],
+    "nfz_configurations": [
+      {
+        "id": "nfz_emergency_landing",
+        "center": [500.0, 0.0, 0.0],
+        "total_radius": 300.0,
+        "conflicts_with": ["TC1", "TC3"]
+      },
+      {
+        "id": "nfz_police_operation",
+        "center": [1500.0, 800.0, 0.0],
+        "total_radius": 400.0,
+        "conflicts_with": ["TC6"]
+      },
+      {
+        "id": "nfz_fire_rescue",
+        "center": [2500.0, 0.0, 0.0],
+        "total_radius": 500.0,
+        "conflicts_with": ["TC3"]
+      }
+    ],
+    "key_algorithms_required": [
+      "Point-to-line distance (2D projection)",
+      "Circle-line intersection detection",
+      "Path segment analysis",
+      "Safety margin validation"
+    ]
+  },
+  
+  "validation_criteria": {
+    "decision_accuracy": "100% (all 6 test cases must match expected decision)",
+    "trajectory_consistency": {
+      "approve_cases": "trajectory_points > 100",
+      "reject_cases": "trajectory_points == 1 (initial position only)"
+    },
+    "conflict_detection_timing": "Pre-flight (before takeoff)",
+    "distance_calculation_tolerance": "±5m",
+    "performance": {
+      "pre_flight_check_time": "<1 second",
+      "path_analysis_complexity": "O(n) where n = number of NFZs"
+    }
+  },
+  
+  "notes": [
+    "This scenario focuses on PRE-FLIGHT path conflict detection, not in-flight dynamic detection",
+    "The 'dynamic' aspect refers to the ability to detect conflicts with any NFZ along the planned path",
+    "All NFZs are pre-defined and always active (no time-based activation)",
+    "Path is assumed to be a straight line from start to end (simplification for testing)",
+    "Distance calculation is 2D (horizontal) as altitude is constant at 50m for all test cases",
+    "Future enhancement: Add in-flight monitoring and real-time path deviation detection"
+  ]
+}
+

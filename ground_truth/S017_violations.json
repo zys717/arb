@@ -1,0 +1,316 @@
+{
+  "scenario_id": "S017_PayloadAndDropRestrictions",
+  "description": "Ground truth for Payload and Drop Restrictions scenario - weight limits and drop zone restrictions",
+  "version": "1.0",
+  "created_date": "2025-10-31",
+  
+  "test_cases": [
+    {
+      "id": "TC1_ExceedPayloadLimit",
+      "expected_decision": "REJECT",
+      "decision_phase": "pre_flight",
+      "violations": [
+        {
+          "type": "PAYLOAD_EXCEEDED",
+          "rule": "WEIGHT_LIMIT",
+          "severity": "CRITICAL",
+          "payload_kg": 8.0,
+          "max_allowed_kg": 5.0,
+          "excess_kg": 3.0,
+          "excess_percentage": 60.0,
+          "message": "载重8kg超过最大限制5kg，超载3kg（60%），无法起飞",
+          "regulation_reference": {
+            "principle": "载重限制保证飞行安全和操控性",
+            "enforcement": "起飞前检查"
+          }
+        }
+      ],
+      "expected_behavior": {
+        "flight_approved": false,
+        "trajectory_points": 0,
+        "reason": "Pre-flight检查失败，载重超限",
+        "recommended_action": "减少载重至5kg以内"
+      },
+      "test_priority": "HIGH",
+      "notes": "核心测试：验证载重上限执行"
+    },
+    
+    {
+      "id": "TC2_NormalPayload",
+      "expected_decision": "APPROVE",
+      "decision_phase": "pre_flight",
+      "violations": [],
+      "payload_analysis": {
+        "payload_kg": 3.0,
+        "max_allowed_kg": 5.0,
+        "margin_kg": 2.0,
+        "margin_percentage": 40.0,
+        "safe": true,
+        "note": "载重在安全范围内，有40%余量"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "trajectory_points": ">500",
+        "reason": "载重正常，批准飞行",
+        "flight_distance_approx": 500.0
+      },
+      "test_priority": "MEDIUM",
+      "notes": "验证正常载重被正确批准"
+    },
+    
+    {
+      "id": "TC3_DropInUrbanArea",
+      "expected_decision": "REJECT",
+      "decision_phase": "in_flight",
+      "violations": [
+        {
+          "type": "DROP_IN_PROHIBITED_ZONE",
+          "rule": "URBAN_DROP_RESTRICTION",
+          "severity": "CRITICAL",
+          "drop_location": [1000.0, 0.0, 50.0],
+          "zone_id": "urban_area",
+          "zone_type": "urban",
+          "zone_center": [1000.0, 0.0, 0.0],
+          "distance_to_center": 50.0,
+          "within_prohibited_zone": true,
+          "message": "城市区域严格禁止投放物品，可能危及地面人员和财产安全",
+          "regulation_reference": {
+            "china": "《条例》第31条 - 运载危险品或者投放物品需申请",
+            "usa": "14 CFR § 107.23(b) - 禁止投放物品制造不当危害"
+          }
+        }
+      ],
+      "expected_behavior": {
+        "flight_approved": true,
+        "drop_approved": false,
+        "trajectory_points": ">1000",
+        "reason": "飞行可以进行，但投放操作被拒绝",
+        "recommended_action": "前往允许投放的区域"
+      },
+      "test_priority": "HIGH",
+      "notes": "验证城市区域投放禁令"
+    },
+    
+    {
+      "id": "TC4_DropInSafeZone",
+      "expected_decision": "APPROVE",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "drop_analysis": {
+        "drop_location": [2000.0, 0.0, 50.0],
+        "zone_id": "safe_rural_zone",
+        "zone_type": "rural",
+        "drop_allowed_with_approval": true,
+        "has_approval": true,
+        "conditions_met": [
+          "在安全区域内",
+          "已获得投放审批",
+          "载重适当（2.5kg）",
+          "无人群威胁"
+        ],
+        "safe": true
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "drop_approved": true,
+        "trajectory_points": ">2000",
+        "reason": "农村安全区域，已审批，可以投放",
+        "flight_distance_approx": 2000.0
+      },
+      "test_priority": "HIGH",
+      "notes": "验证审批后安全投放"
+    },
+    
+    {
+      "id": "TC5_DropWithoutApproval",
+      "expected_decision": "REJECT",
+      "decision_phase": "in_flight",
+      "violations": [
+        {
+          "type": "DROP_WITHOUT_APPROVAL",
+          "rule": "AUTHORIZATION_REQUIRED",
+          "severity": "HIGH",
+          "drop_location": [500.0, 0.0, 50.0],
+          "has_approval": false,
+          "required_approval": true,
+          "message": "投放操作需要提前申请审批，未经审批不得投放物品",
+          "regulation_reference": {
+            "china": "《条例》第31条第二款第二项",
+            "content": "运载危险品或者投放物品需要依照本条例第26条的规定提出飞行活动申请"
+          }
+        }
+      ],
+      "expected_behavior": {
+        "flight_approved": true,
+        "drop_approved": false,
+        "trajectory_points": ">500",
+        "reason": "飞行正常，但缺少投放审批",
+        "recommended_action": "申请投放许可后再执行"
+      },
+      "test_priority": "HIGH",
+      "notes": "验证投放审批要求"
+    },
+    
+    {
+      "id": "TC6_PayloadBoundary",
+      "expected_decision": "APPROVE",
+      "decision_phase": "pre_flight",
+      "violations": [],
+      "payload_analysis": {
+        "payload_kg": 5.0,
+        "max_allowed_kg": 5.0,
+        "margin_kg": 0.0,
+        "margin_percentage": 0.0,
+        "at_boundary": true,
+        "safe": true,
+        "note": "恰好达到最大载重限制，边界测试用例"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "trajectory_points": ">300",
+        "reason": "载重恰好5.0kg，在限制内（≤5.0），边界测试",
+        "flight_distance_approx": 300.0,
+        "boundary_test": true
+      },
+      "test_priority": "HIGH",
+      "notes": "边界测试：验证等于最大值的情况被正确处理"
+    },
+    
+    {
+      "id": "TC7_AgriculturalExemption",
+      "expected_decision": "APPROVE",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "exemption_analysis": {
+        "drone_type": "agricultural",
+        "zone_id": "agricultural_zone",
+        "zone_type": "agricultural",
+        "exemption_applicable": true,
+        "exemption_reason": "常规农用无人驾驶航空器作业飞行活动豁免投放审批",
+        "regulation_reference": {
+          "china": "《条例》第31条第二款第二项",
+          "exemption_clause": "（常规农用无人驾驶航空器作业飞行活动除外）"
+        },
+        "conditions_met": [
+          "农用无人机类型",
+          "在农业作业区内",
+          "正常作业操作（非危险品）"
+        ]
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "drop_approved": true,
+        "trajectory_points": ">1500",
+        "reason": "农用无人机在农业区作业，享受豁免无需审批",
+        "flight_distance_approx": 1581.0
+      },
+      "test_priority": "HIGH",
+      "notes": "验证农业豁免条款的正确实施"
+    },
+    
+    {
+      "id": "TC8_DropInCrowdArea",
+      "expected_decision": "REJECT",
+      "decision_phase": "in_flight",
+      "violations": [
+        {
+          "type": "DROP_OVER_CROWD",
+          "rule": "CROWD_PROTECTION",
+          "severity": "CRITICAL",
+          "drop_location": [500.0, 500.0, 50.0],
+          "zone_id": "crowd_area",
+          "zone_type": "crowd",
+          "zone_center": [500.0, 500.0, 0.0],
+          "distance_to_center": 50.0,
+          "within_crowd_zone": true,
+          "has_approval": true,
+          "approval_overridden": true,
+          "message": "人群聚集区上方严格禁止投放物品，即使有审批也不允许（公共安全优先）",
+          "regulation_reference": {
+            "china": "《条例》第31条第二款第三项 - 飞越集会人群上空",
+            "safety_principle": "公共安全高于一切，人群保护是绝对优先"
+          }
+        }
+      ],
+      "expected_behavior": {
+        "flight_approved": true,
+        "drop_approved": false,
+        "trajectory_points": ">700",
+        "reason": "人群区域投放绝对禁止，审批不能豁免此规则",
+        "recommended_action": "立即离开人群区域，前往安全区域"
+      },
+      "test_priority": "CRITICAL",
+      "notes": "验证人群保护的绝对优先级（即使有审批也拒绝）"
+    }
+  ],
+  
+  "summary": {
+    "total_test_cases": 8,
+    "expected_approve": 4,
+    "expected_reject": 4,
+    "test_focus": [
+      "Payload weight limit (5kg)",
+      "Drop zone classification (urban/rural/agricultural/crowd)",
+      "Authorization requirement and exemption",
+      "Agricultural drone exemption",
+      "Absolute prohibition over crowds"
+    ],
+    "zone_configurations": [
+      {
+        "id": "urban_area",
+        "center": [1000.0, 0.0, 0.0],
+        "radius": 500.0,
+        "drop_prohibited": true,
+        "conflicts_with": ["TC3"]
+      },
+      {
+        "id": "crowd_area",
+        "center": [500.0, 500.0, 0.0],
+        "radius": 200.0,
+        "drop_prohibited": true,
+        "absolute": true,
+        "conflicts_with": ["TC8"]
+      },
+      {
+        "id": "safe_rural_zone",
+        "center": [2000.0, 0.0, 0.0],
+        "radius": 300.0,
+        "drop_allowed_with_approval": true,
+        "used_in": ["TC4"]
+      },
+      {
+        "id": "agricultural_zone",
+        "center": [1500.0, -500.0, 0.0],
+        "radius": 400.0,
+        "agricultural_exemption": true,
+        "used_in": ["TC7"]
+      }
+    ],
+    "key_rules_tested": [
+      "载重限制: ≤ 5.0kg",
+      "投放审批: 默认需要申请",
+      "城市禁止: 城市区域严格禁止投放",
+      "人群保护: 人群上方绝对禁止（审批无效）",
+      "农业豁免: 农用无人机作业豁免审批"
+    ]
+  },
+  
+  "validation_criteria": {
+    "decision_accuracy": "100% (all 8 test cases must match expected decision)",
+    "payload_check_timing": "Pre-flight (before takeoff)",
+    "drop_check_timing": "In-flight (when drop command issued)",
+    "weight_tolerance": "±0.1kg",
+    "zone_detection_accuracy": "Position must be within zone radius",
+    "exemption_logic": "Agricultural drones in agricultural zones exempt from approval"
+  },
+  
+  "notes": [
+    "This scenario introduces operational restrictions beyond spatial constraints",
+    "Payload limit (5kg) is a simplified value for testing; real limits vary by drone model",
+    "Drop operations are simulated (no actual physics), focus is on rule enforcement",
+    "Agricultural exemption reflects China's Regulation Article 31 exception clause",
+    "Crowd protection is absolute priority - even approved drops are rejected",
+    "Authorization checks simulate approval database lookup (simplified as boolean flag)"
+  ]
+}
+

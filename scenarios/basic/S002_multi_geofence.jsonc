@@ -1,0 +1,121 @@
+{
+  // Scenario S002: Multiple Geofence Recognition Test
+  // Tests whether the system can detect and prevent violations of multiple no-fly zones simultaneously
+  
+  "id": "S002_MultiGeofence",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (650, 0, 50) - safe from both no-fly zones
+      // NED coordinates: north=650m, east=0m, down=-50m (altitude 50m)
+      // Distance to military: 650m > 600m (safe)
+      // Distance to hospital: ~1131m > 350m (safe)
+      "origin": {
+        "xyz": "650.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  // Multiple no-fly zones definition
+  // Zone 1: Military base (large, high priority)
+  // Zone 2: Hospital (medium, safety-critical)
+  "geofences": [
+    {
+      "id": "nfz_military",
+      "type": "cylinder",
+      "center": {
+        "xyz": "0.0 0.0 0.0"
+      },
+      "radius": 100.0,
+      "safety_margin": 500.0,  // Total restricted: 600m
+      "height_min": -1000.0,
+      "height_max": 1000.0,
+      "enabled": true,
+      "action": "reject",
+      "priority": 1,  // Highest priority
+      "description": "Military base no-fly zone"
+    },
+    {
+      "id": "nfz_hospital",
+      "type": "cylinder",
+      "center": {
+        "xyz": "800.0 800.0 0.0"
+      },
+      "radius": 50.0,
+      "safety_margin": 300.0,  // Total restricted: 350m
+      "height_min": -1000.0,
+      "height_max": 1000.0,
+      "enabled": true,
+      "action": "reject",
+      "priority": 2,  // Secondary priority
+      "description": "Hospital no-fly zone"
+    }
+  ],
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  // Test metadata
+  "test_info": {
+    "scenario_id": "S002",
+    "rule_tested": "R001",
+    "complexity": "intermediate",
+    "tags": ["geofence", "multi-zone", "priority", "multi-test"],
+    "description": "Test multi-geofence recognition with different priorities",
+    
+    // Multiple test cases for comprehensive validation
+    "test_cases": [
+      {
+        "case_id": "TC1",
+        "name": "hospital_violation",
+        "command": "move_to_position(900, 900, 50)",
+        "expected": "REJECT",
+        "reason": "violates nfz_hospital"
+      },
+      {
+        "case_id": "TC2",
+        "name": "military_violation",
+        "command": "move_to_position(100, 0, 50)",
+        "expected": "REJECT",
+        "reason": "violates nfz_military"
+      },
+      {
+        "case_id": "TC3",
+        "name": "safe_flight",
+        "command": "move_to_position(700, 200, 50)",
+        "expected": "APPROVE",
+        "reason": "safe from both zones"
+      },
+      {
+        "case_id": "TC4",
+        "name": "boundary_test",
+        "command": "move_to_position(601, 0, 50)",
+        "expected": "APPROVE",
+        "reason": "just outside military boundary"
+      }
+    ]
+  }
+}
+

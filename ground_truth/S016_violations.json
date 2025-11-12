@@ -1,0 +1,175 @@
+{
+  "scenario_id": "S016_RealtimeObstacleAvoidance",
+  "test_cases": [
+    {
+      "id": "TC1_DirectApproach_StopBeforeObstacle",
+      "expected_decision": "APPROVE_WITH_STOP",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "avoidance_event": {
+        "triggered": true,
+        "obstacle_id": "obstacle_building",
+        "obstacle_center": [800.0, 0.0, 0.0],
+        "detection_distance": 80.0,
+        "expected_stop_position": [720.0, 0.0, 50.0],
+        "avoidance_action": "stop_and_hover",
+        "reason": "实时检测到前方80m处有障碍物，自动停止"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "flight_completed": false,
+        "stopped_before_target": true,
+        "trajectory_points": ">700",
+        "final_position_approx": [720.0, 0.0, 50.0],
+        "distance_traveled_approx": 720.0,
+        "reason": "检测到障碍物，在安全距离前停止"
+      },
+      "test_priority": "HIGH",
+      "notes": "核心测试：验证In-flight实时检测和自动停止功能"
+    },
+    
+    {
+      "id": "TC2_NoObstacle_CompleteFlightPath",
+      "expected_decision": "APPROVE",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "avoidance_event": {
+        "triggered": false,
+        "reason": "全程无障碍物接近，安全完成飞行"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "flight_completed": true,
+        "stopped_before_target": false,
+        "trajectory_points": ">400",
+        "final_position_approx": [400.0, 0.0, 50.0],
+        "distance_traveled_approx": 400.0,
+        "reason": "无障碍物，完整飞行至目标点"
+      },
+      "test_priority": "MEDIUM",
+      "notes": "验证无障碍物时正常完成飞行"
+    },
+    
+    {
+      "id": "TC3_OffsetPath_PassSafely",
+      "expected_decision": "APPROVE",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "avoidance_event": {
+        "triggered": false,
+        "closest_approach": {
+          "obstacle_id": "obstacle_building",
+          "min_distance": 140.0,
+          "safe_margin": 80.0,
+          "clearance": 60.0,
+          "safe": true
+        },
+        "reason": "路径偏移，与障碍物保持安全距离"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "flight_completed": true,
+        "stopped_before_target": false,
+        "trajectory_points": ">800",
+        "final_position_approx": [800.0, 150.0, 50.0],
+        "distance_traveled_approx": 813.9,
+        "reason": "偏移路径，安全绕过障碍物"
+      },
+      "test_priority": "HIGH",
+      "notes": "验证偏移路径不会触发错误的避让"
+    },
+    
+    {
+      "id": "TC4_MultipleObstacles_StopAtFirst",
+      "expected_decision": "APPROVE_WITH_STOP",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "avoidance_event": {
+        "triggered": true,
+        "obstacle_id": "obstacle_building",
+        "obstacle_center": [800.0, 0.0, 0.0],
+        "detection_distance": 80.0,
+        "expected_stop_position": [720.0, 0.0, 50.0],
+        "avoidance_action": "stop_and_hover",
+        "note": "虽然目标更远，但在第一个障碍物前停止"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "flight_completed": false,
+        "stopped_before_target": true,
+        "trajectory_points": ">700",
+        "final_position_approx": [720.0, 0.0, 50.0],
+        "distance_traveled_approx": 720.0,
+        "reason": "检测到第一个障碍物，提前停止（未到达最终目标）"
+      },
+      "test_priority": "MEDIUM",
+      "notes": "验证多障碍物场景下在第一个障碍物前停止"
+    },
+    
+    {
+      "id": "TC5_DiagonalPath_DetectTower",
+      "expected_decision": "APPROVE_WITH_STOP",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "avoidance_event": {
+        "triggered": true,
+        "obstacle_id": "obstacle_tower",
+        "obstacle_center": [1500.0, 300.0, 0.0],
+        "detection_distance": 80.0,
+        "path_total_length": 1529.7,
+        "expected_stop_distance": 1450.0,
+        "expected_stop_position_approx": [1465.0, 293.0, 50.0],
+        "avoidance_action": "stop_and_hover",
+        "calculation": "路径长度sqrt(1500^2+300^2)≈1530m，停在1530-80=1450m处"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "flight_completed": false,
+        "stopped_before_target": true,
+        "trajectory_points": ">1400",
+        "final_position_approx": [1465.0, 293.0, 50.0],
+        "distance_traveled_approx": 1450.0,
+        "reason": "对角线路径检测到塔，在安全距离前停止"
+      },
+      "test_priority": "HIGH",
+      "notes": "验证对角线路径的实时检测精度"
+    },
+    
+    {
+      "id": "TC6_ShortDistance_NoObstacle",
+      "expected_decision": "APPROVE",
+      "decision_phase": "in_flight",
+      "violations": [],
+      "avoidance_event": {
+        "triggered": false,
+        "closest_approach": {
+          "obstacle_id": "obstacle_building",
+          "min_distance": 600.0,
+          "safe": true
+        },
+        "reason": "短距离飞行，远离所有障碍物"
+      },
+      "expected_behavior": {
+        "flight_approved": true,
+        "flight_completed": true,
+        "stopped_before_target": false,
+        "trajectory_points": ">200",
+        "final_position_approx": [200.0, 0.0, 50.0],
+        "distance_traveled_approx": 200.0,
+        "reason": "短距离安全飞行，完成"
+      },
+      "test_priority": "LOW",
+      "notes": "基础测试：验证短距离无障碍飞行"
+    }
+  ],
+  
+  "ground_truth_metadata": {
+    "version": "1.0",
+    "created_date": "2025-10-31",
+    "author": "AirSim-RuleBench Team",
+    "total_test_cases": 6,
+    "expected_pass_rate": "100%",
+    "notes": "S016实时障碍物避让场景Ground Truth，重点测试In-flight检测和自动停止"
+  }
+}
+

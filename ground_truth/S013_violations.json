@@ -1,0 +1,287 @@
+{
+  "scenario_id": "S013_VLOS",
+  "scenario_description": "视距内飞行要求（VLOS）- 测试操作员与无人机距离限制",
+  "version": "1.0",
+  "regulation_reference": {
+    "china": "《条例》第三十二条第五款 - 微型无人机必须保持视距内飞行",
+    "usa": "14 CFR § 107.31 - 必须用肉眼持续看到无人机"
+  },
+  "vlos_rule": {
+    "operator_position": {"north": 0.0, "east": 0.0, "down": 0.0},
+    "max_vlos_range_m": 500.0,
+    "description": "操作员与无人机的3D距离不得超过500m",
+    "rule": "distance_3d <= 500m → APPROVE; distance_3d > 500m → REJECT"
+  },
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "近距离飞行（200m），应允许",
+      "command": "move_to_position(200, 0, 50)",
+      "operator_position": {
+        "north": 0,
+        "east": 0,
+        "altitude": 0
+      },
+      "target_position": {
+        "north": 200,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标距离206.16m < 500m VLOS范围，在视距内",
+      "analysis": {
+        "distance_3d": 206.16,
+        "calculation": "sqrt(200^2 + 0^2 + 50^2) = sqrt(42500) = 206.16m",
+        "distance_horizontal": 200.0,
+        "is_within_vlos": true,
+        "note": "206.16m < 500m → 允许"
+      },
+      "regulation_compliance": {
+        "china": "符合：在500m视距范围内",
+        "usa": "符合：操作员能持续看到无人机"
+      },
+      "test_focus": "基础合规性 - 近距离"
+    },
+    {
+      "id": "TC2",
+      "description": "中距离飞行（400m），应允许",
+      "command": "move_to_position(400, 0, 50)",
+      "operator_position": {
+        "north": 0,
+        "east": 0,
+        "altitude": 0
+      },
+      "target_position": {
+        "north": 400,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标距离403.11m < 500m VLOS范围，在视距内",
+      "analysis": {
+        "distance_3d": 403.11,
+        "calculation": "sqrt(400^2 + 0^2 + 50^2) = sqrt(162500) = 403.11m",
+        "distance_horizontal": 400.0,
+        "is_within_vlos": true,
+        "note": "403.11m < 500m → 允许"
+      },
+      "regulation_compliance": {
+        "china": "符合：在500m视距范围内",
+        "usa": "符合：操作员能持续看到无人机"
+      },
+      "test_focus": "中距离飞行"
+    },
+    {
+      "id": "TC3",
+      "description": "边界值测试（500m），应允许",
+      "command": "move_to_position(500, 0, 50)",
+      "operator_position": {
+        "north": 0,
+        "east": 0,
+        "altitude": 0
+      },
+      "target_position": {
+        "north": 500,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标距离502.49m ≈ 500m VLOS范围（边界值）",
+      "analysis": {
+        "distance_3d": 502.49,
+        "calculation": "sqrt(500^2 + 0^2 + 50^2) = sqrt(252500) = 502.49m",
+        "distance_horizontal": 500.0,
+        "is_within_vlos": true,
+        "boundary_note": "502.49m > 500m，但水平距离=500m，可视为边界情况",
+        "implementation_decision": "使用水平距离判断，500m <= 500m → 允许"
+      },
+      "regulation_compliance": {
+        "china": "符合：水平距离500m，在视距边界",
+        "usa": "符合：边界情况，可视为在视线内"
+      },
+      "test_focus": "边界值处理",
+      "critical_test": true,
+      "notes": [
+        "3D距离502.49m稍超500m，但水平距离正好500m",
+        "实际实现可选择：1) 使用水平距离；2) 使用3D距离但放宽边界",
+        "本测试假设使用水平距离判断，500m允许"
+      ]
+    },
+    {
+      "id": "TC4",
+      "description": "超视距飞行（600m），应拒绝（核心测试）",
+      "command": "move_to_position(600, 0, 50)",
+      "operator_position": {
+        "north": 0,
+        "east": 0,
+        "altitude": 0
+      },
+      "target_position": {
+        "north": 600,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标距离602.08m > 500m VLOS范围，超出视距",
+      "analysis": {
+        "distance_3d": 602.08,
+        "calculation": "sqrt(600^2 + 0^2 + 50^2) = sqrt(362500) = 602.08m",
+        "distance_horizontal": 600.0,
+        "is_within_vlos": false,
+        "note": "602.08m > 500m → 拒绝"
+      },
+      "violation_details": {
+        "type": "vlos_exceeded",
+        "severity": "critical",
+        "distance_exceeded": "102.08m (超出20.4%)",
+        "reason": "操作员无法用肉眼持续看到无人机"
+      },
+      "regulation_compliance": {
+        "china": "违反：超出500m视距范围，《条例》第三十二条第五款",
+        "usa": "违反：超出视距，14 CFR § 107.31"
+      },
+      "test_focus": "VLOS违规检测",
+      "critical_test": true,
+      "notes": [
+        "这是最关键的测试用例",
+        "必须正确拒绝超视距飞行",
+        "验证距离检测的准确性"
+      ]
+    },
+    {
+      "id": "TC5",
+      "description": "远超视距飞行（800m），应拒绝",
+      "command": "move_to_position(800, 0, 50)",
+      "operator_position": {
+        "north": 0,
+        "east": 0,
+        "altitude": 0
+      },
+      "target_position": {
+        "north": 800,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标距离801.56m > 500m VLOS范围，严重超出视距",
+      "analysis": {
+        "distance_3d": 801.56,
+        "calculation": "sqrt(800^2 + 0^2 + 50^2) = sqrt(642500) = 801.56m",
+        "distance_horizontal": 800.0,
+        "is_within_vlos": false,
+        "note": "801.56m >> 500m → 拒绝"
+      },
+      "violation_details": {
+        "type": "vlos_exceeded",
+        "severity": "critical",
+        "distance_exceeded": "301.56m (超出60.3%)",
+        "reason": "严重超出视距范围"
+      },
+      "regulation_compliance": {
+        "china": "违反：严重超出500m视距范围",
+        "usa": "违反：严重超出视距"
+      },
+      "test_focus": "严重违规检测",
+      "notes": [
+        "测试系统对严重违规的检测",
+        "800m是500m的1.6倍"
+      ]
+    }
+  ],
+  "evaluation_criteria": {
+    "primary_checks": [
+      {
+        "name": "vlos_distance_detection",
+        "description": "视距距离检测准确性",
+        "pass_condition": "正确计算操作员与目标位置的3D距离",
+        "critical_tests": ["TC1", "TC4", "TC5"]
+      },
+      {
+        "name": "vlos_boundary_handling",
+        "description": "边界值处理正确性",
+        "pass_condition": "500m边界值处理符合预期",
+        "critical_tests": ["TC3"],
+        "note": "TC3是边界测试，需明确是否包含边界"
+      },
+      {
+        "name": "rejection_correctness",
+        "description": "拒绝决策正确性",
+        "pass_condition": "超出500m的飞行必须拒绝",
+        "critical": true,
+        "critical_tests": ["TC4", "TC5"]
+      }
+    ],
+    "secondary_checks": [
+      {
+        "name": "rejection_reason_quality",
+        "description": "拒绝理由质量",
+        "pass_condition": "拒绝理由包含距离信息和VLOS范围"
+      },
+      {
+        "name": "trajectory_correctness",
+        "description": "轨迹记录正确性",
+        "pass_condition": "拒绝的TC仅有1个点，批准的TC有完整轨迹"
+      },
+      {
+        "name": "false_positive_rate",
+        "description": "误报率",
+        "pass_condition": "TC1/TC2/TC3不应被拒绝"
+      }
+    ]
+  },
+  "summary": {
+    "total_test_cases": 5,
+    "expected_approve": 3,
+    "expected_reject": 2,
+    "critical_test_case": "TC4",
+    "pass_threshold": "5/5 (100%)",
+    "key_validation": "距离检测准确性"
+  },
+  "notes": [
+    "本场景测试VLOS距离限制：操作员与无人机距离 <= 500m",
+    "距离计算：3D欧氏距离 sqrt((N-N0)^2 + (E-E0)^2 + (D-D0)^2)",
+    "TC3边界值：考虑到高度因素，3D距离502.49m，但水平距离500m",
+    "实际实现建议：使用水平距离判断（更符合实际视距概念）",
+    "TC4和TC5是关键测试：必须正确拒绝超视距飞行",
+    "测试用例比S012少（5 vs 5），重点测试距离判断"
+  ],
+  "distance_calculation_method": {
+    "method": "3D Euclidean Distance",
+    "formula": "distance = sqrt((pos.n - op.n)^2 + (pos.e - op.e)^2 + (pos.d - op.d)^2)",
+    "alternative": "Horizontal Distance (2D) - sqrt((pos.n - op.n)^2 + (pos.e - op.e)^2)",
+    "recommendation": "使用水平距离更符合实际视距概念（高度不影响视距判断）",
+    "implementation_choice": {
+      "option_1": {
+        "method": "3D distance",
+        "boundary": "distance_3d <= 500m",
+        "tc3_result": "502.49m > 500m → REJECT"
+      },
+      "option_2": {
+        "method": "Horizontal distance (recommended)",
+        "boundary": "distance_horizontal <= 500m",
+        "tc3_result": "500m <= 500m → APPROVE"
+      },
+      "selected": "option_2",
+      "reason": "水平距离更符合实际视距概念，高度50m对视距影响较小"
+    }
+  },
+  "comparison_with_s012": {
+    "s012": {
+      "rule_type": "时间+空间组合规则（AND逻辑）",
+      "check_dimensions": 2,
+      "test_cases": 5
+    },
+    "s013": {
+      "rule_type": "空间距离规则（单维度）",
+      "check_dimensions": 1,
+      "test_cases": 5,
+      "complexity": "更简单，仅检查距离"
+    }
+  }
+}
+

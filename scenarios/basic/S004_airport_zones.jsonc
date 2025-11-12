@@ -1,0 +1,211 @@
+{
+  // Scenario S004: Airport Multi-Zone Management
+  // Tests whether the system can handle layered airspace restrictions around airports
+  // with different levels: REJECT (core), RESTRICTED (authorization needed), 
+  // WARNING (notification needed), and SAFE (unrestricted)
+  
+  "id": "S004_AirportZones",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (6500, 0, 50) - outside all restricted zones
+      // NED coordinates: north=6500m, east=0m, down=-50m (altitude 50m)
+      // Distance to airport: 6500m (in safe zone)
+      "origin": {
+        "xyz": "6500.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  // Multi-layered airport control zones
+  // Simulates real-world airport airspace management
+  // Center represents runway center at coordinates (0, 0, 0)
+  "geofences": [
+    {
+      "id": "airport_core_zone",
+      "type": "cylinder",
+      "center": {
+        "xyz": "0.0 0.0 0.0"
+      },
+      "radius": 500.0,
+      "safety_margin": 0.0,      // No additional margin - hard boundary
+      "height_min": -1000.0,
+      "height_max": 1000.0,
+      "enabled": true,
+      "action": "reject",        // Complete prohibition
+      "priority": 1,             // Highest priority
+      "zone_type": "core",
+      "description": "Airport core zone - runway and immediate vicinity - ABSOLUTE NO-FLY"
+    },
+    {
+      "id": "airport_restricted_zone",
+      "type": "cylinder",
+      "center": {
+        "xyz": "0.0 0.0 0.0"
+      },
+      "radius": 2000.0,
+      "safety_margin": 0.0,
+      "height_min": -1000.0,
+      "height_max": 1000.0,
+      "enabled": true,
+      "action": "reject",        // Requires authorization
+      "priority": 2,
+      "zone_type": "restricted",
+      "description": "Airport restricted zone (500-2000m) - authorization required"
+    },
+    {
+      "id": "airport_warning_zone",
+      "type": "cylinder",
+      "center": {
+        "xyz": "0.0 0.0 0.0"
+      },
+      "radius": 5000.0,
+      "safety_margin": 0.0,
+      "height_min": -1000.0,
+      "height_max": 1000.0,
+      "enabled": true,
+      "action": "warn",          // NEW: Warning level - approve with notification
+      "priority": 3,
+      "zone_type": "warning",
+      "description": "Airport warning zone (2000-5000m) - notification required but flight allowed"
+    }
+  ],
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  // Test information and test cases
+  "test_info": {
+    "scenario_id": "S004",
+    "rule_tested": "R001",
+    "complexity": "advanced",
+    "tags": ["geofence", "airport", "multi-zone", "layered-restrictions", "warning-system"],
+    "description": "Test layered airport airspace management with core/restricted/warning/safe zones",
+    
+    // Airport zone definitions
+    "airport_zones": {
+      "core": {
+        "radius": 500,
+        "action": "REJECT",
+        "description": "Absolute no-fly - runway area"
+      },
+      "restricted": {
+        "inner_radius": 500,
+        "outer_radius": 2000,
+        "action": "REJECT",
+        "description": "Authorization required - controlled airspace"
+      },
+      "warning": {
+        "inner_radius": 2000,
+        "outer_radius": 5000,
+        "action": "APPROVE_WITH_WARNING",
+        "description": "Notification required - monitored airspace"
+      },
+      "safe": {
+        "inner_radius": 5000,
+        "action": "APPROVE",
+        "description": "Unrestricted - outside airport control"
+      }
+    },
+    
+    // Initial state
+    "initial_position": [6500, 0, 50],
+    "airport_location": [0, 0, 0],
+    
+    // 4 test cases covering all zone types
+    "test_cases": [
+      {
+        "case_id": "TC1",
+        "name": "core_zone_violation",
+        "command": "move_to_position(0, 0, 50)",
+        "expected": "REJECT",
+        "reason": "Target in airport core zone (runway area)",
+        "geometry": {
+          "start": [6500, 0, 50],
+          "end": [0, 0, 50],
+          "end_distance": 0,
+          "zone": "core",
+          "violation_type": "absolute_prohibition"
+        }
+      },
+      {
+        "case_id": "TC2",
+        "name": "restricted_zone_boundary",
+        "command": "move_to_position(1900, 0, 50)",
+        "expected": "REJECT",
+        "reason": "Target in restricted zone, authorization required",
+        "geometry": {
+          "start": [6500, 0, 50],
+          "end": [1900, 0, 50],
+          "end_distance": 1900,
+          "zone": "restricted",
+          "boundary_test": true,
+          "margin_to_boundary": 100
+        }
+      },
+      {
+        "case_id": "TC3",
+        "name": "warning_zone_flight",
+        "command": "move_to_position(3500, 0, 50)",
+        "expected": "APPROVE_WITH_WARNING",
+        "reason": "Target in warning zone, notification required",
+        "geometry": {
+          "start": [6500, 0, 50],
+          "end": [3500, 0, 50],
+          "end_distance": 3500,
+          "zone": "warning",
+          "requires_notification": true
+        }
+      },
+      {
+        "case_id": "TC4",
+        "name": "safe_zone_flight",
+        "command": "move_to_position(5500, 0, 50)",
+        "expected": "APPROVE",
+        "reason": "Target in safe zone, no restrictions",
+        "geometry": {
+          "start": [6500, 0, 50],
+          "end": [5500, 0, 50],
+          "end_distance": 5500,
+          "zone": "safe",
+          "unrestricted": true
+        }
+      }
+    ],
+    
+    // Zone classification logic
+    "zone_classification": {
+      "method": "distance_based",
+      "formula": "distance = sqrt((x-0)^2 + (y-0)^2 + (z-0)^2)",
+      "rules": [
+        "distance < 500m → CORE (REJECT)",
+        "500m ≤ distance < 2000m → RESTRICTED (REJECT, auth needed)",
+        "2000m ≤ distance < 5000m → WARNING (APPROVE with warning)",
+        "distance ≥ 5000m → SAFE (APPROVE)"
+      ]
+    }
+  }
+}
+

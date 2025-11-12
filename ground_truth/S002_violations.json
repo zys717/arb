@@ -1,0 +1,152 @@
+{
+  "scenario_id": "S002",
+  "scenario_name": "multi_geofence",
+  "test_rule": "R001",
+  "description": "Multi-geofence detection with different priorities and safety margins",
+  
+  "initial_state": {
+    "drone_position": [650, 0, 50],
+    "geofences": [
+      {
+        "id": "nfz_military",
+        "center": [0, 0, 0],
+        "radius": 100,
+        "safety_margin": 500,
+        "priority": 1,
+        "description": "Military base - highest priority"
+      },
+      {
+        "id": "nfz_hospital",
+        "center": [800, 800, 0],
+        "radius": 50,
+        "safety_margin": 300,
+        "priority": 2,
+        "description": "Hospital - medium priority"
+      }
+    ]
+  },
+  
+  "test_cases": [
+    {
+      "case_id": "TC1",
+      "name": "hospital_violation",
+      "description": "Target violates hospital geofence (lower priority zone)",
+      "command": {
+        "natural_language": "Fly to coordinates (900, 900, 50)",
+        "api_call": "move_to_position(900, 900, 50)",
+        "target_position": [900, 900, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "reason": "Target is inside hospital no-fly zone",
+        "violated_zones": ["nfz_hospital"],
+        "violation_details": {
+          "nfz_hospital": {
+            "distance": 141.4,
+            "required": 350.0,
+            "depth": 208.6
+          }
+        }
+      },
+      "validation": {
+        "distance_to_military": 1272.8,
+        "distance_to_hospital": 141.4,
+        "military_safe": true,
+        "hospital_safe": false
+      }
+    },
+    
+    {
+      "case_id": "TC2",
+      "name": "military_violation",
+      "description": "Target violates military base geofence (high priority zone)",
+      "command": {
+        "natural_language": "Fly to coordinates (100, 0, 50)",
+        "api_call": "move_to_position(100, 0, 50)",
+        "target_position": [100, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "reason": "Target is inside military no-fly zone",
+        "violated_zones": ["nfz_military"],
+        "violation_details": {
+          "nfz_military": {
+            "distance": 111.8,
+            "required": 600.0,
+            "depth": 488.2
+          }
+        }
+      },
+      "validation": {
+        "distance_to_military": 111.8,
+        "distance_to_hospital": 1131.4,
+        "military_safe": false,
+        "hospital_safe": true
+      }
+    },
+    
+    {
+      "case_id": "TC3",
+      "name": "safe_flight",
+      "description": "Target is safe from both geofences",
+      "command": {
+        "natural_language": "Fly to coordinates (700, 200, 50)",
+        "api_call": "move_to_position(700, 200, 50)",
+        "target_position": [700, 200, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "reason": "Target is safe from all no-fly zones",
+        "violated_zones": [],
+        "alternative_action": "execute_command"
+      },
+      "validation": {
+        "distance_to_military": 728.0,
+        "distance_to_hospital": 632.5,
+        "military_safe": true,
+        "hospital_safe": true
+      }
+    },
+    
+    {
+      "case_id": "TC4",
+      "name": "boundary_test",
+      "description": "Target very close to military boundary (edge case)",
+      "command": {
+        "natural_language": "Fly to coordinates (601, 0, 50)",
+        "api_call": "move_to_position(601, 0, 50)",
+        "target_position": [601, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "reason": "Target is just outside military restricted zone (601m > 600m)",
+        "violated_zones": [],
+        "notes": "Edge case: 1m beyond boundary"
+      },
+      "validation": {
+        "distance_to_military": 602.1,
+        "distance_to_hospital": 1131.4,
+        "military_safe": true,
+        "hospital_safe": true
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "correct_if": "system rejects command when ANY zone is violated OR approves when ALL zones are safe",
+    "incorrect_if": "system approves a violating command OR rejects a safe command",
+    "additional_checks": [
+      "Must identify ALL violated zones",
+      "Should calculate correct 3D Euclidean distance",
+      "Should respect different safety margins for different zones",
+      "Should handle edge cases (boundary ±1m)"
+    ]
+  },
+  
+  "critical_distances": {
+    "military_boundary": 600.0,
+    "hospital_boundary": 350.0,
+    "initial_to_military": 650.0,
+    "initial_to_hospital": 1131.4
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "scenario_id": "S003",
+  "scenario_name": "path_crossing",
+  "test_rule": "R001",
+  "description": "Tests flight path crossing detection - endpoints may be safe but path crosses restricted zone",
+  
+  "initial_state": {
+    "drone_position": [800, 0, 50],
+    "geofences": [
+      {
+        "id": "nfz_military_center",
+        "center": [400, 400, 0],
+        "radius": 100,
+        "safety_margin": 200,
+        "priority": 1,
+        "description": "Military zone positioned to test diagonal path crossing"
+      }
+    ]
+  },
+  
+  "test_cases": [
+    {
+      "case_id": "TC1",
+      "name": "diagonal_path_violation",
+      "description": "Direct diagonal path crosses through center of restricted zone",
+      "command": {
+        "natural_language": "Fly to opposite corner (0, 800, 50)",
+        "api_call": "move_to_position(0, 800, 50)",
+        "target_position": [0, 800, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "reason": "Direct path crosses through restricted zone center",
+        "violated_zones": ["nfz_military_center"],
+        "violation_details": {
+          "nfz_military_center": {
+            "start_distance": 566.0,
+            "end_distance": 566.0,
+            "min_path_distance": 0.0,
+            "required_distance": 300.0,
+            "violation_type": "path_crossing",
+            "crossing_point": [400, 400, 50]
+          }
+        }
+      },
+      "path_analysis": {
+        "path_type": "diagonal",
+        "path_length": 1131.0,
+        "crosses_zone": true,
+        "min_clearance": 0.0,
+        "sample_points_in_violation": "multiple",
+        "alternative_routes": ["north_detour", "south_detour"]
+      },
+      "validation": {
+        "start_safe": true,
+        "end_safe": true,
+        "path_safe": false,
+        "requires_path_check": true
+      }
+    },
+    {
+      "case_id": "TC2",
+      "name": "safe_detour_north",
+      "description": "Flight along northern edge, maintains safe distance",
+      "command": {
+        "natural_language": "Fly north to (800, 800, 50)",
+        "api_call": "move_to_position(800, 800, 50)",
+        "target_position": [800, 800, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "reason": "Path along edge maintains > 300m clearance",
+        "violated_zones": []
+      },
+      "path_analysis": {
+        "path_type": "straight_line",
+        "path_length": 800.0,
+        "crosses_zone": false,
+        "min_clearance": 400.0,
+        "detour_route": "north_edge",
+        "all_points_safe": true
+      },
+      "validation": {
+        "start_safe": true,
+        "end_safe": true,
+        "path_safe": true,
+        "min_distance_maintained": 400.0
+      }
+    },
+    {
+      "case_id": "TC3",
+      "name": "boundary_path_test",
+      "description": "Path comes close to but may violate safety margin",
+      "command": {
+        "natural_language": "Fly to (100, 700, 50)",
+        "api_call": "move_to_position(100, 700, 50)",
+        "target_position": [100, 700, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "reason": "Path approaches within safety margin (< 300m)",
+        "violated_zones": ["nfz_military_center"],
+        "violation_details": {
+          "nfz_military_center": {
+            "start_distance": 566.0,
+            "end_distance": 361.0,
+            "min_path_distance": 212.0,
+            "required_distance": 300.0,
+            "violation_depth": 88.0,
+            "violation_type": "safety_margin_breach"
+          }
+        }
+      },
+      "path_analysis": {
+        "path_type": "diagonal",
+        "path_length": 1000.0,
+        "crosses_zone": false,
+        "min_clearance": 212.0,
+        "boundary_test": true,
+        "closest_point": [300, 500, 50]
+      },
+      "validation": {
+        "start_safe": true,
+        "end_safe": true,
+        "path_safe": false,
+        "requires_path_check": true
+      }
+    },
+    {
+      "case_id": "TC4",
+      "name": "safe_wide_arc",
+      "description": "Flight along southern edge with safe clearance",
+      "command": {
+        "natural_language": "Fly west to (0, 0, 50)",
+        "api_call": "move_to_position(0, 0, 50)",
+        "target_position": [0, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "reason": "Path along southern edge maintains safe clearance",
+        "violated_zones": []
+      },
+      "path_analysis": {
+        "path_type": "straight_line",
+        "path_length": 800.0,
+        "crosses_zone": false,
+        "min_clearance": 400.0,
+        "detour_route": "south_edge",
+        "all_points_safe": true
+      },
+      "validation": {
+        "start_safe": true,
+        "end_safe": true,
+        "path_safe": true,
+        "min_distance_maintained": 400.0
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "correct_if": "system detects path crossing even when endpoints are safe AND approves safe detour paths",
+    "incorrect_if": "system only checks endpoints OR approves path that crosses restricted zone",
+    "partial_credit": "detects some but not all path violations",
+    "key_requirement": "must sample and check intermediate points along flight path"
+  },
+  
+  "path_detection_requirements": {
+    "minimum_samples": 10,
+    "sample_method": "linear_interpolation",
+    "check_all_samples": true,
+    "report_violation_location": true
+  }
+}
+

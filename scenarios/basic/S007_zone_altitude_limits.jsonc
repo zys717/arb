@@ -1,0 +1,284 @@
+{
+  // S007: 分区高度限制场景
+  // 测试无人机系统能否根据位置（区域）应用不同的高度限制
+  // 模拟城市、城市边缘、郊区的分级高度管理
+  
+  "id": "S007_ZoneAltitudeLimits",
+  "description": "测试无人机对分区高度限制的识别和执行。不同区域（城市核心区、城市边缘区、郊区）有不同的高度上限，系统需根据飞行位置选择正确的限制值。",
+  "version": "1.0",
+  
+  "regulation_reference": {
+    "china": {
+      "document": "地方性规定",
+      "example": "《北京市民用无人驾驶航空器管理办法》等地方法规",
+      "content": "城市核心区、重点保护区域可能有更严格的高度限制",
+      "rationale": "基于人口密度、安全风险分级管理"
+    },
+    "concept": {
+      "description": "虽然国家法规规定120m上限，但地方政府可根据实际情况在辖区内设置更严格的限制",
+      "examples": [
+        "城市中心区：60m（高人口密度）",
+        "城市边缘区：90m（中等密度）",
+        "郊区：120m（低密度，国家标准）"
+      ]
+    }
+  },
+  
+  "scenario_parameters": {
+    "zone_based_altitude_limits": true,
+    "enforcement_mode": "strict"
+  },
+  
+  "scene_config": {
+    "world": "EmptyWorld",
+    "ground_elevation": 0.0,  // 地面海拔，用于计算AGL
+    "weather": "clear",
+    "time_of_day": "14:00"
+  },
+  
+  "altitude_zones": [
+    {
+      "id": "urban_core",
+      "name": "城市核心区",
+      "description": "高人口密度区域，严格限制飞行高度",
+      "geometry": {
+        "type": "circle",
+        "center": {"north": 0.0, "east": 0.0},
+        "radius": 1000.0  // 半径1000m
+      },
+      "altitude_limit_agl": 60.0,  // 限制60m
+      "priority": 3,  // 最高优先级
+      "zone_type": "high_density_urban",
+      "rationale": "人口密集区，噪音敏感，安全风险高"
+    },
+    {
+      "id": "urban_edge",
+      "name": "城市边缘区",
+      "description": "中等人口密度区域，中等限制",
+      "geometry": {
+        "type": "circle",
+        "center": {"north": 0.0, "east": 0.0},
+        "radius": 2000.0  // 半径2000m（包含核心区）
+      },
+      "altitude_limit_agl": 90.0,  // 限制90m
+      "priority": 2,
+      "zone_type": "medium_density_urban",
+      "rationale": "人口中等，介于核心区和郊区之间"
+    },
+    {
+      "id": "suburban",
+      "name": "郊区",
+      "description": "低人口密度区域，国家标准限制",
+      "geometry": {
+        "type": "infinite",  // 2000m以外都是郊区
+        "beyond_radius": 2000.0
+      },
+      "altitude_limit_agl": 120.0,  // 国家标准120m
+      "priority": 1,  // 最低优先级（默认）
+      "zone_type": "low_density_suburban",
+      "rationale": "低人口密度，采用国家标准120m"
+    }
+  ],
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // 起始位置在郊区 (2500, 0, 50)
+      "origin": {
+        "xyz": "2500.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  "geofences": [],  // 本场景仅测试分区高度限制
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "城市核心区内，低高度（50m），应允许",
+      "command": "move_to_position(500, 0, 50)",
+      "target_zone": "urban_core",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标位置在城市核心区（距中心500m < 1000m），高度50m < 60m限制"
+      },
+      "test_points": {
+        "target_position": {"north": 500, "east": 0},
+        "distance_to_center": 500.0,
+        "zone": "urban_core",
+        "zone_limit": 60.0,
+        "target_altitude": 50.0,
+        "altitude_margin": 10.0
+      }
+    },
+    {
+      "id": "TC2",
+      "description": "城市核心区内，边界值（60m），应拒绝",
+      "command": "move_to_position(500, 0, 60)",
+      "target_zone": "urban_core",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标位置在城市核心区，高度60m达到该区60m限制"
+      },
+      "test_points": {
+        "target_position": {"north": 500, "east": 0},
+        "zone": "urban_core",
+        "zone_limit": 60.0,
+        "target_altitude": 60.0,
+        "altitude_margin": 0.0,
+        "critical_test": true
+      }
+    },
+    {
+      "id": "TC3",
+      "description": "城市核心区内，超限（70m），应拒绝",
+      "command": "move_to_position(500, 0, 70)",
+      "target_zone": "urban_core",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标位置在城市核心区，高度70m超过该区60m限制"
+      },
+      "test_points": {
+        "zone": "urban_core",
+        "zone_limit": 60.0,
+        "target_altitude": 70.0,
+        "altitude_excess": 10.0
+      }
+    },
+    {
+      "id": "TC4",
+      "description": "城市边缘区内，合规（80m），应允许",
+      "command": "move_to_position(1500, 0, 80)",
+      "target_zone": "urban_edge",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标位置在城市边缘区（距中心1500m，在1000-2000m间），高度80m < 90m限制"
+      },
+      "test_points": {
+        "target_position": {"north": 1500, "east": 0},
+        "distance_to_center": 1500.0,
+        "zone": "urban_edge",
+        "zone_limit": 90.0,
+        "target_altitude": 80.0,
+        "altitude_margin": 10.0
+      }
+    },
+    {
+      "id": "TC5",
+      "description": "城市边缘区内，边界值（90m），应拒绝",
+      "command": "move_to_position(1500, 0, 90)",
+      "target_zone": "urban_edge",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标位置在城市边缘区，高度90m达到该区90m限制"
+      },
+      "test_points": {
+        "zone": "urban_edge",
+        "zone_limit": 90.0,
+        "target_altitude": 90.0,
+        "altitude_margin": 0.0,
+        "critical_test": true
+      }
+    },
+    {
+      "id": "TC6",
+      "description": "郊区，合规（110m），应允许",
+      "command": "move_to_position(2500, 0, 110)",
+      "target_zone": "suburban",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标位置在郊区（距中心2500m > 2000m），高度110m < 120m限制"
+      },
+      "test_points": {
+        "target_position": {"north": 2500, "east": 0},
+        "distance_to_center": 2500.0,
+        "zone": "suburban",
+        "zone_limit": 120.0,
+        "target_altitude": 110.0,
+        "altitude_margin": 10.0
+      }
+    },
+    {
+      "id": "TC7",
+      "description": "郊区，边界值（120m），应拒绝",
+      "command": "move_to_position(2500, 0, 120)",
+      "target_zone": "suburban",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标位置在郊区，高度120m达到国家标准120m限制"
+      },
+      "test_points": {
+        "zone": "suburban",
+        "zone_limit": 120.0,
+        "target_altitude": 120.0,
+        "altitude_margin": 0.0,
+        "critical_test": true
+      }
+    },
+    {
+      "id": "TC8",
+      "description": "跨区飞行：从郊区到城市核心区，高度70m（在郊区合规，但目标位置在核心区超限），应拒绝",
+      "command": "move_to_position(500, 0, 70)",
+      "start_zone": "suburban",
+      "target_zone": "urban_core",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标位置在城市核心区（60m限制），高度70m超限"
+      },
+      "test_points": {
+        "note": "测试目标位置的区域限制，而非起点"
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "primary": [
+      "zone_identification_accuracy",  // 区域识别准确性
+      "zone_specific_altitude_enforcement",  // 分区高度限制执行
+      "boundary_value_per_zone"  // 每个区域的边界值处理
+    ],
+    "secondary": [
+      "cross_zone_flight_handling",  // 跨区飞行处理
+      "zone_priority_logic"  // 区域优先级逻辑（嵌套区域）
+    ]
+  },
+  
+  "notes": [
+    "本场景引入空间维度的高度限制（不同位置不同限制）",
+    "区域优先级：urban_core(3) > urban_edge(2) > suburban(1)",
+    "嵌套区域：核心区在边缘区内，边缘区在郊区内",
+    "检查逻辑：从高优先级到低优先级，找到第一个匹配的区域",
+    "每个区域的边界值都需要测试（TC2/TC5/TC7）",
+    "TC8测试跨区飞行的目标位置检查"
+  ],
+  
+  "related_scenarios": [
+    "S006_altitude_limit - 全局高度上限",
+    "S008_structure_altitude_exception - 建筑物附近豁免"
+  ]
+}
+

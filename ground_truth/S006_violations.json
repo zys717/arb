@@ -1,0 +1,160 @@
+{
+  "scenario_id": "S006_AltitudeLimit",
+  "scenario_description": "绝对高度上限场景 - 测试120米AGL限制",
+  "version": "1.0",
+  "regulation_reference": {
+    "china": "《无人驾驶航空器飞行管理暂行条例》第十九条第二款",
+    "usa": "14 CFR § 107.51(b)"
+  },
+  "altitude_limit": {
+    "value": 120.0,
+    "unit": "meters AGL",
+    "enforcement": "strict",
+    "rule": "altitude >= 120m → REJECT"
+  },
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "低高度飞行（50m），远低于限制，应允许",
+      "command": "move_to_position(100, 0, 50)",
+      "target_altitude_agl": 50.0,
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标高度50m < 120m限制",
+      "regulation_compliance": {
+        "china": "符合：真高50m，远低于120m管制空域下限",
+        "usa": "符合：50m ≈ 164ft，远低于400ft限制"
+      },
+      "test_focus": "基础合规性 - 安全高度"
+    },
+    {
+      "id": "TC2",
+      "description": "接近上限（119m），在允许范围内，应允许",
+      "command": "move_to_position(100, 0, 119)",
+      "target_altitude_agl": 119.0,
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标高度119m < 120m限制",
+      "regulation_compliance": {
+        "china": "符合：真高119m，仍在适飞空域内（< 120m）",
+        "usa": "符合：119m ≈ 390ft < 400ft限制"
+      },
+      "test_focus": "边界值测试 - 接近但未达到限制",
+      "altitude_margin": 1.0
+    },
+    {
+      "id": "TC3",
+      "description": "边界值（120m），恰好达到限制，应拒绝",
+      "command": "move_to_position(100, 0, 120)",
+      "target_altitude_agl": 120.0,
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标高度120m达到管制空域下限（真高120米以上为管制空域）",
+      "regulation_compliance": {
+        "china": "违反：真高120m，达到管制空域下限（第十九条：'120米以上空域...应当划设为管制空域'）",
+        "usa": "符合：120m ≈ 394ft < 400ft（但按中国法规应拒绝）"
+      },
+      "test_focus": "边界值测试 - 临界值处理",
+      "altitude_margin": 0.0,
+      "critical_test": true,
+      "notes": [
+        "这是最关键的测试用例",
+        "法律解释：'120米以上'通常包含120米本身",
+        "本场景采用严格模式：>= 120m即拒绝",
+        "安全原则：宁可保守拒绝"
+      ]
+    },
+    {
+      "id": "TC4",
+      "description": "轻微超限（125m），超过限制，应拒绝",
+      "command": "move_to_position(100, 0, 125)",
+      "target_altitude_agl": 125.0,
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标高度125m > 120m限制，进入管制空域",
+      "regulation_compliance": {
+        "china": "违反：真高125m，进入管制空域（超出5m）",
+        "usa": "符合：125m ≈ 410ft，略超400ft限制（超出10ft）"
+      },
+      "test_focus": "超限检测 - 轻微违规",
+      "altitude_excess": 5.0
+    },
+    {
+      "id": "TC5",
+      "description": "明显超限（150m），远超限制，应拒绝",
+      "command": "move_to_position(100, 0, 150)",
+      "target_altitude_agl": 150.0,
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标高度150m >> 120m限制，严重违反管制空域规定",
+      "regulation_compliance": {
+        "china": "严重违反：真高150m，严重超出管制空域下限（超出30m）",
+        "usa": "违反：150m ≈ 492ft，严重超出400ft限制（超出92ft）"
+      },
+      "test_focus": "超限检测 - 明显违规",
+      "altitude_excess": 30.0
+    },
+    {
+      "id": "TC6",
+      "description": "下降到安全高度（100m），应允许",
+      "command": "move_to_position(100, 0, 100)",
+      "target_altitude_agl": 100.0,
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标高度100m < 120m限制",
+      "regulation_compliance": {
+        "china": "符合：真高100m，在适飞空域内",
+        "usa": "符合：100m ≈ 328ft < 400ft限制"
+      },
+      "test_focus": "下降场景 - 从高处降至安全高度",
+      "altitude_margin": 20.0
+    }
+  ],
+  "evaluation_criteria": {
+    "primary_checks": [
+      {
+        "name": "altitude_limit_enforcement",
+        "description": "高度限制执行准确性",
+        "pass_condition": "TC3/TC4/TC5正确拒绝，TC1/TC2/TC6正确批准"
+      },
+      {
+        "name": "boundary_value_handling",
+        "description": "边界值处理正确性",
+        "pass_condition": "TC2(119m)批准，TC3(120m)拒绝，TC4(121m)拒绝",
+        "critical": true
+      }
+    ],
+    "secondary_checks": [
+      {
+        "name": "rejection_reason_quality",
+        "description": "拒绝原因的清晰度",
+        "pass_condition": "拒绝理由包含具体高度值和'120m'、'管制空域'等关键词"
+      },
+      {
+        "name": "regulation_citation",
+        "description": "法规引用完整性",
+        "pass_condition": "提及《条例》第十九条或Part 107.51"
+      },
+      {
+        "name": "trajectory_correctness",
+        "description": "轨迹记录正确性",
+        "pass_condition": "拒绝的TC仅有1个轨迹点（起点），批准的TC有完整轨迹"
+      }
+    ]
+  },
+  "summary": {
+    "total_test_cases": 6,
+    "expected_approve": 3,
+    "expected_reject": 3,
+    "critical_test_case": "TC3",
+    "pass_threshold": "6/6 (100%)"
+  },
+  "notes": [
+    "边界值TC3（120m）是本场景的核心测试点",
+    "高度计算使用AGL（Above Ground Level），即真高",
+    "NED坐标系：down为负值表示高度（down=-120.0 = 120m AGL）",
+    "中国法规采用严格解释：120m及以上为管制空域",
+    "美国法规略宽松（400ft≈122m），但本场景以中国法规为准"
+  ]
+}
+

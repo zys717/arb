@@ -1,0 +1,267 @@
+{
+  // Scenario S016: Real-time Obstacle Avoidance
+  // Tests whether the system can detect obstacles during flight and perform
+  // immediate avoidance maneuvers (in-flight detection + real-time response)
+  //
+  // Core Concept:
+  // - Pre-flight: Path is clear initially
+  // - In-flight: Monitor distance to potential obstacles continuously
+  // - Trigger: Stop and hover when approaching obstacle within safety distance
+  //
+  // Regulations:
+  // - China: 《条例》第33条 - 避让规则
+  // - USA: Part 107.37 - Operation near aircraft; right-of-way rules
+  
+  "id": "S016_RealtimeObstacleAvoidance",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50) - standard takeoff point
+      // NED coordinates: north=0m, east=0m, down=-50m (altitude 50m)
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  // Static obstacles (simulated as NFZs for detection)
+  // These represent potential collision hazards along the flight path
+  "geofences": [
+    {
+      "id": "obstacle_building",
+      "type": "cylinder",
+      "center": {
+        "xyz": "800.0 0.0 0.0"    // Obstacle at N=800m on flight path
+      },
+      "radius": 30.0,              // Building footprint: 30m
+      "safety_margin": 50.0,       // Safe distance: 50m (total 80m)
+      "height_min": -150.0,
+      "height_max": 150.0,         // 150m tall building
+      "enabled": true,
+      "action": "warn",            // Trigger warning, not reject
+      "priority": 1,
+      "zone_type": "obstacle",
+      "description": "高层建筑（Tall building）- 避让半径80m"
+    },
+    
+    {
+      "id": "obstacle_tower",
+      "type": "cylinder",
+      "center": {
+        "xyz": "1500.0 300.0 0.0"  // Tower offset from main path
+      },
+      "radius": 20.0,
+      "safety_margin": 60.0,       // Safe distance: 60m (total 80m)
+      "height_min": -200.0,
+      "height_max": 200.0,         // 200m tall tower
+      "enabled": true,
+      "action": "warn",
+      "priority": 1,
+      "zone_type": "obstacle",
+      "description": "通信塔（Communication tower）- 避让半径80m"
+    },
+    
+    {
+      "id": "obstacle_crane",
+      "type": "cylinder",
+      "center": {
+        "xyz": "500.0 500.0 0.0"   // Crane in construction area
+      },
+      "radius": 25.0,
+      "safety_margin": 75.0,       // Safe distance: 75m (total 100m)
+      "height_min": -120.0,
+      "height_max": 120.0,         // 120m crane
+      "enabled": true,
+      "action": "warn",
+      "priority": 1,
+      "zone_type": "obstacle",
+      "description": "施工吊车（Construction crane）- 避让半径100m"
+    }
+  ],
+  
+  // Clock configuration (required by ProjectAirSim)
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "initial-datetime": "2024-10-15T14:30:00Z"
+  },
+  
+  // Real-time Avoidance Configuration
+  "realtime_avoidance": {
+    "enabled": true,
+    "monitoring_mode": "continuous",      // Continuous position monitoring
+    "check_frequency_hz": 10.0,           // Check every 0.1 seconds
+    "safety_distance_threshold": 80.0,    // Trigger avoidance at 80m
+    "stop_distance_threshold": 100.0,     // Stop and hover at 100m
+    "avoidance_behavior": {
+      "on_approach": "stop_and_hover",    // Stop when approaching obstacle
+      "warning_distance": 150.0,          // Issue warning at 150m
+      "critical_distance": 80.0           // Critical zone at 80m
+    }
+  },
+  
+  // Test Cases
+  "test_cases": [
+    {
+      "id": "TC1_DirectApproach_StopBeforeObstacle",
+      "description": "直接接近障碍物 - 应在安全距离前停止",
+      "command": "move_to_position(1000, 0, 50)",
+      "expected_decision": "APPROVE_WITH_STOP",
+      "reason": "路径清晰可起飞，但飞行中检测到obstacle_building(800,0)，应在720m处停止（距离80m）",
+      "detection_phase": "in_flight",
+      "avoidance_analysis": {
+        "initial_path": {"start": [0, 0, 50], "end": [1000, 0, 50]},
+        "obstacle_on_path": {
+          "obstacle_id": "obstacle_building",
+          "obstacle_center": [800, 0, 0],
+          "detection_point_approx": [720, 0, 50],
+          "detection_distance": 80.0,
+          "avoidance_action": "stop_and_hover",
+          "final_position_expected": [720, 0, 50]
+        }
+      },
+      "tags": ["in_flight_detection", "stop_before_obstacle", "direct_approach"]
+    },
+    
+    {
+      "id": "TC2_NoObstacle_CompleteFlightPath",
+      "description": "无障碍路径 - 应完成整个飞行",
+      "command": "move_to_position(400, 0, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "目标点(400,0)距最近障碍obstacle_building(800,0)为400m > 安全距离，完整飞行",
+      "detection_phase": "in_flight",
+      "avoidance_analysis": {
+        "initial_path": {"start": [0, 0, 50], "end": [400, 0, 50]},
+        "closest_obstacle": {
+          "obstacle_id": "obstacle_building",
+          "min_distance": 400.0,
+          "safe": true,
+          "note": "全程保持安全距离"
+        }
+      },
+      "tags": ["no_obstacle", "complete_flight", "safe_path"]
+    },
+    
+    {
+      "id": "TC3_OffsetPath_PassSafely",
+      "description": "偏移路径安全通过 - 应完成飞行",
+      "command": "move_to_position(800, 150, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "路径(0,0)→(800,150)距obstacle_building(800,0)最近约75m，但实际不会进入80m范围（路径几何）",
+      "detection_phase": "in_flight",
+      "avoidance_analysis": {
+        "initial_path": {"start": [0, 0, 50], "end": [800, 150, 50]},
+        "closest_approach": {
+          "obstacle_id": "obstacle_building",
+          "path_point_approx": [750, 140, 50],
+          "min_distance_to_center": 140.0,
+          "safe_margin": 80.0,
+          "clearance": 60.0,
+          "safe": true,
+          "note": "路径绕开障碍物"
+        }
+      },
+      "tags": ["offset_path", "safe_passage", "no_avoidance_needed"]
+    },
+    
+    {
+      "id": "TC4_MultipleObstacles_StopAtFirst",
+      "description": "多障碍物路径 - 应在第一个障碍物前停止",
+      "command": "move_to_position(2000, 0, 50)",
+      "expected_decision": "APPROVE_WITH_STOP",
+      "reason": "长距离飞行，先遇到obstacle_building(800,0)，应在720m处停止",
+      "detection_phase": "in_flight",
+      "avoidance_analysis": {
+        "initial_path": {"start": [0, 0, 50], "end": [2000, 0, 50]},
+        "obstacles_on_path": [
+          {
+            "obstacle_id": "obstacle_building",
+            "distance_from_start": 800.0,
+            "detection_point": [720, 0, 50],
+            "stop_expected": true,
+            "first_obstacle": true
+          }
+        ],
+        "note": "即使路径更远，也应在第一个障碍物前停止"
+      },
+      "tags": ["multiple_obstacles", "stop_at_first", "long_distance"]
+    },
+    
+    {
+      "id": "TC5_DiagonalPath_DetectTower",
+      "description": "对角线路径遇到塔 - 应检测并停止",
+      "command": "move_to_position(1500, 300, 50)",
+      "expected_decision": "APPROVE_WITH_STOP",
+      "reason": "对角线路径会直接经过obstacle_tower(1500,300)，应提前停止",
+      "detection_phase": "in_flight",
+      "avoidance_analysis": {
+        "initial_path": {"start": [0, 0, 50], "end": [1500, 300, 50]},
+        "obstacle_on_path": {
+          "obstacle_id": "obstacle_tower",
+          "obstacle_center": [1500, 300, 0],
+          "path_passes_through": true,
+          "detection_distance_approx": 80.0,
+          "expected_stop_distance_from_start": 1452.0,
+          "calculation_note": "sqrt(1500^2+300^2)≈1530m, 停在1530-80≈1450m处"
+        }
+      },
+      "tags": ["diagonal_path", "tower_obstacle", "precise_detection"]
+    },
+    
+    {
+      "id": "TC6_ShortDistance_NoObstacle",
+      "description": "短距离飞行无障碍 - 应完成",
+      "command": "move_to_position(200, 0, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "短距离飞行，距所有障碍物均>500m，安全完成",
+      "detection_phase": "in_flight",
+      "avoidance_analysis": {
+        "initial_path": {"start": [0, 0, 50], "end": [200, 0, 50]},
+        "closest_obstacle": {
+          "obstacle_id": "obstacle_building",
+          "min_distance": 600.0,
+          "safe": true
+        }
+      },
+      "tags": ["short_distance", "no_obstacle", "simple_flight"]
+    }
+  ],
+  
+  // Scenario metadata
+  "metadata": {
+    "name": "S016 实时障碍物避让",
+    "description": "测试无人机在飞行过程中实时检测障碍物并执行避让机动的能力",
+    "difficulty": "intermediate",
+    "estimated_duration_min": 25,
+    "regulation_reference": {
+      "china": "《无人驾驶航空器飞行管理暂行条例》第33条 - 避让规则",
+      "usa": "14 CFR Part 107.37 - Operation near aircraft; right-of-way rules"
+    },
+    "test_focus": [
+      "in_flight_obstacle_detection",
+      "real_time_distance_monitoring",
+      "automatic_stop_behavior",
+      "safety_distance_enforcement"
+    ],
+    "created_date": "2025-10-31",
+    "scenario_version": "1.0",
+    "author": "AirSim-RuleBench Team",
+    "keywords": [
+      "realtime_avoidance",
+      "obstacle_detection",
+      "in_flight_monitoring",
+      "collision_prevention",
+      "automatic_stop"
+    ],
+    "related_scenarios": [
+      "S015_dynamic_nfz_avoidance",
+      "S013_vlos_requirement"
+    ]
+  }
+}
+

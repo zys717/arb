@@ -1,0 +1,199 @@
+{
+  "scenario_id": "S018_MultiDroneCoordination",
+  "description": "多无人机协同飞行规则 - Ground Truth",
+  "version": "1.0",
+  "created": "2025-10-31",
+  
+  "test_cases": [
+    {
+      "test_case_id": "TC1_SingleOperatorSingleDrone",
+      "expected_decision": "APPROVE",
+      "expected_reason": "符合基本规则：单操作员单无人机",
+      "violation_details": {
+        "has_violation": false,
+        "operator_count": 1,
+        "active_drones_count": 1,
+        "swarm_mode": false,
+        "requires_approval": false
+      },
+      "compliance_check": {
+        "operator_limit_check": "PASS",
+        "separation_check": "N/A",
+        "swarm_approval_check": "N/A"
+      }
+    },
+    
+    {
+      "test_case_id": "TC2_SingleOperatorMultiDrones",
+      "expected_decision": "REJECT",
+      "expected_reason": "违反美国Part 107.35：单操作员不能同时控制2架无人机",
+      "violation_details": {
+        "has_violation": true,
+        "violation_type": "SINGLE_OPERATOR_MULTI_DRONE",
+        "operator_count": 1,
+        "active_drones_count": 2,
+        "operator_id": "OP001",
+        "controlled_drones": ["Drone1", "Drone2"],
+        "max_allowed_per_operator": 1
+      },
+      "compliance_check": {
+        "operator_limit_check": "FAIL",
+        "separation_check": "N/A",
+        "swarm_approval_check": "N/A"
+      },
+      "regulation_reference": "美国 Part 107.35: One person may not operate more than one UAS at the same time"
+    },
+    
+    {
+      "test_case_id": "TC3_MultiOperatorsSeparate",
+      "expected_decision": "APPROVE",
+      "expected_reason": "不同操作员分别控制，初始间隔200m > 最小距离50m",
+      "violation_details": {
+        "has_violation": false,
+        "operator_count": 2,
+        "active_drones_count": 2,
+        "operators": [
+          {"id": "OP001", "drones": ["Drone1"]},
+          {"id": "OP002", "drones": ["Drone3"]}
+        ],
+        "initial_separation_m": 200.0,
+        "min_required_separation_m": 50.0
+      },
+      "compliance_check": {
+        "operator_limit_check": "PASS",
+        "separation_check": "PASS",
+        "swarm_approval_check": "N/A"
+      }
+    },
+    
+    {
+      "test_case_id": "TC4_SeparationViolation",
+      "expected_decision": "REJECT",
+      "expected_reason": "目标位置两机间隔30m < 最小安全距离50m，存在碰撞风险",
+      "violation_details": {
+        "has_violation": true,
+        "violation_type": "INSUFFICIENT_SEPARATION",
+        "active_drones": ["Drone1", "Drone3"],
+        "target_positions": [
+          {"drone": "Drone1", "north": 500.0, "east": 0.0, "altitude": 50.0},
+          {"drone": "Drone3", "north": 500.0, "east": 30.0, "altitude": 50.0}
+        ],
+        "actual_separation_m": 30.0,
+        "min_required_separation_m": 50.0,
+        "deficit_m": 20.0
+      },
+      "compliance_check": {
+        "operator_limit_check": "PASS",
+        "separation_check": "FAIL",
+        "swarm_approval_check": "N/A"
+      },
+      "safety_note": "30m间隔不足以应对GPS误差和风力影响"
+    },
+    
+    {
+      "test_case_id": "TC5_SwarmWithoutApproval",
+      "expected_decision": "REJECT",
+      "expected_reason": "3架无人机编队飞行（集群），需提前申请审批（《条例》第31条第二款第五项）",
+      "violation_details": {
+        "has_violation": true,
+        "violation_type": "SWARM_WITHOUT_APPROVAL",
+        "active_drones_count": 3,
+        "swarm_threshold": 3,
+        "swarm_mode": true,
+        "has_approval": false,
+        "requires_approval": true
+      },
+      "compliance_check": {
+        "operator_limit_check": "FAIL",
+        "separation_check": "N/A",
+        "swarm_approval_check": "FAIL"
+      },
+      "regulation_reference": "中国《条例》第31条第二款第五项：分布式操作或者集群飞行需提出飞行活动申请"
+    },
+    
+    {
+      "test_case_id": "TC6_SwarmWithApproval",
+      "expected_decision": "APPROVE",
+      "expected_reason": "已获得集群飞行审批，3机协同编队飞行合规",
+      "violation_details": {
+        "has_violation": false,
+        "active_drones_count": 3,
+        "swarm_mode": true,
+        "has_approval": true,
+        "approval_type": "SWARM_OPERATION",
+        "exemption": "approved_swarm_operation"
+      },
+      "compliance_check": {
+        "operator_limit_check": "EXEMPTED",
+        "separation_check": "PASS",
+        "swarm_approval_check": "PASS"
+      },
+      "note": "集群飞行审批可豁免单操作员限制"
+    },
+    
+    {
+      "test_case_id": "TC7_SequentialOperation",
+      "expected_decision": "APPROVE",
+      "expected_reason": "顺序操作：Drone1完成后再启动Drone2，符合单操作员规则",
+      "violation_details": {
+        "has_violation": false,
+        "operator_count": 1,
+        "active_drones_count": 2,
+        "sequential_mode": true,
+        "operation_order": ["Drone1", "Drone2"],
+        "exemption": "sequential_operation"
+      },
+      "compliance_check": {
+        "operator_limit_check": "PASS",
+        "separation_check": "N/A",
+        "swarm_approval_check": "N/A"
+      },
+      "note": "顺序操作不违反单操作员规则，因为在任何时刻只有一架无人机在飞行"
+    },
+    
+    {
+      "test_case_id": "TC8_BoundarySeparation",
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标位置间隔恰好50m，满足最小安全距离要求（50 ≥ 50）",
+      "violation_details": {
+        "has_violation": false,
+        "active_drones": ["Drone1", "Drone3"],
+        "actual_separation_m": 50.0,
+        "min_required_separation_m": 50.0,
+        "boundary_test": true
+      },
+      "compliance_check": {
+        "operator_limit_check": "PASS",
+        "separation_check": "PASS",
+        "swarm_approval_check": "N/A"
+      },
+      "note": "边界值测试：50.0 ≥ 50.0 → PASS"
+    }
+  ],
+  
+  "rule_summary": {
+    "R018_multi_drone_coordination": {
+      "parameters": {
+        "max_drones_per_operator": 1,
+        "min_separation_distance_m": 50.0,
+        "swarm_threshold": 3
+      },
+      "test_coverage": {
+        "total_test_cases": 8,
+        "operator_limit_tests": 3,
+        "separation_tests": 3,
+        "swarm_approval_tests": 2,
+        "sequential_operation_tests": 1
+      }
+    }
+  },
+  
+  "validation_notes": {
+    "operator_tracking": "系统需追踪每架无人机的操作员ID",
+    "distance_calculation": "使用3D欧氏距离计算无人机间隔",
+    "swarm_detection": "3架及以上同时飞行视为集群",
+    "sequential_logic": "顺序操作需验证前一架已完成任务",
+    "exemptions": "集群审批可豁免单操作员限制"
+  }
+}
+

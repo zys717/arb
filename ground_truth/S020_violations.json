@@ -1,0 +1,160 @@
+{
+  "scenario_id": "S020_ApprovalTimeline",
+  "description": "飞行申请时限规则 - Ground Truth",
+  "version": "1.0",
+  "created": "2025-11-01",
+  
+  "test_cases": [
+    {
+      "test_case_id": "TC1_ApprovalTooLate",
+      "expected_decision": "REJECT",
+      "expected_reason": "申请时间距飞行仅6小时，未满足提前36小时申请要求",
+      "violation_details": {
+        "has_violation": true,
+        "violation_type": "INSUFFICIENT_ADVANCE_NOTICE",
+        "current_time": "2024-10-20T10:00:00Z",
+        "application_time": "2024-10-21T09:00:00Z",
+        "planned_flight_time": "2024-10-21T15:00:00Z",
+        "time_difference_hours": 6.0,
+        "required_hours": 36.0,
+        "shortage_hours": 30.0,
+        "target_location": {"north": 1000.0, "east": 0.0, "altitude": 50.0},
+        "in_controlled_zone": true,
+        "flight_type": "normal"
+      },
+      "compliance_check": {
+        "advance_notice_check": "FAIL",
+        "emergency_exemption": "N/A",
+        "uncontrolled_airspace": "N/A"
+      },
+      "regulation_reference": "中国《条例》第26条：拟飞行前1日12时前提出申请"
+    },
+    
+    {
+      "test_case_id": "TC2_ApprovalOnTime",
+      "expected_decision": "APPROVE",
+      "expected_reason": "申请时间满足提前36小时要求，批准飞行",
+      "violation_details": {
+        "has_violation": false,
+        "test_phases": [
+          {
+            "phase": "sufficient_advance",
+            "application_time": "2024-10-20T10:00:00Z",
+            "planned_flight_time": "2024-10-22T14:00:00Z",
+            "time_difference_hours": 52.0,
+            "required_hours": 36.0,
+            "meets_requirement": true,
+            "note": "提前52小时申请，远超要求"
+          },
+          {
+            "phase": "boundary_36hours",
+            "application_time": "2024-10-20T10:00:00Z",
+            "planned_flight_time": "2024-10-21T22:00:00Z",
+            "time_difference_hours": 36.0,
+            "required_hours": 36.0,
+            "meets_requirement": true,
+            "note": "恰好36小时，使用 >= 判断，满足要求"
+          }
+        ],
+        "target_location": {"north": 1000.0, "east": 0.0, "altitude": 50.0},
+        "in_controlled_zone": true,
+        "flight_type": "normal"
+      },
+      "compliance_check": {
+        "advance_notice_check": "PASS",
+        "boundary_test": "PASS (36h >= 36h)",
+        "emergency_exemption": "N/A",
+        "uncontrolled_airspace": "N/A"
+      }
+    },
+    
+    {
+      "test_case_id": "TC3_EmergencyExemption",
+      "expected_decision": "APPROVE",
+      "expected_reason": "紧急救援任务豁免时限要求，批准在30分钟后起飞",
+      "violation_details": {
+        "has_violation": false,
+        "current_time": "2024-10-20T10:00:00Z",
+        "application_time": "2024-10-20T10:00:00Z",
+        "planned_flight_time": "2024-10-20T10:30:00Z",
+        "time_difference_hours": 0.5,
+        "required_hours": 36.0,
+        "flight_type": "emergency",
+        "emergency_details": {
+          "mission_type": "search_and_rescue",
+          "priority": "high",
+          "approved_by": "emergency_response_center"
+        },
+        "exemption_applied": "EMERGENCY_MISSION",
+        "target_location": {"north": 1000.0, "east": 0.0, "altitude": 50.0},
+        "in_controlled_zone": true
+      },
+      "compliance_check": {
+        "advance_notice_check": "EXEMPTED (emergency)",
+        "emergency_exemption": "PASS",
+        "uncontrolled_airspace": "N/A"
+      },
+      "regulation_reference": "紧急任务豁免条款"
+    },
+    
+    {
+      "test_case_id": "TC4_UncontrolledAirspaceExempt",
+      "expected_decision": "APPROVE",
+      "expected_reason": "适飞空域内飞行（高度50m<120m，非管制区域），无需提前申请",
+      "violation_details": {
+        "has_violation": false,
+        "current_time": "2024-10-20T10:00:00Z",
+        "application_time": null,
+        "planned_flight_time": "2024-10-20T10:30:00Z",
+        "time_difference_hours": 0.5,
+        "required_hours": 0.0,
+        "flight_type": "normal",
+        "target_location": {"north": 300.0, "east": 0.0, "altitude": 50.0},
+        "altitude": 50.0,
+        "in_controlled_zone": false,
+        "distance_to_controlled_zone": 700.0,
+        "exemption_applied": "UNCONTROLLED_AIRSPACE",
+        "airspace_check": {
+          "altitude_check": "50m < 120m → uncontrolled",
+          "zone_check": "distance=700m > zone_radius=500m → outside",
+          "exemption": "light drone in uncontrolled airspace"
+        }
+      },
+      "compliance_check": {
+        "advance_notice_check": "N/A (exempted)",
+        "emergency_exemption": "N/A",
+        "uncontrolled_airspace": "PASS"
+      },
+      "regulation_reference": "中国《条例》第31条第一款：微型、轻型、小型无人驾驶航空器在适飞空域内的飞行活动无需提出飞行活动申请"
+    }
+  ],
+  
+  "rule_summary": {
+    "R020_approval_timeline": {
+      "parameters": {
+        "advance_notice_hours": 36,
+        "boundary_mode": "inclusive (>= 36h)",
+        "controlled_zone_center": [1000.0, 0.0],
+        "controlled_zone_radius": 500.0,
+        "uncontrolled_altitude_ceiling": 120.0
+      },
+      "test_coverage": {
+        "total_test_cases": 4,
+        "insufficient_advance_tests": 1,
+        "sufficient_advance_tests": 1,
+        "boundary_tests": 1,
+        "emergency_exemption_tests": 1,
+        "uncontrolled_exemption_tests": 1
+      }
+    }
+  },
+  
+  "validation_notes": {
+    "time_calculation": "计算申请时间与飞行时间的小时差",
+    "boundary_judgment": "使用 >= 判断，36小时恰好满足要求",
+    "exemption_priority": "适飞空域豁免 > 紧急任务豁免 > 时限检查",
+    "multi_phase_test": "TC2包含两个阶段，提升单TC覆盖率",
+    "quality_focus": "4个TC精简设计，每个TC验证多个维度"
+  }
+}
+

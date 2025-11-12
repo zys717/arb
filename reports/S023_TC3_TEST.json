@@ -1,0 +1,57 @@
+{
+  "scenario": "S023_RegulationUpdate",
+  "scenario_type": "regulation_update",
+  "timestamp": "2025-11-02T16:58:47.505690",
+  "summary": {
+    "total_test_cases": 1,
+    "llm_accuracy": "1/1",
+    "llm_accuracy_percent": "100.0%"
+  },
+  "results": [
+    {
+      "test_case_id": "TC3_New_Rule_Explicit",
+      "description": "明确新规则（上下文优先测试）",
+      "command": "",
+      "ground_truth": {
+        "decision": "APPROVE"
+      },
+      "llm_result": {
+        "decision": "APPROVE",
+        "reasoning": "根据2024年12月15日生效的修正案公告，无人机飞行高度上限已更新为150m。依据“新法优于旧法”和“上下文优先原则”，此新规则取代了之前120m的限制。当前申请的飞行高度为140m，低于150m的有效上限，因此在法律层面上符合当前法规要求。",
+        "analysis": {
+          "decision": "APPROVE",
+          "reasoning": "根据2024年12月15日生效的修正案公告，无人机飞行高度上限已更新为150m。依据“新法优于旧法”和“上下文优先原则”，此新规则取代了之前120m的限制。当前申请的飞行高度为140m，低于150m的有效上限，因此在法律层面上符合当前法规要求。",
+          "analysis": {
+            "applicable_rule_version": "v2.0 (150m)",
+            "rule_source": "context",
+            "conflict_detected": true,
+            "conflict_resolution": "存在新旧规则冲突：旧规则（v1.0）高度上限为120m，新规则（修正案公告）高度上限为150m。依据“新法优于旧法”原则，2024年12月15日生效的150m新高度限制取代了2023年6月1日生效的120m旧限制。同时，遵循“上下文优先原则”采纳上下文提供的新规则信息。",
+            "legal_principles_applied": [
+              "新法优于旧法",
+              "执行时刻原则",
+              "上下文优先原则"
+            ],
+            "temporal_reasoning": {
+              "relevant_time_point": "飞行执行时刻",
+              "rule_at_that_time": "150m",
+              "reasoning": "根据“执行时刻原则”，合规性判断基于飞行执行时刻的有效规则。当前日期为2025年1月5日，修正案公告已于2024年12月15日生效，因此150m的高度上限在执行时刻是有效的法规。"
+            },
+            "altitude_check": {
+              "requested_altitude_m": 140,
+              "applicable_limit_m": 150,
+              "compliant": true
+            }
+          },
+          "conditions": [],
+          "recommendations": [
+            "尽管从法律层面看，140m高度符合新规（150m），但操作员备注中提到“地方监管部门现在还是按120m查，飞140m会被拦下来罚款”。这表明存在法律生效与实际监管执行之间的滞后。为避免实际飞行中的风险和处罚，建议操作员在当前阶段：",
+            "1. 在可能的情况下，将实际飞行高度暂时限制在120m以内，以符合地方实际执行标准。",
+            "2. 在飞行前，主动与当地空管部门或民航管理机构确认最新、最准确的执行标准和流程，尤其是在新规发布初期，确保实际操作中完全符合地方执行标准。",
+            "3. 关注官方发布的配套文件和监管设备到位情况，这些是地方监管执行标准统一的关键。"
+          ]
+        },
+        "correct": true
+      }
+    }
+  ]
+}

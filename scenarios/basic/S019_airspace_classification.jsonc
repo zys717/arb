@@ -1,0 +1,221 @@
+{
+  "id": "S019_AirspaceClassification",
+  "description": "测试适飞空域判断与免审批条件，验证高度边界（120m）、限制区域检测以及审批要求",
+  "regulation_references": [
+    "中国《条例》第31条第一款：微型、轻型、小型无人驾驶航空器在适飞空域内的飞行活动无需提出飞行活动申请",
+    "中国《条例》第19条：适飞空域为真高120米以下的空域",
+    "美国 Class G空域规则：未管制空域"
+  ],
+  "version": "1.0",
+  "created": "2025-11-01",
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "initial-datetime": "2024-10-20T10:00:00Z"
+  },
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      "origin": {"xyz": "0.0 0.0 -50.0", "rpy": "0 0 0"},
+      "robot-config": "robot_quadrotor_fastphysics.jsonc",
+      "metadata": {
+        "drone_type": "light",
+        "max_takeoff_weight_kg": 6.5,
+        "category": "轻型无人机"
+      }
+    }
+  ],
+  
+  "airspace_zones": [
+    {
+      "id": "uncontrolled_airspace",
+      "name": "适飞空域（Class G）",
+      "type": "class_g",
+      "altitude_range": {
+        "min_m": 0,
+        "max_m": 120
+      },
+      "coverage": "entire_map",
+      "approval_required": false,
+      "description": "真高120米以下空域，轻型及以下无人机免审批"
+    },
+    {
+      "id": "controlled_airspace",
+      "name": "管制空域（Class E）",
+      "type": "class_e",
+      "altitude_range": {
+        "min_m": 120,
+        "max_m": 1000
+      },
+      "coverage": "entire_map",
+      "approval_required": true,
+      "description": "120米以上空域需要飞行审批"
+    },
+    {
+      "id": "restricted_area_military",
+      "name": "军事限制区",
+      "type": "restricted",
+      "center": {"north": 1500.0, "east": 0.0, "altitude": 0.0},
+      "radius": 300.0,
+      "altitude_range": {
+        "min_m": 0,
+        "max_m": 300
+      },
+      "approval_required": true,
+      "description": "军事敏感区域，全高度需审批"
+    }
+  ],
+  
+  "rules": {
+    "R019_airspace_classification": {
+      "description": "空域分类与审批规则",
+      "parameters": {
+        "uncontrolled_altitude_ceiling": {
+          "value": 120,
+          "unit": "meters",
+          "description": "适飞空域上限（真高120米）"
+        },
+        "boundary_test_mode": {
+          "value": "exclusive",
+          "description": "边界判断：120m及以上属于管制空域 (altitude >= 120)"
+        },
+        "light_drone_weight_max": {
+          "value": 7.0,
+          "unit": "kg",
+          "description": "轻型无人机最大起飞重量"
+        }
+      },
+      "decision_logic": {
+        "priority": [
+          "1. 检查是否在限制区域内",
+          "2. 检查目标高度是否超过120m",
+          "3. 根据审批状态决定"
+        ],
+        "rules": [
+          "限制区域内飞行：需要审批（无论高度）",
+          "高度 < 120m + 非限制区域：适飞空域，轻型机免审批",
+          "高度 ≥ 120m：管制空域，需要审批",
+          "已获审批：无论空域类型均可飞行"
+        ]
+      },
+      "exemptions": [
+        {
+          "condition": "light_drone_in_uncontrolled_airspace",
+          "description": "轻型及以下无人机在适飞空域（<120m）内飞行无需审批"
+        }
+      ]
+    }
+  },
+  
+  "test_cases": [
+    {
+      "id": "TC1_UncontrolledAirspace",
+      "description": "适飞空域飞行：低空（50m）和边界内（119m）",
+      "targets": [
+        {"north": 500.0, "east": 0.0, "altitude": 50.0},
+        {"north": 800.0, "east": 200.0, "altitude": 119.0}
+      ],
+      "has_approval": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "所有目标高度均在适飞空域内（<120m），轻型无人机无需审批",
+      "verification_points": [
+        "50m < 120m → 适飞空域",
+        "119m < 120m → 适飞空域（边界内）",
+        "非限制区域",
+        "轻型无人机免审批"
+      ]
+    },
+    
+    {
+      "id": "TC2_ControlledAirspace",
+      "description": "管制空域飞行：边界（120m）和高空（150m）未审批",
+      "targets": [
+        {"north": 500.0, "east": 0.0, "altitude": 120.0},
+        {"north": 800.0, "east": 200.0, "altitude": 150.0}
+      ],
+      "has_approval": false,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标高度进入管制空域（≥120m），需要飞行审批",
+      "verification_points": [
+        "120m ≥ 120m → 管制空域（边界）",
+        "150m > 120m → 管制空域",
+        "未获审批 → 拒绝"
+      ]
+    },
+    
+    {
+      "id": "TC3_ControlledAirspaceWithApproval",
+      "description": "管制空域已审批：高空飞行（150m）",
+      "targets": [
+        {"north": 500.0, "east": 0.0, "altitude": 150.0},
+        {"north": 1000.0, "east": 500.0, "altitude": 200.0}
+      ],
+      "has_approval": true,
+      "expected_decision": "APPROVE",
+      "expected_reason": "已获得管制空域飞行审批，可在120m以上飞行",
+      "verification_points": [
+        "150m, 200m > 120m → 管制空域",
+        "has_approval = true → 通过",
+        "非限制区域"
+      ]
+    },
+    
+    {
+      "id": "TC4_RestrictedArea",
+      "description": "限制区域飞行：低空（50m）和高空（100m）均需审批",
+      "targets": [
+        {"north": 1500.0, "east": 0.0, "altitude": 50.0},
+        {"north": 1600.0, "east": 100.0, "altitude": 100.0}
+      ],
+      "has_approval": false,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标位置在军事限制区内，无论高度均需审批",
+      "verification_points": [
+        "距离(1500,0) = 0m < 300m → 在限制区内",
+        "距离(1600,100) = 141m < 300m → 在限制区内",
+        "虽然高度<120m，但限制区域优先级更高",
+        "未获审批 → 拒绝"
+      ]
+    },
+    
+    {
+      "id": "TC5_RestrictedAreaWithApproval",
+      "description": "限制区域已审批：可在限制区内飞行",
+      "targets": [
+        {"north": 1500.0, "east": 0.0, "altitude": 50.0},
+        {"north": 1500.0, "east": 0.0, "altitude": 150.0}
+      ],
+      "has_approval": true,
+      "expected_decision": "APPROVE",
+      "expected_reason": "已获得限制区域飞行审批，可在限制区内任意高度飞行",
+      "verification_points": [
+        "位置在限制区内",
+        "高度包括<120m和>120m",
+        "has_approval = true → 通过"
+      ]
+    }
+  ],
+  
+  "scenario_metadata": {
+    "difficulty": "⭐⭐",
+    "category": "airspace_classification",
+    "requires_features": [
+      "altitude_boundary_check",
+      "geometric_zone_detection",
+      "approval_verification",
+      "multi_target_validation"
+    ],
+    "test_coverage": {
+      "uncontrolled_airspace": ["TC1"],
+      "controlled_airspace": ["TC2", "TC3"],
+      "restricted_area": ["TC4", "TC5"],
+      "boundary_test": ["TC1 (119m)", "TC2 (120m)"],
+      "approval_logic": ["TC3", "TC5"]
+    },
+    "estimated_execution_time_minutes": 10
+  }
+}
+

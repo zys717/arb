@@ -1,0 +1,124 @@
+{
+  "scenario_id": "S008_StructureWaiver",
+  "scenario_name": "建筑物附近高度豁免",
+  "regulation": "14 CFR § 107.51(b) - Structure Altitude Waiver",
+  "test_cases": [
+    {
+      "test_case_id": "TC1",
+      "description": "远离建筑物超全局限制",
+      "command": "move_to_position(3000, 0, 150)",
+      "target_position": {
+        "north": 3000.0,
+        "east": 0.0,
+        "altitude_agl": 150.0
+      },
+      "context": {
+        "distance_to_nearest_structure": 2236.0,
+        "nearest_structure_id": "building_1",
+        "within_waiver_radius": false,
+        "global_altitude_limit": 120.0
+      },
+      "violation_expected": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标高度150m超过全局限制120m，且不在任何建筑物豁免半径内（距building_1约2236m，超出豁免半径121.92m）",
+      "violated_rules": [
+        "global_altitude_limit"
+      ],
+      "key_validation": "全局限制优先级（豁免区域外）"
+    },
+    {
+      "test_case_id": "TC2",
+      "description": "建筑物豁免区内合规高度",
+      "command": "move_to_position(1000, 1100, 150)",
+      "target_position": {
+        "north": 1000.0,
+        "east": 1100.0,
+        "altitude_agl": 150.0
+      },
+      "context": {
+        "distance_to_nearest_structure": 100.0,
+        "nearest_structure_id": "building_1",
+        "structure_height": 100.0,
+        "within_waiver_radius": true,
+        "waiver_radius": 121.92,
+        "waiver_altitude_limit": 221.92,
+        "altitude_above_structure": 50.0
+      },
+      "violation_expected": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标位置在building_1豁免半径内（距离100.0m < 121.92m），目标高度150m符合豁免上限221.92m（建筑高100m + 豁免额度121.92m）",
+      "violated_rules": [],
+      "key_validation": "豁免条件成功应用（虽超全局120m限制，但在豁免区内合法）"
+    },
+    {
+      "test_case_id": "TC3",
+      "description": "建筑物豁免区内超豁免上限",
+      "command": "move_to_position(1000, 1100, 230)",
+      "target_position": {
+        "north": 1000.0,
+        "east": 1100.0,
+        "altitude_agl": 230.0
+      },
+      "context": {
+        "distance_to_nearest_structure": 100.0,
+        "nearest_structure_id": "building_1",
+        "structure_height": 100.0,
+        "within_waiver_radius": true,
+        "waiver_radius": 121.92,
+        "waiver_altitude_limit": 221.92,
+        "altitude_above_structure": 130.0,
+        "excess_altitude": 8.08
+      },
+      "violation_expected": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "虽在building_1豁免半径内（距离100.0m），但目标高度230m超过豁免上限221.92m（超出8.08m）",
+      "violated_rules": [
+        "structure_waiver_altitude_limit"
+      ],
+      "key_validation": "豁免区内仍有高度上限约束"
+    },
+    {
+      "test_case_id": "TC4",
+      "description": "豁免半径边界测试",
+      "command": "move_to_position(1122, 1000, 150)",
+      "target_position": {
+        "north": 1122.0,
+        "east": 1000.0,
+        "altitude_agl": 150.0
+      },
+      "context": {
+        "distance_to_nearest_structure": 122.0,
+        "nearest_structure_id": "building_1",
+        "within_waiver_radius": false,
+        "waiver_radius": 121.92,
+        "boundary_test": true,
+        "distance_exceeds_radius_by": 0.08,
+        "global_altitude_limit": 120.0
+      },
+      "violation_expected": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标位置距building_1为122.0m，超出豁免半径121.92m（超出0.08m），豁免不适用，应用全局限制120m，目标高度150m超限",
+      "violated_rules": [
+        "global_altitude_limit"
+      ],
+      "key_validation": "边界精度处理（>=半径则豁免失效）"
+    }
+  ],
+  "summary": {
+    "total_test_cases": 4,
+    "expected_violations": 3,
+    "expected_approvals": 1,
+    "critical_boundary_tests": [
+      "TC2 - 豁免成功应用（150m > 120m但合法）",
+      "TC4 - 边界精度（122.0m vs 121.92m）"
+    ]
+  },
+  "notes": [
+    "本场景测试FAA Part 107.51(b)建筑物高度豁免规则",
+    "中国法规无对应豁免，特殊作业需单独申请",
+    "豁免判定仅基于水平距离（2D），不考虑垂直距离",
+    "使用精确值121.92m（400英尺），避免舍入误差",
+    "TC2是关键测试：证明豁免可使高度限制从120m提升至221.92m"
+  ]
+}
+

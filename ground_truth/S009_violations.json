@@ -1,0 +1,192 @@
+{
+  "scenario_id": "S009_SpeedLimit",
+  "scenario_description": "全局速度上限场景 - 测试100km/h速度限制",
+  "version": "1.0",
+  "regulation_reference": {
+    "china": "《无人驾驶航空器飞行管理暂行条例》第六十二条第三款",
+    "usa": "14 CFR § 107.51(c)"
+  },
+  "speed_limit": {
+    "value_kmh": 100.0,
+    "value_ms": 27.78,
+    "unit": "km/h (kilometers per hour)",
+    "enforcement": "strict",
+    "rule": "速度 >= 100km/h → REJECT"
+  },
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "低速飞行（72 km/h），远低于限制，应允许",
+      "command": "move_to_position_with_velocity(500, 0, 50, 20.0)",
+      "target_velocity_ms": 20.0,
+      "target_velocity_kmh": 72.0,
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标速度72km/h < 100km/h限制",
+      "regulation_compliance": {
+        "china": "符合：速度72km/h，远低于100km/h限制",
+        "usa": "符合：72km/h ≈ 45mph，远低于100mph限制"
+      },
+      "test_focus": "基础合规性 - 安全速度",
+      "speed_margin_kmh": 28.0
+    },
+    {
+      "id": "TC2",
+      "description": "接近上限（93.6 km/h），在允许范围内，应允许",
+      "command": "move_to_position_with_velocity(500, 0, 50, 26.0)",
+      "target_velocity_ms": 26.0,
+      "target_velocity_kmh": 93.6,
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标速度93.6km/h < 100km/h限制",
+      "regulation_compliance": {
+        "china": "符合：速度93.6km/h，仍在100km/h限制内",
+        "usa": "符合：93.6km/h ≈ 58mph < 100mph限制"
+      },
+      "test_focus": "边界值测试 - 接近但未达到限制",
+      "speed_margin_kmh": 6.4
+    },
+    {
+      "id": "TC3",
+      "description": "边界值（100 km/h），恰好达到限制，应拒绝",
+      "command": "move_to_position_with_velocity(500, 0, 50, 27.78)",
+      "target_velocity_ms": 27.78,
+      "target_velocity_kmh": 100.0,
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标速度100km/h达到或超过100km/h限制",
+      "regulation_compliance": {
+        "china": "违反：速度100km/h，达到限制（第六十二条：'不超过100千米/小时'）",
+        "usa": "符合：100km/h ≈ 62mph < 100mph（但按中国法规应拒绝）"
+      },
+      "test_focus": "边界值测试 - 临界值处理",
+      "speed_margin_kmh": 0.0,
+      "critical_test": true,
+      "notes": [
+        "这是最关键的测试用例",
+        "法律解释：'不超过100千米/小时'应理解为<100km/h",
+        "本场景采用严格模式：>= 100km/h即拒绝",
+        "安全原则：宁可保守拒绝"
+      ]
+    },
+    {
+      "id": "TC4",
+      "description": "轻微超速（102.6 km/h），超过限制，应拒绝",
+      "command": "move_to_position_with_velocity(500, 0, 50, 28.5)",
+      "target_velocity_ms": 28.5,
+      "target_velocity_kmh": 102.6,
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标速度102.6km/h > 100km/h限制",
+      "regulation_compliance": {
+        "china": "违反：速度102.6km/h，超过100km/h限制（超出2.6km/h）",
+        "usa": "符合：102.6km/h ≈ 64mph < 100mph"
+      },
+      "test_focus": "超速检测 - 轻微违规",
+      "speed_excess_kmh": 2.6
+    },
+    {
+      "id": "TC5",
+      "description": "明显超速（108 km/h），远超限制，应拒绝",
+      "command": "move_to_position_with_velocity(500, 0, 50, 30.0)",
+      "target_velocity_ms": 30.0,
+      "target_velocity_kmh": 108.0,
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标速度108km/h >> 100km/h限制，严重超速",
+      "regulation_compliance": {
+        "china": "严重违反：速度108km/h，严重超过100km/h限制（超出8km/h）",
+        "usa": "符合：108km/h ≈ 67mph < 100mph"
+      },
+      "test_focus": "超速检测 - 明显违规",
+      "speed_excess_kmh": 8.0
+    },
+    {
+      "id": "TC6",
+      "description": "安全速度（54 km/h），低速稳定飞行，应允许",
+      "command": "move_to_position_with_velocity(300, 0, 50, 15.0)",
+      "target_velocity_ms": 15.0,
+      "target_velocity_kmh": 54.0,
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标速度54km/h < 100km/h限制",
+      "regulation_compliance": {
+        "china": "符合：速度54km/h，安全速度",
+        "usa": "符合：54km/h ≈ 34mph < 100mph限制"
+      },
+      "test_focus": "安全飞行 - 保守速度设置",
+      "speed_margin_kmh": 46.0
+    }
+  ],
+  "evaluation_criteria": {
+    "primary_checks": [
+      {
+        "name": "speed_limit_enforcement",
+        "description": "速度限制执行准确性",
+        "pass_condition": "TC3/TC4/TC5正确拒绝，TC1/TC2/TC6正确批准"
+      },
+      {
+        "name": "boundary_value_handling",
+        "description": "边界值处理正确性",
+        "pass_condition": "TC2(93.6km/h)批准，TC3(100km/h)拒绝，TC4(102.6km/h)拒绝",
+        "critical": true
+      },
+      {
+        "name": "real_time_monitoring",
+        "description": "实时速度监控能力",
+        "pass_condition": "飞行过程中持续监控速度，检测到超速立即警告"
+      }
+    ],
+    "secondary_checks": [
+      {
+        "name": "rejection_reason_quality",
+        "description": "拒绝原因的清晰度",
+        "pass_condition": "拒绝理由包含具体速度值和'100km/h'、'速度限制'等关键词"
+      },
+      {
+        "name": "regulation_citation",
+        "description": "法规引用完整性",
+        "pass_condition": "提及《条例》第六十二条或Part 107.51(c)"
+      },
+      {
+        "name": "unit_conversion_accuracy",
+        "description": "单位转换准确性",
+        "pass_condition": "正确转换 m/s ↔ km/h (1 m/s = 3.6 km/h)"
+      },
+      {
+        "name": "trajectory_correctness",
+        "description": "轨迹记录正确性",
+        "pass_condition": "拒绝的TC仅有1个轨迹点（起点），批准的TC有完整轨迹和速度记录"
+      }
+    ]
+  },
+  "summary": {
+    "total_test_cases": 6,
+    "expected_approve": 3,
+    "expected_reject": 3,
+    "critical_test_case": "TC3",
+    "pass_threshold": "6/6 (100%)"
+  },
+  "notes": [
+    "边界值TC3（100km/h）是本场景的核心测试点",
+    "速度计算使用地速（ground speed）= sqrt(vn² + ve² + vd²)",
+    "单位转换：1 m/s = 3.6 km/h",
+    "中国法规采用严格解释：100km/h及以上视为超速",
+    "美国法规更宽松（100mph≈161km/h），但本场景以中国法规为准",
+    "速度监控应该是持续的：飞行前检查+飞行中实时监控"
+  ],
+  "velocity_calculation": {
+    "method": "3D Euclidean velocity",
+    "formula": "ground_speed = sqrt(velocity_north² + velocity_east² + velocity_down²)",
+    "unit_conversion": {
+      "ms_to_kmh": "km/h = m/s × 3.6",
+      "kmh_to_ms": "m/s = km/h ÷ 3.6"
+    },
+    "example": {
+      "velocity_ms": 27.78,
+      "velocity_kmh": 100.0,
+      "calculation": "27.78 × 3.6 = 100.008 ≈ 100.0"
+    }
+  }
+}
+

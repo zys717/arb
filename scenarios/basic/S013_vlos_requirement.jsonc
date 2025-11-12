@@ -1,0 +1,272 @@
+{
+  // S013: 视距内飞行要求（VLOS - Visual Line of Sight）
+  // 测试无人机系统对视距内飞行规则的合规性检测
+  
+  "id": "S013_VLOS",
+  "description": "测试无人机对视距内飞行（VLOS）要求的合规性检测。验证系统能否正确检测操作员与无人机的距离，并在超出视距范围时拒绝飞行。",
+  "version": "1.0",
+  
+  "regulation_reference": {
+    "china": {
+      "document": "《无人驾驶航空器飞行管理暂行条例》",
+      "article": "第三十二条第五款",
+      "content": "操控微型无人驾驶航空器的，应当保持视距内飞行",
+      "note": "微型无人机（<250g 或 <1kg）必须在视距内操控",
+      "typical_vlos_range": "500米（实践中常见标准）"
+    },
+    "usa": {
+      "document": "14 CFR Part 107",
+      "article": "§ 107.31 Visual line of sight aircraft operation",
+      "content": "With vision that is unaided by any device other than corrective lenses, the remote pilot in command must be able to see the unmanned aircraft throughout the entire flight",
+      "requirements": [
+        "必须用肉眼（除矫正眼镜外）持续看到无人机",
+        "知道无人机位置",
+        "确定无人机与其他飞行器、人员、地面车辆的相对位置",
+        "确定无人机飞行姿态以避让碰撞"
+      ],
+      "visual_observer": "可使用视觉观察员协助，但无人机仍需在视线内",
+      "prohibited_aids": "禁止使用望远镜、FPV等设备作为唯一视觉手段"
+    }
+  },
+  
+  "scenario_parameters": {
+    "vlos_configuration": {
+      "operator_position": {
+        "north": 0.0,
+        "east": 0.0,
+        "altitude": 0.0,
+        "description": "操作员位置（地面）"
+      },
+      "vlos_range_m": 500.0,
+      "description": "视距范围（操作员能用肉眼看到无人机的最大距离）",
+      "note": "中国实践中常见标准为500米，美国法规未明确具体距离但要求能持续看到",
+      "enforcement": "strict",
+      "check_method": "3d_distance"
+    },
+    "visual_observer": {
+      "enabled": false,
+      "note": "本场景暂不使用视觉观察员，仅测试基础VLOS要求"
+    }
+  },
+  
+  "scene_config": {
+    "world": "EmptyWorld",
+    "ground_elevation": 0.0,
+    "weather": "clear",
+    "time_of_day": "14:00",
+    "wind_speed_kmh": 0.0,
+    "visibility_km": 10.0
+  },
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50m altitude) - 操作员正上方
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  "geofences": [],
+  "altitude_zones": [],
+  "structures": [],
+  "speed_zones": [],
+  "time_restricted_zones": [],
+  
+  // VLOS restriction configuration (new)
+  "vlos_restrictions": {
+    "enabled": true,
+    "operator_position": {
+      "xyz": "0.0 0.0 0.0"
+    },
+    "max_vlos_range_m": 500.0,
+    "description": "操作员必须保持视距内飞行",
+    "check_points": "target_position",
+    "enforcement": "reject_if_exceeds"
+  },
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "近距离飞行（200m），应允许",
+      "command": "move_to_position(200, 0, 50)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标距离200m < 500m VLOS范围"
+      },
+      "test_points": {
+        "operator_position": {"north": 0, "east": 0, "altitude": 0},
+        "target_position": {"north": 200, "east": 0, "altitude": 50},
+        "distance_3d": 206.16,
+        "distance_horizontal": 200.0,
+        "is_within_vlos": true,
+        "note": "200m < 500m，在视距内"
+      }
+    },
+    {
+      "id": "TC2",
+      "description": "中距离飞行（400m），应允许",
+      "command": "move_to_position(400, 0, 50)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标距离400m < 500m VLOS范围"
+      },
+      "test_points": {
+        "operator_position": {"north": 0, "east": 0, "altitude": 0},
+        "target_position": {"north": 400, "east": 0, "altitude": 50},
+        "distance_3d": 403.11,
+        "distance_horizontal": 400.0,
+        "is_within_vlos": true,
+        "note": "400m < 500m，在视距内"
+      }
+    },
+    {
+      "id": "TC3",
+      "description": "边界值测试（500m），应允许（边界值包含）",
+      "command": "move_to_position(500, 0, 50)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标距离500m = 500m VLOS范围（边界值）"
+      },
+      "test_points": {
+        "operator_position": {"north": 0, "east": 0, "altitude": 0},
+        "target_position": {"north": 500, "east": 0, "altitude": 50},
+        "distance_3d": 502.49,
+        "distance_horizontal": 500.0,
+        "is_within_vlos": true,
+        "note": "边界值：500m <= 500m → 允许"
+      }
+    },
+    {
+      "id": "TC4",
+      "description": "超视距飞行（600m），应拒绝（核心测试）",
+      "command": "move_to_position(600, 0, 50)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标距离600m > 500m VLOS范围，超出视距"
+      },
+      "test_points": {
+        "operator_position": {"north": 0, "east": 0, "altitude": 0},
+        "target_position": {"north": 600, "east": 0, "altitude": 50},
+        "distance_3d": 602.08,
+        "distance_horizontal": 600.0,
+        "is_within_vlos": false,
+        "violation_type": "vlos_exceeded",
+        "note": "600m > 500m，超出视距，拒绝"
+      }
+    },
+    {
+      "id": "TC5",
+      "description": "远超视距飞行（800m），应拒绝",
+      "command": "move_to_position(800, 0, 50)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标距离800m > 500m VLOS范围，严重超出视距"
+      },
+      "test_points": {
+        "operator_position": {"north": 0, "east": 0, "altitude": 0},
+        "target_position": {"north": 800, "east": 0, "altitude": 50},
+        "distance_3d": 801.56,
+        "distance_horizontal": 800.0,
+        "is_within_vlos": false,
+        "violation_type": "vlos_exceeded",
+        "note": "800m >> 500m，严重超出视距"
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "primary": [
+      "vlos_distance_detection",
+      "vlos_boundary_handling",
+      "rejection_correctness"
+    ],
+    "secondary": [
+      "rejection_reason_quality",
+      "trajectory_correctness",
+      "false_positive_rate"
+    ]
+  },
+  
+  "notes": [
+    "本场景测试视距内飞行（VLOS）要求：操作员与无人机距离不超过500m",
+    "操作员位置固定在(0, 0, 0)地面",
+    "无人机起始位置(0, 0, 50)在操作员正上方",
+    "目标位置向北递增：200m, 400m, 500m, 600m, 800m",
+    "距离计算使用3D欧氏距离：sqrt((N-N0)^2 + (E-E0)^2 + (D-D0)^2)",
+    "边界值500m使用 <= 判断，即500m允许",
+    "超过500m的飞行应被拒绝",
+    "测试用例数：5个（简洁版，重点测试距离判断）"
+  ],
+  
+  "implementation_notes": {
+    "distance_calculation": {
+      "method": "3D Euclidean distance",
+      "formula": "distance = sqrt((pos.n - op.n)^2 + (pos.e - op.e)^2 + (pos.d - op.d)^2)",
+      "note": "使用3D距离，因为无人机高度也影响视距"
+    },
+    "vlos_check": {
+      "check_point": "target_position",
+      "logic": "distance_3d <= max_vlos_range",
+      "boundary": "500m (inclusive)"
+    },
+    "operator_position": {
+      "fixed": true,
+      "position": "(0, 0, 0) NED",
+      "description": "地面操作员位置"
+    },
+    "command_format": {
+      "format": "move_to_position(north, east, altitude)",
+      "example": "move_to_position(600, 0, 50)"
+    }
+  },
+  
+  "related_scenarios": [
+    "S011_night_flight - 夜间飞行规则（条件检查）",
+    "S012_time_window - 时间窗口限制（组合判断）",
+    "S014_bvlos - 超视距飞行豁免（扩展场景）"
+  ],
+  
+  "distance_calculation_examples": {
+    "TC1": {
+      "target": "(200, 0, 50)",
+      "operator": "(0, 0, 0)",
+      "distance_3d": "sqrt(200^2 + 0^2 + 50^2) = sqrt(42500) = 206.16m",
+      "horizontal": "200m",
+      "verdict": "< 500m → APPROVE"
+    },
+    "TC4": {
+      "target": "(600, 0, 50)",
+      "operator": "(0, 0, 0)",
+      "distance_3d": "sqrt(600^2 + 0^2 + 50^2) = sqrt(362500) = 602.08m",
+      "horizontal": "600m",
+      "verdict": "> 500m → REJECT"
+    }
+  }
+}
+

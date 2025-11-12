@@ -1,0 +1,318 @@
+{
+  "scenario_id": "S010",
+  "scenario_name": "zone_speed_limits",
+  "test_rule": "R00X (Zone-based Speed Limits)",
+  "regulation_reference": {
+    "china": "《无人驾驶航空器飞行管理暂行条例》第三十二条第六款",
+    "local": "地方性规定：居民区、工业区等人口密集区域的速度限制"
+  },
+  "speed_zones": [
+    {
+      "zone_id": "residential_zone",
+      "zone_type": "居民区",
+      "center_ned": {"n": 300.0, "e": 300.0, "down": 0.0},
+      "radius": 200.0,
+      "speed_limit": {
+        "value": 50.0,
+        "unit": "km/h",
+        "enforcement": "strict",
+        "rule": "速度 >= 50 km/h 且在居民区内 → REJECT"
+      },
+      "priority": 1,
+      "reason": "保护居民安全和隐私"
+    },
+    {
+      "zone_id": "industrial_zone",
+      "zone_type": "工业区",
+      "center_ned": {"n": -400.0, "e": 0.0, "down": 0.0},
+      "radius": 150.0,
+      "speed_limit": {
+        "value": 80.0,
+        "unit": "km/h",
+        "enforcement": "strict",
+        "rule": "速度 >= 80 km/h 且在工业区内 → REJECT"
+      },
+      "priority": 2,
+      "reason": "保护工作人员安全"
+    },
+    {
+      "zone_id": "open_area",
+      "zone_type": "开阔区",
+      "speed_limit": {
+        "value": 100.0,
+        "unit": "km/h",
+        "enforcement": "strict",
+        "rule": "速度 >= 100 km/h → REJECT（继承S009全局限制）"
+      },
+      "priority": 3,
+      "reason": "标准全局速度限制"
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "居民区内低速飞行（40 km/h），符合50 km/h限制，应允许",
+      "command": "move_to_position_with_velocity(300, 300, 50, 11.11)",
+      "start_position": {"n": 0.0, "e": 0.0, "alt": 50.0},
+      "target_position": {"n": 300.0, "e": 300.0, "alt": 50.0},
+      "target_velocity_ms": 11.11,
+      "target_velocity_kmh": 40.0,
+      "flight_distance_m": 424.26,
+      "zones_traversed": [
+        {
+          "zone": "open_area",
+          "entry_point": {"n": 0.0, "e": 0.0},
+          "exit_point": {"n": 158.6, "e": 158.6},
+          "applicable_limit_kmh": 100.0
+        },
+        {
+          "zone": "residential_zone",
+          "entry_point": {"n": 158.6, "e": 158.6},
+          "exit_point": {"n": 300.0, "e": 300.0},
+          "applicable_limit_kmh": 50.0
+        }
+      ],
+      "most_restrictive_zone": "residential_zone (50 km/h)",
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标速度40.0km/h < 居民区限制50.0km/h",
+      "regulation_compliance": {
+        "china": "符合：速度40km/h，满足居民区50km/h限制",
+        "local": "符合地方性居民区限速规定"
+      },
+      "test_focus": "居民区内合规飞行",
+      "speed_margin_kmh": 10.0
+    },
+    {
+      "id": "TC2",
+      "description": "工业区内中速飞行（70 km/h），符合80 km/h限制，应允许",
+      "command": "move_to_position_with_velocity(-400, 0, 50, 19.44)",
+      "start_position": {"n": 0.0, "e": 0.0, "alt": 50.0},
+      "target_position": {"n": -400.0, "e": 0.0, "alt": 50.0},
+      "target_velocity_ms": 19.44,
+      "target_velocity_kmh": 70.0,
+      "flight_distance_m": 400.0,
+      "zones_traversed": [
+        {
+          "zone": "open_area",
+          "entry_point": {"n": 0.0, "e": 0.0},
+          "exit_point": {"n": -250.0, "e": 0.0},
+          "applicable_limit_kmh": 100.0
+        },
+        {
+          "zone": "industrial_zone",
+          "entry_point": {"n": -250.0, "e": 0.0},
+          "exit_point": {"n": -400.0, "e": 0.0},
+          "applicable_limit_kmh": 80.0
+        }
+      ],
+      "most_restrictive_zone": "industrial_zone (80 km/h)",
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标速度70.0km/h < 工业区限制80.0km/h",
+      "regulation_compliance": {
+        "china": "符合：速度70km/h，满足工业区80km/h限制",
+        "local": "符合地方性工业区限速规定"
+      },
+      "test_focus": "工业区内合规飞行",
+      "speed_margin_kmh": 10.0
+    },
+    {
+      "id": "TC3",
+      "description": "居民区内超速飞行（60 km/h），超过50 km/h限制，应拒绝",
+      "command": "move_to_position_with_velocity(300, 300, 50, 16.67)",
+      "start_position": {"n": 0.0, "e": 0.0, "alt": 50.0},
+      "target_position": {"n": 300.0, "e": 300.0, "alt": 50.0},
+      "target_velocity_ms": 16.67,
+      "target_velocity_kmh": 60.0,
+      "flight_distance_m": 424.26,
+      "zones_traversed": [
+        {
+          "zone": "open_area",
+          "entry_point": {"n": 0.0, "e": 0.0},
+          "exit_point": {"n": 158.6, "e": 158.6},
+          "applicable_limit_kmh": 100.0,
+          "compliant": true
+        },
+        {
+          "zone": "residential_zone",
+          "entry_point": {"n": 158.6, "e": 158.6},
+          "exit_point": {"n": 300.0, "e": 300.0},
+          "applicable_limit_kmh": 50.0,
+          "compliant": false
+        }
+      ],
+      "most_restrictive_zone": "residential_zone (50 km/h)",
+      "violation_location": "residential_zone",
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标速度60.0km/h超过居民区限制50.0km/h（超出10.0km/h）",
+      "regulation_compliance": {
+        "china": "违反：速度60km/h，超过居民区50km/h限制",
+        "local": "违反地方性居民区限速规定"
+      },
+      "test_focus": "居民区内超速检测",
+      "speed_excess_kmh": 10.0,
+      "critical_test": true,
+      "notes": [
+        "这是本场景的关键测试用例",
+        "60km/h在开阔区合规，但在居民区违规",
+        "证明系统能够识别不同区域的不同限制"
+      ]
+    },
+    {
+      "id": "TC4",
+      "description": "开阔区高速飞行（90 km/h），符合100 km/h全局限制，应允许",
+      "command": "move_to_position_with_velocity(500, 500, 50, 25.0)",
+      "start_position": {"n": 0.0, "e": 0.0, "alt": 50.0},
+      "target_position": {"n": 500.0, "e": 500.0, "alt": 50.0},
+      "target_velocity_ms": 25.0,
+      "target_velocity_kmh": 90.0,
+      "flight_distance_m": 707.11,
+      "zones_traversed": [
+        {
+          "zone": "open_area",
+          "entry_point": {"n": 0.0, "e": 0.0},
+          "exit_point": {"n": 500.0, "e": 500.0},
+          "applicable_limit_kmh": 100.0,
+          "compliant": true
+        }
+      ],
+      "residential_zone_analysis": {
+        "zone_center": {"n": 300.0, "e": 300.0},
+        "zone_radius": 200.0,
+        "closest_point_on_path": {"n": 250.0, "e": 250.0},
+        "distance_to_zone_center": 70.71,
+        "distance_margin": 129.29,
+        "inside_zone": false,
+        "note": "路径接近居民区但不进入（最近点距离70.71m < 200m半径，但需考虑路径宽度）"
+      },
+      "most_restrictive_zone": "open_area (100 km/h)",
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标速度90.0km/h < 全局限制100.0km/h，且飞行路径仅在开阔区内",
+      "regulation_compliance": {
+        "china": "符合：速度90km/h < 全局限制100km/h",
+        "local": "不涉及任何限制区域"
+      },
+      "test_focus": "开阔区高速飞行 + 路径预测",
+      "speed_margin_kmh": 10.0,
+      "notes": [
+        "测试路径预测能力：虽然接近居民区，但路径不穿越",
+        "直线路径(0,0)→(500,500)接近居民区中心(300,300)",
+        "路径上最近点约在(250,250)，距居民区中心70.71m",
+        "70.71m < 200m，理论上会进入居民区边缘",
+        "实际实现时需要精确的路径-圆柱体相交检测"
+      ]
+    }
+  ],
+  "zone_geometry": {
+    "residential_zone": {
+      "shape": "cylinder",
+      "center_2d": {"n": 300.0, "e": 300.0},
+      "radius": 200.0,
+      "height_range": {"min": -500.0, "max": 500.0},
+      "area_sqm": 125663.7
+    },
+    "industrial_zone": {
+      "shape": "cylinder",
+      "center_2d": {"n": -400.0, "e": 0.0},
+      "radius": 150.0,
+      "height_range": {"min": -500.0, "max": 500.0},
+      "area_sqm": 70685.8
+    },
+    "zone_separation": {
+      "residential_to_industrial": 721.11,
+      "residential_to_origin": 424.26,
+      "industrial_to_origin": 400.0
+    }
+  },
+  "evaluation_criteria": {
+    "primary_checks": [
+      {
+        "name": "zone_speed_recognition",
+        "description": "区域速度限制识别准确性",
+        "pass_condition": "TC1和TC2在限制区内正确批准，TC3正确拒绝"
+      },
+      {
+        "name": "path_based_detection",
+        "description": "基于路径的区域检测",
+        "pass_condition": "能够预测飞行路径将穿越哪些区域，并应用相应限制"
+      },
+      {
+        "name": "zone_transition_handling",
+        "description": "区域切换处理",
+        "pass_condition": "从开阔区进入限制区时正确应用限制区规则"
+      },
+      {
+        "name": "most_restrictive_rule",
+        "description": "最严格规则优先",
+        "pass_condition": "当路径穿越多个区域时，应用最严格的速度限制"
+      }
+    ],
+    "secondary_checks": [
+      {
+        "name": "zone_specific_reasoning",
+        "description": "区域特定的拒绝理由",
+        "pass_condition": "拒绝时应明确指出具体违反了哪个区域的限制（如'居民区50km/h限制'）"
+      },
+      {
+        "name": "speed_margin_reporting",
+        "description": "速度余量报告",
+        "pass_condition": "批准时提供速度余量信息（距限制还有多少km/h）"
+      },
+      {
+        "name": "multi_zone_awareness",
+        "description": "多区域感知",
+        "pass_condition": "能够识别路径穿越多个区域的情况"
+      }
+    ]
+  },
+  "summary": {
+    "total_test_cases": 4,
+    "expected_approve": 3,
+    "expected_reject": 1,
+    "critical_test_case": "TC3",
+    "pass_threshold": "4/4 (100%)",
+    "complexity": "中等（3个速度区域 + 路径预测）"
+  },
+  "path_prediction_algorithm": {
+    "description": "路径预测和区域检测算法",
+    "steps": [
+      "1. 获取起点和终点坐标",
+      "2. 生成直线路径的采样点（每10m或更密）",
+      "3. 对每个采样点检测所在区域：",
+      "   - 计算到各区域中心的2D距离：d = sqrt((n-cn)² + (e-ce)²)",
+      "   - 如果 d <= radius 且高度在范围内，则在该区域内",
+      "4. 记录路径穿越的所有区域及其限制",
+      "5. 找到最严格的限制（最小的speed_limit_kmh）",
+      "6. 比较目标速度与最严格限制",
+      "7. 做出决策：APPROVE（符合）或 REJECT（违反）"
+    ],
+    "example_tc3": {
+      "path": "(0,0) → (300,300)",
+      "sampling": [
+        {"point": {"n": 0, "e": 0}, "zone": "open_area", "limit": 100},
+        {"point": {"n": 50, "e": 50}, "zone": "open_area", "limit": 100},
+        {"point": {"n": 100, "e": 100}, "zone": "open_area", "limit": 100},
+        {"point": {"n": 150, "e": 150}, "zone": "open_area", "limit": 100},
+        {"point": {"n": 200, "e": 200}, "zone": "residential_zone", "limit": 50},
+        {"point": {"n": 250, "e": 250}, "zone": "residential_zone", "limit": 50},
+        {"point": {"n": 300, "e": 300}, "zone": "residential_zone", "limit": 50}
+      ],
+      "most_restrictive": 50,
+      "target_velocity": 60,
+      "decision": "REJECT (60 > 50)"
+    }
+  },
+  "notes": [
+    "TC3是关键测试：60km/h速度在开阔区合规，但在居民区违规",
+    "TC4测试复杂路径：路径(0,0)→(500,500)接近但不进入居民区",
+    "区域检测使用2D圆柱体模型，与S002地理围栏类似",
+    "速度限制采用层级制：居民区(50) < 工业区(80) < 开阔区(100)",
+    "路径预测是核心算法，确保整个飞行过程符合所有穿越区域的限制",
+    "当路径穿越多个区域时，必须满足最严格的限制",
+    "单位转换：1 m/s = 3.6 km/h"
+  ]
+}
+

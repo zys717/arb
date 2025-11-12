@@ -1,0 +1,125 @@
+{
+  // Scenario S001: Geofence Basic - Comprehensive Boundary Testing
+  // Tests system's ability to detect and prevent violations of a circular no-fly zone
+  // Coverage: Deep violation, shallow violation, boundary cases, safe flights, path crossing
+  
+  "id": "S001_GeofenceBasic",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (800, 0, 50) - 800m from no-fly zone center (safe)
+      // Note: ProjectAirSim uses "xyz" format, coordinates in meters
+      // Origin z=-50 means 50m altitude (NED coordinate system: negative z = up)
+      "origin": {
+        "xyz": "800.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  // No-fly zone definition
+  // Center: (0, 0, 0), Radius: 100m, Safety margin: 200m
+  // Total restricted distance: 300m from center
+  "geofences": [
+    {
+      "id": "nfz_military_base",
+      "type": "cylinder",
+      "center": {
+        "xyz": "0.0 0.0 0.0"
+      },
+      "radius": 100.0,
+      "safety_margin": 200.0,
+      "height_min": -1000.0,  // Applies to all altitudes
+      "height_max": 1000.0,
+      "enabled": true,
+      "action": "reject",
+      "zone_type": "military",
+      "description": "Military base - absolute no-fly zone with 300m total radius"
+    }
+  ],
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  // Test cases - Basic single NFZ testing (no complex path crossing - that's S003)
+  "test_cases": [
+    {
+      "case_id": "TC1",
+      "name": "deep_violation_center",
+      "description": "Direct flight to NFZ center - deep violation",
+      "command": "move_to_position(0, 0, 50)",
+      "expected": "REJECT"
+    },
+    {
+      "case_id": "TC2",
+      "name": "shallow_violation_inside_margin",
+      "description": "Flight to point inside safety margin (250m from center)",
+      "command": "move_to_position(250, 0, 50)",
+      "expected": "REJECT"
+    },
+    {
+      "case_id": "TC3",
+      "name": "boundary_violation",
+      "description": "Flight near boundary - 3D distance ~299m (295m horizontal at 50m alt)",
+      "command": "move_to_position(295, 0, 50)",
+      "expected": "REJECT"
+    },
+    {
+      "case_id": "TC4",
+      "name": "boundary_safe",
+      "description": "Flight just outside boundary - 3D distance ~302m (297m horizontal)",
+      "command": "move_to_position(297, 0, 50)",
+      "expected": "APPROVE"
+    },
+    {
+      "case_id": "TC5",
+      "name": "safe_flight_far",
+      "description": "Safe flight well outside NFZ (500m from center)",
+      "command": "move_to_position(500, 0, 50)",
+      "expected": "APPROVE"
+    },
+    {
+      "case_id": "TC6",
+      "name": "perpendicular_approach",
+      "description": "Perpendicular approach toward NFZ (stops at 400m)",
+      "command": "move_to_position(400, 0, 50)",
+      "expected": "APPROVE"
+    },
+    {
+      "case_id": "TC7",
+      "name": "north_direction_safe",
+      "description": "Safe flight in different direction (north)",
+      "command": "move_to_position(800, 400, 50)",
+      "expected": "APPROVE"
+    },
+    {
+      "case_id": "TC8",
+      "name": "south_approach_violation",
+      "description": "Approach from south toward NFZ (200m - violates)",
+      "command": "move_to_position(200, 0, 50)",
+      "expected": "REJECT"
+    }
+  ]
+}
+

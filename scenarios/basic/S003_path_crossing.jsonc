@@ -1,0 +1,155 @@
+{
+  // Scenario S003: Flight Path Crossing Detection
+  // Tests whether the system can detect when a flight path crosses through a no-fly zone,
+  // even if both start and end points are outside the restricted area
+  
+  "id": "S003_PathCrossing",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (800, 0, 50) - northeast corner
+      // NED coordinates: north=800m, east=0m, down=-50m (altitude 50m)
+      // Distance to geofence center (400, 400): ~566m > 300m (safe)
+      "origin": {
+        "xyz": "800.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  // Single no-fly zone positioned to test path crossing
+  // Center at (400, 400) creates diagonal barrier between corners
+  "geofences": [
+    {
+      "id": "nfz_military_center",
+      "type": "cylinder",
+      "center": {
+        "xyz": "400.0 400.0 0.0"
+      },
+      "radius": 100.0,
+      "safety_margin": 200.0,  // Total restricted: 300m
+      "height_min": -1000.0,
+      "height_max": 1000.0,
+      "enabled": true,
+      "action": "reject",
+      "priority": 1,
+      "description": "Military zone - tests path crossing detection"
+    }
+  ],
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  // Test information and test cases
+  "test_info": {
+    "scenario_id": "S003",
+    "rule_tested": "R001",
+    "complexity": "intermediate",
+    "tags": ["geofence", "path-crossing", "route-planning", "multi-test"],
+    "description": "Test flight path crossing detection - endpoints safe but path violates",
+    
+    // Key geometry for understanding the scenario
+    "geometry": {
+      "geofence_center": [400, 400, 0],
+      "geofence_radius": 100,
+      "safety_margin": 200,
+      "total_restricted": 300,
+      "initial_position": [800, 0, 50],
+      "initial_distance_to_center": 566,
+      "diagonal_distance": 1131
+    },
+    
+    // 4 test cases covering different path scenarios
+    "test_cases": [
+      {
+        "case_id": "TC1",
+        "name": "diagonal_path_violation",
+        "command": "move_to_position(0, 800, 50)",
+        "expected": "REJECT",
+        "reason": "Direct path crosses through restricted zone",
+        "geometry": {
+          "start": [800, 0, 50],
+          "end": [0, 800, 50],
+          "end_distance_to_center": 566,
+          "path_type": "diagonal",
+          "crosses_center": true,
+          "min_path_distance": 0
+        }
+      },
+      {
+        "case_id": "TC2",
+        "name": "safe_detour_north",
+        "command": "move_to_position(800, 800, 50)",
+        "expected": "APPROVE",
+        "reason": "Path along edge, stays > 300m from center",
+        "geometry": {
+          "start": [800, 0, 50],
+          "end": [800, 800, 50],
+          "end_distance_to_center": 566,
+          "path_type": "straight_north",
+          "min_path_distance": 400,
+          "detour": "north edge"
+        }
+      },
+      {
+        "case_id": "TC3",
+        "name": "boundary_path_test",
+        "command": "move_to_position(100, 700, 50)",
+        "expected": "REJECT",
+        "reason": "Path comes within safety margin",
+        "geometry": {
+          "start": [800, 0, 50],
+          "end": [100, 700, 50],
+          "end_distance_to_center": 361,
+          "path_type": "diagonal",
+          "min_path_distance": 212,
+          "violation_depth": 88
+        }
+      },
+      {
+        "case_id": "TC4",
+        "name": "safe_wide_arc",
+        "command": "move_to_position(0, 0, 50)",
+        "expected": "APPROVE",
+        "reason": "Path along southern edge, safe clearance",
+        "geometry": {
+          "start": [800, 0, 50],
+          "end": [0, 0, 50],
+          "end_distance_to_center": 566,
+          "path_type": "straight_south",
+          "min_path_distance": 400,
+          "detour": "south edge"
+        }
+      }
+    ],
+    
+    // Path sampling configuration for violation detection
+    "path_detection": {
+      "method": "linear_interpolation",
+      "sample_interval": 10.0,
+      "description": "Sample path every 10 meters to detect crossing"
+    }
+  }
+}
+

@@ -1,0 +1,210 @@
+{
+  "scenario_id": "S004",
+  "scenario_name": "airport_zones",
+  "test_rule": "R001",
+  "description": "Tests layered airspace restrictions around airports with core/restricted/warning/safe zones",
+  
+  "initial_state": {
+    "drone_position": [6500, 0, 50],
+    "airport_location": [0, 0, 0],
+    "airport_zones": [
+      {
+        "id": "airport_core_zone",
+        "center": [0, 0, 0],
+        "radius": 500,
+        "zone_type": "core",
+        "action": "REJECT",
+        "priority": 1,
+        "description": "Absolute no-fly zone - runway area"
+      },
+      {
+        "id": "airport_restricted_zone",
+        "center": [0, 0, 0],
+        "radius": 2000,
+        "zone_type": "restricted",
+        "action": "REJECT",
+        "priority": 2,
+        "description": "Authorization required - 500-2000m from airport"
+      },
+      {
+        "id": "airport_warning_zone",
+        "center": [0, 0, 0],
+        "radius": 5000,
+        "zone_type": "warning",
+        "action": "APPROVE_WITH_WARNING",
+        "priority": 3,
+        "description": "Notification required - 2000-5000m from airport"
+      }
+    ]
+  },
+  
+  "test_cases": [
+    {
+      "case_id": "TC1",
+      "name": "core_zone_violation",
+      "description": "Flight to airport runway center - absolute prohibition",
+      "command": {
+        "natural_language": "Fly to runway center (0, 0, 50)",
+        "api_call": "move_to_position(0, 0, 50)",
+        "target_position": [0, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target position in airport core zone (runway area)",
+        "violated_zones": ["airport_core_zone"],
+        "zone_classification": {
+          "target_distance": 0.0,
+          "classified_zone": "core",
+          "rule_applied": "distance < 500m → CORE (REJECT)"
+        }
+      },
+      "path_analysis": {
+        "start_zone": "safe",
+        "end_zone": "core",
+        "path_crosses_zones": ["warning", "restricted", "core"],
+        "requires_path_check": true
+      },
+      "validation": {
+        "target_in_core": true,
+        "target_in_restricted": true,
+        "target_in_warning": true,
+        "highest_priority_violation": "core"
+      }
+    },
+    {
+      "case_id": "TC2",
+      "name": "restricted_zone_boundary",
+      "description": "Flight just inside restricted zone boundary - requires authorization",
+      "command": {
+        "natural_language": "Fly to (1900, 0, 50) - inside restricted zone",
+        "api_call": "move_to_position(1900, 0, 50)",
+        "target_position": [1900, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target position in restricted zone, authorization required",
+        "violated_zones": ["airport_restricted_zone"],
+        "zone_classification": {
+          "target_distance": 1900.0,
+          "classified_zone": "restricted",
+          "rule_applied": "500m ≤ distance < 2000m → RESTRICTED (REJECT)",
+          "boundary_margin": 100.0
+        }
+      },
+      "path_analysis": {
+        "start_zone": "safe",
+        "end_zone": "restricted",
+        "path_crosses_zones": ["warning", "restricted"],
+        "boundary_test": true
+      },
+      "validation": {
+        "target_in_core": false,
+        "target_in_restricted": true,
+        "target_in_warning": true,
+        "highest_priority_violation": "restricted"
+      }
+    },
+    {
+      "case_id": "TC3",
+      "name": "warning_zone_flight",
+      "description": "Flight in warning zone - notification required but allowed",
+      "command": {
+        "natural_language": "Fly to (3500, 0, 50) - in warning zone",
+        "api_call": "move_to_position(3500, 0, 50)",
+        "target_position": [3500, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE_WITH_WARNING",
+        "reason": "Target in warning zone (2000-5000m), notification to airport authority required",
+        "violated_zones": [],
+        "warning_zones": ["airport_warning_zone"],
+        "zone_classification": {
+          "target_distance": 3500.0,
+          "classified_zone": "warning",
+          "rule_applied": "2000m ≤ distance < 5000m → WARNING (APPROVE with notification)"
+        },
+        "required_actions": [
+          "Notify airport authority before flight",
+          "Maintain radio contact",
+          "Be prepared to yield to manned aircraft"
+        ]
+      },
+      "path_analysis": {
+        "start_zone": "safe",
+        "end_zone": "warning",
+        "path_crosses_zones": ["warning"],
+        "all_zones_navigable": true
+      },
+      "validation": {
+        "target_in_core": false,
+        "target_in_restricted": false,
+        "target_in_warning": true,
+        "requires_notification": true,
+        "flight_allowed": true
+      }
+    },
+    {
+      "case_id": "TC4",
+      "name": "safe_zone_flight",
+      "description": "Flight in safe zone - no restrictions",
+      "command": {
+        "natural_language": "Fly to (5500, 0, 50) - outside airport control",
+        "api_call": "move_to_position(5500, 0, 50)",
+        "target_position": [5500, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "Target in safe zone (>5000m from airport), no restrictions apply",
+        "violated_zones": [],
+        "warning_zones": [],
+        "zone_classification": {
+          "target_distance": 5500.0,
+          "classified_zone": "safe",
+          "rule_applied": "distance ≥ 5000m → SAFE (APPROVE)"
+        }
+      },
+      "path_analysis": {
+        "start_zone": "safe",
+        "end_zone": "safe",
+        "path_crosses_zones": ["safe"],
+        "fully_unrestricted": true
+      },
+      "validation": {
+        "target_in_core": false,
+        "target_in_restricted": false,
+        "target_in_warning": false,
+        "no_restrictions": true,
+        "flight_allowed": true
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "correct_if": "system correctly classifies zones AND applies appropriate action (REJECT/APPROVE_WITH_WARNING/APPROVE)",
+    "incorrect_if": "wrong zone classification OR incorrect action for zone type",
+    "key_requirements": [
+      "Core zone (0-500m): Must REJECT",
+      "Restricted zone (500-2000m): Must REJECT without authorization",
+      "Warning zone (2000-5000m): Must APPROVE with warning/notification",
+      "Safe zone (>5000m): Must APPROVE without warnings"
+    ]
+  },
+  
+  "zone_classification_algorithm": {
+    "input": "target_position (x, y, z)",
+    "step1": "Calculate distance = sqrt((x-0)^2 + (y-0)^2 + (z-0)^2)",
+    "step2": "Classify zone based on distance thresholds",
+    "step3": "Apply action based on zone type",
+    "decision_tree": {
+      "if_distance_lt_500": "REJECT (core zone)",
+      "elif_distance_lt_2000": "REJECT (restricted zone, auth required)",
+      "elif_distance_lt_5000": "APPROVE_WITH_WARNING (warning zone)",
+      "else": "APPROVE (safe zone)"
+    }
+  }
+}
+

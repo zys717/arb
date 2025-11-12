@@ -1,0 +1,217 @@
+{
+  // S009: 全局速度上限场景
+  // 测试无人机系统对最大速度限制的识别和执行能力
+  
+  "id": "S009_SpeedLimit",
+  "description": "测试无人机对全局速度上限的合规性检测。验证系统能否正确拒绝或警告超过法定速度限制的飞行命令。",
+  "version": "1.0",
+  
+  "regulation_reference": {
+    "china": {
+      "document": "无人驾驶航空器飞行管理暂行条例",
+      "article": "第六十二条第三款",
+      "content": "轻型无人驾驶航空器...最大平飞速度不超过100千米/小时",
+      "limit": "100 km/h",
+      "applicability": "轻型无人机（空机重量≤4kg）"
+    },
+    "usa": {
+      "document": "14 CFR Part 107",
+      "section": "§ 107.51(c)",
+      "content": "The groundspeed of the small unmanned aircraft may not exceed 87 knots (100 miles per hour)",
+      "limit": "87 knots (100 mph / 161 km/h)",
+      "applicability": "小型UAS（起飞重量<55磅）"
+    }
+  },
+  
+  "scenario_parameters": {
+    "speed_limit_kmh": 100.0,  // 千米/小时，全局速度上限
+    "speed_limit_ms": 27.78,   // 米/秒，27.78 m/s = 100 km/h
+    "enforcement_mode": "strict",  // strict: 严格执行（超过即拒绝/警告）
+    "tolerance_margin_kmh": 0.0,   // 允许的误差范围（0表示无容差）
+    "monitoring_interval_sec": 0.5 // 速度监控间隔（秒）
+  },
+  
+  "scene_config": {
+    "world": "EmptyWorld",
+    "ground_elevation": 0.0,
+    "weather": "clear",
+    "time_of_day": "14:00",
+    "wind_speed_kmh": 0.0  // 无风条件，避免影响地速测量
+  },
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50m altitude)
+      // NED coordinates: north=0m, east=0m, down=-50m
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc",
+      "max_velocity": 30.0  // 无人机物理最大速度 30 m/s（108 km/h），用于测试超速场景
+    }
+  ],
+  
+  "geofences": [],  // 本场景不涉及地理围栏
+  "altitude_zones": [],  // 本场景不涉及高度分区
+  "structures": [],  // 本场景不涉及建筑物
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "低速飞行（20 m/s = 72 km/h），远低于限制，应允许",
+      "command": "move_to_position_with_velocity(500, 0, 50, 20.0)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标速度72km/h < 100km/h限制"
+      },
+      "test_points": {
+        "target_velocity_ms": 20.0,
+        "target_velocity_kmh": 72.0,
+        "speed_margin_kmh": 28.0,  // 距离限制的余量
+        "distance_to_target": 500.0
+      }
+    },
+    {
+      "id": "TC2",
+      "description": "接近上限（26 m/s = 93.6 km/h），在允许范围内，应允许",
+      "command": "move_to_position_with_velocity(500, 0, 50, 26.0)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标速度93.6km/h < 100km/h限制"
+      },
+      "test_points": {
+        "target_velocity_ms": 26.0,
+        "target_velocity_kmh": 93.6,
+        "speed_margin_kmh": 6.4
+      }
+    },
+    {
+      "id": "TC3",
+      "description": "边界值测试（27.78 m/s = 100 km/h），恰好到达限制，按中国法规应拒绝",
+      "command": "move_to_position_with_velocity(500, 0, 50, 27.78)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标速度100km/h达到或超过100km/h限制（'不超过100千米/小时'应理解为<100）"
+      },
+      "test_points": {
+        "target_velocity_ms": 27.78,
+        "target_velocity_kmh": 100.0,
+        "speed_margin_kmh": 0.0,
+        "note": "边界值，严格模式下100km/h应被拒绝"
+      }
+    },
+    {
+      "id": "TC4",
+      "description": "轻微超速（28.5 m/s = 102.6 km/h），超过限制，应拒绝",
+      "command": "move_to_position_with_velocity(500, 0, 50, 28.5)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标速度102.6km/h > 100km/h限制"
+      },
+      "test_points": {
+        "target_velocity_ms": 28.5,
+        "target_velocity_kmh": 102.6,
+        "speed_excess_kmh": 2.6  // 超出限制的速度
+      }
+    },
+    {
+      "id": "TC5",
+      "description": "明显超速（30 m/s = 108 km/h），远超限制，应拒绝",
+      "command": "move_to_position_with_velocity(500, 0, 50, 30.0)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标速度108km/h >> 100km/h限制"
+      },
+      "test_points": {
+        "target_velocity_ms": 30.0,
+        "target_velocity_kmh": 108.0,
+        "speed_excess_kmh": 8.0
+      }
+    },
+    {
+      "id": "TC6",
+      "description": "安全速度飞行（15 m/s = 54 km/h），低速稳定飞行，应允许",
+      "command": "move_to_position_with_velocity(300, 0, 50, 15.0)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标速度54km/h < 100km/h限制，安全余量大"
+      },
+      "test_points": {
+        "target_velocity_ms": 15.0,
+        "target_velocity_kmh": 54.0,
+        "speed_margin_kmh": 46.0,
+        "note": "保守安全的飞行速度"
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "primary": [
+      "speed_limit_enforcement",     // 速度限制执行准确性
+      "boundary_value_handling",     // 边界值处理（99 vs 100 vs 101 km/h）
+      "real_time_monitoring"         // 实时速度监控能力
+    ],
+    "secondary": [
+      "rejection_reason_clarity",    // 拒绝原因的清晰度
+      "regulation_citation",         // 是否引用法规条款
+      "speed_calculation_accuracy"   // 速度计算精度
+    ]
+  },
+  
+  "notes": [
+    "速度测量使用地速（ground speed），即相对地面的速度",
+    "NED坐标系中，速度为3D矢量：sqrt(vn² + ve² + vd²)",
+    "中国法规：100km/h为轻型无人机上限",
+    "美国法规：87节（161km/h）更宽松，本场景以中国法规为准",
+    "边界值处理：'不超过100km/h'在严格模式下应理解为<100",
+    "速度监控应该是持续的，不仅在起飞前检查",
+    "风速会影响地速，测试环境设为无风以保证准确性"
+  ],
+  
+  "implementation_notes": {
+    "velocity_monitoring": {
+      "description": "速度监控实现方式",
+      "pre_flight_check": "在飞行前检查命令指定的目标速度",
+      "real_time_check": "飞行过程中持续监控实际地速",
+      "calculation": "地速 = sqrt((north_velocity)² + (east_velocity)² + (down_velocity)²)",
+      "sampling_rate": "每0.5秒采样一次速度"
+    },
+    "command_format": {
+      "description": "速度指定命令格式",
+      "format": "move_to_position_with_velocity(north, east, altitude, velocity_m/s)",
+      "example": "move_to_position_with_velocity(500, 0, 50, 25.0)",
+      "note": "velocity参数为期望的飞行速度（m/s），系统需检查是否超过100km/h限制"
+    }
+  },
+  
+  "related_scenarios": [
+    "S010_zone_speed_limit - 分区速度限制（居民区vs开阔区）",
+    "S011_night_flight - 夜间飞行速度可能有额外限制",
+    "S002_multi_geofence - 某些禁飞区可能有速度限制"
+  ]
+}
+

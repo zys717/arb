@@ -1,0 +1,292 @@
+{
+  "scenario_id": "S005",
+  "scenario_name": "dynamic_tfr",
+  "test_rule": "R001",
+  "description": "Tests time-dependent temporary flight restrictions (TFRs) with dynamic activation/deactivation",
+  
+  "initial_state": {
+    "drone_position": [3000, 0, 50],
+    "tfrs": [
+      {
+        "id": "tfr_major_event",
+        "center": [0, 0, 0],
+        "radius": 2000,
+        "safety_margin": 500,
+        "total_restricted": 2500,
+        "type": "scheduled_event",
+        "active_start": "2024-01-15T14:00:00Z",
+        "active_end": "2024-01-15T18:00:00Z",
+        "advance_notice_hours": 24,
+        "notice_published": "2024-01-14T14:00:00Z",
+        "description": "Major public event (stadium/concert) - 24-hour advance notice"
+      },
+      {
+        "id": "tfr_emergency",
+        "center": [5000, 0, 0],
+        "radius": 1000,
+        "safety_margin": 500,
+        "total_restricted": 1500,
+        "type": "emergency_response",
+        "active_start": "2024-01-15T15:30:00Z",
+        "active_end": "2024-01-15T19:00:00Z",
+        "advance_notice_minutes": 30,
+        "notice_published": "2024-01-15T15:00:00Z",
+        "description": "Emergency rescue operation - 30-minute advance notice"
+      }
+    ]
+  },
+  
+  "test_cases": [
+    {
+      "case_id": "TC1",
+      "name": "before_tfr_activation",
+      "description": "Flight before TFR activation time - should be approved",
+      "simulated_time": "2024-01-15T13:00:00Z",
+      "command": {
+        "natural_language": "Fly to event center before TFR activation",
+        "api_call": "move_to_position(0, 0, 50)",
+        "target_position": [0, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "TFR not yet active (current: 13:00, activation: 14:00)",
+        "violated_zones": [],
+        "tfr_status": {
+          "tfr_major_event": "inactive_future",
+          "tfr_emergency": "inactive_future"
+        }
+      },
+      "time_analysis": {
+        "current_time": "2024-01-15T13:00:00Z",
+        "time_to_tfr1_start": "1 hour",
+        "time_to_tfr1_end": "5 hours",
+        "tfr1_active": false,
+        "tfr2_active": false
+      },
+      "validation": {
+        "time_check_correct": true,
+        "all_tfrs_inactive": true,
+        "flight_allowed": true,
+        "no_temporal_violations": true
+      }
+    },
+    {
+      "case_id": "TC2",
+      "name": "during_tfr_active",
+      "description": "Flight during TFR active period - should be rejected",
+      "simulated_time": "2024-01-15T15:00:00Z",
+      "command": {
+        "natural_language": "Fly to event center during active TFR",
+        "api_call": "move_to_position(0, 0, 50)",
+        "target_position": [0, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target in active temporary flight restriction zone",
+        "violated_zones": ["tfr_major_event"],
+        "tfr_status": {
+          "tfr_major_event": "active",
+          "tfr_emergency": "inactive_future"
+        },
+        "violation_details": {
+          "tfr_id": "tfr_major_event",
+          "distance_to_center": 50.0,
+          "required_distance": 2500.0,
+          "violation_depth": 2450.0,
+          "tfr_type": "scheduled_event",
+          "active_period": "14:00-18:00 UTC",
+          "time_remaining": "3 hours until expiration"
+        }
+      },
+      "time_analysis": {
+        "current_time": "2024-01-15T15:00:00Z",
+        "time_since_tfr1_start": "1 hour",
+        "time_until_tfr1_end": "3 hours",
+        "tfr1_active": true,
+        "tfr2_active": false
+      },
+      "validation": {
+        "time_check_correct": true,
+        "tfr_active_detected": true,
+        "spatial_violation": true,
+        "temporal_violation": true,
+        "rejection_justified": true
+      }
+    },
+    {
+      "case_id": "TC3",
+      "name": "after_tfr_expiration",
+      "description": "Flight after TFR expiration - should be approved",
+      "simulated_time": "2024-01-15T19:00:00Z",
+      "command": {
+        "natural_language": "Fly to event center after TFR expiration",
+        "api_call": "move_to_position(0, 0, 50)",
+        "target_position": [0, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "TFR expired (ended at 18:00, current: 19:00)",
+        "violated_zones": [],
+        "tfr_status": {
+          "tfr_major_event": "expired",
+          "tfr_emergency": "expired"
+        },
+        "status_message": "Previous TFR 'tfr_major_event' expired 1 hour ago - zone now safe"
+      },
+      "time_analysis": {
+        "current_time": "2024-01-15T19:00:00Z",
+        "time_since_tfr1_end": "1 hour",
+        "time_since_tfr2_end": "0 hours",
+        "tfr1_active": false,
+        "tfr2_active": false
+      },
+      "validation": {
+        "time_check_correct": true,
+        "both_tfrs_expired": true,
+        "flight_allowed": true,
+        "zone_restored_to_safe": true
+      }
+    },
+    {
+      "case_id": "TC4",
+      "name": "emergency_tfr_short_notice",
+      "description": "Flight toward emergency TFR with 30-minute advance notice",
+      "simulated_time": "2024-01-15T16:00:00Z",
+      "command": {
+        "natural_language": "Fly to emergency response area",
+        "api_call": "move_to_position(5000, 0, 50)",
+        "target_position": [5000, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target in active emergency TFR zone",
+        "violated_zones": ["tfr_emergency"],
+        "tfr_status": {
+          "tfr_major_event": "active",
+          "tfr_emergency": "active"
+        },
+        "violation_details": {
+          "tfr_id": "tfr_emergency",
+          "distance_to_center": 50.0,
+          "required_distance": 1500.0,
+          "violation_depth": 1450.0,
+          "tfr_type": "emergency_response",
+          "active_period": "15:30-19:00 UTC",
+          "advance_notice": "30 minutes",
+          "emergency_type": "rescue_operation"
+        }
+      },
+      "time_analysis": {
+        "current_time": "2024-01-15T16:00:00Z",
+        "time_since_emergency_start": "30 minutes",
+        "time_until_emergency_end": "3 hours",
+        "tfr1_active": true,
+        "tfr2_active": true,
+        "both_tfrs_active": true
+      },
+      "validation": {
+        "emergency_tfr_detected": true,
+        "short_notice_handled": true,
+        "spatial_violation": true,
+        "temporal_violation": true,
+        "priority_correct": true
+      }
+    },
+    {
+      "case_id": "TC5",
+      "name": "overlapping_tfrs_safe_gap",
+      "description": "Flight between two active TFRs - should be approved",
+      "simulated_time": "2024-01-15T16:30:00Z",
+      "command": {
+        "natural_language": "Fly to position between two active TFRs",
+        "api_call": "move_to_position(2500, 0, 50)",
+        "target_position": [2500, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "Target outside all active TFR zones despite both being active",
+        "violated_zones": [],
+        "tfr_status": {
+          "tfr_major_event": "active",
+          "tfr_emergency": "active"
+        },
+        "distance_analysis": {
+          "to_tfr1_center": 2500.0,
+          "tfr1_required": 2500.0,
+          "tfr1_safe": true,
+          "to_tfr2_center": 2500.0,
+          "tfr2_required": 1500.0,
+          "tfr2_safe": true
+        }
+      },
+      "time_analysis": {
+        "current_time": "2024-01-15T16:30:00Z",
+        "tfr1_active": true,
+        "tfr2_active": true,
+        "both_active": true,
+        "overlap_period": true
+      },
+      "validation": {
+        "multiple_tfrs_active": true,
+        "all_tfrs_checked": true,
+        "spatial_safe_from_all": true,
+        "independent_tfr_checks": true,
+        "flight_allowed": true
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "correct_if": "system correctly identifies TFR active/inactive status based on time AND performs spatial checks only for active TFRs",
+    "incorrect_if": "time-based activation ignored OR active TFRs not enforced OR expired TFRs still enforced",
+    "key_requirements": [
+      "Time parsing and comparison accuracy",
+      "TFR-1 inactive before 14:00, active 14:00-18:00, inactive after 18:00",
+      "TFR-2 inactive before 15:30, active 15:30-19:00, inactive after 19:00",
+      "Spatial checks only for temporally active TFRs",
+      "Independent checking of multiple simultaneous TFRs"
+    ]
+  },
+  
+  "time_boundary_tests": {
+    "edge_case_1": {
+      "description": "Exact TFR activation moment",
+      "test_time": "2024-01-15T14:00:00Z",
+      "expected": "TFR should be active (>= activation time)"
+    },
+    "edge_case_2": {
+      "description": "Exact TFR expiration moment",
+      "test_time": "2024-01-15T18:00:00Z",
+      "expected": "TFR should be inactive (>= expiration time)"
+    },
+    "edge_case_3": {
+      "description": "One second before activation",
+      "test_time": "2024-01-15T13:59:59Z",
+      "expected": "TFR should be inactive"
+    },
+    "edge_case_4": {
+      "description": "One second after expiration",
+      "test_time": "2024-01-15T18:00:01Z",
+      "expected": "TFR should be inactive"
+    }
+  },
+  
+  "regulation_compliance": {
+    "china_article_20": {
+      "major_event_notice": "24 hours advance",
+      "emergency_notice": "30 minutes advance",
+      "tested_in": ["TC2", "TC4"]
+    },
+    "faa_tfr_system": {
+      "notam_publication": "Required before activation",
+      "time_bounded": "TFRs have start and end times",
+      "tested_in": ["TC1", "TC2", "TC3"]
+    }
+  }
+}
+

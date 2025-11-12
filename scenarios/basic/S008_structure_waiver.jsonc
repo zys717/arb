@@ -1,0 +1,141 @@
+{
+  // S008: 建筑物附近高度豁免场景
+  // Structure Altitude Waiver Scenario
+  // 
+  // 法规依据:
+  // - 美国 14 CFR § 107.51(b): 在建筑物400英尺半径内，
+  //   可以飞到建筑物顶部上方400英尺
+  // - 中国无对应规则（本场景仅测试美国法规）
+  //
+  // 测试重点:
+  // 1. 全局高度限制（120m）
+  // 2. 建筑物豁免条件识别
+  // 3. 豁免区域内的高度计算
+  // 4. 边界值处理（半径边界）
+
+  "id": "S008_StructureWaiver",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      "origin": {
+        "xyz": "2500.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+
+  "scene-type": "UnrealNative",
+
+  "scenario_parameters": {
+    "global_altitude_limit_agl": 120.0,  // 全局120m限制（中美共同）
+    "structure_waiver_enabled": true,     // 启用建筑物豁免
+    "waiver_regulation": "FAA Part 107.51(b)"
+  },
+
+  "scene_config": {
+    "world": "EmptyWorld",
+    "ground_elevation": 0.0,
+    "weather": "clear",
+    "time_of_day": "14:00"
+  },
+
+  // 建筑物定义
+  "structures": [
+    {
+      "id": "building_1",
+      "name": "高层建筑物",
+      "description": "用于测试400英尺半径豁免的高层建筑",
+      "location": {
+        "north": 1000.0,
+        "east": 1000.0,
+        "ground_elevation": 0.0
+      },
+      "height_agl": 100.0,  // 建筑物高度100米
+      "waiver_radius": 121.92,  // 400英尺 = 121.92米（精确）
+      "waiver_altitude_above_structure": 121.92,  // 建筑物顶部+400英尺
+      "total_waiver_altitude": 221.92,  // 100m + 121.92m = 221.92m
+      "regulation_reference": "14 CFR § 107.51(b)"
+    }
+  ],
+
+  // 地理围栏（用于可视化，不影响高度豁免逻辑）
+  "geofences": [],
+
+  // 测试用例说明
+  "test_info": {
+    "scenario_focus": "建筑物附近高度豁免",
+    "regulation_tested": [
+      "14 CFR § 107.51(b) - Structure Altitude Waiver"
+    ],
+    "test_cases": [
+      {
+        "id": "TC1",
+        "description": "远离建筑物超全局限制",
+        "command": "move_to_position(3000, 0, 150)",
+        "target_position": {"north": 3000.0, "east": 0.0, "altitude_agl": 150.0},
+        "distance_to_structure": 3162.3,
+        "expected_decision": "REJECT",
+        "expected_reason": "超过全局高度限制120m，且不在任何建筑物豁免半径内"
+      },
+      {
+        "id": "TC2",
+        "description": "建筑物豁免区内合规高度",
+        "command": "move_to_position(1000, 1100, 150)",
+        "target_position": {"north": 1000.0, "east": 1100.0, "altitude_agl": 150.0},
+        "distance_to_structure": 100.0,
+        "within_waiver_radius": true,
+        "expected_decision": "APPROVE",
+        "expected_reason": "在building_1豁免半径内（100m < 121.92m），高度150m < 221.92m豁免上限"
+      },
+      {
+        "id": "TC3",
+        "description": "建筑物豁免区内超豁免上限",
+        "command": "move_to_position(1000, 1100, 230)",
+        "target_position": {"north": 1000.0, "east": 1100.0, "altitude_agl": 230.0},
+        "distance_to_structure": 100.0,
+        "within_waiver_radius": true,
+        "expected_decision": "REJECT",
+        "expected_reason": "虽在豁免半径内，但高度230m超过豁免上限221.92m"
+      },
+      {
+        "id": "TC4",
+        "description": "豁免半径边界测试",
+        "command": "move_to_position(1122, 1000, 150)",
+        "target_position": {"north": 1122.0, "east": 1000.0, "altitude_agl": 150.0},
+        "distance_to_structure": 122.0,
+        "boundary_test": true,
+        "expected_decision": "REJECT",
+        "expected_reason": "刚好超出豁免半径边界（122.0m > 121.92m），应用全局120m限制"
+      }
+    ],
+    "key_validations": [
+      "全局高度限制优先级（远离建筑物时）",
+      "建筑物豁免半径计算（水平距离）",
+      "豁免高度上限计算（建筑高度+400英尺）",
+      "边界条件处理（>=半径时豁免失效）"
+    ]
+  }
+}
+

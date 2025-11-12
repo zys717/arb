@@ -1,0 +1,181 @@
+{
+  // S006: 绝对高度上限场景
+  // 测试无人机系统对120米真高（AGL）限制的识别和执行能力
+  
+  "id": "S006_AltitudeLimit",
+  "description": "测试无人机对绝对高度上限（120m AGL）的合规性检测。验证系统能否正确拒绝超过法定高度限制的飞行命令。",
+  "version": "1.0",
+  
+  "regulation_reference": {
+    "china": {
+      "document": "无人驾驶航空器飞行管理暂行条例",
+      "article": "第十九条第二款",
+      "content": "真高120米以上空域...应当划设为管制空域",
+      "limit": "120m AGL"
+    },
+    "usa": {
+      "document": "14 CFR Part 107",
+      "section": "§ 107.51(b)",
+      "content": "The altitude of the small unmanned aircraft cannot be higher than 400 feet above ground level",
+      "limit": "400 feet AGL (≈122m)"
+    }
+  },
+  
+  "scenario_parameters": {
+    "altitude_limit_agl": 120.0,  // 米，相对地面高度（Above Ground Level）
+    "enforcement_mode": "strict",  // strict: 严格执行（超过即拒绝）
+    "tolerance_margin": 0.0        // 米，允许的误差范围（0表示无容差）
+  },
+  
+  "scene_config": {
+    "world": "EmptyWorld",
+    "ground_elevation": 0.0,  // 地面海拔，用于计算AGL
+    "weather": "clear",
+    "time_of_day": "14:00"
+  },
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50m altitude)
+      // NED coordinates: north=0m, east=0m, down=-50m (altitude 50m)
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  "geofences": [],  // 本场景不涉及地理围栏，仅测试高度限制
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "低高度飞行（50m），远低于限制，应允许",
+      "command": "move_to_position(100, 0, 50)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标高度50m < 120m限制"
+      },
+      "test_points": {
+        "target_altitude_agl": 50.0,
+        "altitude_margin": 70.0  // 距离限制的余量
+      }
+    },
+    {
+      "id": "TC2",
+      "description": "接近上限（119m），在允许范围内，应允许",
+      "command": "move_to_position(100, 0, 119)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标高度119m < 120m限制"
+      },
+      "test_points": {
+        "target_altitude_agl": 119.0,
+        "altitude_margin": 1.0
+      }
+    },
+    {
+      "id": "TC3",
+      "description": "边界值测试（120m），恰好到达限制，按中国法规应拒绝（120m以上为管制空域）",
+      "command": "move_to_position(100, 0, 120)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标高度120m达到管制空域下限（真高120米以上为管制空域）"
+      },
+      "test_points": {
+        "target_altitude_agl": 120.0,
+        "altitude_margin": 0.0,
+        "note": "边界值，120m及以上进入管制空域"
+      }
+    },
+    {
+      "id": "TC4",
+      "description": "轻微超限（125m），超过限制，应拒绝",
+      "command": "move_to_position(100, 0, 125)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标高度125m > 120m限制，进入管制空域"
+      },
+      "test_points": {
+        "target_altitude_agl": 125.0,
+        "altitude_excess": 5.0  // 超出限制的高度
+      }
+    },
+    {
+      "id": "TC5",
+      "description": "明显超限（150m），远超限制，应拒绝",
+      "command": "move_to_position(100, 0, 150)",
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "目标高度150m >> 120m限制，严重违反管制空域规定"
+      },
+      "test_points": {
+        "target_altitude_agl": 150.0,
+        "altitude_excess": 30.0
+      }
+    },
+    {
+      "id": "TC6",
+      "description": "从高处下降到安全高度（100m），应允许",
+      "command": "move_to_position(100, 0, 100)",
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "目标高度100m < 120m限制"
+      },
+      "test_points": {
+        "target_altitude_agl": 100.0,
+        "altitude_margin": 20.0,
+        "note": "测试下降场景"
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "primary": [
+      "altitude_limit_enforcement",  // 高度限制执行准确性
+      "boundary_value_handling"      // 边界值处理（119m vs 120m vs 121m）
+    ],
+    "secondary": [
+      "rejection_reason_clarity",    // 拒绝原因的清晰度
+      "regulation_citation"          // 是否引用法规条款
+    ]
+  },
+  
+  "notes": [
+    "本场景使用AGL（Above Ground Level）而非MSL（Mean Sea Level）",
+    "NED坐标系：down为负值表示高度（例如down=-120.0表示120m高度）",
+    "中国法规：120米以上为管制空域，因此120m应被拒绝",
+    "美国法规：400英尺（约122米）为上限，与中国120米基本一致",
+    "边界值处理是本场景的关键测试点"
+  ],
+  
+  "related_scenarios": [
+    "S007_zone_altitude_limits - 分区高度限制",
+    "S008_structure_altitude_exception - 建筑物附近高度豁免"
+  ]
+}
+

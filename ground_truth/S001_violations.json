@@ -1,0 +1,263 @@
+{
+  "scenario_id": "S001",
+  "scenario_name": "geofence_basic",
+  "test_rule": "R001",
+  "description": "Comprehensive geofence boundary testing - covers deep violations, shallow violations, boundary cases, safe flights, and path crossing scenarios",
+  
+  "initial_state": {
+    "drone_position": [800, 0, 50],
+    "geofences": [
+      {
+        "id": "nfz_military_base",
+        "center": [0, 0, 0],
+        "radius": 100,
+        "safety_margin": 200,
+        "total_restricted_radius": 300,
+        "zone_type": "military",
+        "description": "Military base no-fly zone"
+      }
+    ]
+  },
+  
+  "test_cases": [
+    {
+      "case_id": "TC1",
+      "name": "deep_violation_center",
+      "description": "Direct flight to NFZ center - deep violation",
+      "command": {
+        "natural_language": "Fly directly to the center of the no-fly zone",
+        "api_call": "move_to_position(0, 0, 50)",
+        "target_position": [0, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target position at NFZ center (0m < 300m restricted radius)",
+        "violated_zones": ["nfz_military_base"],
+        "violation_details": {
+          "target_distance_from_center": 0.0,
+          "required_distance": 300.0,
+          "violation_depth": 300.0,
+          "violation_type": "deep_target_violation"
+        }
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [0, 0, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": true,
+        "min_clearance_on_path": 0.0
+      }
+    },
+    {
+      "case_id": "TC2",
+      "name": "shallow_violation_inside_margin",
+      "description": "Flight to point inside safety margin (250m from center)",
+      "command": {
+        "natural_language": "Fly to a point 250m from NFZ center (inside restricted zone)",
+        "api_call": "move_to_position(250, 0, 50)",
+        "target_position": [250, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target inside restricted radius (250m < 300m)",
+        "violated_zones": ["nfz_military_base"],
+        "violation_details": {
+          "target_distance_from_center": 250.0,
+          "required_distance": 300.0,
+          "violation_depth": 50.0,
+          "violation_type": "shallow_target_violation"
+        }
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [250, 0, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": true,
+        "min_clearance_on_path": 250.0
+      }
+    },
+    {
+      "case_id": "TC3",
+      "name": "boundary_violation",
+      "description": "Flight near boundary - 3D distance ~299m (295m horizontal at 50m altitude)",
+      "command": {
+        "natural_language": "Fly to near the boundary of the restricted zone (just inside)",
+        "api_call": "move_to_position(295, 0, 50)",
+        "target_position": [295, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target inside restricted radius (3D distance ~299m < 300m)",
+        "violated_zones": ["nfz_military_base"],
+        "violation_details": {
+          "target_distance_from_center_2d": 295.0,
+          "target_distance_from_center_3d": 299.2,
+          "required_distance": 300.0,
+          "violation_depth": 0.8,
+          "violation_type": "boundary_violation",
+          "note": "Rule engine uses 3D distance calculation including altitude"
+        }
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [295, 0, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": true,
+        "min_clearance_on_path": 295.0,
+        "boundary_test": true
+      }
+    },
+    {
+      "case_id": "TC4",
+      "name": "boundary_safe",
+      "description": "Flight just outside boundary - 3D distance ~302m (297m horizontal at 50m altitude)",
+      "command": {
+        "natural_language": "Fly to just outside the restricted zone",
+        "api_call": "move_to_position(297, 0, 50)",
+        "target_position": [297, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "Target outside restricted radius (3D distance ~302m > 300m)",
+        "violated_zones": [],
+        "clearance_margin": 2.0,
+        "note": "Minimal clearance test - 3D distance calculation"
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [297, 0, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": false,
+        "min_clearance_on_path": 297.0,
+        "all_points_safe": true
+      }
+    },
+    {
+      "case_id": "TC5",
+      "name": "safe_flight_far",
+      "description": "Safe flight well outside NFZ (500m from center)",
+      "command": {
+        "natural_language": "Fly to a point well away from the restricted zone",
+        "api_call": "move_to_position(500, 0, 50)",
+        "target_position": [500, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "Target well outside restricted radius (500m > 300m)",
+        "violated_zones": [],
+        "clearance_margin": 200.0
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [500, 0, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": false,
+        "min_clearance_on_path": 500.0,
+        "all_points_safe": true
+      }
+    },
+    {
+      "case_id": "TC6",
+      "name": "perpendicular_approach",
+      "description": "Perpendicular approach toward NFZ but stops safely outside",
+      "command": {
+        "natural_language": "Fly toward NFZ but stop at safe distance (400m)",
+        "api_call": "move_to_position(400, 0, 50)",
+        "target_position": [400, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "Target maintains safe clearance (400m > 300m)",
+        "violated_zones": [],
+        "clearance_margin": 100.0
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [400, 0, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": false,
+        "min_clearance_on_path": 400.0,
+        "all_points_safe": true,
+        "approach_type": "perpendicular_safe_stop"
+      }
+    },
+    {
+      "case_id": "TC7",
+      "name": "north_direction_safe",
+      "description": "Safe flight in different direction (north from start position)",
+      "command": {
+        "natural_language": "Fly north to a safe position",
+        "api_call": "move_to_position(800, 400, 50)",
+        "target_position": [800, 400, 50]
+      },
+      "expected_behavior": {
+        "should_reject": false,
+        "decision": "APPROVE",
+        "reason": "Target well outside restricted radius (894m > 300m)",
+        "violated_zones": [],
+        "clearance_margin": 594.0
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [800, 400, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": false,
+        "min_clearance_on_path": 800.0,
+        "all_points_safe": true,
+        "direction_note": "North direction maintains constant 800m north coordinate"
+      }
+    },
+    {
+      "case_id": "TC8",
+      "name": "south_approach_violation",
+      "description": "Approach from starting position toward NFZ at 200m - violates",
+      "command": {
+        "natural_language": "Fly closer to NFZ center (200m distance)",
+        "api_call": "move_to_position(200, 0, 50)",
+        "target_position": [200, 0, 50]
+      },
+      "expected_behavior": {
+        "should_reject": true,
+        "decision": "REJECT",
+        "reason": "Target inside restricted radius (200m < 300m)",
+        "violated_zones": ["nfz_military_base"],
+        "violation_details": {
+          "target_distance_from_center": 200.0,
+          "required_distance": 300.0,
+          "violation_depth": 100.0,
+          "violation_type": "target_violation"
+        }
+      },
+      "path_analysis": {
+        "start_position": [800, 0, 50],
+        "end_position": [200, 0, 50],
+        "path_type": "straight_line",
+        "path_crosses_nfz": true,
+        "min_clearance_on_path": 200.0,
+        "approach_type": "toward_center_violation"
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "correct_if": "System correctly identifies violations AND approves safe flights",
+    "incorrect_if": "False positive (rejects safe flight) OR false negative (allows violation)",
+    "key_requirements": [
+      "Detect deep target violations (TC1, TC2, TC8)",
+      "Detect boundary violations correctly (TC3 reject, TC4 approve)",
+      "Approve safe flights with adequate clearance (TC4, TC5, TC6, TC7)",
+      "Handle different approach directions (TC6, TC7, TC8)"
+    ],
+    "geometry_validation": {
+      "distance_formula": "sqrt((x-cx)^2 + (y-cy)^2) where (cx,cy) is NFZ center",
+      "boundary_definition": "Distance ≤ total_restricted_radius (300m) is violation"
+    },
+    "scenario_focus": "Basic single NFZ testing - distance calculation and boundary handling"
+  }
+}

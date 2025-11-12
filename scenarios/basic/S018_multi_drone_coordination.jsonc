@@ -1,0 +1,294 @@
+{
+  "id": "S018_MultiDroneCoordination",
+  "description": "测试多无人机协同飞行规则，包括单操作员限制、无人机间隔距离、集群飞行审批等",
+  "regulation_references": [
+    "中国《条例》第31条第二款第五项：分布式操作或者集群飞行需申请",
+    "美国 Part 107.35: 一名操作员一次只能操作一架无人机"
+  ],
+  "version": "1.0",
+  "created": "2025-10-31",
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "initial-datetime": "2024-10-20T10:00:00Z"
+  },
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      "origin": {"xyz": "0.0 0.0 -50.0", "rpy": "0 0 0"},
+      "robot-config": "robot_quadrotor_fastphysics.jsonc",
+      "metadata": {
+        "operator_id": "OP001",
+        "operator_name": "Operator_Alpha",
+        "drone_type": "light"
+      }
+    },
+    {
+      "type": "robot",
+      "name": "Drone2",
+      "origin": {"xyz": "0.0 100.0 -50.0", "rpy": "0 0 0"},
+      "robot-config": "robot_quadrotor_fastphysics.jsonc",
+      "metadata": {
+        "operator_id": "OP001",
+        "operator_name": "Operator_Alpha",
+        "drone_type": "light"
+      }
+    },
+    {
+      "type": "robot",
+      "name": "Drone3",
+      "origin": {"xyz": "0.0 200.0 -50.0", "rpy": "0 0 0"},
+      "robot-config": "robot_quadrotor_fastphysics.jsonc",
+      "metadata": {
+        "operator_id": "OP002",
+        "operator_name": "Operator_Beta",
+        "drone_type": "light"
+      }
+    }
+  ],
+  
+  "rules": {
+    "R018_multi_drone_coordination": {
+      "description": "多无人机协同飞行规则",
+      "parameters": {
+        "max_drones_per_operator": {
+          "value": 1,
+          "unit": "count",
+          "description": "单操作员最多同时控制的无人机数量（美国Part 107.35）"
+        },
+        "min_separation_distance": {
+          "value": 50.0,
+          "unit": "meters",
+          "description": "不同无人机之间的最小安全距离"
+        },
+        "swarm_threshold": {
+          "value": 3,
+          "unit": "count",
+          "description": "达到此数量视为集群飞行，需要特殊审批"
+        },
+        "swarm_requires_approval": {
+          "value": true,
+          "description": "集群飞行是否需要提前审批（中国《条例》第31条第二款第五项）"
+        }
+      },
+      "exemptions": [
+        {
+          "condition": "approved_swarm_operation",
+          "description": "已获得集群飞行审批可豁免单操作员限制"
+        },
+        {
+          "condition": "sequential_operation",
+          "description": "顺序操作（非同时飞行）不受单操作员限制"
+        }
+      ]
+    }
+  },
+  
+  "test_cases": [
+    {
+      "id": "TC1_SingleOperatorSingleDrone",
+      "description": "基础场景：单操作员控制单架无人机",
+      "active_drones": ["Drone1"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 0.0, "altitude": 50.0}
+        }
+      ],
+      "swarm_mode": false,
+      "has_approval": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "符合基本规则：单操作员单无人机"
+    },
+    
+    {
+      "id": "TC2_SingleOperatorMultiDrones",
+      "description": "违规场景：单操作员同时控制两架无人机",
+      "active_drones": ["Drone1", "Drone2"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 0.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone2",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 100.0, "altitude": 50.0}
+        }
+      ],
+      "swarm_mode": false,
+      "has_approval": false,
+      "expected_decision": "REJECT",
+      "expected_reason": "违反美国Part 107.35：单操作员不能同时控制2架无人机"
+    },
+    
+    {
+      "id": "TC3_MultiOperatorsSeparate",
+      "description": "合规场景：多操作员分别控制，距离足够",
+      "active_drones": ["Drone1", "Drone3"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 0.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone3",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 200.0, "altitude": 50.0}
+        }
+      ],
+      "swarm_mode": false,
+      "has_approval": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "不同操作员分别控制，初始间隔200m > 最小距离50m"
+    },
+    
+    {
+      "id": "TC4_SeparationViolation",
+      "description": "违规场景：无人机间隔距离不足",
+      "active_drones": ["Drone1", "Drone3"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 0.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone3",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 30.0, "altitude": 50.0}
+        }
+      ],
+      "swarm_mode": false,
+      "has_approval": false,
+      "expected_decision": "REJECT",
+      "expected_reason": "目标位置两机间隔30m < 最小安全距离50m，存在碰撞风险"
+    },
+    
+    {
+      "id": "TC5_SwarmWithoutApproval",
+      "description": "违规场景：3机集群飞行未获审批",
+      "active_drones": ["Drone1", "Drone2", "Drone3"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 0.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone2",
+          "action": "move_to_position",
+          "target": {"north": 510.0, "east": 10.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone3",
+          "action": "move_to_position",
+          "target": {"north": 520.0, "east": 20.0, "altitude": 50.0}
+        }
+      ],
+      "swarm_mode": true,
+      "has_approval": false,
+      "expected_decision": "REJECT",
+      "expected_reason": "3架无人机编队飞行（集群），需提前申请审批（《条例》第31条第二款第五项）"
+    },
+    
+    {
+      "id": "TC6_SwarmWithApproval",
+      "description": "合规场景：已审批的集群飞行",
+      "active_drones": ["Drone1", "Drone2", "Drone3"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 0.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone2",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 60.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone3",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 120.0, "altitude": 50.0}
+        }
+      ],
+      "swarm_mode": true,
+      "has_approval": true,
+      "expected_decision": "APPROVE",
+      "expected_reason": "已获得集群飞行审批，3机协同编队飞行合规"
+    },
+    
+    {
+      "id": "TC7_SequentialOperation",
+      "description": "合规场景：单操作员顺序操作（非同时飞行）",
+      "active_drones": ["Drone1", "Drone2"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 300.0, "east": 0.0, "altitude": 50.0},
+          "wait_for_completion": true
+        },
+        {
+          "drone": "Drone2",
+          "action": "move_to_position",
+          "target": {"north": 300.0, "east": 100.0, "altitude": 50.0},
+          "start_after_previous": true
+        }
+      ],
+      "swarm_mode": false,
+      "has_approval": false,
+      "sequential_mode": true,
+      "expected_decision": "APPROVE",
+      "expected_reason": "顺序操作：Drone1完成后再启动Drone2，符合单操作员规则"
+    },
+    
+    {
+      "id": "TC8_BoundarySeparation",
+      "description": "边界测试：恰好50米分离距离",
+      "active_drones": ["Drone1", "Drone3"],
+      "commands": [
+        {
+          "drone": "Drone1",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 0.0, "altitude": 50.0}
+        },
+        {
+          "drone": "Drone3",
+          "action": "move_to_position",
+          "target": {"north": 500.0, "east": 50.0, "altitude": 50.0}
+        }
+      ],
+      "swarm_mode": false,
+      "has_approval": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "目标位置间隔恰好50m，满足最小安全距离要求（50 ≥ 50）"
+    }
+  ],
+  
+  "scenario_metadata": {
+    "difficulty": "⭐⭐⭐",
+    "category": "multi_drone_coordination",
+    "requires_features": [
+      "multiple_drone_instances",
+      "operator_tracking",
+      "distance_calculation",
+      "swarm_mode_detection",
+      "sequential_execution"
+    ],
+    "test_coverage": {
+      "operator_limits": ["TC1", "TC2", "TC7"],
+      "separation_distance": ["TC3", "TC4", "TC8"],
+      "swarm_approval": ["TC5", "TC6"]
+    },
+    "estimated_execution_time_minutes": 15
+  }
+}
+

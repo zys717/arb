@@ -1,0 +1,214 @@
+{
+  "scenario_id": "S019_AirspaceClassification",
+  "description": "适飞空域判断与审批规则 - Ground Truth",
+  "version": "1.0",
+  "created": "2025-11-01",
+  
+  "test_cases": [
+    {
+      "test_case_id": "TC1_UncontrolledAirspace",
+      "expected_decision": "APPROVE",
+      "expected_reason": "所有目标高度均在适飞空域内（<120m），轻型无人机无需审批",
+      "violation_details": {
+        "has_violation": false,
+        "targets": [
+          {
+            "position": {"north": 500.0, "east": 0.0, "altitude": 50.0},
+            "airspace_type": "uncontrolled",
+            "altitude_check": "50m < 120m",
+            "in_restricted_area": false,
+            "requires_approval": false
+          },
+          {
+            "position": {"north": 800.0, "east": 200.0, "altitude": 119.0},
+            "airspace_type": "uncontrolled",
+            "altitude_check": "119m < 120m (boundary test)",
+            "in_restricted_area": false,
+            "requires_approval": false
+          }
+        ],
+        "drone_category": "light",
+        "exemption": "light_drone_in_uncontrolled_airspace"
+      },
+      "compliance_check": {
+        "altitude_check": "PASS",
+        "restricted_area_check": "PASS",
+        "approval_check": "N/A"
+      }
+    },
+    
+    {
+      "test_case_id": "TC2_ControlledAirspace",
+      "expected_decision": "REJECT",
+      "expected_reason": "目标高度进入管制空域（≥120m），需要飞行审批",
+      "violation_details": {
+        "has_violation": true,
+        "violation_type": "CONTROLLED_AIRSPACE_WITHOUT_APPROVAL",
+        "targets": [
+          {
+            "position": {"north": 500.0, "east": 0.0, "altitude": 120.0},
+            "airspace_type": "controlled",
+            "altitude_check": "120m >= 120m (boundary)",
+            "in_restricted_area": false,
+            "requires_approval": true,
+            "has_approval": false
+          },
+          {
+            "position": {"north": 800.0, "east": 200.0, "altitude": 150.0},
+            "airspace_type": "controlled",
+            "altitude_check": "150m > 120m",
+            "in_restricted_area": false,
+            "requires_approval": true,
+            "has_approval": false
+          }
+        ],
+        "first_violation_altitude": 120.0,
+        "excess_altitude": 0.0
+      },
+      "compliance_check": {
+        "altitude_check": "FAIL",
+        "restricted_area_check": "PASS",
+        "approval_check": "FAIL"
+      },
+      "regulation_reference": "中国《条例》第19条、第31条：120米以上空域需要审批"
+    },
+    
+    {
+      "test_case_id": "TC3_ControlledAirspaceWithApproval",
+      "expected_decision": "APPROVE",
+      "expected_reason": "已获得管制空域飞行审批，可在120m以上飞行",
+      "violation_details": {
+        "has_violation": false,
+        "targets": [
+          {
+            "position": {"north": 500.0, "east": 0.0, "altitude": 150.0},
+            "airspace_type": "controlled",
+            "altitude_check": "150m > 120m",
+            "in_restricted_area": false,
+            "requires_approval": true,
+            "has_approval": true
+          },
+          {
+            "position": {"north": 1000.0, "east": 500.0, "altitude": 200.0},
+            "airspace_type": "controlled",
+            "altitude_check": "200m > 120m",
+            "in_restricted_area": false,
+            "requires_approval": true,
+            "has_approval": true
+          }
+        ],
+        "approval_type": "controlled_airspace_flight"
+      },
+      "compliance_check": {
+        "altitude_check": "PASS",
+        "restricted_area_check": "PASS",
+        "approval_check": "PASS"
+      }
+    },
+    
+    {
+      "test_case_id": "TC4_RestrictedArea",
+      "expected_decision": "REJECT",
+      "expected_reason": "目标位置在军事限制区内，无论高度均需审批",
+      "violation_details": {
+        "has_violation": true,
+        "violation_type": "RESTRICTED_AREA_WITHOUT_APPROVAL",
+        "targets": [
+          {
+            "position": {"north": 1500.0, "east": 0.0, "altitude": 50.0},
+            "airspace_type": "restricted",
+            "altitude_check": "50m < 120m (but overridden by restricted area)",
+            "in_restricted_area": true,
+            "distance_to_center": 0.0,
+            "zone_radius": 300.0,
+            "zone_id": "restricted_area_military",
+            "requires_approval": true,
+            "has_approval": false
+          },
+          {
+            "position": {"north": 1600.0, "east": 100.0, "altitude": 100.0},
+            "airspace_type": "restricted",
+            "altitude_check": "100m < 120m (but overridden by restricted area)",
+            "in_restricted_area": true,
+            "distance_to_center": 141.4,
+            "zone_radius": 300.0,
+            "zone_id": "restricted_area_military",
+            "requires_approval": true,
+            "has_approval": false
+          }
+        ],
+        "priority_note": "限制区域检查优先级高于高度检查"
+      },
+      "compliance_check": {
+        "altitude_check": "N/A",
+        "restricted_area_check": "FAIL",
+        "approval_check": "FAIL"
+      },
+      "regulation_reference": "限制区域飞行需要特殊审批"
+    },
+    
+    {
+      "test_case_id": "TC5_RestrictedAreaWithApproval",
+      "expected_decision": "APPROVE",
+      "expected_reason": "已获得限制区域飞行审批，可在限制区内任意高度飞行",
+      "violation_details": {
+        "has_violation": false,
+        "targets": [
+          {
+            "position": {"north": 1500.0, "east": 0.0, "altitude": 50.0},
+            "airspace_type": "restricted",
+            "altitude_check": "50m < 120m",
+            "in_restricted_area": true,
+            "distance_to_center": 0.0,
+            "requires_approval": true,
+            "has_approval": true
+          },
+          {
+            "position": {"north": 1500.0, "east": 0.0, "altitude": 150.0},
+            "airspace_type": "restricted + controlled",
+            "altitude_check": "150m > 120m",
+            "in_restricted_area": true,
+            "distance_to_center": 0.0,
+            "requires_approval": true,
+            "has_approval": true
+          }
+        ],
+        "approval_type": "restricted_area_flight",
+        "note": "限制区域审批包含所有高度"
+      },
+      "compliance_check": {
+        "altitude_check": "PASS",
+        "restricted_area_check": "PASS",
+        "approval_check": "PASS"
+      }
+    }
+  ],
+  
+  "rule_summary": {
+    "R019_airspace_classification": {
+      "parameters": {
+        "uncontrolled_altitude_ceiling_m": 120,
+        "boundary_mode": "exclusive (altitude >= 120 is controlled)",
+        "restricted_area_center": [1500.0, 0.0],
+        "restricted_area_radius_m": 300.0
+      },
+      "test_coverage": {
+        "total_test_cases": 5,
+        "uncontrolled_tests": 1,
+        "controlled_tests": 2,
+        "restricted_area_tests": 2,
+        "boundary_tests": 2,
+        "approval_tests": 2
+      }
+    }
+  },
+  
+  "validation_notes": {
+    "altitude_boundary": "使用>=判断，120m及以上属于管制空域",
+    "priority": "限制区域检查 > 高度检查 > 审批检查",
+    "distance_calculation": "使用2D水平距离判断是否在限制区域内",
+    "multi_target": "所有目标点都需通过检查才能APPROVE",
+    "exemption": "轻型无人机在适飞空域(<120m)且非限制区域时免审批"
+  }
+}
+

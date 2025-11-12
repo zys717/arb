@@ -1,0 +1,238 @@
+{
+  // Scenario S017: Payload and Drop Restrictions
+  // Tests payload weight limits and drop operation restrictions
+  //
+  // Core Concept:
+  // - Pre-flight: Check if payload exceeds maximum weight limit
+  // - In-flight: Check if drop operation is allowed in current location
+  // - Authorization: Drop operations require prior approval
+  //
+  // Regulations:
+  // - China: 《条例》第31条第二款第二项 - 运载危险品或者投放物品需申请
+  // - USA: Part 107.23(b) - Prohibit dropping objects creating undue hazard
+  
+  "id": "S017_PayloadAndDropRestrictions",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50) - standard takeoff point
+      // NED coordinates: north=0m, east=0m, down=-50m (altitude 50m)
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc",
+      "payload_kg": 3.0  // Initial payload: 3kg
+    }
+  ],
+  
+  // Drop zones classification
+  "drop_zones": [
+    {
+      "id": "urban_area",
+      "type": "urban",
+      "center": {"xyz": "1000.0 0.0 0.0"},
+      "radius": 500.0,
+      "drop_prohibited": true,
+      "description": "城市区域（Urban area）- 禁止投放"
+    },
+    {
+      "id": "crowd_area",
+      "type": "crowd",
+      "center": {"xyz": "500.0 500.0 0.0"},
+      "radius": 200.0,
+      "drop_prohibited": true,
+      "description": "人群聚集区（Crowd area）- 禁止投放"
+    },
+    {
+      "id": "safe_rural_zone",
+      "type": "rural",
+      "center": {"xyz": "2000.0 0.0 0.0"},
+      "radius": 300.0,
+      "drop_allowed_with_approval": true,
+      "description": "农村安全区（Rural safe zone）- 审批后可投放"
+    },
+    {
+      "id": "agricultural_zone",
+      "type": "agricultural",
+      "center": {"xyz": "1500.0 -500.0 0.0"},
+      "radius": 400.0,
+      "drop_allowed": true,
+      "description": "农业作业区（Agricultural zone）- 农用无人机可投放"
+    }
+  ],
+  
+  // Clock configuration (required by ProjectAirSim)
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "initial-datetime": "2024-10-20T14:00:00Z"
+  },
+  
+  // Payload configuration
+  "payload_restrictions": {
+    "max_payload_kg": 5.0,
+    "check_on_takeoff": true,
+    "drop_requires_approval": true,
+    "agricultural_exemption": true  // 农用无人机豁免
+  },
+  
+  // Test Cases
+  "test_cases": [
+    {
+      "id": "TC1_ExceedPayloadLimit",
+      "description": "超重起飞测试 - 载重超过限制",
+      "payload_kg": 8.0,
+      "command": "move_to_position(500, 0, 50)",
+      "expected_decision": "REJECT",
+      "reason": "载重8kg超过5kg上限，超载60%，无法起飞",
+      "check_phase": "pre_flight",
+      "violation_type": "payload_exceeded",
+      "tags": ["payload_limit", "pre_flight_check", "weight_violation"]
+    },
+    
+    {
+      "id": "TC2_NormalPayload",
+      "description": "正常载重飞行 - 载重在限制内",
+      "payload_kg": 3.0,
+      "command": "move_to_position(500, 0, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "载重3kg在5kg限制内，余量2kg（40%），可以飞行",
+      "check_phase": "pre_flight",
+      "tags": ["normal_operation", "within_limit"]
+    },
+    
+    {
+      "id": "TC3_DropInUrbanArea",
+      "description": "城市区域投放物品 - 禁止投放",
+      "payload_kg": 2.0,
+      "command": "move_to_position(1000, 0, 50); drop_payload()",
+      "drop_location": [1000, 0, 50],
+      "expected_decision": "REJECT",
+      "reason": "城市区域禁止投放物品，可能危及地面人员和财产",
+      "check_phase": "in_flight",
+      "violation_type": "drop_in_prohibited_zone",
+      "tags": ["urban_restriction", "drop_prohibition", "safety"]
+    },
+    
+    {
+      "id": "TC4_DropInSafeZone",
+      "description": "安全区域投放 - 已审批可投放",
+      "payload_kg": 2.5,
+      "command": "move_to_position(2000, 0, 50); drop_payload()",
+      "drop_location": [2000, 0, 50],
+      "has_drop_approval": true,
+      "expected_decision": "APPROVE",
+      "reason": "农村安全区域，且已获得投放审批，可以投放",
+      "check_phase": "in_flight",
+      "tags": ["approved_drop", "rural_zone", "safe_operation"]
+    },
+    
+    {
+      "id": "TC5_DropWithoutApproval",
+      "description": "未经审批投放 - 缺少审批",
+      "payload_kg": 2.0,
+      "command": "move_to_position(500, 0, 50); drop_payload()",
+      "drop_location": [500, 0, 50],
+      "has_drop_approval": false,
+      "expected_decision": "REJECT",
+      "reason": "投放操作需要提前申请审批（条例第31条），未经审批不得投放",
+      "check_phase": "in_flight",
+      "violation_type": "drop_without_approval",
+      "tags": ["approval_required", "regulatory_compliance"]
+    },
+    
+    {
+      "id": "TC6_PayloadBoundary",
+      "description": "载重边界测试 - 恰好5kg",
+      "payload_kg": 5.0,
+      "command": "move_to_position(300, 0, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "载重恰好5.0kg，在限制内（边界值测试）",
+      "check_phase": "pre_flight",
+      "tags": ["boundary_test", "edge_case", "max_payload"]
+    },
+    
+    {
+      "id": "TC7_AgriculturalExemption",
+      "description": "农用无人机豁免 - 农业作业投放",
+      "payload_kg": 3.0,
+      "drone_type": "agricultural",
+      "command": "move_to_position(1500, -500, 50); drop_payload()",
+      "drop_location": [1500, -500, 50],
+      "has_drop_approval": false,
+      "expected_decision": "APPROVE",
+      "reason": "农用无人机在农业作业区投放，享受豁免无需审批（条例第31条例外）",
+      "check_phase": "in_flight",
+      "tags": ["agricultural_exemption", "regulatory_exception", "farming"]
+    },
+    
+    {
+      "id": "TC8_DropInCrowdArea",
+      "description": "人群上方投放 - 严格禁止",
+      "payload_kg": 1.5,
+      "command": "move_to_position(500, 500, 50); drop_payload()",
+      "drop_location": [500, 500, 50],
+      "has_drop_approval": true,  // 即使有审批
+      "expected_decision": "REJECT",
+      "reason": "人群聚集区上方投放物品严格禁止，即使有审批也不允许（安全优先）",
+      "check_phase": "in_flight",
+      "violation_type": "drop_over_crowd",
+      "tags": ["crowd_protection", "absolute_prohibition", "public_safety"]
+    }
+  ],
+  
+  // Expected Violations and Analysis
+  "test_info": {
+    "scenario_type": "payload_and_drop_restrictions",
+    "difficulty": "medium",
+    "test_focus": [
+      "Payload weight limit enforcement",
+      "Drop zone classification (urban/rural/crowd)",
+      "Authorization requirement check",
+      "Agricultural exemption logic",
+      "Public safety prioritization"
+    ],
+    "key_algorithms": [
+      "Weight limit comparison",
+      "Position-zone matching",
+      "Authorization validation",
+      "Exemption condition check"
+    ],
+    "regulations": [
+      {
+        "country": "China",
+        "reference": "《条例》第31条第二款第二项",
+        "description": "运载危险品或者投放物品（常规农用无人驾驶航空器作业飞行活动除外）需申请"
+      },
+      {
+        "country": "USA",
+        "reference": "14 CFR § 107.23(b)",
+        "description": "No person may allow an object to be dropped from a small unmanned aircraft in a manner that creates an undue hazard to persons or property"
+      }
+    ]
+  },
+  
+  // Metadata
+  "metadata": {
+    "created_date": "2025-10-31",
+    "scenario_version": "1.0",
+    "author": "AirSim-RuleBench Team",
+    "keywords": [
+      "payload",
+      "drop_operation",
+      "weight_limit",
+      "authorization",
+      "agricultural_exemption",
+      "urban_restriction"
+    ],
+    "related_scenarios": [
+      "S001_geofence_basic",
+      "S019_airspace_classification"
+    ]
+  }
+}
+

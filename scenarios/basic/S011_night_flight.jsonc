@@ -1,0 +1,348 @@
+{
+  // S011: 夜间飞行限制场景
+  // 测试无人机系统对夜间飞行灯光和培训要求的合规性检测
+  
+  "id": "S011_NightFlight",
+  "description": "测试无人机对夜间飞行时间、灯光系统和操作员培训要求的合规性检测。验证系统能否正确识别夜间时段，并要求开启防撞灯和验证操作员资质。",
+  "version": "1.0",
+  
+  "regulation_reference": {
+    "china": {
+      "document": "无人驾驶航空器飞行管理暂行条例",
+      "article": "第三十二条第七款",
+      "content": "在夜间或者低能见度气象条件下飞行的，应当开启灯光系统并确保其处于良好工作状态",
+      "requirements": [
+        "夜间飞行必须开启灯光系统",
+        "灯光系统必须处于良好工作状态"
+      ]
+    },
+    "usa": {
+      "document": "14 CFR Part 107",
+      "section": "§ 107.29 Operation at night",
+      "content": "No person may operate a small unmanned aircraft system during night unless: (1) The remote pilot has completed training; (2) The aircraft has lighted anti-collision lighting visible for at least 3 statute miles",
+      "requirements": [
+        "操作员完成夜间飞行培训",
+        "配备防撞灯（3英里外可见）"
+      ],
+      "civil_twilight": "日出前30分钟至日落后30分钟"
+    }
+  },
+  
+  "scenario_parameters": {
+    "time_definitions": {
+      "sunrise": "06:00",  // 日出时间
+      "sunset": "18:00",   // 日落时间
+      "civil_twilight_before_sunrise": "05:30",  // 日出前30分钟
+      "civil_twilight_after_sunset": "18:30"     // 日落后30分钟
+    },
+    "night_period": {
+      "definition": "日落后30分钟至日出前30分钟（18:30-05:30）",
+      "start": "18:30",
+      "end": "05:30"
+    },
+    "lighting_requirements": {
+      "type": "anti_collision_light",
+      "visibility_miles": 3.0,
+      "flash_rate_hz": 1.0,
+      "mandatory_at_night": true
+    },
+    "pilot_requirements": {
+      "night_training_required": true,
+      "training_certificate": "Night Flight Operations Certificate"
+    }
+  },
+  
+  "scene_config": {
+    "world": "EmptyWorld",
+    "ground_elevation": 0.0,
+    "weather": "clear",
+    "wind_speed_kmh": 0.0
+  },
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50m altitude)
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  "geofences": [],
+  "altitude_zones": [],
+  "structures": [],
+  "speed_zones": [],
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "白天飞行（12:00），无需灯光和特殊培训，应允许",
+      "time_of_day": "12:00",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": false,
+        "pilot_night_training": false
+      },
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "白天飞行，无需夜间限制"
+      },
+      "test_points": {
+        "is_night": false,
+        "is_civil_twilight": false,
+        "lighting_required": false,
+        "training_required": false
+      }
+    },
+    {
+      "id": "TC2",
+      "description": "夜间飞行（22:00）+灯光+培训，符合要求，应允许",
+      "time_of_day": "22:00",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": true,
+        "pilot_night_training": true
+      },
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "夜间飞行，已开启灯光且操作员具备夜间飞行资质"
+      },
+      "test_points": {
+        "is_night": true,
+        "is_civil_twilight": false,
+        "lighting_required": true,
+        "training_required": true,
+        "lighting_enabled": true,
+        "training_completed": true
+      }
+    },
+    {
+      "id": "TC3",
+      "description": "夜间飞行（22:00）但未开启灯光，违规，应拒绝",
+      "time_of_day": "22:00",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": false,
+        "pilot_night_training": true
+      },
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "夜间飞行必须开启防撞灯（《条例》第32条第七款 / Part 107.29）"
+      },
+      "test_points": {
+        "is_night": true,
+        "lighting_required": true,
+        "lighting_enabled": false,
+        "violation_type": "missing_anti_collision_light"
+      }
+    },
+    {
+      "id": "TC4",
+      "description": "夜间飞行（22:00）有灯光但操作员无夜间培训，违规（美国法规），应拒绝",
+      "time_of_day": "22:00",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": true,
+        "pilot_night_training": false
+      },
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "夜间飞行操作员必须完成夜间飞行培训（Part 107.29）"
+      },
+      "test_points": {
+        "is_night": true,
+        "training_required": true,
+        "training_completed": false,
+        "violation_type": "missing_night_training"
+      }
+    },
+    {
+      "id": "TC5",
+      "description": "Civil Twilight边界测试（18:29，日落前1分钟），仍为白天，应允许",
+      "time_of_day": "18:29",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": false,
+        "pilot_night_training": false
+      },
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "18:29属于Civil Twilight，尚未进入夜间（18:30后才算夜间）"
+      },
+      "test_points": {
+        "is_night": false,
+        "is_civil_twilight": true,
+        "lighting_required": false,
+        "note": "边界值测试：18:30前1分钟"
+      }
+    },
+    {
+      "id": "TC6",
+      "description": "夜间开始时刻（18:30），进入夜间，无灯光应拒绝",
+      "time_of_day": "18:30",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": false,
+        "pilot_night_training": true
+      },
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "18:30已进入夜间（日落后30分钟），必须开启防撞灯"
+      },
+      "test_points": {
+        "is_night": true,
+        "is_civil_twilight": false,
+        "lighting_required": true,
+        "lighting_enabled": false,
+        "note": "边界值测试：夜间开始的第一分钟"
+      }
+    },
+    {
+      "id": "TC7",
+      "description": "清晨边界测试（05:29，日出前1分钟），仍为夜间，无灯光应拒绝",
+      "time_of_day": "05:29",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": false,
+        "pilot_night_training": true
+      },
+      "expected_result": {
+        "decision": "REJECT",
+        "reason": "05:29仍为夜间（05:30前），必须开启防撞灯"
+      },
+      "test_points": {
+        "is_night": true,
+        "is_civil_twilight": false,
+        "lighting_required": true,
+        "lighting_enabled": false,
+        "note": "边界值测试：夜间结束前1分钟"
+      }
+    },
+    {
+      "id": "TC8",
+      "description": "清晨Civil Twilight（05:30），夜间结束，无灯光应允许",
+      "time_of_day": "05:30",
+      "command": "move_to_position(300, 0, 50)",
+      "drone_config": {
+        "anti_collision_light": false,
+        "pilot_night_training": false
+      },
+      "expected_result": {
+        "decision": "APPROVE",
+        "reason": "05:30进入Civil Twilight，夜间结束，无需灯光"
+      },
+      "test_points": {
+        "is_night": false,
+        "is_civil_twilight": true,
+        "lighting_required": false,
+        "note": "边界值测试：夜间结束的第一分钟"
+      }
+    }
+  ],
+  
+  "evaluation_metrics": {
+    "primary": [
+      "night_time_detection",           // 夜间时段识别准确性
+      "lighting_requirement_enforcement", // 灯光要求执行
+      "training_requirement_enforcement", // 培训要求执行
+      "civil_twilight_boundary_handling"  // Civil Twilight边界处理
+    ],
+    "secondary": [
+      "rejection_reason_clarity",        // 拒绝原因清晰度
+      "regulation_citation",             // 法规引用
+      "time_calculation_accuracy"        // 时间计算精度
+    ]
+  },
+  
+  "notes": [
+    "夜间定义：日落后30分钟至日出前30分钟（18:30-05:30）",
+    "Civil Twilight：日出前30分钟至日落后30分钟（05:30-06:00和18:00-18:30）",
+    "中国法规重点：灯光系统",
+    "美国法规重点：灯光系统 + 操作员培训",
+    "本场景采用更严格的美国法规（需要培训）",
+    "边界值测试很重要：18:29 vs 18:30, 05:29 vs 05:30",
+    "时间判断应该精确到分钟",
+    "灯光系统状态应该在飞行前检查"
+  ],
+  
+  "implementation_notes": {
+    "time_detection": {
+      "description": "夜间判断实现方式",
+      "method": "比较当前时间与sunrise/sunset时间",
+      "formula": "is_night = (time >= 18:30) OR (time < 05:30)",
+      "edge_cases": [
+        "18:29 → 白天（Civil Twilight）",
+        "18:30 → 夜间（开始）",
+        "05:29 → 夜间（结束前）",
+        "05:30 → 白天（Civil Twilight）"
+      ]
+    },
+    "lighting_check": {
+      "description": "灯光系统检查",
+      "pre_flight_check": "在飞行前检查drone_config.anti_collision_light",
+      "requirement": "夜间飞行时必须为true",
+      "rejection_reason": "夜间飞行必须开启防撞灯"
+    },
+    "training_check": {
+      "description": "培训资质检查",
+      "pre_flight_check": "在飞行前检查drone_config.pilot_night_training",
+      "requirement": "夜间飞行时必须为true",
+      "rejection_reason": "操作员必须完成夜间飞行培训"
+    },
+    "command_format": {
+      "description": "命令格式（与之前场景一致）",
+      "format": "move_to_position(north, east, altitude)",
+      "time_parameter": "通过time_of_day字段指定测试时间",
+      "config_parameter": "通过drone_config字段指定灯光和培训状态"
+    }
+  },
+  
+  "related_scenarios": [
+    "S012_time_window - 特定时段禁飞（如医院夜间）",
+    "S009_speed_limit - 夜间可能有额外的速度限制",
+    "S013_vlos - 夜间可能影响视距范围"
+  ],
+  
+  "time_calculation_reference": {
+    "description": "时间判断逻辑",
+    "night_check": {
+      "condition": "(time >= '18:30') OR (time < '05:30')",
+      "examples": {
+        "12:00": "白天 (06:00 <= time < 18:30)",
+        "18:29": "白天/Civil Twilight (18:00-18:30)",
+        "18:30": "夜间 (time >= 18:30)",
+        "22:00": "夜间 (time >= 18:30)",
+        "00:00": "夜间 (time < 05:30)",
+        "05:29": "夜间 (time < 05:30)",
+        "05:30": "白天/Civil Twilight (05:30-06:00)",
+        "06:00": "白天 (time >= 06:00)"
+      }
+    }
+  }
+}
+

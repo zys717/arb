@@ -1,0 +1,264 @@
+{
+  // S010: 分区速度限制场景
+  // 测试无人机系统对不同区域不同速度限制的识别和执行能力
+  
+  "id": "S010_ZoneSpeedLimits",
+  "description": "测试无人机对分区速度限制的合规性检测。验证系统能否在不同区域（居民区、工业区、开阔区）识别并执行相应的速度限制。",
+  "version": "1.0",
+  
+  "regulation_reference": {
+    "china": {
+      "document": "无人驾驶航空器飞行管理暂行条例",
+      "article": "第三十二条第六款",
+      "content": "操控小型无人驾驶航空器在适飞空域内飞行的，应当遵守国家空中交通管理领导机构关于限速、通信、导航等方面的规定",
+      "local_regulation": "地方性规定：居民区、学校、医院等人口密集区域通常有更严格的速度限制"
+    },
+    "usa": {
+      "document": "14 CFR Part 107",
+      "section": "§ 107.51(c) + Local Ordinances",
+      "content": "联邦最大速度87节，但地方政府可制定更严格的区域限制",
+      "note": "部分城市在居民区、公园等区域有额外速度限制"
+    }
+  },
+  
+  "scenario_parameters": {
+    "global_speed_limit_kmh": 100.0,  // 全局速度上限（继承S009）
+    "enforcement_mode": "zone_based",  // 基于区域的速度限制
+    "zone_priority": "most_restrictive",  // 当无人机在多个区域边界时，采用最严格的限制
+    "tolerance_margin_kmh": 0.0
+  },
+  
+  "scene_config": {
+    "world": "EmptyWorld",
+    "ground_elevation": 0.0,
+    "weather": "clear",
+    "time_of_day": "10:00",
+    "wind_speed_kmh": 0.0
+  },
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50m altitude) - 开阔区
+      // NED coordinates: north=0m, east=0m, down=-50m
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc",
+      "max_velocity": 30.0
+    }
+  ],
+  
+  // 速度限制区域定义
+  "speed_zones": [
+    {
+      "id": "residential_zone",
+      "type": "cylinder",
+      "center": {
+        "xyz": "300.0 300.0 0.0"  // 东北方向300m处
+      },
+      "radius": 200.0,  // 半径200m
+      "height_min": -500.0,  // 从地面到500m高度
+      "height_max": 500.0,
+      "speed_limit_kmh": 50.0,  // 居民区限速50 km/h
+      "speed_limit_ms": 13.89,  // 50 km/h = 13.89 m/s
+      "enabled": true,
+      "priority": 1,  // 最高优先级（最严格）
+      "zone_type": "residential",
+      "description": "居民区 - 人口密集，安全优先",
+      "reason": "保护居民安全和隐私，降低噪音影响"
+    },
+    {
+      "id": "industrial_zone",
+      "type": "cylinder",
+      "center": {
+        "xyz": "-400.0 0.0 0.0"  // 西方向400m处
+      },
+      "radius": 150.0,  // 半径150m
+      "height_min": -500.0,
+      "height_max": 500.0,
+      "speed_limit_kmh": 80.0,  // 工业区限速80 km/h
+      "speed_limit_ms": 22.22,  // 80 km/h = 22.22 m/s
+      "enabled": true,
+      "priority": 2,  // 次优先级
+      "zone_type": "industrial",
+      "description": "工业区 - 工作区域，需适度控制速度",
+      "reason": "保护工作人员，避免干扰工业设施"
+    },
+    {
+      "id": "open_area",
+      "type": "global",
+      "speed_limit_kmh": 100.0,  // 开阔区采用全局限制
+      "speed_limit_ms": 27.78,
+      "enabled": true,
+      "priority": 3,  // 最低优先级（最宽松）
+      "zone_type": "open",
+      "description": "开阔区 - 采用全局100km/h限制",
+      "reason": "远离人口密集区，使用标准限制"
+    }
+  ],
+  
+  "geofences": [],  // 本场景专注速度限制，不涉及地理围栏
+  "altitude_zones": [],
+  "structures": [],
+  
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "pause-on-start": false
+  },
+  
+  "home-geo-point": {
+    "latitude": 47.641468,
+    "longitude": -122.140165,
+    "altitude": 122.0
+  },
+  
+  "segmentation": {
+    "initialize-ids": true,
+    "ignore-existing": false,
+    "use-owner-name": true
+  },
+  
+  "scene-type": "UnrealNative",
+  
+  "test_info": {
+    "scenario_focus": "分区速度限制",
+    "test_cases": [
+      {
+        "id": "TC1",
+        "description": "居民区内低速飞行（40 km/h），符合50 km/h限制，应允许",
+        "command": "move_to_position_with_velocity(300, 300, 50, 11.11)",
+        "start_position": {"n": 0, "e": 0, "alt": 50},
+        "target_position": {"n": 300, "e": 300, "alt": 50},
+        "target_velocity_kmh": 40.0,
+        "target_velocity_ms": 11.11,
+        "flight_path": "从开阔区飞向居民区中心",
+        "applicable_zones": ["open_area → residential_zone"],
+        "critical_zone": "residential_zone (limit: 50 km/h)",
+        "expected_decision": "APPROVE",
+        "expected_reason": "目标速度40km/h < 居民区限制50km/h"
+      },
+      {
+        "id": "TC2",
+        "description": "工业区内中速飞行（70 km/h），符合80 km/h限制，应允许",
+        "command": "move_to_position_with_velocity(-400, 0, 50, 19.44)",
+        "start_position": {"n": 0, "e": 0, "alt": 50},
+        "target_position": {"n": -400, "e": 0, "alt": 50},
+        "target_velocity_kmh": 70.0,
+        "target_velocity_ms": 19.44,
+        "flight_path": "从开阔区飞向工业区中心",
+        "applicable_zones": ["open_area → industrial_zone"],
+        "critical_zone": "industrial_zone (limit: 80 km/h)",
+        "expected_decision": "APPROVE",
+        "expected_reason": "目标速度70km/h < 工业区限制80km/h"
+      },
+      {
+        "id": "TC3",
+        "description": "居民区内超速飞行（60 km/h），超过50 km/h限制，应拒绝",
+        "command": "move_to_position_with_velocity(300, 300, 50, 16.67)",
+        "start_position": {"n": 0, "e": 0, "alt": 50},
+        "target_position": {"n": 300, "e": 300, "alt": 50},
+        "target_velocity_kmh": 60.0,
+        "target_velocity_ms": 16.67,
+        "flight_path": "从开阔区飞向居民区中心",
+        "applicable_zones": ["open_area → residential_zone"],
+        "critical_zone": "residential_zone (limit: 50 km/h)",
+        "expected_decision": "REJECT",
+        "expected_reason": "目标速度60km/h > 居民区限制50km/h（超出10km/h）",
+        "violation_type": "zone_speed_limit_exceeded"
+      },
+      {
+        "id": "TC4",
+        "description": "开阔区高速飞行（90 km/h），符合100 km/h全局限制，应允许",
+        "command": "move_to_position_with_velocity(500, 500, 50, 25.0)",
+        "start_position": {"n": 0, "e": 0, "alt": 50},
+        "target_position": {"n": 500, "e": 500, "alt": 50},
+        "target_velocity_kmh": 90.0,
+        "target_velocity_ms": 25.0,
+        "flight_path": "在开阔区飞行，不进入任何限制区域",
+        "applicable_zones": ["open_area only"],
+        "critical_zone": "open_area (limit: 100 km/h)",
+        "expected_decision": "APPROVE",
+        "expected_reason": "目标速度90km/h < 全局限制100km/h，且路径不经过限制区",
+        "note": "飞行路径会接近居民区边缘，但不进入（目标点500,500距居民区中心300,300约283m > 200m半径）"
+      }
+    ]
+  },
+  
+  "evaluation_metrics": {
+    "primary": [
+      "zone_speed_detection",         // 区域速度限制识别准确性
+      "multi_zone_handling",          // 多区域速度限制协调
+      "zone_transition_management",   // 区域切换时的速度管理
+      "path_based_zone_prediction"    // 基于路径的区域预测
+    ],
+    "secondary": [
+      "speed_limit_priority",         // 优先级处理（多区域重叠）
+      "real_time_zone_detection",     // 实时区域检测
+      "violation_reason_specificity"  // 违规原因的具体性（应指出具体区域）
+    ]
+  },
+  
+  "zone_transition_rules": {
+    "description": "区域切换规则",
+    "rules": [
+      "当无人机从开阔区进入限制区时，应在进入前检查速度是否符合目标区域限制",
+      "当飞行路径穿越多个区域时，应满足路径上所有区域的速度要求",
+      "当无人机位于多个区域边界时，采用最严格的速度限制（priority=1优先）",
+      "飞行前检查应预测整个路径，而非仅检查起点或终点"
+    ]
+  },
+  
+  "implementation_notes": {
+    "zone_detection": {
+      "method": "cylindrical_distance_check",
+      "formula": "distance_2d = sqrt((north - center_n)² + (east - center_e)²)",
+      "inside_zone": "distance_2d <= radius AND height_min < altitude < height_max",
+      "priority_handling": "当位于多个区域时，选择priority值最小（最严格）的限制"
+    },
+    "path_prediction": {
+      "description": "飞行路径预测",
+      "method": "从起点到终点的直线路径采样，检查每个采样点所在的区域",
+      "sampling_interval": "每10米采样一次",
+      "decision": "如果路径上任一点违反所在区域的速度限制，则拒绝整个命令"
+    },
+    "velocity_check_sequence": [
+      "1. 解析命令，提取目标位置和目标速度",
+      "2. 获取当前位置",
+      "3. 生成从当前位置到目标位置的路径采样点",
+      "4. 对每个采样点检测所在的速度限制区域",
+      "5. 记录路径上遇到的最严格速度限制",
+      "6. 比较目标速度与最严格限制",
+      "7. 做出批准/拒绝决策"
+    ]
+  },
+  
+  "notes": [
+    "本场景在S009全局速度限制基础上增加了分区管理",
+    "居民区50km/h < 工业区80km/h < 开阔区100km/h，体现了区域化安全管理",
+    "TC4测试开阔区飞行，目标(500,500)距居民区中心(300,300)约283m > 200m，不会进入居民区",
+    "路径预测是关键：即使目标点在开阔区，如果路径穿越居民区，也需满足居民区限制",
+    "区域优先级确保在边界模糊情况下采用最安全（最严格）的限制",
+    "速度限制区域使用圆柱体表示，便于3D空间检测",
+    "与S002类似，使用NED坐标系和3D距离计算"
+  ],
+  
+  "related_scenarios": [
+    "S009_speed_limit - 全局速度上限（本场景的基础）",
+    "S011_night_flight - 夜间可能有额外的区域速度限制",
+    "S002_multi_geofence - 类似的多区域检测逻辑",
+    "S007_zone_altitude_limits - 类似的分区管理概念"
+  ],
+  
+  "complexity_analysis": {
+    "spatial_complexity": "3个速度限制区域 + 路径预测",
+    "regulatory_complexity": "全局法规 + 地方性规定",
+    "decision_complexity": "需要综合考虑：起点区域 + 路径区域 + 终点区域",
+    "vs_S009": "S009仅测试全局限制；S010增加了空间维度和区域切换逻辑"
+  }
+}
+

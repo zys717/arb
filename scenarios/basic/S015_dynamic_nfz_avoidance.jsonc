@@ -1,0 +1,301 @@
+{
+  // Scenario S015: Dynamic No-Fly Zone Avoidance
+  // Tests whether the system can detect no-fly zones along the flight path and
+  // avoid them proactively during flight (path conflict detection + real-time avoidance)
+  //
+  // Core Concept:
+  // - Pre-flight: Check if straight-line path intersects any no-fly zones
+  // - In-flight: Monitor upcoming path and stop if about to enter restricted airspace
+  //
+  // Regulations:
+  // - China: 《条例》第19条 - 管制空域禁止进入
+  // - USA: Part 107.45 - Operation in certain airspace prohibited
+  
+  "id": "S015_DynamicNFZAvoidance",
+  
+  "actors": [
+    {
+      "type": "robot",
+      "name": "Drone1",
+      // Initial position: (0, 0, 50) - standard takeoff point
+      // NED coordinates: north=0m, east=0m, down=-50m (altitude 50m)
+      "origin": {
+        "xyz": "0.0 0.0 -50.0",
+        "rpy": "0 0 0"
+      },
+      "robot-config": "robot_quadrotor_fastphysics.jsonc"
+    }
+  ],
+  
+  // No-Fly Zones for path conflict testing
+  // These zones are always active (not time-restricted)
+  // The "dynamic" aspect is in the detection and avoidance logic
+  "geofences": [
+    {
+      "id": "nfz_emergency_landing",
+      "type": "cylinder",
+      "center": {
+        "xyz": "500.0 0.0 0.0"    // NFZ at N=500m, directly on path
+      },
+      "radius": 200.0,
+      "safety_margin": 100.0,      // Total restricted distance: 300m (200+100)
+      "height_min": -200.0,        // Ground level to 200m altitude
+      "height_max": 200.0,
+      "enabled": true,
+      "action": "reject",
+      "priority": 1,
+      "zone_type": "emergency_zone",
+      "description": "紧急医疗直升机降落区（Emergency helicopter landing zone）- 禁飞半径300m"
+    },
+    
+    {
+      "id": "nfz_police_operation",
+      "type": "cylinder",
+      "center": {
+        "xyz": "1500.0 800.0 0.0"  // NFZ offset from path (E=800m)
+      },
+      "radius": 250.0,
+      "safety_margin": 150.0,      // Total restricted distance: 400m
+      "height_min": -200.0,
+      "height_max": 200.0,
+      "enabled": true,
+      "action": "reject",
+      "priority": 1,
+      "zone_type": "law_enforcement",
+      "description": "警务行动区域（Police operation area）- 禁飞半径400m"
+    },
+    
+    {
+      "id": "nfz_fire_rescue",
+      "type": "cylinder",
+      "center": {
+        "xyz": "2500.0 0.0 0.0"    // NFZ at N=2500m, on path for long-distance flights
+      },
+      "radius": 300.0,
+      "safety_margin": 200.0,      // Total restricted distance: 500m
+      "height_min": -200.0,
+      "height_max": 200.0,
+      "enabled": true,
+      "action": "reject",
+      "priority": 1,
+      "zone_type": "fire_rescue",
+      "description": "消防救援区域（Fire and rescue operation）- 禁飞半径500m"
+    }
+  ],
+  
+  // Clock configuration (required by ProjectAirSim)
+  "clock": {
+    "type": "steppable",
+    "step-ns": 3000000,
+    "real-time-update-rate": 3000000,
+    "initial-datetime": "2024-10-15T10:30:00Z"
+  },
+  
+  // Path Avoidance Configuration
+  "path_avoidance": {
+    "enabled": true,
+    "check_method": "trajectory_prediction",  // Predict future positions
+    "lookahead_time_sec": 10.0,              // Check 10 seconds ahead
+    "sampling_interval_sec": 0.5,            // Check every 0.5 seconds during flight
+    "stop_behavior": "immediate_hover",      // Stop and hover when conflict detected
+    "safety_action": {
+      "on_conflict": "stop_and_notify",      // Stop flying, notify operator
+      "return_to_home": false                // Don't auto-RTH (for testing)
+    }
+  },
+  
+  // Test Cases
+  "test_cases": [
+    {
+      "id": "TC1_PathBlocked_FrontNFZ",
+      "description": "路径前方有禁飞区 - 应在Pre-flight检测并拒绝",
+      "command": "move_to_position(800, 0, 50)",
+      "expected_decision": "REJECT",
+      "reason": "直线路径穿过NFZ_Emergency_Landing (N=500m, R=300m)",
+      "detection_phase": "pre_flight",
+      "conflict_analysis": {
+        "path": {"start": [0, 0, 50], "end": [800, 0, 50]},
+        "conflicts": [
+          {
+            "nfz_id": "nfz_emergency_landing",
+            "intersection_point_approx": [500, 0, 50],
+            "min_distance_to_nfz_center": 0.0,
+            "conflict_type": "path_intersection"
+          }
+        ]
+      },
+      "tags": ["path_conflict", "pre_flight_check", "direct_intersection"]
+    },
+    
+    {
+      "id": "TC2_PathClear_OffsetNFZ",
+      "description": "路径旁边有禁飞区但不冲突 - 应批准飞行",
+      "command": "move_to_position(1000, 1000, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "对角线路径绕开所有NFZ（最近的NFZ_Emergency距离~1118m > 300m安全边界）",
+      "detection_phase": "pre_flight",
+      "conflict_analysis": {
+        "path": {"start": [0, 0, 50], "end": [1000, 1000, 50]},
+        "conflicts": [],
+        "closest_nfz": {
+          "nfz_id": "nfz_emergency_landing",
+          "center": [500, 0, 0],
+          "path_closest_point_approx": [250, 250, 50],
+          "min_distance_to_center": 559.0,
+          "safe_margin": 300.0,
+          "clearance": 259.0,
+          "safe": true,
+          "calculation_note": "对角线路径 (0,0)→(1000,1000) 距离NFZ中心(500,0)最近点约为(250,250)，距离≈559m"
+        }
+      },
+      "tags": ["path_clear", "pre_flight_check", "no_conflict", "diagonal_path"]
+    },
+    
+    {
+      "id": "TC3_MultipleNFZ_BothBlocked",
+      "description": "路径穿过多个禁飞区 - 应拒绝（最近的NFZ优先）",
+      "command": "move_to_position(3000, 0, 50)",
+      "expected_decision": "REJECT",
+      "reason": "直线路径穿过2个NFZ：Emergency(N=500m) 和 FireRescue(N=2500m)",
+      "detection_phase": "pre_flight",
+      "conflict_analysis": {
+        "path": {"start": [0, 0, 50], "end": [3000, 0, 50]},
+        "conflicts": [
+          {
+            "nfz_id": "nfz_emergency_landing",
+            "intersection_point_approx": [500, 0, 50],
+            "detection_distance_from_start": 500.0,
+            "conflict_type": "path_intersection"
+          },
+          {
+            "nfz_id": "nfz_fire_rescue",
+            "intersection_point_approx": [2500, 0, 50],
+            "detection_distance_from_start": 2500.0,
+            "conflict_type": "path_intersection"
+          }
+        ],
+        "first_conflict": "nfz_emergency_landing"
+      },
+      "tags": ["multiple_conflicts", "pre_flight_check", "reject_first"]
+    },
+    
+    {
+      "id": "TC4_ShortPath_NoConflict",
+      "description": "短距离飞行，未到达任何禁飞区 - 应批准",
+      "command": "move_to_position(150, 0, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "路径终点(150,0)距NFZ_Emergency中心(500,0)为350m > 300m安全边界（余量50m）",
+      "detection_phase": "pre_flight",
+      "conflict_analysis": {
+        "path": {"start": [0, 0, 50], "end": [150, 0, 50]},
+        "conflicts": [],
+        "closest_approach": {
+          "nfz_id": "nfz_emergency_landing",
+          "nfz_center": [500, 0, 0],
+          "path_end_to_center": 350.0,
+          "required_clearance": 300.0,
+          "clearance": 50.0,
+          "safe": true,
+          "calculation_note": "直线路径，终点到NFZ中心距离: 500-150=350m"
+        }
+      },
+      "tags": ["short_path", "pre_flight_check", "safe_distance"]
+    },
+    
+    {
+      "id": "TC5_EdgeCase_NearBoundary",
+      "description": "路径刚好贴近禁飞区边界 - 边界测试",
+      "command": "move_to_position(500, 400, 50)",
+      "expected_decision": "APPROVE",
+      "reason": "对角线路径(0,0)→(500,400)最近距离NFZ中心约312m > 300m安全边界（余量~12m）",
+      "detection_phase": "pre_flight",
+      "conflict_analysis": {
+        "path": {"start": [0, 0, 50], "end": [500, 400, 50]},
+        "conflicts": [],
+        "edge_case": {
+          "nfz_id": "nfz_emergency_landing",
+          "nfz_center": [500, 0, 0],
+          "path_closest_point_approx": [305, 244, 50],
+          "min_distance_to_center": 312.3,
+          "safety_margin": 300.0,
+          "clearance": 12.3,
+          "safe": true,
+          "calculation_note": "点到线段距离算法：投影参数t≈0.61，最近点≈(305,244)，距离≈312m"
+        }
+      },
+      "tags": ["boundary_test", "pre_flight_check", "edge_case", "narrow_clearance"]
+    },
+    
+    {
+      "id": "TC6_Diagonal_PathConflict",
+      "description": "对角线路径冲突测试",
+      "command": "move_to_position(1500, 500, 50)",
+      "expected_decision": "REJECT",
+      "reason": "对角线路径会穿过NFZ_Police_Operation（中心在N=1500, E=800, 半径400m）",
+      "detection_phase": "pre_flight",
+      "conflict_analysis": {
+        "path": {"start": [0, 0, 50], "end": [1500, 500, 50]},
+        "conflicts": [
+          {
+            "nfz_id": "nfz_police_operation",
+            "path_closest_point_approx": [1500, 500, 50],
+            "distance_to_nfz_center": 300.0,
+            "safety_margin": 400.0,
+            "conflict_type": "path_too_close"
+          }
+        ]
+      },
+      "tags": ["diagonal_path", "pre_flight_check", "2d_conflict"]
+    }
+  ],
+  
+  // Expected Violations and Analysis
+  "test_info": {
+    "scenario_type": "path_avoidance",
+    "difficulty": "medium",
+    "test_focus": [
+      "Pre-flight path conflict detection",
+      "Straight-line path vs NFZ intersection",
+      "Multiple NFZ priority handling",
+      "Boundary condition testing",
+      "2D distance calculation (horizontal)"
+    ],
+    "key_algorithms": [
+      "Point-to-line distance calculation",
+      "Circle-line intersection detection",
+      "Safety margin validation"
+    ],
+    "regulations": [
+      {
+        "country": "China",
+        "reference": "《条例》第19条",
+        "description": "管制空域禁止进入"
+      },
+      {
+        "country": "USA",
+        "reference": "14 CFR § 107.45",
+        "description": "Operation in certain airspace prohibited"
+      }
+    ]
+  },
+  
+  // Metadata
+  "metadata": {
+    "created_date": "2025-10-31",
+    "scenario_version": "1.0",
+    "author": "AirSim-RuleBench Team",
+    "keywords": [
+      "path_planning",
+      "avoidance",
+      "no_fly_zone",
+      "conflict_detection",
+      "emergency_zones"
+    ],
+    "related_scenarios": [
+      "S001_geofence_basic",
+      "S002_multi_geofence",
+      "S005_dynamic_tfr"
+    ]
+  }
+}
+

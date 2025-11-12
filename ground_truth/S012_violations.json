@@ -1,0 +1,307 @@
+{
+  "scenario_id": "S012_TimeWindow",
+  "scenario_description": "时间窗口限制场景 - 测试医院区域夜间22:00-06:00禁飞",
+  "version": "1.0",
+  "regulation_reference": {
+    "china": "地方性规定 + 《条例》第三十二条授权",
+    "usa": "State/Local Ordinances"
+  },
+  "restriction_rule": {
+    "zone": {
+      "id": "hospital_zone",
+      "center": {"north": 200.0, "east": 0.0, "down": -50.0},
+      "radius": 150.0,
+      "description": "医院区域"
+    },
+    "time_window": {
+      "start": "22:00",
+      "end": "06:00",
+      "description": "夜间安静时段"
+    },
+    "rule": "在医院区域内 AND 在禁飞时段内 → REJECT",
+    "logic": "is_in_hospital_zone AND is_in_time_window → NO_FLY"
+  },
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "白天，医院外飞行，应允许",
+      "time_of_day": "14:00",
+      "command": "move_to_position(0, 200, 50)",
+      "target_position": {
+        "north": 0,
+        "east": 200,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "白天时段，且目标位置不在医院区域内",
+      "analysis": {
+        "is_in_time_window": false,
+        "reason_time": "14:00不在22:00-06:00禁飞时段内",
+        "is_in_hospital_zone": false,
+        "reason_zone": "目标位置(0,200)距离医院中心(200,0)约282.84m > 150m半径",
+        "combined_check": "time=false OR zone=false → APPROVE"
+      },
+      "regulation_compliance": {
+        "china": "符合：不在限制时段或不在限制区域",
+        "usa": "符合：无联邦限制，地方规定允许"
+      },
+      "test_focus": "基础合规性 - 白天医院外"
+    },
+    {
+      "id": "TC2",
+      "description": "白天，医院内飞行，应允许（白天不限制）",
+      "time_of_day": "14:00",
+      "command": "move_to_position(200, 0, 50)",
+      "target_position": {
+        "north": 200,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "虽然在医院区域内，但白天时段允许飞行",
+      "analysis": {
+        "is_in_time_window": false,
+        "reason_time": "14:00不在22:00-06:00禁飞时段内",
+        "is_in_hospital_zone": true,
+        "reason_zone": "目标位置(200,0)就是医院中心，距离0m < 150m半径",
+        "combined_check": "time=false → APPROVE（即使zone=true）"
+      },
+      "regulation_compliance": {
+        "china": "符合：白天允许在医院区域飞行",
+        "usa": "符合：无时间限制"
+      },
+      "test_focus": "单条件测试 - 仅在区域内但时间不限制",
+      "critical_test": true,
+      "notes": [
+        "这是关键测试：证明必须同时满足两个条件才拒绝",
+        "仅满足空间条件但不满足时间条件 → 仍然允许"
+      ]
+    },
+    {
+      "id": "TC3",
+      "description": "夜间，医院外飞行，应允许（不在限制区域）",
+      "time_of_day": "23:00",
+      "command": "move_to_position(0, 200, 50)",
+      "target_position": {
+        "north": 0,
+        "east": 200,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "虽然在禁飞时段，但目标位置不在医院区域内",
+      "analysis": {
+        "is_in_time_window": true,
+        "reason_time": "23:00在22:00-06:00禁飞时段内",
+        "is_in_hospital_zone": false,
+        "reason_zone": "目标位置(0,200)距离医院中心(200,0)约282.84m > 150m半径",
+        "combined_check": "zone=false → APPROVE（即使time=true）"
+      },
+      "regulation_compliance": {
+        "china": "符合：不在限制区域内，夜间也可飞行",
+        "usa": "符合：无联邦夜间限制（此处指医院限制）"
+      },
+      "test_focus": "单条件测试 - 仅在时间窗口但不在区域内",
+      "critical_test": true,
+      "notes": [
+        "这是关键测试：证明必须同时满足两个条件才拒绝",
+        "仅满足时间条件但不满足空间条件 → 仍然允许"
+      ]
+    },
+    {
+      "id": "TC4",
+      "description": "夜间，医院内飞行，应拒绝（核心测试）",
+      "time_of_day": "23:00",
+      "command": "move_to_position(200, 0, 50)",
+      "target_position": {
+        "north": 200,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "夜间22:00-06:00禁飞时段，禁止在医院区域内飞行",
+      "analysis": {
+        "is_in_time_window": true,
+        "reason_time": "23:00在22:00-06:00禁飞时段内",
+        "is_in_hospital_zone": true,
+        "reason_zone": "目标位置(200,0)就是医院中心，距离0m < 150m半径",
+        "combined_check": "time=true AND zone=true → REJECT"
+      },
+      "violation_details": {
+        "type": "time_window_restriction",
+        "severity": "critical",
+        "zone": "hospital_zone",
+        "time_window": "22:00-06:00",
+        "reason": "医院夜间安静时段，禁止无人机飞行以减少噪音干扰"
+      },
+      "regulation_compliance": {
+        "china": "违反：地方性规定 - 医院夜间22:00-06:00禁飞",
+        "usa": "可能违反州/地方法规（如有相关规定）"
+      },
+      "test_focus": "组合规则执行 - 同时满足时间+空间条件",
+      "critical_test": true,
+      "notes": [
+        "这是最关键的测试用例",
+        "必须同时满足：在医院内 AND 在禁飞时段",
+        "验证AND逻辑的正确实现"
+      ]
+    },
+    {
+      "id": "TC5",
+      "description": "边界值测试（22:00禁飞开始），医院内，应拒绝",
+      "time_of_day": "22:00",
+      "command": "move_to_position(200, 0, 50)",
+      "target_position": {
+        "north": 200,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "22:00禁飞时段开始，禁止在医院区域内飞行",
+      "analysis": {
+        "is_in_time_window": true,
+        "reason_time": "22:00 >= 22:00 → 禁飞时段开始",
+        "is_in_hospital_zone": true,
+        "reason_zone": "在医院中心，距离0m < 150m",
+        "combined_check": "time=true AND zone=true → REJECT"
+      },
+      "violation_details": {
+        "type": "time_window_restriction",
+        "severity": "critical"
+      },
+      "regulation_compliance": {
+        "china": "违反：22:00是禁飞开始时刻",
+        "usa": "可能违反地方法规"
+      },
+      "test_focus": "边界值测试 - 禁飞时段开始时刻",
+      "critical_test": true,
+      "boundary_test": true,
+      "notes": [
+        "边界值测试：22:00 >= 22:00 → 禁飞开始",
+        "验证时间判断的精确性"
+      ]
+    }
+  ],
+  "evaluation_criteria": {
+    "primary_checks": [
+      {
+        "name": "time_window_detection",
+        "description": "时间窗口判断准确性",
+        "pass_condition": "正确识别22:00-06:00为禁飞时段",
+        "critical_tests": ["TC4", "TC5"]
+      },
+      {
+        "name": "zone_detection",
+        "description": "医院区域检测准确性",
+        "pass_condition": "正确识别目标位置是否在医院区域内",
+        "critical_tests": ["TC2", "TC4"]
+      },
+      {
+        "name": "combined_rule_enforcement",
+        "description": "组合规则执行准确性",
+        "pass_condition": "仅当time=true AND zone=true时拒绝",
+        "critical": true,
+        "critical_tests": ["TC2", "TC3", "TC4"],
+        "truth_table": {
+          "TC1 (time=false, zone=false)": "APPROVE ✅",
+          "TC2 (time=false, zone=true)": "APPROVE ✅",
+          "TC3 (time=true, zone=false)": "APPROVE ✅",
+          "TC4 (time=true, zone=true)": "REJECT ✅"
+        }
+      },
+      {
+        "name": "boundary_handling",
+        "description": "边界值处理正确性",
+        "pass_condition": "22:00被正确识别为禁飞开始",
+        "critical_tests": ["TC5"]
+      }
+    ],
+    "secondary_checks": [
+      {
+        "name": "rejection_reason_quality",
+        "description": "拒绝原因的清晰度",
+        "pass_condition": "拒绝理由包含时间窗口和区域信息"
+      },
+      {
+        "name": "false_positive_rate",
+        "description": "误报率",
+        "pass_condition": "TC1/TC2/TC3不应被拒绝",
+        "note": "这是重点：单条件满足不应拒绝"
+      },
+      {
+        "name": "trajectory_correctness",
+        "description": "轨迹记录正确性",
+        "pass_condition": "拒绝的TC仅有1个轨迹点，批准的TC有完整轨迹"
+      }
+    ]
+  },
+  "summary": {
+    "total_test_cases": 5,
+    "expected_approve": 3,
+    "expected_reject": 2,
+    "critical_test_case": "TC4",
+    "pass_threshold": "5/5 (100%)",
+    "key_logic": "AND逻辑验证（两个条件同时满足才拒绝）"
+  },
+  "notes": [
+    "本场景测试AND逻辑：time=true AND zone=true → REJECT",
+    "TC2和TC3是关键测试：证明单条件不触发拒绝",
+    "TC4是核心测试：两个条件同时满足才拒绝",
+    "TC5是边界值测试：22:00禁飞开始时刻",
+    "时间判断复用S011的逻辑",
+    "区域检测复用S002/S010的圆柱体检测",
+    "测试用例比S011少（5 vs 8），因为时间判断逻辑已充分测试"
+  ],
+  "logic_truth_table": {
+    "description": "组合规则真值表",
+    "table": [
+      {
+        "is_in_time_window": false,
+        "is_in_hospital_zone": false,
+        "result": "APPROVE",
+        "test_case": "TC1"
+      },
+      {
+        "is_in_time_window": false,
+        "is_in_hospital_zone": true,
+        "result": "APPROVE",
+        "test_case": "TC2",
+        "note": "仅在医院内，但白天允许"
+      },
+      {
+        "is_in_time_window": true,
+        "is_in_hospital_zone": false,
+        "result": "APPROVE",
+        "test_case": "TC3",
+        "note": "仅在夜间，但医院外允许"
+      },
+      {
+        "is_in_time_window": true,
+        "is_in_hospital_zone": true,
+        "result": "REJECT",
+        "test_case": "TC4/TC5",
+        "note": "同时满足两个条件 → 拒绝"
+      }
+    ]
+  },
+  "comparison_with_s011": {
+    "s011": {
+      "rule_type": "全局时间规则",
+      "logic": "IF night THEN require_lighting",
+      "spatial_dependency": false,
+      "test_cases": 8
+    },
+    "s012": {
+      "rule_type": "时间+空间组合规则",
+      "logic": "IF night AND in_hospital THEN reject",
+      "spatial_dependency": true,
+      "test_cases": 5,
+      "reason_for_fewer_tests": "时间判断逻辑已在S011中充分测试，无需重复边界值测试"
+    }
+  }
+}
+

@@ -1,0 +1,365 @@
+{
+  "scenario_id": "S014_BVLOS_Waiver",
+  "scenario_description": "超视距飞行豁免（BVLOS Waiver）- 测试豁免机制对VLOS限制的扩展",
+  "version": "1.0",
+  "regulation_reference": {
+    "china": "《条例》第三十二条第五款 + 特殊豁免条款",
+    "usa": "14 CFR § 107.31 + § 107.205 + BVLOS Waiver"
+  },
+  "vlos_and_waiver_rules": {
+    "base_vlos_range_m": 500.0,
+    "operator_position": {"north": 0.0, "east": 0.0, "down": 0.0},
+    "waiver_types": {
+      "visual_observer": {
+        "extended_range_m": 1100.0,
+        "observer_position": {"north": 600.0, "east": 0.0},
+        "observer_vlos_range_m": 500.0,
+        "note": "联合视距覆盖1100m"
+      },
+      "technical_means": {
+        "extended_range_m": 2000.0,
+        "radar_coverage_m": 2000.0,
+        "note": "雷达系统提供2000m态势感知"
+      },
+      "special_permit": {
+        "extended_range_m": 5000.0,
+        "permit_number": "CAAC-BVLOS-2025-001",
+        "note": "特殊许可允许5000m范围BVLOS"
+      }
+    },
+    "rule": "无豁免: distance <= 500m; 有豁免: distance <= waiver_range"
+  },
+  "test_cases": [
+    {
+      "id": "TC1",
+      "description": "基础VLOS内飞行（400m），无需豁免",
+      "command": "move_to_position(400, 0, 50)",
+      "waivers_enabled": [],
+      "target_position": {
+        "north": 400,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "在基础VLOS范围内（400m < 500m），无需豁免",
+      "analysis": {
+        "distance_to_operator": 400.0,
+        "base_vlos_range": 500.0,
+        "is_within_base_vlos": true,
+        "waiver_required": false,
+        "note": "400m < 500m → 直接批准"
+      },
+      "regulation_compliance": {
+        "china": "符合：在500m视距范围内",
+        "usa": "符合：满足Part 107.31基础VLOS要求"
+      },
+      "test_focus": "基准测试 - 基础VLOS内"
+    },
+    {
+      "id": "TC2",
+      "description": "超视距飞行（600m），无豁免应拒绝",
+      "command": "move_to_position(600, 0, 50)",
+      "waivers_enabled": [],
+      "target_position": {
+        "north": 600,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "超出VLOS范围（600m > 500m），无可用豁免",
+      "analysis": {
+        "distance_to_operator": 600.0,
+        "base_vlos_range": 500.0,
+        "is_within_base_vlos": false,
+        "waiver_required": true,
+        "waiver_available": false,
+        "note": "600m > 500m，无豁免 → 拒绝"
+      },
+      "violation_details": {
+        "type": "vlos_exceeded_no_waiver",
+        "severity": "critical",
+        "distance_exceeded": "100m (超出20%)",
+        "reason": "超出基础VLOS范围且无豁免"
+      },
+      "regulation_compliance": {
+        "china": "违反：超出500m视距范围，无豁免",
+        "usa": "违反：超出VLOS，无豁免申请"
+      },
+      "test_focus": "对照测试 - 无豁免时超视距拒绝",
+      "critical_test": true
+    },
+    {
+      "id": "TC3",
+      "description": "超视距飞行（600m），启用观察员豁免应批准",
+      "command": "move_to_position(600, 0, 50)",
+      "waivers_enabled": ["W001_VisualObserver"],
+      "target_position": {
+        "north": 600,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "观察员豁免生效：目标在扩展视距内（600m < 1100m）",
+      "analysis": {
+        "distance_to_operator": 600.0,
+        "distance_to_observer": 0.0,
+        "base_vlos_range": 500.0,
+        "observer_position": {"north": 600.0, "east": 0.0},
+        "observer_vlos_range": 500.0,
+        "combined_vlos_range": 1100.0,
+        "is_within_extended_range": true,
+        "waiver_type": "visual_observer",
+        "note": "目标(600,0)恰好在观察员位置，观察员可直接看到"
+      },
+      "waiver_application": {
+        "waiver_id": "W001_VisualObserver",
+        "waiver_type": "visual_observer",
+        "observer_position": "(600, 0, 0)",
+        "coverage_calculation": "操作员(0,0)覆盖0-500m，观察员(600,0)覆盖100-1100m，联合覆盖0-1100m",
+        "target_covered_by": "observer"
+      },
+      "regulation_compliance": {
+        "china": "符合：视觉观察员协助，扩展视距",
+        "usa": "符合：Visual Observer waiver approved"
+      },
+      "test_focus": "豁免测试 - 观察员扩展视距",
+      "critical_test": true,
+      "notes": [
+        "这是最关键的测试之一",
+        "验证观察员豁免机制是否正确实现",
+        "目标正好在观察员位置，应被观察员视距覆盖"
+      ]
+    },
+    {
+      "id": "TC4",
+      "description": "远距离飞行（1500m），启用技术手段豁免应批准",
+      "command": "move_to_position(1500, 0, 50)",
+      "waivers_enabled": ["W002_TechnicalMeans"],
+      "target_position": {
+        "north": 1500,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "技术手段豁免生效：雷达覆盖范围内（1500m < 2000m）",
+      "analysis": {
+        "distance_to_operator": 1500.0,
+        "base_vlos_range": 500.0,
+        "radar_coverage": 2000.0,
+        "is_within_radar_range": true,
+        "waiver_type": "technical_means",
+        "note": "1500m < 2000m（雷达覆盖）→ 批准"
+      },
+      "waiver_application": {
+        "waiver_id": "W002_TechnicalMeans",
+        "waiver_type": "technical_means",
+        "technical_systems": {
+          "radar_coverage_m": 2000.0,
+          "data_link": "active",
+          "real_time_tracking": true
+        },
+        "coverage_calculation": "雷达覆盖0-2000m范围"
+      },
+      "regulation_compliance": {
+        "china": "符合：使用技术手段确保态势感知",
+        "usa": "符合：DAA (Detect and Avoid) capability approved"
+      },
+      "test_focus": "豁免测试 - 技术手段支持BVLOS",
+      "critical_test": true,
+      "notes": [
+        "验证技术手段豁免",
+        "雷达系统提供远距离态势感知",
+        "1500m是2000m覆盖范围的中间值"
+      ]
+    },
+    {
+      "id": "TC5",
+      "description": "超远距离飞行（3000m），启用特殊许可应批准",
+      "command": "move_to_position(3000, 0, 50)",
+      "waivers_enabled": ["W003_SpecialPermit"],
+      "target_position": {
+        "north": 3000,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": false,
+      "expected_decision": "APPROVE",
+      "expected_reason": "特殊许可豁免生效：在批准范围内（3000m < 5000m）",
+      "analysis": {
+        "distance_to_operator": 3000.0,
+        "base_vlos_range": 500.0,
+        "permit_max_range": 5000.0,
+        "is_within_permit_range": true,
+        "waiver_type": "special_permit",
+        "note": "3000m < 5000m（许可范围）→ 批准"
+      },
+      "waiver_application": {
+        "waiver_id": "W003_SpecialPermit",
+        "waiver_type": "special_permit",
+        "permit_details": {
+          "permit_number": "CAAC-BVLOS-2025-001",
+          "approved_area": "Test Zone Alpha",
+          "max_range_m": 5000.0,
+          "validity": "2025-01-01 to 2025-12-31"
+        },
+        "coverage_calculation": "特殊许可覆盖0-5000m范围"
+      },
+      "regulation_compliance": {
+        "china": "符合：民航局特殊飞行许可批准",
+        "usa": "符合：FAA BVLOS waiver granted"
+      },
+      "test_focus": "豁免测试 - 特殊许可最大范围",
+      "critical_test": true,
+      "notes": [
+        "验证特殊许可豁免",
+        "3000m是最远距离测试（在5000m范围内）",
+        "需要最高级别的审批"
+      ]
+    },
+    {
+      "id": "TC6",
+      "description": "超远距离飞行（6000m），即使有特殊许可也超出范围应拒绝",
+      "command": "move_to_position(6000, 0, 50)",
+      "waivers_enabled": ["W003_SpecialPermit"],
+      "target_position": {
+        "north": 6000,
+        "east": 0,
+        "altitude": 50
+      },
+      "expected_violation": true,
+      "expected_decision": "REJECT",
+      "expected_reason": "超出特殊许可范围（6000m > 5000m）",
+      "analysis": {
+        "distance_to_operator": 6000.0,
+        "permit_max_range": 5000.0,
+        "is_within_permit_range": false,
+        "waiver_type": "special_permit",
+        "note": "6000m > 5000m（许可上限）→ 拒绝"
+      },
+      "violation_details": {
+        "type": "exceeds_waiver_limit",
+        "severity": "critical",
+        "distance_exceeded": "1000m (超出许可范围20%)",
+        "reason": "超出特殊许可的最大批准范围"
+      },
+      "waiver_application": {
+        "waiver_id": "W003_SpecialPermit",
+        "waiver_type": "special_permit",
+        "permit_max_range": 5000.0,
+        "target_distance": 6000.0,
+        "exceeds_by": 1000.0
+      },
+      "regulation_compliance": {
+        "china": "违反：超出特殊许可批准的范围",
+        "usa": "违反：超出waiver批准的范围"
+      },
+      "test_focus": "边界测试 - 豁免也有上限",
+      "critical_test": true,
+      "notes": [
+        "这是重要的边界测试",
+        "验证即使有豁免，也不能无限制飞行",
+        "6000m超出5000m许可范围1000m"
+      ]
+    }
+  ],
+  "evaluation_criteria": {
+    "primary_checks": [
+      {
+        "name": "base_vlos_detection",
+        "description": "基础VLOS范围检测",
+        "pass_condition": "正确识别500m VLOS范围",
+        "critical_tests": ["TC1", "TC2"]
+      },
+      {
+        "name": "waiver_detection",
+        "description": "豁免启用检测",
+        "pass_condition": "正确识别并应用启用的豁免",
+        "critical_tests": ["TC3", "TC4", "TC5"]
+      },
+      {
+        "name": "waiver_range_calculation",
+        "description": "豁免范围计算准确性",
+        "pass_condition": "各类豁免的扩展范围计算正确",
+        "critical_tests": ["TC3", "TC4", "TC5"]
+      },
+      {
+        "name": "no_waiver_rejection",
+        "description": "无豁免时正确拒绝",
+        "pass_condition": "超出基础VLOS且无豁免时拒绝",
+        "critical": true,
+        "critical_tests": ["TC2"]
+      },
+      {
+        "name": "waiver_limit_enforcement",
+        "description": "豁免上限执行",
+        "pass_condition": "超出豁免范围时正确拒绝",
+        "critical": true,
+        "critical_tests": ["TC6"]
+      }
+    ],
+    "secondary_checks": [
+      {
+        "name": "waiver_type_differentiation",
+        "description": "不同豁免类型区分",
+        "pass_condition": "正确识别和应用不同类型的豁免"
+      },
+      {
+        "name": "rejection_reason_quality",
+        "description": "拒绝理由质量",
+        "pass_condition": "拒绝理由包含豁免信息和范围限制"
+      },
+      {
+        "name": "approval_reason_quality",
+        "description": "批准理由质量",
+        "pass_condition": "批准理由说明豁免类型和有效范围"
+      }
+    ]
+  },
+  "summary": {
+    "total_test_cases": 6,
+    "expected_approve": 4,
+    "expected_reject": 2,
+    "critical_test_cases": ["TC2", "TC3", "TC4", "TC5", "TC6"],
+    "pass_threshold": "6/6 (100%)",
+    "key_validation": "豁免机制实现正确性"
+  },
+  "notes": [
+    "本场景测试BVLOS豁免机制：基础VLOS 500m可通过豁免扩展",
+    "三种豁免类型：观察员(1100m)、技术手段(2000m)、特殊许可(5000m)",
+    "TC1-TC2为基准测试：基础VLOS内外的行为",
+    "TC3-TC5测试三种豁免类型的有效性",
+    "TC6测试豁免的范围上限（不能无限扩展）",
+    "豁免通过waivers_enabled字段指定",
+    "关键验证：TC2无豁免拒绝，TC3-TC5有豁免批准，TC6超出豁免拒绝"
+  ],
+  "waiver_logic_flow": {
+    "step1": "检查目标是否在基础VLOS内（<= 500m）",
+    "step2": "是 → 直接批准（无需豁免）",
+    "step3": "否 → 检查是否有启用的豁免",
+    "step4": "无豁免 → 拒绝（VLOS violation）",
+    "step5": "有豁免 → 根据豁免类型计算扩展范围",
+    "step6": "检查目标是否在扩展范围内",
+    "step7": "是 → 批准（waiver applied）",
+    "step8": "否 → 拒绝（exceeds waiver limit）"
+  },
+  "comparison_with_s013": {
+    "s013": {
+      "rule_type": "固定VLOS限制（500m）",
+      "no_waivers": true,
+      "test_cases": 5,
+      "focus": "基础VLOS距离检测"
+    },
+    "s014": {
+      "rule_type": "VLOS限制 + 豁免扩展",
+      "waiver_types": 3,
+      "test_cases": 6,
+      "focus": "豁免机制验证",
+      "complexity": "更高（条件性规则扩展）"
+    }
+  }
+}
+
