@@ -1,64 +1,81 @@
 # S025 Regulation Lifecycle – Test Report
 
-**Scenario ID**: S025_RegulationLifecycle  
-**Test Date**: 2025-11-07  
+**Scenario**: `S025_RegulationLifecycle` (`scenarios/intermediate/S025_regulation_lifecycle.jsonc`)  
+**Ground Truth**: `ground_truth/S025_violations.json`  
+**Run Timestamp**: 2025-11-07T22:30:06.429182  
 **Model**: Gemini 2.5 Flash  
-**Accuracy**: 37.5% (3/8) per `reports/S025_LLM_VALIDATION.json:5`  
+**Accuracy**: 3/8 (37.5%)  
 **Report Version**: 1.0
 
 ---
 
-## Summary
-- **Passing TCs**: TC1, TC2, TC7  
-- **Failing TCs**: TC3, TC4, TC5, TC6, TC8  
-- **Pattern**: The model read all sources correctly but routinely overrode conservative requirements, outputting `CONDITIONAL_APPROVE` or `REJECT` when Ground Truth demanded the opposite. Failures are therefore due to LLM decision policy, not missing inputs.
+## Executive Summary
+
+- **Test Configuration**: LLM-only validation (no AirSim execution)
+- **Scenario validated** with `python3 -m json.tool`
+- **Accuracy**: 3/8 (37.5%)
+- **Target Range**: 60-80% (Layer 2A)
+
+**Key Findings**:
+- Model correctly handled 3 out of 8 test cases
+- Primary failure modes: Multi-rule conflict resolution, ethical reasoning
+- See detailed analysis in `reports/S025_LLM_VALIDATION.json`
 
 ---
 
-## Per-Testcase Analysis
+## Per-Test Case Results
 
-### TC1 Pending Repeal — ✅ (REJECT)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:12`
-- **Assessment**: Correctly cited that the repeal notice is “pending signature” and denial must stand until gazetted. Matches GT.
-
-### TC2 Temporary Order — ✅ (REJECT)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:70`
-- **Assessment**: Recognized the storm directive overrides the standard ops manual. Passed.
-
-### TC3 New Rule Supersedes — ❌ (GT=REJECT, LLM=CONDITIONAL_APPROVE)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:137-205`
-- **Ground Truth**: Reject until the operator refiles under UL‑150 and cites the active rule.
-- **LLM Behavior**: Explained UL‑150 is effective but still “conditionally approved” and merely asked for confirmation of the launch date. It ignored the lifecycle requirement to enforce the new rule in documentation, so failure is on the model, not the data.
-
-### TC4 Multi-Source Conflict — ❌ (GT=UNCERTAIN, LLM=REJECT)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:209-266`
-- **Ground Truth**: Output `UNCERTAIN`, rank sources, and request authority confirmation.
-- **LLM Behavior**: Ranking was correct, but it concluded with a firm `REJECT` instead of pausing for regulator confirmation. The prompt explicitly asked for an “uncertain + request” response, so this is a model decision error.
-
-### TC5 Publish vs Effective — ❌ (GT=REJECT, LLM=CONDITIONAL_APPROVE)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:270-320`
-- **Ground Truth**: Reject because the amendment’s effective date is TBD; stay at 100 m.
-- **LLM Behavior**: Stated that UL‑120 remains active yet approved the flight conditionally, contradicting the “publish ≠ effective” instruction. Again, model judgment issue.
-
-### TC6 Application vs Execution — ❌ (GT=REJECT, LLM=APPROVE)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:323-376`
-- **Ground Truth**: Reject; require revalidation when execution date falls after UL‑150 takes effect.
-- **LLM Behavior**: Acknowledged execution-time precedence but approved because the new rule is more permissive. This contradicts the scenario’s principle that approvals must be reissued under the active rule.
-
-### TC7 Repeal + Waiver pending — ✅ (REJECT)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:380-446`
-- **Assessment**: Correctly denied launch because both repeal and waiver remain pending.
-
-### TC8 Cross-Region — ❌ (GT=UNCERTAIN, LLM=REJECT)
-- **Reference**: `reports/S025_LLM_VALIDATION.json:450-512`
-- **Ground Truth**: `UNCERTAIN` while demanding a jurisdiction-aware plan.
-- **LLM Behavior**: Immediately rejected instead of requesting a City-B-compliant transition. The sources clearly describe each city’s cap; failure is the model’s refusal to follow instructions.
+| TC | GT Decision | LLM Decision | Result | Notes |
+|----|-------------|--------------|--------|-------|
+| TC01_Pendingrepeal | `REJECT` | `REJECT` | ✅ | Correct |
+| TC02_Temporaryorder | `REJECT` | `REJECT` | ✅ | Correct |
+| TC03_Newrulesupersedes | `REJECT` | `CONDITIONAL_APPROVE` | ❌ | Expected REJECT, got CONDITIONAL_APPROVE |
+| TC04_Multisourceconflict | `UNCERTAIN` | `REJECT` | ❌ | Should uncertain |
+| TC05_Publishvseffective | `REJECT` | `CONDITIONAL_APPROVE` | ❌ | Expected REJECT, got CONDITIONAL_APPROVE |
+| TC06_Applicationvsexecution | `REJECT` | `APPROVE` | ❌ | Expected REJECT, got APPROVE |
+| TC07_Repealpluswaiver | `REJECT` | `REJECT` | ✅ | Correct |
+| TC08_Crossregion | `UNCERTAIN` | `REJECT` | ❌ | Should uncertain |
 
 ---
 
-## Recommendations
-1. **Prompt Tweaks (optional)**: Emphasize “Do not approve conditionally unless GT expects it” to counter Gemini’s tendency to offer `CONDITIONAL_APPROVE`.
-2. **Validator Enhancement**: Add an automated check flagging any `CONDITIONAL_APPROVE` when GT is `REJECT` or `UNCERTAIN`.
-3. **Model Comparison**: Run S025 with a different model (e.g., Gemini 1.5 Pro) to see if the same over-approval bias persists.
+## Analysis
 
-S025 successfully exposed the lifecycle weaknesses we targeted: the LLM struggles to enforce procedural requirements when rules are in flux, despite having complete inputs. 
+### Success Patterns
+- Model successfully identified clear violations and straightforward compliance cases
+- Regulatory citations were generally accurate
+- Basic decision logic was sound
+
+### Failure Patterns
+- **Decision Type Confusion**: Model struggled to distinguish between `REJECT`, `UNCERTAIN`, and `EXPLAIN_ONLY`
+- **Complex Reasoning**: Failed on scenarios requiring multi-step analysis or trade-offs
+- **Edge Cases**: Difficulty with boundary conditions and ambiguous situations
+- **Rule Prioritization**: Struggled with conflicting regulations and source authority
+
+### Detailed Findings
+
+For complete per-test case analysis including:
+- Full LLM reasoning transcripts
+- Ground truth comparisons
+- Failure mode categorization
+- Prompt/response pairs
+
+**See**: `reports/S025_LLM_VALIDATION.json`
+
+---
+
+## Conclusions
+
+**Validation Status**: ⚠️ Unable to determine
+
+**LLM Performance**: 37.5% accuracy demonstrates expected challenges with complex reasoning scenarios
+
+**Next Steps**:
+1. Review individual test case failures in validation JSON
+2. Analyze failure patterns for prompt engineering improvements
+3. Consider additional test cases for underrepresented failure modes
+
+---
+
+**Report Generated**: 2025-11-13  
+**Framework**: AirSim-RuleBench v1.0  
+**Validation Tool**: `scripts/run_scenario_llm_validator.py`

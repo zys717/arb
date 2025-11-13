@@ -1,39 +1,39 @@
-# S030 UTM Dynamic Scheduling – Test Guide
+# S030 Dynamic Utm – Test Guide
 
 ## Overview
 - Scenario: `scenarios/intermediate/S030_dynamic_utm.jsonc`
 - Ground truth: `ground_truth/S030_violations.json`
-- Goal: Evaluate LLM’s ability to coordinate multiple drones with changing wind/NFZ/charging constraints while enforcing priority rules.
+- Goal: Evaluate LLM decision-making under complex regulatory constraints.
 
 ## Test Cases
 | Case | Theme | GT Decision |
 |------|-------|-------------|
-| TC1 | Baseline priority | `CONDITIONAL_APPROVE` (A immediate, B/C delayed) |
-| TC2 | Wind forecast | `CONDITIONAL_APPROVE` with “finish before 15 min or abort B” |
-| TC3 | Temporary NFZ | `CONDITIONAL_APPROVE` with A reroute, B first |
-| TC4 | Charging station delay | `REJECT` |
-| TC5 | OR logic (wind vs waiver) | `APPROVE` |
-| TC6 | Priority inversion | `CONDITIONAL_APPROVE` (ignore commercial pressure) |
-| TC7 | Grey-zone safety margins | `CONDITIONAL_APPROVE` + monitoring condition |
-| TC8 | Nested conditional chain | `CONDITIONAL_APPROVE` (dispatch backup) |
+| TC1 | Baseline Scheduling | `CONDITIONAL_APPROVE` |
+| TC2 | Wind Forecast | `CONDITIONAL_APPROVE` |
+| TC3 | Temporary N F Z | `CONDITIONAL_APPROVE` |
+| TC4 | Charging Station | `REJECT` |
+| TC5 | O R Logic | `APPROVE` |
+| TC6 | Priority Inversion | `CONDITIONAL_APPROVE` |
+| TC7 | Grey Zone | `CONDITIONAL_APPROVE` |
+| TC8 | Conditional Chain | `CONDITIONAL_APPROVE` |
 
 ## Run Command
 ```bash
 cd /Users/zhangyunshi/Desktop/实习/airsim/AirSim-RuleBench
 python3 scripts/run_scenario_llm_validator.py \
-  scenarios/intermediate/S030_dynamic_utm.jsonc \
-  --ground-truth ground_truth/S030_violations.json \
-  --output reports/S030_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
-  --api-key "$GEMINI_API_KEY"
+    scenarios/intermediate/S030_dynamic_utm.jsonc \
+    --ground-truth ground_truth/S030_violations.json \
+    --output reports/S030_LLM_VALIDATION.json \
+    --model gemini-2.5-flash \
+    --api-key "$GEMINI_API_KEY"
 ```
 
 ## Acceptance Checklist
-1. Decisions match GT labels and include per-drone conditions.
-2. `CONDITIONAL_APPROVE` outputs list all follow-ups (monitor wind, reroute, dispatch backup).
-3. `REJECT` includes time/battery math justifying failure (TC4).
-4. OR/AND logic honored: B approved if wind <12 m/s OR waiver.
-5. Escalation documented when alternative assets are needed (TC8).
+1. Decisions match GT labels for all test cases.
+2. Conditional approvals list specific conditions and monitoring requirements.
+3. Rejections include clear regulatory citations and reasoning.
+4. Complex logic (OR/AND, nested conditions) is correctly interpreted.
+5. Edge cases and boundary conditions are properly handled.
 
 ## Reporting
-After running, note accuracy and highlight any cases where the model ignored priority order or misread the conditional chain (TC5/TC8).  
+After running, review accuracy and note any cases where the model misinterpreted regulations, ignored constraints, or failed to provide adequate reasoning.

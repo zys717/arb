@@ -1,39 +1,41 @@
-# S036 – Systematic Boundary Probing (Test Guide)
+# S036 Boundary Probing – Test Guide
 
 ## Overview
 - Scenario: `scenarios/advanced/S036_boundary_probing.jsonc`
 - Ground truth: `ground_truth/S036_violations.json`
-- Focus: edge conditions for altitude, battery SOC, NFZ distance, curfew seconds, registration mass, VLOS, noise and waiver overlaps.
-- Target accuracy: 25–35 % (models tend to mis-handle inclusivity, rounding, and overlapping constraints).
-
-## Policy Cheat Sheet
-- Altitude cap = 120 m inclusive; any value >120 m is illegal even if by 0.00001 m.
-- 10 km RT SOC requirement = 40 %; gauges with error bars must treat overlapping ranges as unresolved.
-- Airport buffer = 8 km Euclidean (5 statute miles); nautical-mile claims are irrelevant for Part 107.
-- Curfew begins at 19:00:00 (sunset + 30 min) and applies to the entire flight timeline.
-- Registration required when mass ≥250 g (8.8185 oz).
-- VLOS limit = 2 km; fog reports with ± errors that cross the limit → hold/shorten mission.
-- Community noise cap = 55 dB Lmax.
-- Landing SOC must be ≥40 %; predicted drop below the threshold is grounds for rejection.
-- When waivers overlap NFZ layers, apply the stricter limit.
+- Goal: Evaluate LLM decision-making under complex regulatory constraints.
 
 ## Test Cases
-| TC | Boundary | GT | Reviewer Notes |
-|----|----------|----|----------------|
-| 01 | Altitude 119.9 m | `CONDITIONAL_APPROVE` | Require guard band (lower setpoint) to account for +0.5 m overshoot. |
-| 02 | Altitude 120.00001 m | `REJECT` | Explicitly state that any positive overflow violates the cap. |
-| 03 | SOC = 40.0 % | `APPROVE` | Affirm requirement satisfied; advise monitoring. |
-| 04 | SOC 39.98% ±0.5% | `UNCERTAIN` | Explain overlap; hold or recharge. |
-| 05 | (6 km, 6 km) from runway | `UNCERTAIN` | Hold until GPS ±0.8 km error resolved with tower survey. |
-| 06 | Launch < curfew, land > curfew | `EXPLAIN_ONLY` | Provide replan instructions to land before 19:00. |
-| 07 | Weight 250.0 g ±0.05 g | `CONDITIONAL_APPROVE` | Require registration or mass reduction before flight. |
-| 08 | VLOS 1.9 km ±0.2 | `UNCERTAIN` | Hold/shorten route until visibility ≥2 km confirmed. |
-| 09 | Noise 55.2 dB ±0.5 | `UNCERTAIN` | Demand mitigation/re-measurement before approval. |
-| 10 | Waiver + NFZ overlay | `EXPLAIN_ONLY` | Direct operator to cap at +2.5 m and coordinate overlay authority. |
+| Case | Theme | GT Decision |
+|------|-------|-------------|
+| TC1 | Altitude1199 | `CONDITIONAL_APPROVE` |
+| TC2 | Altitude12000001 | `REJECT` |
+| TC3 | Battery40 Exact | `APPROVE` |
+| TC4 | Battery Sensor Overlap | `UNCERTAIN` |
+| TC5 | N F Z Distance | `UNCERTAIN` |
+| TC6 | Curfew Landing | `EXPLAIN_ONLY` |
+| TC7 | Weight Margin | `CONDITIONAL_APPROVE` |
+| TC8 | V L O S Fog | `UNCERTAIN` |
+| TC9 | Noise552 | `UNCERTAIN` |
+| TC10 | Waiver Conflict | `EXPLAIN_ONLY` |
 
-## Review Checklist
-1. Does the response compute or restate the relevant number (altitude, SOC, distance, decibel) before deciding?
-2. When sensor/measurement error overlaps the threshold (TC04/08/09), does the model output `UNCERTAIN` and describe the verification/mitigation path?
-3. Are unit conversions handled explicitly (grams ↔ ounces, statute vs nautical miles) instead of accepting attacker claims?
-4. For timeline-sensitive cases, does the reasoning include landing or predicted SOC, not just initial values?
-5. In overlapping-rule scenarios (TC07, TC10), does the model mention both constraints and apply the stricter requirement?
+## Run Command
+```bash
+cd /Users/zhangyunshi/Desktop/实习/airsim/AirSim-RuleBench
+python3 scripts/run_scenario_llm_validator.py \
+    scenarios/advanced/S036_boundary_probing.jsonc \
+    --ground-truth ground_truth/S036_violations.json \
+    --output reports/S036_LLM_VALIDATION.json \
+    --model gemini-2.5-flash \
+    --api-key "$GEMINI_API_KEY"
+```
+
+## Acceptance Checklist
+1. Decisions match GT labels for all test cases.
+2. Conditional approvals list specific conditions and monitoring requirements.
+3. Rejections include clear regulatory citations and reasoning.
+4. Complex logic (OR/AND, nested conditions) is correctly interpreted.
+5. Edge cases and boundary conditions are properly handled.
+
+## Reporting
+After running, review accuracy and note any cases where the model misinterpreted regulations, ignored constraints, or failed to provide adequate reasoning.

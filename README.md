@@ -14,6 +14,41 @@ A comprehensive benchmark for evaluating Large Language Models (LLMs) on UAV reg
 - Dual validation framework: Rule Engine + LLM Engine
 - Target accuracy gradient: Layer 1 (90-100%), Layer 2A (60-80%), Layer 2B (20-50%)
 
+## Language Note / 语言说明
+
+**AirSim-RuleBench is a bilingual benchmark** designed to reflect the real-world multilingual nature of international UAV regulations.
+
+### English-Chinese Structure
+
+- **Code & Documentation:** English (README, guides, scripts)
+- **Chinese Regulations:** Preserved in original Chinese for accuracy
+  - Example: `《无人驾驶航空器飞行管理暂行条例》第19条`
+  - These citations ensure legal precision and cultural context
+- **Test Descriptions:** Mixed English/Chinese
+  - Ground truth files contain bilingual test case descriptions
+  - Reflects real-world scenarios where operators must understand regulations in both languages
+
+### Why Bilingual?
+
+1. **Authenticity:** Chinese UAV regulations (《条例》, Part 107) are legally binding in their original language
+2. **Research Value:** Tests LLM's multilingual regulatory reasoning capabilities
+3. **Practical Relevance:** Real UAV operators in China work with bilingual documentation
+4. **Academic Contribution:** One of the first bilingual benchmarks for regulatory AI
+
+### File Language Distribution
+
+| Component            | Language         | Rationale                                       |
+| -------------------- | ---------------- | ----------------------------------------------- |
+| README & Docs        | English          | International accessibility                     |
+| Code & Scripts       | English          | Standard practice                               |
+| Ground Truth         | Mixed EN/CN      | Preserves regulatory accuracy                   |
+| Test Reports         | English          | Academic standard                               |
+| Regulation Citations | Original (CN/EN) | Legal precision (《条例》Art.19, 14 CFR §107.45) |
+
+**Note:** If you need fully English versions of test descriptions, automated translation scripts are available in `scripts/` (preserving regulation citations in original language).
+
+---
+
 ### Quick Start
 
 ```bash
@@ -41,106 +76,114 @@ AirSim-RuleBench/
 │   ├── basic/                   # Layer 1: Basic Rule Execution (S001-S020)
 │   ├── intermediate/            # Layer 2A: Complex Reasoning (S021-S030)
 │   └── advanced/                # Layer 2B: Stress Testing (S031-S040)
-├── ground_truth/                # Ground truth annotations (40 files)
-├── reports/                     # LLM validation reports (42 files)
+├── ground_truth/                # Ground truth annotations (40 files, bilingual)
+├── reports/                     # LLM validation reports (42 files, English)
 ├── scripts/                     # Validation and execution tools
 │   ├── run_scenario_llm_validator.py  # Main LLM validator
 │   └── llm_prompts/            # Modular prompt builders
-├── docs/                        # Documentation and test guides
+├── docs/                        # Documentation and test guides (English)
 ├── templates/                   # Reusable templates
 └── test_logs/                   # Execution logs
 ```
 
+**Language Distribution:** Documentation and code are in English. Ground truth files contain bilingual test descriptions with Chinese regulation citations preserved for accuracy (see [Language Note](#language-note--语言说明)).
 
 ## Three-Layer Architecture
 
 ### Layer 1: Basic Rule Execution (S001-S020)
+
 **Target Accuracy: 90-100%**
 
 Tests fundamental capabilities: geometric calculations, single-rule compliance, deterministic logic.
 
 #### Spatial Constraints (S001-S008)
-| Scenario | Rule | Status | Validation |
-|----------|------|--------|------------|
-| S001 | Geofence Basic | Completed | Available |
-| S002 | Multi-Geofence | Completed | Available |
-| S003 | Path Crossing | Completed | Available |
-| S004 | Airport Zones | Completed | Available |
-| S005 | Dynamic TFR | Completed | Available |
-| S006 | Altitude Limit (120m) | Completed | Available |
-| S007 | Zone Altitude Limits | Completed | Available |
-| S008 | Structure Waiver | Completed | Available |
+
+| Scenario | Rule                  | Status    | Validation |
+| -------- | --------------------- | --------- | ---------- |
+| S001     | Geofence Basic        | Completed | Available  |
+| S002     | Multi-Geofence        | Completed | Available  |
+| S003     | Path Crossing         | Completed | Available  |
+| S004     | Airport Zones         | Completed | Available  |
+| S005     | Dynamic TFR           | Completed | Available  |
+| S006     | Altitude Limit (120m) | Completed | Available  |
+| S007     | Zone Altitude Limits  | Completed | Available  |
+| S008     | Structure Waiver      | Completed | Available  |
 
 #### Motion & Time Parameters (S009-S012)
-| Scenario | Rule | Status | Validation |
-|----------|------|--------|------------|
-| S009 | Global Speed Limit (100 km/h) | Completed | Available |
-| S010 | Zone Speed Limits | Completed | Available |
-| S011 | Night Flight | Completed | Available |
-| S012 | Time Window Limits | Completed | Available |
+
+| Scenario | Rule                          | Status    | Validation |
+| -------- | ----------------------------- | --------- | ---------- |
+| S009     | Global Speed Limit (100 km/h) | Completed | Available  |
+| S010     | Zone Speed Limits             | Completed | Available  |
+| S011     | Night Flight                  | Completed | Available  |
+| S012     | Time Window Limits            | Completed | Available  |
 
 #### Line-of-Sight & Avoidance (S013-S016)
-| Scenario | Rule | Status | LLM Accuracy |
-|----------|------|--------|--------------|
-| S013 | VLOS Requirement | Completed | - |
-| S014 | BVLOS Waiver | Completed | - |
-| S015 | Dynamic NFZ Avoidance (Pre-flight) | Completed | 6/6 (100%) |
-| S016 | Realtime Obstacle Avoidance (In-flight) | Completed | 6/6 (100%) |
+
+| Scenario | Rule                                    | Status    | LLM Accuracy |
+| -------- | --------------------------------------- | --------- | ------------ |
+| S013     | VLOS Requirement                        | Completed | -            |
+| S014     | BVLOS Waiver                            | Completed | -            |
+| S015     | Dynamic NFZ Avoidance (Pre-flight)      | Completed | 6/6 (100%)   |
+| S016     | Realtime Obstacle Avoidance (In-flight) | Completed | 6/6 (100%)   |
 
 #### Payload & Approval (S017-S020)
-| Scenario | Rule | Status | LLM Accuracy |
-|----------|------|--------|--------------|
-| S017 | Payload and Drop Restrictions | Completed | 8/8 (100%) |
-| S018 | Multi-Drone Coordination | Completed | 8/8 (100%) |
-| S019 | Airspace Classification | Completed | 5/5 (100%) |
-| S020 | Approval Timeline | Completed | 4/4 (100%) |
+
+| Scenario | Rule                          | Status    | LLM Accuracy |
+| -------- | ----------------------------- | --------- | ------------ |
+| S017     | Payload and Drop Restrictions | Completed | 8/8 (100%)   |
+| S018     | Multi-Drone Coordination      | Completed | 8/8 (100%)   |
+| S019     | Airspace Classification       | Completed | 5/5 (100%)   |
+| S020     | Approval Timeline             | Completed | 4/4 (100%)   |
 
 **Layer 1 Summary:** 20 scenarios, 31/31 test cases passed with LLM validation (100% accuracy on S015-S020)
 
 ### Layer 2A: Complex Reasoning Challenges (S021-S030)
+
 **Target Accuracy: 60-80%**
 
 Tests multi-rule conflicts, dynamic updates, ethical dilemmas, and regulation lifecycle management.
 
-| Scenario | Focus | Status | Validation |
-|----------|-------|--------|------------|
-| S021 | Emergency Battery Dilemma | Completed | Available |
-| S022 | Rule Conflict Priority | Completed | Available |
-| S023 | Regulation Update | Completed | Available |
-| S024 | Conflicting Sources | Completed | Available |
-| S025 | Regulation Lifecycle | Completed | Available |
-| S026 | Ethical Trilemma | Completed | Available |
-| S027 | Business vs Safety | Completed | Available |
-| S028 | Dynamic Priority | Completed | Available |
-| S029 | Phased Conditional | Completed | Available |
-| S030 | Dynamic UTM | Completed | Available |
+| Scenario | Focus                     | Status    | Validation |
+| -------- | ------------------------- | --------- | ---------- |
+| S021     | Emergency Battery Dilemma | Completed | Available  |
+| S022     | Rule Conflict Priority    | Completed | Available  |
+| S023     | Regulation Update         | Completed | Available  |
+| S024     | Conflicting Sources       | Completed | Available  |
+| S025     | Regulation Lifecycle      | Completed | Available  |
+| S026     | Ethical Trilemma          | Completed | Available  |
+| S027     | Business vs Safety        | Completed | Available  |
+| S028     | Dynamic Priority          | Completed | Available  |
+| S029     | Phased Conditional        | Completed | Available  |
+| S030     | Dynamic UTM               | Completed | Available  |
 
 **Layer 2A Summary:** 10 scenarios testing rule interactions, source conflicts, and ethical reasoning
 
 ### Layer 2B: Stress Testing & Adversarial (S031-S040)
+
 **Target Accuracy: 20-50%**
 
 Tests pragmatic ambiguity, loophole exploitation, epistemic uncertainty, and adversarial manipulation.
 
-| Scenario | Focus | Status | Validation |
-|----------|-------|--------|------------|
-| S031 | Semantic & Ethical Dependency Cascade | Completed | Available |
-| S032 | Pragmatic Ambiguity | Completed | Available |
-| S033 | Dynamic Priority Cascade | Completed | Available |
-| S034 | Pragmatic Intent | Completed | Available |
-| S035 | Authority Manipulation | Completed | Available |
-| S036 | Boundary Probing | Completed | Available |
-| S037 | Implicit Priority | Completed | Available |
-| S038 | Causal Temporal Reasoning | Completed | Available |
-| S039 | Epistemic Conflict | Completed | Available |
-| S040 | Adversarial Loopholes | Completed | Available |
+| Scenario | Focus                                 | Status    | Validation |
+| -------- | ------------------------------------- | --------- | ---------- |
+| S031     | Semantic & Ethical Dependency Cascade | Completed | Available  |
+| S032     | Pragmatic Ambiguity                   | Completed | Available  |
+| S033     | Dynamic Priority Cascade              | Completed | Available  |
+| S034     | Pragmatic Intent                      | Completed | Available  |
+| S035     | Authority Manipulation                | Completed | Available  |
+| S036     | Boundary Probing                      | Completed | Available  |
+| S037     | Implicit Priority                     | Completed | Available  |
+| S038     | Causal Temporal Reasoning             | Completed | Available  |
+| S039     | Epistemic Conflict                    | Completed | Available  |
+| S040     | Adversarial Loopholes                 | Completed | Available  |
 
 **Layer 2B Summary:** 10 scenarios testing LLM robustness under ambiguous, adversarial, and edge-case conditions
-
 
 ## Key Features
 
 ### Dual Validation Framework
+
 - **Rule Engine:** Deterministic validation using geometric calculations and logical rules
 - **LLM Engine:** Heuristic validation using Gemini 2.5 Flash with structured prompts
 - **Comparative Analysis:** Identify decision discrepancies and failure modes
@@ -168,51 +211,55 @@ Based on 2024-2025 top-tier conference research (NeurIPS, ACL, EMNLP, ICLR):
 ## Documentation
 
 ### Core Documents
+
 - **Quick Start:** [docs/QUICKSTART.md](docs/QUICKSTART.md) - Get started in 5 minutes
 - **Architecture:** [AirSim_RuleBench_Three_Layer_Architecture.md](AirSim_RuleBench_Three_Layer_Architecture.md) - Detailed design document
 - **Workflow Guide:** [PROJECT_WORKFLOW_GUIDE.md](PROJECT_WORKFLOW_GUIDE.md) - Development process
 - **Regulations Reference:** [regulations_reference.md](regulations_reference.md) - Real-world UAV regulations
 
 ### Scenario Documentation
+
 Each scenario includes:
+
 - **JSONC Configuration:** Scene setup, rules, test cases
 - **Ground Truth JSON:** Expected decisions and reasoning
 - **README:** Scenario description and highlights
 - **Test Guide:** Evaluation criteria and usage (in `docs/`)
 
 Example: S001 Geofence Basic
+
 - Config: `scenarios/basic/S001_geofence_basic.jsonc`
 - Ground Truth: `ground_truth/S001_violations.json`
 - README: `scenarios/basic/S001_README.md`
 - Test Guide: `docs/S001_TEST_GUIDE.md`
 
-
 ## Tools & Scripts
 
 ### Main Validation Tools
 
-| Script | Function | Usage |
-|--------|----------|-------|
-| `run_scenario_llm_validator.py` | LLM compliance validation | Local |
-| `validate_scenario.py` | Scenario configuration validation | Local |
-| `detect_violations.py` | Trajectory violation detection | Local |
+| Script                            | Function                          | Usage |
+| --------------------------------- | --------------------------------- | ----- |
+| `run_scenario_llm_validator.py` | LLM compliance validation         | Local |
+| `validate_scenario.py`          | Scenario configuration validation | Local |
+| `detect_violations.py`          | Trajectory violation detection    | Local |
 
 ### Scenario Execution Scripts (Server)
 
-| Script | Applicable Scenarios | Purpose |
-|--------|---------------------|---------|
-| `run_scenario.py` | S001-S008 | Basic spatial constraints |
-| `run_scenario_motion.py` | S009-S012 | Motion parameters |
-| `run_scenario_vlos.py` | S013-S014 | Line-of-sight requirements |
-| `run_scenario_path.py` | S015-S016 | Dynamic avoidance |
-| `run_scenario_payload.py` | S017 | Payload restrictions |
-| `run_scenario_multi.py` | S018 | Multi-drone coordination |
-| `run_scenario_airspace.py` | S019 | Airspace classification |
-| `run_scenario_timeline.py` | S020 | Approval timelines |
+| Script                       | Applicable Scenarios | Purpose                    |
+| ---------------------------- | -------------------- | -------------------------- |
+| `run_scenario.py`          | S001-S008            | Basic spatial constraints  |
+| `run_scenario_motion.py`   | S009-S012            | Motion parameters          |
+| `run_scenario_vlos.py`     | S013-S014            | Line-of-sight requirements |
+| `run_scenario_path.py`     | S015-S016            | Dynamic avoidance          |
+| `run_scenario_payload.py`  | S017                 | Payload restrictions       |
+| `run_scenario_multi.py`    | S018                 | Multi-drone coordination   |
+| `run_scenario_airspace.py` | S019                 | Airspace classification    |
+| `run_scenario_timeline.py` | S020                 | Approval timelines         |
 
 ### LLM Prompt System
 
 Modular prompt builders in `scripts/llm_prompts/`:
+
 - **Specialized prompts** for each scenario type (NFZ, altitude, speed, payload, etc.)
 - **Consistent interface** across all builders
 - **Easy to extend** for new scenario types
@@ -281,6 +328,7 @@ See [templates/scenario_template.md](templates/scenario_template.md) for detaile
 **Last Updated:** 2025-11-12
 
 **Milestone Achievements:**
+
 - 40 complete scenarios across three layers
 - 42 LLM validation reports generated
 - Dual-engine validation framework established
@@ -288,11 +336,13 @@ See [templates/scenario_template.md](templates/scenario_template.md) for detaile
 - Comprehensive documentation
 
 **Layer Completion:**
+
 - Layer 1 (Basic): 20/20 scenarios (100%)
 - Layer 2A (Intermediate): 10/10 scenarios (100%)
 - Layer 2B (Advanced): 10/10 scenarios (100%)
 
 **Validation Coverage:**
+
 - Scenarios with LLM validation: 42/40 (includes multi-model runs)
 - Layer 1 validated test cases: 31/31 (100% accuracy)
 - Full benchmark validation: In progress
@@ -326,14 +376,13 @@ If you use AirSim-RuleBench in your research, please cite:
 ## Contact & Contributions
 
 - **Maintainer:** Zhang Yunshi
-- **Contributors:** See [CONTRIBUTORS.md](CONTRIBUTORS.md)
 - **Issues:** Report bugs and request features via GitHub Issues
 - **Pull Requests:** Contributions welcome! See development guidelines above
 
 ---
 
-**Version:** 4.0  
-**Status:** Active Development  
-**Scenarios:** 40 (Complete)  
-**Validations:** 42 Reports  
+**Version:** 4.0
+**Status:** Active Development
+**Scenarios:** 40 (Complete)
+**Validations:** 42 Reports
 **Documentation:** Comprehensive
