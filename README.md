@@ -9,7 +9,7 @@ A comprehensive benchmark for evaluating Large Language Models (LLMs) on UAV reg
 ### Key Achievements
 
 - 40 complete scenarios with ground truth annotations
-- 42 LLM validation reports (Gemini 2.5 Flash)
+- 40 LLM validation reports (Gemini 2.5 Flash)
 - Three-layer architecture: Basic (S001-S020), Intermediate (S021-S030), Advanced (S031-S040)
 - Dual validation framework: Rule Engine + LLM Engine
 - Target accuracy gradient: Layer 1 (90-100%), Layer 2A (60-80%), Layer 2B (20-50%)
@@ -37,12 +37,12 @@ A comprehensive benchmark for evaluating Large Language Models (LLMs) on UAV reg
 
 ### File Language Distribution
 
-| Component            | Language         | Rationale                                       |
-| -------------------- | ---------------- | ----------------------------------------------- |
-| README & Docs        | English          | International accessibility                     |
-| Code & Scripts       | English          | Standard practice                               |
-| Ground Truth         | Mixed EN/CN      | Preserves regulatory accuracy                   |
-| Test Reports         | English          | Academic standard                               |
+| Component            | Language         | Rationale                                         |
+| -------------------- | ---------------- | ------------------------------------------------- |
+| README & Docs        | English          | International accessibility                       |
+| Code & Scripts       | English          | Standard practice                                 |
+| Ground Truth         | Mixed EN/CN      | Preserves regulatory accuracy                     |
+| Test Reports         | English          | Academic standard                                 |
 | Regulation Citations | Original (CN/EN) | Legal precision (《条例》Art.19, 14 CFR §107.45) |
 
 **Note:** If you need fully English versions of test descriptions, automated translation scripts are available in `scripts/` (preserving regulation citations in original language).
@@ -55,12 +55,14 @@ A comprehensive benchmark for evaluating Large Language Models (LLMs) on UAV reg
 # Validate scenario configuration
 python scripts/validate_scenario.py scenarios/basic/S001_geofence_basic.jsonc
 
-# Run LLM validation
+# Run LLM validation (requires API key)
+export GEMINI_API_KEY="your-api-key-here"
 python scripts/run_scenario_llm_validator.py \
   scenarios/basic/S001_geofence_basic.jsonc \
   --ground-truth ground_truth/S001_violations.json \
   --output reports/S001_LLM_VALIDATION.json \
-  --model gemini-2.5-flash
+  --model gemini-2.5-flash \
+  --api-key "$GEMINI_API_KEY"
 
 # Detect violations from trajectory
 python scripts/detect_violations.py test_logs/trajectory.json -g ground_truth/S001_violations.json
@@ -77,7 +79,7 @@ AirSim-RuleBench/
 │   ├── intermediate/            # Layer 2A: Complex Reasoning (S021-S030)
 │   └── advanced/                # Layer 2B: Stress Testing (S031-S040)
 ├── ground_truth/                # Ground truth annotations (40 files, bilingual)
-├── reports/                     # LLM validation reports (42 files, English)
+├── reports/                     # LLM validation reports (40 files, English)
 ├── scripts/                     # Validation and execution tools
 │   ├── run_scenario_llm_validator.py  # Main LLM validator
 │   └── llm_prompts/            # Modular prompt builders
@@ -122,8 +124,8 @@ Tests fundamental capabilities: geometric calculations, single-rule compliance, 
 
 | Scenario | Rule                                    | Status    | LLM Accuracy |
 | -------- | --------------------------------------- | --------- | ------------ |
-| S013     | VLOS Requirement                        | Completed | -            |
-| S014     | BVLOS Waiver                            | Completed | -            |
+| S013     | VLOS Requirement                        | Completed | 5/5 (100%)   |
+| S014     | BVLOS Waiver                            | Completed | 6/6 (100%)   |
 | S015     | Dynamic NFZ Avoidance (Pre-flight)      | Completed | 6/6 (100%)   |
 | S016     | Realtime Obstacle Avoidance (In-flight) | Completed | 6/6 (100%)   |
 
@@ -136,7 +138,7 @@ Tests fundamental capabilities: geometric calculations, single-rule compliance, 
 | S019     | Airspace Classification       | Completed | 5/5 (100%)   |
 | S020     | Approval Timeline             | Completed | 4/4 (100%)   |
 
-**Layer 1 Summary:** 20 scenarios, 31/31 test cases passed with LLM validation (100% accuracy on S015-S020)
+**Layer 1 Summary:** 20 scenarios, 63/63 test cases passed with LLM validation (100% accuracy on S013-S020)
 
 ### Layer 2A: Complex Reasoning Challenges (S021-S030)
 
@@ -286,10 +288,13 @@ cp templates/ground_truth_template.json ground_truth/S0XX_violations.json
 python scripts/validate_scenario.py scenarios/basic/S0XX.jsonc
 
 # 5. Run LLM validation
+export GEMINI_API_KEY="your-api-key-here"
 python scripts/run_scenario_llm_validator.py \
   scenarios/basic/S0XX.jsonc \
   --ground-truth ground_truth/S0XX_violations.json \
-  --output reports/S0XX_LLM_VALIDATION.json
+  --output reports/S0XX_LLM_VALIDATION.json \
+  --model gemini-2.5-flash \
+  --api-key "$GEMINI_API_KEY"
 ```
 
 ### Development Guidelines
@@ -321,68 +326,4 @@ See [templates/scenario_template.md](templates/scenario_template.md) for detaile
 - **Source Citation:** Proper reference to regulations
 - **Failure Mode Classification:** Error type taxonomy
 
-## Project Status
-
-### Current Version: 4.0
-
-**Last Updated:** 2025-11-12
-
-**Milestone Achievements:**
-
-- 40 complete scenarios across three layers
-- 42 LLM validation reports generated
-- Dual-engine validation framework established
-- Modular prompt system implemented
-- Comprehensive documentation
-
-**Layer Completion:**
-
-- Layer 1 (Basic): 20/20 scenarios (100%)
-- Layer 2A (Intermediate): 10/10 scenarios (100%)
-- Layer 2B (Advanced): 10/10 scenarios (100%)
-
-**Validation Coverage:**
-
-- Scenarios with LLM validation: 42/40 (includes multi-model runs)
-- Layer 1 validated test cases: 31/31 (100% accuracy)
-- Full benchmark validation: In progress
-
-### Next Steps
-
-1. Complete systematic evaluation across all 40 scenarios
-2. Multi-model comparison (GPT-4, Claude, etc.)
-3. Failure mode statistical analysis
-4. Prompt optimization experiments
-5. Publication preparation
-
-## Citation
-
-If you use AirSim-RuleBench in your research, please cite:
-
-```bibtex
-@misc{airsim-rulebench-2025,
-  title={AirSim-RuleBench: A Three-Layer Benchmark for Evaluating LLMs on UAV Regulatory Compliance},
-  author={Zhang, Yunshi and Contributors},
-  year={2025},
-  howpublished={\url{https://github.com/yourusername/AirSim-RuleBench}},
-  note={Version 4.0}
-}
-```
-
-## License
-
-[Specify license here]
-
-## Contact & Contributions
-
-- **Maintainer:** Zhang Yunshi
-- **Issues:** Report bugs and request features via GitHub Issues
-- **Pull Requests:** Contributions welcome! See development guidelines above
-
----
-
-**Version:** 4.0
-**Status:** Active Development
-**Scenarios:** 40 (Complete)
-**Validations:** 42 Reports
-**Documentation:** Comprehensive
+**Last Updated:** 2025-11-13
