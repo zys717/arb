@@ -1,5 +1,5 @@
 """
-Prompt builder for S050 – Capital Allocation (fleet vs infrastructure vs mixed plan).
+Prompt builder for S049 – Capital Allocation (fleet vs infrastructure vs mixed plan).
 Forces the LLM to weigh discounted cash flow metrics, governance policy hooks,
 and documentation status before issuing a decision.
 """
@@ -41,7 +41,7 @@ def build_capital_allocation_prompt(start, end, test_case_description: str,
     lines: List[str] = [
         "# Capital Allocation Review Packet",
         "",
-        f"Scenario: {scenario_config.get('scenario_id', 'S050_CapitalAllocation')}",
+        f"Scenario: {scenario_config.get('scenario_id', 'S049_CapitalAllocation')}",
         f"Test Case: {tc_id}",
         f"Title: {raw_case.get('title', test_case_description)}",
         "",

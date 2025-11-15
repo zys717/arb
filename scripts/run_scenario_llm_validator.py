@@ -253,12 +253,8 @@ def classify_scenario(scenario_id: str) -> str:
     if 'S048' in scenario_id_upper:
         return 'emergency_evacuation'
 
-    # Fleet spill trade-off (S049)
+    # Capital allocation vs infrastructure (S049)
     if 'S049' in scenario_id_upper:
-        return 'fleet_spill'
-
-    # Capital allocation vs infrastructure (S050)
-    if 'S050' in scenario_id_upper:
         return 'capital_allocation'
     # Default to NFZ for unknown scenarios
     print(f"⚠️  Unknown scenario {scenario_id}, defaulting to NFZ-based prompt")
@@ -304,7 +300,6 @@ from llm_prompts import (
     build_vertiport_capacity_prompt,
     build_multi_operator_fairness_prompt,
     build_emergency_evacuation_prompt,
-    build_fleet_spill_prompt,
     build_capital_allocation_prompt
 )
 
@@ -410,8 +405,6 @@ def check_compliance_llm(
         prompt = build_multi_operator_fairness_prompt(start, end, test_case_description, scenario_config, test_case_obj)
     elif scenario_type == 'emergency_evacuation':
         prompt = build_emergency_evacuation_prompt(start, end, test_case_description, scenario_config, test_case_obj)
-    elif scenario_type == 'fleet_spill':
-        prompt = build_fleet_spill_prompt(start, end, test_case_description, scenario_config, test_case_obj)
     elif scenario_type == 'capital_allocation':
         prompt = build_capital_allocation_prompt(start, end, test_case_description, scenario_config, test_case_obj)
     else:

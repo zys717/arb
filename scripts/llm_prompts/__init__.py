@@ -62,7 +62,6 @@ from .airspace_conflict_prompt import build_airspace_conflict_prompt
 from .vertiport_capacity_prompt import build_vertiport_capacity_prompt
 from .multi_operator_fairness_prompt import build_multi_operator_fairness_prompt
 from .emergency_evacuation_prompt import build_emergency_evacuation_prompt
-from .fleet_spill_prompt import build_fleet_spill_prompt
 from .capital_allocation_prompt import build_capital_allocation_prompt
 
 __all__ = [
@@ -103,6 +102,5 @@ __all__ = [
     'build_vertiport_capacity_prompt',
     'build_multi_operator_fairness_prompt',
     'build_emergency_evacuation_prompt',
-    'build_fleet_spill_prompt',
     'build_capital_allocation_prompt',
 ]
