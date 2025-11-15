@@ -4,13 +4,13 @@ A comprehensive benchmark for evaluating Large Language Models (LLMs) on UAV reg
 
 ## Overview
 
-**AirSim-RuleBench** is a four-layer progressive benchmark designed to systematically assess LLM capabilities in understanding and enforcing aviation regulations, as well as making operational decisions under uncertainty. The benchmark contains 50 scenarios spanning from basic rule execution to complex semantic reasoning, adversarial stress tests, and real-world operational planning.
+**AirSim-RuleBench** is a four-layer progressive benchmark designed to systematically assess LLM capabilities in understanding and enforcing aviation regulations, as well as making operational decisions under uncertainty. The benchmark contains 49 scenarios spanning from basic rule execution to complex semantic reasoning, adversarial stress tests, and real-world operational planning.
 
 ### Key Achievements
 
-- 50 complete scenarios with ground truth annotations
-- 50 LLM validation reports (Gemini 2.5 Flash)
-- Four-layer architecture: Basic (S001-S020), Intermediate (S021-S030), Advanced (S031-S040), Operational (S041-S050)
+- 49 complete scenarios with ground truth annotations
+- 49 LLM validation reports (Gemini 2.5 Flash)
+- Four-layer architecture: Basic (S001-S020), Intermediate (S021-S030), Advanced (S031-S040), Operational (S041-S049)
 - Dual validation framework: Rule Engine + LLM Engine
 - Target accuracy gradient: Layer 1 (90-100%), Layer 2A (60-80%), Layer 2B (20-50%), Layer 3 (40-75%)
 
@@ -74,13 +74,13 @@ See complete guide in [`docs/QUICKSTART.md`](docs/QUICKSTART.md)
 
 ```
 AirSim-RuleBench/
-├── scenarios/                    # Test scenarios (50 total)
+├── scenarios/                    # Test scenarios (49 total)
 │   ├── basic/                   # Layer 1: Basic Rule Execution (S001-S020)
 │   ├── intermediate/            # Layer 2A: Complex Reasoning (S021-S030)
 │   ├── advanced/                # Layer 2B: Stress Testing (S031-S040)
-│   └── operational/             # Layer 3: Operational Planning (S041-S050)
-├── ground_truth/                # Ground truth annotations (50 files, bilingual)
-├── reports/                     # LLM validation reports (50 files, English)
+│   └── operational/             # Layer 3: Operational Planning (S041-S049)
+├── ground_truth/                # Ground truth annotations (49 files, bilingual)
+├── reports/                     # LLM validation reports (49 files, English)
 ├── scripts/                     # Validation and execution tools
 │   ├── run_scenario_llm_validator.py  # Main LLM validator
 │   └── llm_prompts/            # Modular prompt builders
@@ -183,7 +183,7 @@ Tests pragmatic ambiguity, loophole exploitation, epistemic uncertainty, and adv
 
 **Layer 2B Summary:** 10 scenarios testing LLM robustness under ambiguous, adversarial, and edge-case conditions
 
-### Layer 3: Operational Planning & Resource Allocation (S041-S050)
+### Layer 3: Operational Planning & Resource Allocation (S041-S049)
 
 **Target Accuracy: 40-75%**
 
@@ -199,10 +199,9 @@ Tests real-world operational decision-making: fleet sizing, resource allocation,
 | S046     | Vertiport Capacity Management          | Completed | 5/8 (62.5%)  |
 | S047     | Multi-Operator Fairness & Governance   | Completed | 5/8 (62.5%)  |
 | S048     | Emergency Evacuation & Re-Planning     | Completed | 4/10 (40%)   |
-| S049     | Fleet Spill vs Capacity Trade-off      | Completed | 4/8 (50%)    |
-| S050     | Capital Allocation: Fleet vs Infrastructure | Completed | 4/10 (40%)   |
+| S049     | Capital Allocation: Fleet vs Infrastructure | Completed | 4/10 (40%)   |
 
-**Layer 3 Summary:** 10 scenarios testing operational planning, resource optimization, and multi-constraint decision-making in realistic UAM deployment contexts
+**Layer 3 Summary:** 9 scenarios testing operational planning, resource optimization, and multi-constraint decision-making in realistic UAM deployment contexts
 
 ## Key Features
 

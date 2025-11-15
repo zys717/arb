@@ -1,31 +1,34 @@
-# S049 – Fleet Spill vs Capacity Trade-off (Test Guide)
+# S049 Test Guide – Capital Allocation: Fleet vs Infrastructure
 
-Scenario: `scenarios/operational/S049_fleet_spill_tradeoff.jsonc`  
-Ground truth: `ground_truth/S049_violations.json`
+Use this guide when reviewing Gemini outputs for S049. The goal is to ensure the model cites the correct financial levers **without** being spoon-fed the decision.
 
-Goal: evaluate whether the LLM can select or reject fleet-sizing plans based on spill %, CVaR, fairness, and governance (rebates, incentives, surge justification).
+## Scenario Summary
+- **Budget:** $1M, mutually exclusive unless a test case explicitly authorizes staging.
+- **Options:**  
+  - **Option A – Fleet expansion:** faster revenue start, subject to delivery delay risk.  
+  - **Option B – Vertiport build:** higher NPV at 8 %, but 18‑month construction lag and reliance on permits/grants.  
+  - **Option C – Mixed plan:** moderate metrics; some cases stage spending across years.
+- **Policy hooks:** payback ≤4 yr, IRR ≥10 %, bridge plan for >12 month revenue gaps, realistic discount rates (≥10 % unless documented).
+- **Stakeholder pulls:** Ops prioritizes corridor access, Finance enforces hurdle discipline, Regulators require documentation (tail risk, permits, grants).
 
-## Checklist
-- Cite spill rate, spill CVaR (95%), utilization, idle %, and fairness Gini before making a decision.
-- Enforce policy limits: spill ≤5 %, CVaR ≤12, fairness gini ≤0.35 unless mitigations already executed.
-- Mention documentation requirements (incentive funding, rebate confirmation, SLA notices, surge justification).
-- When Monte Carlo benchmarks suggest uncertainty (TC08), admit `UNCERTAIN` unless the FairUAM supplement is filed.
+## Review Checklist
+1. **Financial accuracy** – model should reference the case-specific discount rate, payback, IRR, PI, or NPV values that drive the decision.
+2. **Governance discipline** – highlight whether mitigations (bridge leases, corridor letters, grant signatures) exist; conditional approvals must state the mitigation.
+3. **Risk disclosure** – Monte Carlo tails, funding probability, or documentation gaps must push the model to `UNCERTAIN/EXPLAIN_ONLY` rather than rubber-stamping.
+4. **JSON contract** – `decision`, ≤6 `reasoning_steps`, `tradeoffs`, `actions`, `violated_policies`.
 
-## Test Cases
-| TC | Focus | Key cues | GT | Notes |
-|----|-------|----------|----|-------|
-| 01 | Zero-spill reference | 14 hulls, spill 0%, financing pending | `UNCERTAIN` | Wait for board/regulator approval. |
-| 02 | 12-ship balanced | Spill 1.8%, incentives unfunded | `UNCERTAIN` | Await confirmation that funding is approved. |
-| 03 | Aggressive cost cut | Spill 11%, CVaR 24, gini 0.41 | `REJECT` | Violates spill + fairness. |
-| 04 | Directional imbalance | gini 0.37, CBD rebate proposed | `CONDITIONAL_APPROVE` | Approve only if rebate program is documented. |
-| 05 | Charging slowdown | Queue 9.5 min, SLA <4 min and no notice | `REJECT` | Deny until SLA comms sent. |
-| 06 | Surge idle cost | Idle 26% → $2.05 trip cost, justification pending | `UNCERTAIN` | Await audited surge evidence. |
-| 07 | CVaR stress fail | CVaR 15.8, no wet lease | `REJECT` | Tail risk outside tolerance. |
-| 08 | Robustness gap | Spill 7%, gap 9.5% vs benchmark | `UNCERTAIN` | Await FairUAM supplement before deciding. |
+## Per-Test-Case Expectations
+| TC | Key cues reviewer must mention | Decision rationale |
+|----|--------------------------------|--------------------|
+| **TC01** | 18‑month lag, zero Year‑1 cash flow, bridge/interim plan missing | Conditional approval only if mitigation is documented. |
+| **TC02** | Forced 12 % discount, IRR hurdle enforcement, Option A only candidate clearing metrics | Reject Option B endorsement. |
+| **TC03** | IRR vs NPV ranking mismatch, covenant optics, need for trade-off appendix | Advisory (`EXPLAIN_ONLY`) requesting the memo. |
+| **TC04** | 6‑month delivery slip, IRR <10 %, payback >4 yrs, no mitigation | Reject. |
+| **TC05** | Monte Carlo tails <17 % growth go negative, missing tail disclosure | `UNCERTAIN` until probability detail provided. |
+| **TC06** | Strategic corridor value hinges on signed permit letter + funding buffer | Conditional approval contingent on documentation. |
+| **TC07** | Staged 60/40 draw locks financing, improves NPV by ~60 k, PI 1.42 | Approve. |
+| **TC08** | 6 % discount breaks WACC policy, no risk memo | Reject assumption. |
+| **TC09** | 25 % CAPEX grant unsigned, only 55 % probability, no fallback funding | `UNCERTAIN` until funds executable. |
+| **TC10** | $700 k/$300 k split lacks consolidated economics, missing utilization math | `EXPLAIN_ONLY` demanding a coherent strategy. |
 
-## Output Requirements
-1. Decision ∈ {APPROVE, CONDITIONAL_APPROVE, REJECT, UNCERTAIN}.
-2. Provide ≤6 reasoning steps referencing metrics, fairness, and mitigation/governance status.
-3. `violated_policies` should include `spill_rate`, `cvar`, `fairness`, or `documentation_pending`.
-4. `CONDITIONAL_APPROVE` must specify the required mitigation (funded incentives, rebate proof, SLA notice, surge justification).
-5. Valid JSON only; no markdown or trailing commas.
+Use the table to check whether Gemini’s reasoning quotes the distinctive cue(s) for each case. Flag any answer that merely repeats numbers without acknowledging the gating documentation or policy trigger.

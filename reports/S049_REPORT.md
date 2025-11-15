@@ -1,13 +1,13 @@
-# S049 – Fleet Spill vs Capacity Trade-off (Operational Layer Report)
+# S049 – Capital Allocation: Fleet vs Infrastructure (Operational Layer Report)
 
-**Scenario**: `scenarios/operational/S049_fleet_spill_tradeoff.jsonc`  
+**Scenario**: `scenarios/operational/S049_capital_allocation.jsonc`  
 **Ground Truth**: `ground_truth/S049_violations.json`  
-**Run Timestamp**: 2025‑11‑15T13:10:25 (`reports/S049_LLM_VALIDATION.json:1-10`)  
+**Run Timestamp**: 2025‑11‑15T13:43:11 (`reports/S049_LLM_VALIDATION.json:1-9`)  
 **Model**: Gemini 2.5 Flash  
-**Accuracy**: 4/8 (50 %)  
+**Accuracy**: 4/10 (40 %)  
 **Report Version**: 1.0
 
-Fleet-sizing data (spill %, CVaR, utilization, fairness, documentation status) were parsed correctly. The failures reflect Gemini’s difficulty with “pending approval” cases (TC01, TC02, TC08) and SLA/fairness enforcement (TC05).
+Prompt routing, scenario metadata, and ground-truth keywords all aligned: the validator ingested the `capital_allocation` prompt builder and Gemini returned well-formed JSON for every case, so the four passes and six misses reflect the model’s reasoning rather than tooling gaps.
 
 ---
 
@@ -15,49 +15,54 @@ Fleet-sizing data (spill %, CVaR, utilization, fairness, documentation status) w
 
 | TC | Theme | GT | LLM | Result |
 |----|-------|----|-----|--------|
-| TC01 | Zero-spill reference | `UNCERTAIN` | `CONDITIONAL_APPROVE` | ❌ |
-| TC02 | 12-aircraft balanced plan | `UNCERTAIN` | `CONDITIONAL_APPROVE` | ❌ |
-| TC03 | 10-aircraft overload | `REJECT` | `REJECT` | ✅ |
-| TC04 | Directional imbalance | `CONDITIONAL_APPROVE` | `CONDITIONAL_APPROVE` | ✅ |
-| TC05 | Slow charging queue | `REJECT` | `CONDITIONAL_APPROVE` | ❌ |
-| TC06 | Surge scenario | `UNCERTAIN` | `UNCERTAIN` | ✅ |
-| TC07 | CVaR stress failure | `REJECT` | `REJECT` | ✅ |
-| TC08 | Robustness gap | `UNCERTAIN` | `REJECT` | ❌ |
+| TC01 | Baseline NPV @8% with 18‑month revenue gap (`scenarios/operational/S049_capital_allocation.jsonc:62-85`) | `CONDITIONAL_APPROVE` | `CONDITIONAL_APPROVE` | ✅ |
+| TC02 | Forced 12 % discount vs sponsor’s 8 % deck (`…:88-105`) | `REJECT` | `APPROVE` | ❌ |
+| TC03 | IRR vs NPV ranking mismatch, ask for appendix (`…:109-120`) | `EXPLAIN_ONLY` | `CONDITIONAL_APPROVE` | ❌ |
+| TC04 | Option‑A delivery delay pushes IRR/payback beyond limits (`…:130-146`) | `REJECT` | `CONDITIONAL_APPROVE` | ❌ |
+| TC05 | Monte Carlo demand tails <17 % go negative (`…:149-165`) | `UNCERTAIN` | `APPROVE` | ❌ |
+| TC06 | Strategic vertiport permits contingent on corridor letter (`…:167-183`) | `CONDITIONAL_APPROVE` | `CONDITIONAL_APPROVE` | ✅ |
+| TC07 | 60/40 staged CAPEX improves PI to 1.42 (`…:185-203`) | `APPROVE` | `APPROVE` | ✅ |
+| TC08 | Sponsor uses 6 % discount without WACC justification (`…:205-222`) | `REJECT` | `REJECT` | ✅ |
+| TC09 | Option‑B relies on unsigned 25 % state grant (`…:223-240`) | `UNCERTAIN` | `CONDITIONAL_APPROVE` | ❌ |
+| TC10 | Split $700k/$300k plan lacks consolidated economics (`…:242-259`) | `EXPLAIN_ONLY` | `CONDITIONAL_APPROVE` | ❌ |
 
 ---
 
 ## Detailed Findings
 
-### ❌ TC01 – Zero-Spill Baseline (`reports/S049_LLM_VALIDATION.json:12-49`)
-Plan hits every quantitative target, but the 14th hull’s financing is paused until the board/regulator vote next week. GT is `UNCERTAIN` because availability is unknown. Gemini simply conditionally approved, ignoring the explicit statement that the critical aircraft may not exist.
+### TC01 – Baseline NPV With Empty Year 1 (`scenarios/operational/S049_capital_allocation.jsonc:62-85`, `reports/S049_LLM_VALIDATION.json:12-41`)
+Success. Gemini latched onto the 18‑month construction lag, cited the missing bridge lease plan, and held Option B at `CONDITIONAL_APPROVE` until Finance/Legal sign off. This matches the GT requirement to mention the zero Year‑1 inflow before approving.
 
-### ❌ TC02 – 12-Aircraft with Unfunded Incentives (`…:50-88`)
-Spill (1.8 %) and CVaR (6.1) meet policy, but only if the demand-shaping incentives remain funded. The CFO hasn’t approved the program beyond the pilot period, so GT equals `UNCERTAIN`. Gemini again conditionally approved and “just asked” for funding proof, rather than acknowledging the open risk.
+### TC02 – 12 % Discount Sensitivity (`…:88-105`, `reports/S049_LLM_VALIDATION.json:44-73`)
+Failure. Even after reiterating the Treasury memo, the model still issued `APPROVE`, effectively endorsing Option A outright. GT expects a rejection of the sponsor’s Option B memo because it refused to restate valuations at 12 %; Gemini ignored that instruction and treated “pick the best” as approval rather than returning a compliance rejection.
 
-### TC03 – 10-Aircraft Overload (`…:89-118`)
-Spill 11 %, CVaR 24.3, and fairness gini 0.41 all violate policy; the model rejected accordingly.
+### TC03 – IRR vs NPV Ranking Conflict (`…:109-120`, `reports/S049_LLM_VALIDATION.json:74-103`)
+Failure. The scenario asks for an advisory response demanding a trade‑off appendix. Instead, Gemini conditionally approved Option B, collapsing the “explain-only” task into yet another approval and demonstrating that it still conflates strategic justification with a procurement decision.
 
-### TC04 – Directional Imbalance (`…:119-148`)
-Fairness breaches require a CBD rebate plan. Gemini returned the correct conditional approval contingent on rebate documentation.
+### TC04 – Delivery Delay Risk (`…:130-146`, `reports/S049_LLM_VALIDATION.json:104-136`)
+Failure. Option A’s 6‑month slip pushes payback to 4.6 years and IRR near the hurdle, so GT says reject until mitigation exists. Gemini correctly spotted the policy violation but still issued `CONDITIONAL_APPROVE`, contradicting the hard rule “payback >4 years requires documented mitigation before approval.”
 
-### ❌ TC05 – Slow Charging SLA Breach (`…:149-188`)
-Spill/CVaR meet targets, but evening queues reach 9.5 min (SLA <4 min) and no notifications/compensation have been sent. Regulators treat this as a violation (GT=`REJECT`). Gemini still conditionally approved, overlooking the explicit SLA failure and absence of mitigation.
+### TC05 – Monte Carlo Demand Tails (`…:149-165`, `reports/S049_LLM_VALIDATION.json:137-171`)
+Failure. Despite reciting the missing tail disclosure and draft VAR worksheet, the model approved Option A rather than stopping at `UNCERTAIN`. The intent was to force an “I can’t endorse anything until the analyst delivers tail probabilities,” but Gemini skipped that guardrail after expounding on the risk.
 
-### TC06 – Surge Scenario (`…:189-226`)
-Idle 26 % pushes cost to $2.05; regulators await audited demand data. Gemini correctly returned `UNCERTAIN`.
+### TC06 – Strategic Value / Corridor Letter (`…:167-183`, `reports/S049_LLM_VALIDATION.json:172-205`)
+Success. Gemini honored the conditional nature of Option B, insisting on the regulator-signed corridor letter plus mitigation plan before release. This shows the prompt now enforces “document the waiver” behavior when provided explicit hooks.
 
-### TC07 – CVaR Stress Failure (`…:227-256`)
-CVaR 15.8 > 12 and no wet lease contract exists; plan rejected as expected.
+### TC07 – Staged CAPEX (`…:185-203`, `reports/S049_LLM_VALIDATION.json:206-234`)
+Success. The model highlighted the 60/40 draw, PI 1.42, and confirmed credit-committee letter, then approved outright. This matches GT and demonstrates that solid documentation leads to clean approvals.
 
-### ❌ TC08 – Robustness Gap (`…:257-290`)
-11-aircraft plan exceeds spill tolerance unless a FairUAM supplement is filed. The supplement is still pending, so GT=`UNCERTAIN`. Gemini rejected outright, ignoring the explicit “await supplement” cue.
+### TC08 – Unrealistic 6 % Discount (`…:205-222`, `reports/S049_LLM_VALIDATION.json:235-272`)
+Success. Gemini fully rejected the analysis, citing the “discount below WACC is invalid” rule and even referencing prior regulatory fines. This validates that the documentation checklist is landing.
+
+### TC09 – Grant Dependency (`…:223-240`, `reports/S049_LLM_VALIDATION.json:273-308`)
+Failure. Even though it listed the unsigned grant and lack of bridge plan, Gemini still conditionally approved Option B. GT insists on `UNCERTAIN` until funds are executable, so this demonstrates the LLM’s reluctance to stop at “unknown” when tempted by strategic upside.
+
+### TC10 – Bifurcated $700k / $300k Plan (`…:242-259`, `reports/S049_LLM_VALIDATION.json:309-360`)
+Failure. The split investment is supposed to trigger an advisory response because there’s no consolidated financial model. Gemini again output `CONDITIONAL_APPROVE`, failing to recognize that missing economics should block a decision and instead layering more documentation requests onto a pseudo-approval.
 
 ---
 
-## Conclusions & Recommendations
-
-1. **Information supply confirmed** – All metrics, notes, and documentation hints are consistent. Gemini’s misses stem from judgement (preferring conditional approvals even when regulators haven’t ruled) or overlooking SLA fairness cues.
-2. **Recurring issues**
-   - **“Pending approval” cases** (TC01, TC02, TC08) show the model’s reluctance to answer `UNCERTAIN`.
-   - **Service-quality enforcement** (TC05) – Gemini focuses on spill/CVaR but ignores SLA violations when no mitigation exists.
-3. **If higher accuracy is needed**, reinforce prompt language: “When regulators put financing/approvals on hold, respond `UNCERTAIN`.” Likewise, emphasize SLA requirements alongside spill/CVaR. For stress testing, the current 50 % accuracy already highlights those gaps; no scenario changes are required.
+## Conclusions
+- **Information feed verified**: classifier, prompt, and GT wiring all behaved as intended; no parsing or JSON-contract issues occurred.
+- **Primary weaknesses exposed**: Gemini struggles to stop at `REJECT/UNCERTAIN/EXPLAIN_ONLY` when documentation is missing. It narrated the gaps (grants, tail risks, payback breach) yet still approved with conditions.
+- **Next actions**: Keep this scenario fixed—40 % accuracy is within the desired 30‑40 % band and clearly tied to reasoning gaps. Future prompt tweaks could further emphasize “missing documentation = deny,” but current results already highlight the intended failure modes.
