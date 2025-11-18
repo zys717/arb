@@ -211,7 +211,7 @@ def detect_geofence_violations(
     trajectory: List[TrajectoryPoint],
     geofence_center: Position3D,
     geofence_radius: float,
-    safety_margin: float = 500.0
+    safety_margin: float = 500.0 
 ) -> Dict[str, Any]:
     """
     Analyze trajectory and detect all geofence violations.

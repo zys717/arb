@@ -3,7 +3,7 @@
   "_instructions": "Replace all placeholders (XXXX, values, descriptions) with actual data",
   
   "scenario_id": "SXXX",
-  "scenario_name": "descriptive_scenario_name",
+  "scenario_name": "descriptive_scenario_name", 
   "test_rule": "RXXX",
   
   "initial_state": {

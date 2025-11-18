@@ -1,6 +1,6 @@
 {
   "scenario_id": "S001",
-  "scenario_name": "geofence_basic",
+  "scenario_name": "geofence_basic", 
   "test_rule": "R001",
   "description": "Comprehensive geofence boundary testing - covers deep violations, shallow violations, boundary cases, safe flights, and path crossing scenarios",
   

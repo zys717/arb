@@ -2,7 +2,7 @@
   "id": "S031_SemanticDependencyCascade",
   "name": "Semantic & Ethical Dependency Cascade",
   "version": "8.0",
-  "created": "2025-11-15",
+  "created": "2025-11-15", 
   "complexity_layer": 3,
   "llm_only": true,
   "description": "Advanced multi-source scenario that combines bilingual waivers, consent revocations, privacy clauses, rumor control, and dynamic feeds. Designed to mimic S024-style conflict reasoning but in a Layer-3 humanitarian mission.",
