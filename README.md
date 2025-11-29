@@ -12,17 +12,22 @@ An automated low-altitude dispatch agent that turns mission requests into compli
 ## Repository Map
 
 ```
-scenarios/        # 49 cases across basic/intermediate/advanced/operational
-ground_truth/     # Expected decisions + evidence (bilingual)
-reports/          # Past LLM validation outputs
-scripts/          # Physics/oracle tools and LLM validator
+scenarios/             # 49 cases across basic/intermediate/advanced/operational
+ground_truth/          # Expected decisions + evidence (bilingual)
+reports/               # LLM validation outputs (S001–S049) and current RAG reports
+reports_former20rag/   # Archived RAG reports for S001–S020 snapshot
+scripts/               # Physics/oracle tools and LLM validator
   ├─ run_scenario_llm_validator.py
   ├─ detect_violations.py
   ├─ run_scenario_*.py (altitude/speed/vlos/path/payload/multi/airspace/timeline)
   └─ llm_prompts/
-docs/             # Quickstart, guides, architecture notes
-templates/        # Scenario + ground truth templates
-test_logs/        # Sample trajectories
+rag/                   # Active RAG code
+  ├─ run_rag_batch.py / run_rag_llm.py / extract_constraints.py / group_constraints.py / controlled_vocab.py / kg_schema.py
+  └─ outputs/constraints_by_scenario.json
+rag/rag_S001-S020/     # Snapshot of stable RAG code for S001–S020
+docs/                  # Quickstart, guides, architecture notes
+templates/             # Scenario + ground truth templates
+test_logs/             # Sample trajectories
 ```
 
 ## Quick Start (Baseline / Validation)
@@ -78,6 +83,13 @@ See `docs/QUICKSTART.md` for details.
 
 ## Status & Roadmap
 
-- Completed: 49-case library with ground truth, physics/oracle scripts, baseline LLM validation reports.
-- In progress: refactoring to the LAE-GPT dispatch narrative; integrating tool-augmented decision loop.
-- Planned: graph/RAG-backed constraint retrieval and a full dispatch agent entrypoint wiring retrieval + tool calls.
+- Completed:
+  - 49-case library with ground truth, physics/oracle scripts, baseline LLM validation reports.
+  - RAG pipeline for S001–S020 with scenario-specific pre-checks (speed/altitude/geo/path/time-window/VLOS-BVLOS/payload/drop/airspace/timeline/multi-drone). Snapshot archived at `rag/rag_S001-S020/`; reports at `reports_former20rag/`.
+- In progress:
+  - Extending RAG coverage to S021–S049 using the same pre-check pattern.
+  - Keeping the active RAG code in `rag/` for new experiments; use the archived snapshot for regression comparisons.
+- Next experiments (suggested flow):
+  1) Extend `run_rag_batch.py` pre-checks to remaining scenarios (21–49): add any new concept loaders/checks, then batch-run and iterate per scenario.
+  2) When a scenario reaches 100%, copy the updated reports to `reports_former20rag/` (or a new archive) and keep `rag/rag_S001-S020/` untouched as a baseline.
+  3) (Optional) Add a small “delta” readme in `rag/` noting prompt/rule changes per scenario to speed troubleshooting.
