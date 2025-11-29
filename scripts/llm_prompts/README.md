@@ -1,6 +1,6 @@
 # LLM Prompt Templates
 
-This module contains dedicated prompt builders for AirSim-RuleBench LLM validation.
+Scenario-specific prompt builders for LAE-GPT's dispatch decisions (LLM + tools).
 
 ## Module Structure
 
@@ -58,9 +58,9 @@ prompt = build_nfz_prompt(
 
 ### Add new scenario type
 1. Add scenario ID mapping in `classify_scenario()`
-2. Create new `xxx_prompt.py` file
-3. Export new function in `__init__.py`
-4. Add invocation in main script `check_compliance_llm()`
+2. Create new `xxx_prompt.py`
+3. Export the builder in `__init__.py`
+4. Wire it in `run_scenario_llm_validator.py` (or the dispatch agent entrypoint).
 
 ## Code Statistics
 
@@ -98,6 +98,6 @@ from llm_prompts import build_nfz_prompt
 "
 ```
 
-Author: AirSim-RuleBench Team 
+Author: LAE-GPT Team 
 Date: 2025-11-01 
 Version: 1.0
