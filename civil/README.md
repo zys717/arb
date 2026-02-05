@@ -4,8 +4,8 @@ This folder contains ASRS-derived civil aviation datasets used to validate LAE-G
 
 ## Scope & Rationale
 
-Civil aviation approval tasks are more procedural and standardized than low-altitude/eVTOL operations.
-We first validate the system on civil aviation tasks, then use the strong performance as transfer evidence for low-altitude approval scenarios.
+Civil aviation approval tasks are more conditional, procedural, and standardized than low-altitude/eVTOL operations.
+We therefore **first** validate LAE-GPT on civil aviation tasks, then use the high success rate in this mature domain as transfer evidence for low-altitude approval experiments.
 
 ## Data Sources
 
