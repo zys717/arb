@@ -30,6 +30,7 @@ import json
 import math
 import time
 import argparse
+import urllib.request
 from importlib import metadata as _importlib_metadata
 from pathlib import Path
 from dataclasses import dataclass, field
@@ -41,14 +42,32 @@ if not hasattr(_importlib_metadata, 'packages_distributions'):
         return {}
     _importlib_metadata.packages_distributions = _packages_distributions_stub  # type: ignore[attr-defined]
 
-# Gemini API
-try:
-    import google.generativeai as genai
-except ImportError:
-    print("ERROR: google-generativeai not installed")
-    print("Install with: pip install google-generativeai")
-    sys.exit(1)
-
+def call_openai_compatible(api_key: str, base_url: str, model_name: str, prompt: str) -> str:
+    """Call an OpenAI-compatible chat completions endpoint and return message content."""
+    url = base_url.rstrip('/') + '/chat/completions'
+    payload = {
+        "model": model_name,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.2
+    }
+    data = json.dumps(payload).encode('utf-8')
+    req = urllib.request.Request(
+        url,
+        data=data,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        },
+        method="POST"
+    )
+    with urllib.request.urlopen(req) as resp:
+        body = resp.read().decode('utf-8')
+    result = json.loads(body)
+    choices = result.get("choices", [])
+    if not choices:
+        raise ValueError("No choices returned from OpenAI-compatible API")
+    message = choices[0].get("message", {})
+    return message.get("content", "")
 
 # ============================================================================
 # SECTION 1: Data Classes
@@ -112,6 +131,10 @@ def classify_scenario(scenario_id: str) -> str:
         'nfz' | 'altitude' | 'speed' | 'vlos' | 'time' | 'payload' | 'multi_drone' | 'airspace' | 'timeline' | 'battery'
     """
     scenario_id_upper = scenario_id.upper()
+
+    # Civil aviation transfer study (C-series)
+    if scenario_id_upper.startswith('C'):
+        return 'civil_aviation'
     
     # NFZ-based: Spatial conflict detection (geofence)
     if any(x in scenario_id_upper for x in ['S001', 'S002', 'S003', 'S004', 'S005', 
@@ -301,7 +324,8 @@ from llm_prompts import (
     build_vertiport_capacity_prompt,
     build_multi_operator_fairness_prompt,
     build_emergency_evacuation_prompt,
-    build_capital_allocation_prompt
+    build_capital_allocation_prompt,
+    build_civil_aviation_prompt
 )
 
 # ============================================================================
@@ -316,6 +340,8 @@ def check_compliance_llm(
     scenario_config: Dict,
     scenario_id: str,
     api_key: str,
+    provider: str,
+    api_base: str,
     test_case_obj: Any = None,
     model_name: str = 'gemini-2.5-flash'
 ) -> Tuple[str, Dict, str]:
@@ -408,21 +434,30 @@ def check_compliance_llm(
         prompt = build_emergency_evacuation_prompt(start, end, test_case_description, scenario_config, test_case_obj)
     elif scenario_type == 'surge_capacity':
         prompt = build_capital_allocation_prompt(start, end, test_case_description, scenario_config, test_case_obj)
+    elif scenario_type == 'civil_aviation':
+        prompt = build_civil_aviation_prompt(start, end, test_case_description, scenario_config, test_case_obj)
     else:
         # Fallback to NFZ
         prompt = build_nfz_prompt(start, end, nfzs, test_case_description, scenario_config, test_case_obj)
     
-    # Configure Gemini
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(model_name)  # Allow override via CLI
-    
     try:
-        # Call Gemini
-        print(f"   🤖 Calling Gemini API...")
-        response = model.generate_content(prompt)
-        
-        # Parse response
-        response_text = response.text.strip()
+        if provider == 'gemini':
+            # Lazy import to avoid dependency when using non-Gemini providers
+            try:
+                import google.generativeai as genai
+            except ImportError:
+                print("ERROR: google-generativeai not installed")
+                print("Install with: pip install google-generativeai")
+                return "ERROR", {"error": "missing google-generativeai"}, "Gemini SDK missing"
+
+            genai.configure(api_key=api_key)
+            model = genai.GenerativeModel(model_name)  # Allow override via CLI
+            print(f"   🤖 Calling Gemini API...")
+            response = model.generate_content(prompt)
+            response_text = response.text.strip()
+        else:
+            print(f"   🤖 Calling {provider} API...")
+            response_text = call_openai_compatible(api_key, api_base, model_name, prompt).strip()
         
         # Remove markdown code blocks if present
         if response_text.startswith("```json"):
@@ -501,6 +536,9 @@ def load_scenario_config(scenario_file: Path) -> Dict[str, Any]:
     data = json.loads(content_no_comments)
     
     llm_only = data.get('llm_only', False)
+    scenario_id = data.get('id', '')
+    if scenario_id.upper().startswith('C'):
+        llm_only = True
 
     # Parse NFZs
     nfzs = []
@@ -754,7 +792,7 @@ def load_ground_truth(gt_file: Path) -> Dict[str, Any]:
 # SECTION 6: LLM Validation (Ground Truth Comparison Only)
 # ============================================================================
 
-def validate_scenario(scenario_file: Path, ground_truth_file: Path, api_key: str, output_file: Path, model_name: str = 'gemini-2.5-flash', throttle_seconds: float = 0.0):
+def validate_scenario(scenario_file: Path, ground_truth_file: Path, api_key: str, output_file: Path, model_name: str = 'gemini-2.5-flash', throttle_seconds: float = 0.0, provider: str = 'gemini', api_base: str = ''):
     """
     Run LLM validation on scenario and compare with rule-based engine.
     """
@@ -772,6 +810,7 @@ def validate_scenario(scenario_file: Path, ground_truth_file: Path, api_key: str
     
     print(f"✓ Scenario: {scenario_id}")
     print(f"✓ Model: {model_name}")
+    print(f"✓ Provider: {provider}")
     print(f"✓ NFZs: {len(config['nfzs'])}")
     print(f"✓ Test cases: {len(config['test_cases'])}")
     print()
@@ -819,7 +858,7 @@ def validate_scenario(scenario_file: Path, ground_truth_file: Path, api_key: str
         print(f"✓ Ground Truth: {gt_decision}")
         
         # LLM engine
-        print("\n🤖 LLM Analysis (Gemini):")
+        print(f"\n🤖 LLM Analysis ({provider}):")
         llm_decision, llm_analysis, llm_reasoning = check_compliance_llm(
             tc.start_position,
             tc.target_position,
@@ -828,6 +867,8 @@ def validate_scenario(scenario_file: Path, ground_truth_file: Path, api_key: str
             config,  # Full scenario config for scenario-specific extraction
             config['scenario_id'],  # For scenario type classification
             api_key,
+            provider,
+            api_base,
             tc,  # Pass test case object for waiver info (S014)
             model_name=model_name
         )
@@ -965,20 +1006,36 @@ def main():
     parser.add_argument('scenario_file', type=str, help='Path to scenario JSONC file')
     parser.add_argument('--ground-truth', '-g', type=str, required=True, help='Path to ground truth JSON file')
     parser.add_argument('--output', '-o', type=str, default='llm_validation_report.json', help='Output report file')
-    parser.add_argument('--api-key', type=str, help='Gemini API key (or use GEMINI_API_KEY env var)')
-    parser.add_argument('--model', '-m', type=str, default='gemini-2.5-flash',
-                        help='Gemini model name (default: gemini-2.5-flash)')
+    parser.add_argument('--provider', type=str, default='gemini', choices=['gemini', 'siliconflow'],
+                        help='LLM provider (default: gemini)')
+    parser.add_argument('--api-base', type=str, default='',
+                        help='API base URL for OpenAI-compatible providers (e.g., https://api.siliconflow.com/v1)')
+    parser.add_argument('--api-key', type=str, help='API key for the selected provider (or use provider env var)')
+    parser.add_argument('--model', '-m', type=str, default=None,
+                        help='Model name override (provider-specific)')
     parser.add_argument('--throttle-seconds', type=float, default=0.0,
                         help='Optional sleep between test cases to avoid rate limits')
     
     args = parser.parse_args()
     
-    # Get API key
-    api_key = args.api_key or __import__('os').environ.get('GEMINI_API_KEY')
-    if not api_key:
-        print("ERROR: Gemini API key not provided")
-        print("Use --api-key or set GEMINI_API_KEY environment variable")
-        return 1
+    # Resolve provider config
+    provider = args.provider
+    if provider == 'gemini':
+        api_key = args.api_key or __import__('os').environ.get('GEMINI_API_KEY')
+        if not api_key:
+            print("ERROR: Gemini API key not provided")
+            print("Use --api-key or set GEMINI_API_KEY environment variable")
+            return 1
+        model_name = args.model or 'gemini-2.5-flash'
+        api_base = ''
+    else:
+        api_key = args.api_key or __import__('os').environ.get('SILICONFLOW_API_KEY')
+        if not api_key:
+            print("ERROR: SiliconFlow API key not provided")
+            print("Use --api-key or set SILICONFLOW_API_KEY environment variable")
+            return 1
+        model_name = args.model or 'Qwen/Qwen2.5-32B-Instruct'
+        api_base = args.api_base or 'https://api.siliconflow.com/v1'
     
     scenario_file = Path(args.scenario_file)
     ground_truth_file = Path(args.ground_truth)
@@ -998,8 +1055,10 @@ def main():
         ground_truth_file,
         api_key,
         output_file,
-        model_name=args.model,
-        throttle_seconds=args.throttle_seconds
+        model_name=model_name,
+        throttle_seconds=args.throttle_seconds,
+        provider=provider,
+        api_base=api_base
     )
     
     return 0 if success else 1

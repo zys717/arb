@@ -63,6 +63,7 @@ from .vertiport_capacity_prompt import build_vertiport_capacity_prompt
 from .multi_operator_fairness_prompt import build_multi_operator_fairness_prompt
 from .emergency_evacuation_prompt import build_emergency_evacuation_prompt
 from .capital_allocation_prompt import build_capital_allocation_prompt
+from .civil_aviation_prompt import build_civil_aviation_prompt
 
 __all__ = [
     'build_nfz_prompt',
@@ -103,4 +104,5 @@ __all__ = [
     'build_multi_operator_fairness_prompt',
     'build_emergency_evacuation_prompt',
     'build_capital_allocation_prompt',
+    'build_civil_aviation_prompt',
 ]
