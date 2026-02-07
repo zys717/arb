@@ -2,7 +2,7 @@
   "id": "S030_DynamicUTMScheduling",
   "name": "UTM Dynamic Scheduling",
   "version": "1.0",
-  "created": "2025-11-08",
+  "created": "",
   "complexity_layer": 2,
   "llm_only": true,
   "description": "City-level UTM dispatcher must coordinate three drones with changing environmental conditions.",

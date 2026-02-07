@@ -2,7 +2,7 @@
   "id": "S032_PragmaticAmbiguity",
   "name": "Pragmatic Ambiguity & Regulatory Intent",
   "version": "1.0",
-  "created": "2025-11-11",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "description": "Layer-3 scenario that probes whether the LLM can interpret vague regulatory language (near, appropriate, necessary, frequency, reasonable hours) using pragmatic and contextual reasoning rather than literal loopholes.",

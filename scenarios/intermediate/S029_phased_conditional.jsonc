@@ -2,7 +2,7 @@
   "id": "S029_PhasedConditionalApproval",
   "name": "Phased Conditional Approval",
   "version": "1.0",
-  "created": "2025-11-08",
+  "created": "",
   "complexity_layer": 2,
   "llm_only": true,
   "description": "Evaluates phased/staged conditional approvals for a new UAV platform.",

@@ -9,13 +9,13 @@
     "民法典第1004条：生命权优先"
   ],
   "version": "1.0",
-  "created": "2025-11-02",
+  "created": "",
   "complexity_layer": 2,
   
   "clock": {
     "type": "steppable",
     "step-ns": 3000000,
-    "initial-datetime": "2024-10-20T14:00:00Z"
+    "initial-datetime": ""
   },
   
   "actors": [
@@ -166,7 +166,7 @@
       "target_location": {"north": 2000.0, "east": 0.0, "altitude": 50.0},
       "mission_details": {
         "time": "23:30",
-        "time_iso": "2024-10-20T23:30:00Z",
+        "time_iso": "",
         "location_type": "residential_area",
         "mission_type": "emergency_medical",
         "payload": "心脏病急救药品",
@@ -198,7 +198,7 @@
       },
       "mission_details": {
         "time": "14:00",
-        "time_iso": "2024-10-20T14:00:00Z",
+        "time_iso": "",
         "mission_type": "emergency_medical",
         "payload": "AED（自动体外除颤器）",
         "patient_condition": "心脏骤停，生命危险",
@@ -226,7 +226,7 @@
       "target_location": {"north": 1500.0, "east": 500.0, "altitude": 80.0},
       "mission_details": {
         "time": "10:00",
-        "time_iso": "2024-10-20T10:00:00Z",
+        "time_iso": "",
         "location_type": "private_villa",
         "mission_type": "law_enforcement",
         "requester": "local_police",
@@ -275,7 +275,7 @@
       },
       "mission_details": {
         "time": "15:00",
-        "time_iso": "2024-10-20T15:00:00Z",
+        "time_iso": "",
         "mission_type": "emergency_medical",
         "payload": "急救药品",
         "urgency_level": "MEDIUM",
@@ -327,7 +327,7 @@
       "target_location": {"north": 2500.0, "east": 1000.0, "altitude": 80.0},
       "mission_details": {
         "time": "12:00",
-        "time_iso": "2024-10-20T12:00:00Z",
+        "time_iso": "",
         "location_type": "celebrity_private_residence",
         "mission_type": "media_coverage",
         "requester": "national_news_agency",
@@ -361,7 +361,7 @@
       "target_location": {"north": 1800.0, "east": 0.0, "altitude": 50.0},
       "mission_details": {
         "time": "23:00",
-        "time_iso": "2024-10-20T23:00:00Z",
+        "time_iso": "",
         "location_type": "residential_area",
         "claimed_type": "emergency_medical",
         "description": "紧急配送感冒药给发烧儿童",
@@ -400,7 +400,7 @@
       },
       "time_details": {
         "current_time": "23:30",
-        "time_iso": "2024-10-20T23:30:00Z",
+        "time_iso": "",
         "location_type": "residential_area"
       },
       "battery_status": {

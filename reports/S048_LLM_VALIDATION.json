@@ -1,7 +1,6 @@
 {
   "scenario": "S048_EmergencyEvacuation",
   "scenario_type": "emergency_evacuation",
-  "timestamp": "2025-11-14T16:15:41.864095",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "4/10",

@@ -2,7 +2,7 @@
   "scenario_id": "S028_DynamicPriorityShift",
   "scenario_name": "Dynamic Priority Shift",
   "version": "1.0",
-  "created": "2025-11-08",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["REJECT", "CONDITIONAL_APPROVE", "UNCERTAIN"],
   "summary": "Dynamic priority changes must respect physical and regulatory constraints; only authorized sources can set P1, and conditional plans must include explicit follow-ups.",

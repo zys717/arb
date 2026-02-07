@@ -17,7 +17,7 @@ S024 tests LLM reasoning when multiple authoritative sources contradict each oth
 - **S1** (Sensor): PM2.5 = 450 μg/m³
 - **S2** (Rulebook 2024): Flight prohibited when >300
 - **S3** (Operator manual): "Avoid extremely poor air quality" (vague)
-- **S4** (Memo 2025-01-05): Industrial zone cap at 500
+- **S4** (Memo ): Industrial zone cap at 500
 
 **Question**: Is 450 μg/m³ compliant? S2 says REJECT (>300), S4 says APPROVE (<500).
 

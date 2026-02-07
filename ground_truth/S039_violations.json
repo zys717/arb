@@ -2,7 +2,7 @@
   "scenario_id": "S039_EpistemicConflict",
   "scenario_name": "Epistemic Uncertainty & Contradictory Filings",
   "version": "1.0",
-  "created": "2025-11-13",
+  "created": "",
   "llm_only": true,
   "decision_labels": [
     "APPROVE",

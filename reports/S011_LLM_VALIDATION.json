@@ -1,7 +1,6 @@
 {
   "scenario": "S011_NightFlight",
   "scenario_type": "time",
-  "timestamp": "2025-10-31T17:28:56.187239",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "8/8",

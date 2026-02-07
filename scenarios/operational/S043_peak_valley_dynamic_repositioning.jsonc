@@ -2,7 +2,7 @@
   "id": "S043_PeakValleyDynamicRepositioning",
   "name": "Peak-Valley Dynamic Fleet Repositioning",
   "version": "1.0",
-  "created": "2025-11-14",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "scenario_type": "operational_optimization",

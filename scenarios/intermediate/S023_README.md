@@ -12,7 +12,7 @@ S023 tests whether LLMs can detect and correctly apply updated regulations when 
 
 ## Core Conflict
 **Parametric Memory**: LLM trained on 2024-08 data (altitude limit = 120m)  
-**Context Information**: Scenario provides amendment effective 2024-12-15 (limit = 150m)  
+**Context Information**: Scenario provides amendment effective  (limit = 150m)  
 **Test**: Will the LLM override its training with context-provided updates?
 
 ## Test Cases

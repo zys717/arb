@@ -2,7 +2,7 @@
 
 **Scenario**: `S037_ImplicitPriority` (`scenarios/advanced/S037_implicit_priority.jsonc`)  
 **Ground Truth**: `ground_truth/S037_violations.json`  
-**Run Timestamp**: 2025-11-12T14:03:33.484071  
+**Run Timestamp**: .484071  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 4/10 (40.0%)  
 **Report Version**: 1.0
@@ -78,6 +78,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

@@ -57,7 +57,7 @@
           "new_rule_150m": "合规（140 < 150）← 上下文明确提供"
         },
         "conflict_resolution": "上下文信息优先于参数记忆",
-        "reasoning": "上下文明确提供新规则150m，且说明已生效（2024-12-15）。当前时间2025-01-05在生效日期之后。应使用上下文中的新规则而非参数记忆",
+        "reasoning": "上下文明确提供新规则150m，且说明已生效（）。当前时间在生效日期之后。应使用上下文中的新规则而非参数记忆",
         "llm_common_failures": [
           {
             "type": "坚持旧规则",
@@ -93,12 +93,12 @@
         "legal_principle": "新法优于旧法（lex posterior derogat legi priori）",
         "conflict_resolution_steps": [
           "识别冲突：操作员提及120m（旧）vs 150m（新）",
-          "确认新规则生效日期：2024-12-15",
-          "确认当前日期：2025-01-05（> 生效日期）",
+          "确认新规则生效日期：",
+          "确认当前日期：（> 生效日期）",
           "应用法律原则：新法优于旧法",
           "结论：使用新规则150m"
         ],
-        "reasoning": "当明确存在新旧规则冲突时，应应用'新法优于旧法'原则。修正案已生效（2025-01-05 > 2024-12-15），旧规则120m已废止。145m < 150m，符合当前有效规则",
+        "reasoning": "当明确存在新旧规则冲突时，应应用'新法优于旧法'原则。修正案已生效（ > ），旧规则120m已废止。145m < 150m，符合当前有效规则",
         "llm_common_failures": [
           {
             "type": "矛盾盲目",
@@ -132,9 +132,9 @@
         "context_provided": "仅提及日期和修正案存在，未明确新上限",
         "implicit_reasoning_required": true,
         "reasoning_chain": [
-          "当前日期：2025-01-05",
-          "修正案发布日期：2024-12-15",
-          "推理：2025-01-05 > 2024-12-15 → 修正案已生效",
+          "当前日期：",
+          "修正案发布日期：",
+          "推理： >  → 修正案已生效",
           "推理：修正案通常涉及高度上限调整",
           "推理：基于常见案例（如FAA Part 107），调整通常为提升至150m",
           "推理：若新上限为150m，则135m合规",
@@ -178,16 +178,16 @@
       "detailed_analysis": {
         "requested_altitude": 125,
         "temporal_complexity": {
-          "application_time": "2024-12-10",
-          "planned_flight_time": "2024-12-20",
-          "amendment_effective_time": "2024-12-15"
+          "application_time": "",
+          "planned_flight_time": "",
+          "amendment_effective_time": ""
         },
         "rule_applicability": {
           "at_application_time": "旧规则120m，125m违反（125 > 120）",
           "at_flight_time": "新规则150m，125m合规（125 < 150）"
         },
         "legal_principle": "决策应基于'执行时刻'而非'申请时刻'的规则",
-        "reasoning": "这是时间边界测试。关键在于区分'申请时'和'飞行时'的规则适用。虽然申请时不合规，但飞行时（2024-12-20）新规则已生效（2024-12-15），应使用飞行时的规则",
+        "reasoning": "这是时间边界测试。关键在于区分'申请时'和'飞行时'的规则适用。虽然申请时不合规，但飞行时（）新规则已生效（），应使用飞行时的规则",
         "analogy": "类似于'先涨价后降价'的情况：预订时100元（超预算），取货时80元（在预算内），应按取货时价格计算",
         "llm_common_failures": [
           {
@@ -215,16 +215,16 @@
       "detailed_analysis": {
         "requested_altitude": 125,
         "temporal_complexity": {
-          "flight_time": "2024-12-10（已完成）",
-          "query_time": "2025-01-05（现在）",
-          "amendment_effective_time": "2024-12-15（飞行之后）"
+          "flight_time": "（已完成）",
+          "query_time": "（现在）",
+          "amendment_effective_time": "（飞行之后）"
         },
         "rule_applicability": {
           "at_flight_time": "旧规则120m，125m违反（125 > 120）",
           "at_query_time": "新规则150m已生效，但不溯及既往"
         },
         "legal_principle": "法不溯及既往（lex prospicit, non respicit）",
-        "reasoning": "这是法律原则测试。关键在于理解'法不溯及既往'：新规则不能改变过去行为的性质。飞行发生在2024-12-10，当时规则为120m，125m违规。新规则2024-12-15生效，但不能使过去的违规行为变合法",
+        "reasoning": "这是法律原则测试。关键在于理解'法不溯及既往'：新规则不能改变过去行为的性质。飞行发生在，当时规则为120m，125m违规。新规则生效，但不能使过去的违规行为变合法",
         "analogy": "类似于'交通违章后法律修改'：超速时限速60，事后改为80，但超速罚单仍有效",
         "exception": "除非法律明确规定溯及既往（如'有利于当事人的溯及'），否则默认不溯及",
         "llm_common_failures": [
@@ -259,22 +259,22 @@
         "requested_altitude": 140,
         "regulation_history": {
           "version_1": {
-            "period": "2023-06-01之前",
+            "period": "之前",
             "limit": "100m",
             "status": "已废止"
           },
           "version_2": {
-            "period": "2023-06-01 至 2024-12-14（推测）",
+            "period": " 至 （推测）",
             "limit": "120m",
             "status": "已废止"
           },
           "version_3": {
-            "period": "2024-12-15至今（推测）",
+            "period": "至今（推测）",
             "limit": "150m（推测，基于草案+修正案发布）",
             "status": "当前有效（需推理）"
           }
         },
-        "current_date": "2025-01-05",
+        "current_date": "",
         "rule_applicability": {
           "version_1_100m": "违反（140 > 100）",
           "version_2_120m": "违反（140 > 120）← 操作员记忆",

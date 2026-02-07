@@ -2,7 +2,7 @@
   "scenario_id": "S033_DynamicPriorityShift",
   "scenario_name": "Dynamic Priority Reordering & Rule Overlays",
   "version": "1.0",
-  "created": "2025-11-11",
+  "created": "",
   "llm_only": true,
   "decision_labels": [
     "APPROVE",

@@ -7,7 +7,7 @@ Specialized script for S015-S016 - Avoidance Scenarios
 - S016: In-flight obstacle avoidance (real-time distance monitoring)
 
 Author: LAE-GPT Team
-Date: 2025-10-31
+Date: 
 Version: 2.0
 
 Usage:

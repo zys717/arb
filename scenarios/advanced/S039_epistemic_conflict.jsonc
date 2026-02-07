@@ -2,7 +2,7 @@
   "id": "S039_EpistemicConflict",
   "name": "Epistemic Uncertainty & Contradictory Filings",
   "version": "1.0",
-  "created": "2025-11-13",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "description": "Layer-3 stress test for epistemic humility: applicants provide mutually inconsistent statements or omit critical data, forcing the reviewer to flag uncertainty instead of guessing.",

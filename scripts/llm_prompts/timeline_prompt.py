@@ -119,7 +119,7 @@ Analyze whether a flight application meets the advance notice requirement for re
 
 3. **Calculate time difference**:
    - Difference (hours) = (Planned flight time - Application time) in hours
-   - Example: 2024-10-21T15:00:00Z - 2024-10-21T09:00:00Z = 6 hours
+   - Example:  -  = 6 hours
 
 4. **Check timeline requirement**:
    - Is time difference ≥ {required_advance_hours} hours?
@@ -163,7 +163,7 @@ Return ONLY valid JSON with this exact structure:
 
 ## Important Notes
 - Time difference uses ≥ comparison (36.0h ≥ 36.0h is OK, boundary inclusive)
-- ISO 8601 format: Parse carefully (2024-10-21T15:00:00Z)
+- ISO 8601 format: Parse carefully ()
 - Exemption priority: Uncontrolled airspace > Emergency > Timeline check
 - Light drones in uncontrolled airspace (< 120m, outside restricted areas) are exempt
 - Emergency missions waive timeline requirements

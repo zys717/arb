@@ -1,7 +1,6 @@
 {
   "scenario": "S043_PeakValleyDynamicRepositioning",
   "scenario_type": "repositioning",
-  "timestamp": "2025-11-13T20:42:11.246238",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "5/8",

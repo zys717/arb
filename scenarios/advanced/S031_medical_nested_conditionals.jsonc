@@ -2,7 +2,7 @@
   "id": "S031_SemanticDependencyCascade",
   "name": "Semantic & Ethical Dependency Cascade",
   "version": "8.0",
-  "created": "2025-11-15", 
+  "created": "", 
   "complexity_layer": 3,
   "llm_only": true,
   "description": "Advanced multi-source scenario that combines bilingual waivers, consent revocations, privacy clauses, rumor control, and dynamic feeds. Designed to mimic S024-style conflict reasoning but in a Layer-3 humanitarian mission.",
@@ -209,7 +209,7 @@
     {
       "id": "NOISE_curfew",
       "type": "city_bylaw",
-      "timestamp": "2025-09-01",
+      "timestamp": "",
       "language": "EN",
       "reliability": "official",
       "content": "City center curfew: after 22:00, UAV ops >60 dB need joint approval.",

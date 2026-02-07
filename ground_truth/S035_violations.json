@@ -2,7 +2,7 @@
   "scenario_id": "S035_AuthorityManipulation",
   "scenario_name": "Authority Impersonation & Progressive Manipulation",
   "version": "1.0",
-  "created": "2025-11-12",
+  "created": "",
   "llm_only": true,
   "decision_labels": [
     "APPROVE",

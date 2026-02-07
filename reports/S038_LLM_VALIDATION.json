@@ -1,7 +1,6 @@
 {
   "scenario": "S038_CausalTemporal",
   "scenario_type": "causal_temporal",
-  "timestamp": "2025-11-12T15:30:28.205051",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "3/10",

@@ -2,7 +2,7 @@
   "scenario_id": "S049_EmergencyCapacity",
   "scenario_name": "Surge Capacity Dispatch: Vendor Fleet Requisition",
   "version": "2.1",
-  "created": "2025-02-10",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "CONDITIONAL_APPROVE", "REJECT", "EXPLAIN_ONLY", "UNCERTAIN"],
   "test_cases": [

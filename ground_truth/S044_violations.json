@@ -2,7 +2,7 @@
   "scenario_id": "S044_BatteryEmergencyDecision",
   "scenario_name": "Battery Emergency In-Flight Decision",
   "version": "1.0",
-  "created": "2025-11-14",
+  "created": "",
   "llm_only": true,
   "decision_labels": [
     "APPROVE_CONTINUE",

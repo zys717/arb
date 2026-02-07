@@ -1,7 +1,6 @@
 {
   "scenario": "C005_Weather",
   "scenario_type": "civil_aviation",
-  "timestamp": "2026-02-04T20:04:15.396927",
   "summary": {
     "total_test_cases": 12,
     "llm_accuracy": "12/12",

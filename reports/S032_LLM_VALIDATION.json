@@ -1,7 +1,6 @@
 {
   "scenario": "S032_PragmaticAmbiguity",
   "scenario_type": "semantic_dependency",
-  "timestamp": "2025-11-10T18:29:43.337510",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "4/10",

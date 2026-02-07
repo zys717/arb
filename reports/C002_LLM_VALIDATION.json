@@ -1,7 +1,6 @@
 {
   "scenario": "C002_AirspaceViolation",
   "scenario_type": "civil_aviation",
-  "timestamp": "2026-02-04T19:07:10.579390",
   "summary": {
     "total_test_cases": 12,
     "llm_accuracy": "12/12",

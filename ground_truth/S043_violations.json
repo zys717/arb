@@ -2,7 +2,7 @@
   "scenario_id": "S043_PeakValleyDynamicRepositioning",
   "scenario_name": "Peak-Valley Dynamic Fleet Repositioning",
   "version": "1.0",
-  "created": "2025-11-14",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "CONDITIONAL_APPROVE", "REJECT", "UNCERTAIN", "EXPLAIN_ONLY"],
   "summary": "Eight dispatch strategies across morning peaks, midday valleys, and evening surges. Constraints: avg wait <5 min, empty-leg % <15 (unless justified), utilization >70%, and reposition costs should be justified when exceeding $150.",

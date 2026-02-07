@@ -1,7 +1,6 @@
 {
   "scenario": "S045_AirspaceConflictResolution",
   "scenario_type": "airspace_conflict",
-  "timestamp": "2025-11-14T10:34:03.343668",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "5/8",

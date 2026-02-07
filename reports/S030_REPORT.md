@@ -2,7 +2,7 @@
 
 **Scenario**: `S030_DynamicUTM` (`scenarios/intermediate/S030_dynamic_utm.jsonc`)  
 **Ground Truth**: `ground_truth/S030_violations.json`  
-**Run Timestamp**: 2025-11-09T11:28:50.968324  
+**Run Timestamp**: .968324  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 4/8 (50.0%)  
 **Report Version**: 1.0
@@ -76,6 +76,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

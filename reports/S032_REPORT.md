@@ -2,7 +2,7 @@
 
 **Scenario**: `S032_PragmaticAmbiguity` (`scenarios/advanced/S032_pragmatic_ambiguity.jsonc`)  
 **Ground Truth**: `ground_truth/S032_violations.json`  
-**Run Timestamp**: 2025-11-10T18:29:43.337510  
+**Run Timestamp**: .337510  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 4/10 (40.0%)  
 **Report Version**: 1.0
@@ -78,6 +78,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

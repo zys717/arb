@@ -2,7 +2,7 @@
   "id": "S048_EmergencyEvacuation",
   "name": "Emergency Evacuation & Re-Planning",
   "version": "1.0",
-  "created": "2025-11-15",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "scenario_type": "emergency_evacuation",
@@ -12,7 +12,7 @@
     "type": "manned_aircraft_intrusion",
     "threat_zone_km": 5,
     "altitude_range_m": [0, 300],
-    "detection_time": "2025-11-15T14:23:17Z",
+    "detection_time": "T14:23:17Z",
     "response_deadline_sec": 30
   },
   "resources": {

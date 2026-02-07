@@ -1,7 +1,6 @@
 {
   "scenario": "S027_BusinessSafetyTradeoff",
   "scenario_type": "business_safety",
-  "timestamp": "2025-11-08T19:20:32.670573",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "5/8",

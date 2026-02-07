@@ -1,7 +1,6 @@
 {
   "scenario": "S023_RegulationUpdate",
   "scenario_type": "regulation_update",
-  "timestamp": "2025-11-02T16:43:49.010775",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "6/8",

@@ -2,7 +2,7 @@
   "scenario_id": "S025_RegulationLifecycle",
   "scenario_name": "Regulation Lifecycle & Priority Reasoning",
   "version": "1.0",
-  "created": "2025-11-07",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "REJECT", "UNCERTAIN", "CONDITIONAL_APPROVE", "EXPLAIN_ONLY"],
   "summary": "Labels expected behavior when rules are repealed, superseded, or region-specific while notices are pending.",
@@ -61,7 +61,7 @@
       "expected_behavior": {
         "decision": "REJECT",
         "reasoning_steps": [
-          "Step1: Recognize UL-150 took effect 2025-10-20 with 150 m limit.",
+          "Step1: Recognize UL-150 took effect  with 150 m limit.",
           "Step2: State that UL-120 is superseded.",
           "Step3: Require operator plans to cite the active rule, not legacy text.",
           "Step4: Reject current plan until it is resubmitted under UL-150 reference."

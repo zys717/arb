@@ -1,7 +1,6 @@
 {
   "scenario": "C014_Taxi_Clearance",
   "scenario_type": "civil_aviation",
-  "timestamp": "2026-02-05T12:25:27.972175",
   "summary": {
     "total_test_cases": 12,
     "llm_accuracy": "12/12",

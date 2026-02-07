@@ -2,7 +2,7 @@
   "scenario_id": "S045_AirspaceConflictResolution",
   "scenario_name": "Airspace Conflict Resolution – 20 Drone MWIS",
   "version": "1.0",
-  "created": "2025-11-15",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "CONDITIONAL_APPROVE", "REJECT", "EXPLAIN_ONLY", "UNCERTAIN"],
   "summary": "Eight multi-operator conflict-resolution cases covering pairwise, triangle, star, chain, dense grid, clique, fairness imbalance, and hybrid random graphs. Evaluations hinge on MWIS feasibility, throughput gap, and fairness thresholds.",

@@ -2,7 +2,7 @@
   "scenario_id": "S046_VertiportCapacity",
   "scenario_name": "Vertiport Capacity Management",
   "version": "1.0",
-  "created": "2025-11-15",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "CONDITIONAL_APPROVE", "REJECT", "EXPLAIN_ONLY", "UNCERTAIN"],
   "summary": "Eight vertiport capacity cases spanning FIFO baselines, battery emergencies, gate deadlocks, diversion economics, dynamic replans, fairness constraints, weather uncertainty, and cascade failures.",

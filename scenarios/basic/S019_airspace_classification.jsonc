@@ -7,12 +7,12 @@
     "美国 Class G空域规则：未管制空域"
   ],
   "version": "1.0",
-  "created": "2025-11-01",
+  "created": "",
   
   "clock": {
     "type": "steppable",
     "step-ns": 3000000,
-    "initial-datetime": "2024-10-20T10:00:00Z"
+    "initial-datetime": ""
   },
   
   "actors": [

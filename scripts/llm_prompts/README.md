@@ -72,7 +72,7 @@ prompt = build_nfz_prompt(
 
 ## Version History
 
-### v1.0 (2025-11-01)
+### v1.0 ()
 - Initial refactoring: split from single file (2077 lines) to modular structure
 - Extracted 9 scenario type prompt builders
 - Code reduced by 65%, improved maintainability
@@ -99,5 +99,5 @@ from llm_prompts import build_nfz_prompt
 ```
 
 Author: LAE-GPT Team 
-Date: 2025-11-01 
+Date:  
 Version: 1.0

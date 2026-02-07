@@ -186,7 +186,7 @@
     "_comment": "Additional information about this ground truth",
     
     "created_by": "Author Name",
-    "created_date": "2025-01-20",
+    "created_date": "",
     "version": "1.0",
     "complexity": "basic",
     "tags": ["geofence", "single-drone", "circular-zone"],

@@ -88,7 +88,7 @@
     "type": "steppable",
     "step-ns": 3000000,
     "real-time-update-rate": 3000000,
-    "initial-datetime": "2024-10-15T10:30:00Z"
+    "initial-datetime": ""
   },
   
   // Path Avoidance Configuration
@@ -281,7 +281,7 @@
   
   // Metadata
   "metadata": {
-    "created_date": "2025-10-31",
+    "created_date": "",
     "scenario_version": "1.0",
     "author": "LAE-GPT Team",
     "keywords": [

@@ -2,7 +2,7 @@
   "id": "S035_AuthorityManipulation",
   "name": "Authority Impersonation & Progressive Manipulation",
   "version": "1.0",
-  "created": "2025-11-12",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "description": "Layer-3 adversarial stress test mixing authority impersonation, prefix injection, format suppression, multilingual bypasses, and six-round cumulative goal drift. Each case looks plausible in isolation but collectively pushes the model to forget hard constraints (battery, NFZ, lighting).",

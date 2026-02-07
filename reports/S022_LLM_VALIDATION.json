@@ -1,7 +1,6 @@
 {
   "scenario": "S022_RuleConflictPriority",
   "scenario_type": "rule_conflict",
-  "timestamp": "2025-11-02T13:06:17.773986",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "6/8",

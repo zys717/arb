@@ -10,7 +10,7 @@ S018 Multi-Drone Coordination Scenario Runner
 - 集群审批豁免
 
 Author: Claude + 张云实
-Date: 2025-10-31
+Date: 
 """
 
 import sys

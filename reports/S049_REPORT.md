@@ -2,7 +2,7 @@
 
 - Scenario: `scenarios/operational/S049_emergency_capacity.jsonc` (v2.1, surge_capacity)
 - Ground Truth: `ground_truth/S049_violations.json`
-- LLM report: `reports/S049_LLM_VALIDATION.json` (timestamp `2025-12-09T09:32:49.139759`, accuracy 4/10, 40.0%)
+- LLM report: `reports/S049_LLM_VALIDATION.json` (timestamp `.139759`, accuracy 4/10, 40.0%)
 - Model: Gemini 2.5 Flash (raw LLM)
 
 Summary table

@@ -1,7 +1,6 @@
 {
   "scenario": "S015_DynamicNFZAvoidance",
   "scenario_type": "nfz",
-  "timestamp": "2025-10-31T17:19:04.479481",
   "summary": {
     "total_test_cases": 6,
     "llm_accuracy": "6/6",

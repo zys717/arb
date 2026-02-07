@@ -2,7 +2,7 @@
 
 **Scenario**: `S021_EmergencyBatteryDilemma` (`scenarios/intermediate/S021_emergency_battery_dilemma.jsonc`)  
 **Ground Truth**: `ground_truth/S021_violations.json`  
-**Run Timestamp**: 2025-11-02T10:56:06.230256  
+**Run Timestamp**: .230256  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 7/8 (87.5%)  
 **Report Version**: 1.0
@@ -76,6 +76,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

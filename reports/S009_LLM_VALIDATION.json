@@ -1,7 +1,6 @@
 {
   "scenario": "S009_SpeedLimit",
   "scenario_type": "speed",
-  "timestamp": "2025-10-31T17:37:27.128364",
   "summary": {
     "total_test_cases": 6,
     "llm_accuracy": "6/6",

@@ -2,7 +2,7 @@
 
 **Scenario**: `S031_MedicalNestedConditionals` (`scenarios/advanced/S031_medical_nested_conditionals.jsonc`)  
 **Ground Truth**: `ground_truth/S031_violations.json`  
-**Run Timestamp**: 2025-11-10T16:49:20.853264  
+**Run Timestamp**: .853264  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 3/10 (30.0%)  
 **Report Version**: 1.0
@@ -78,6 +78,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

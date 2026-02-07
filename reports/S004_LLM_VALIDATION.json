@@ -1,7 +1,6 @@
 {
   "scenario": "S004_AirportZones",
   "scenario_type": "nfz",
-  "timestamp": "2025-10-31T20:01:41.682956",
   "summary": {
     "total_test_cases": 4,
     "llm_accuracy": "4/4",

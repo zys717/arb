@@ -1,7 +1,6 @@
 {
   "scenario": "S036_BoundaryProbing",
   "scenario_type": "boundary_precision",
-  "timestamp": "2025-11-12T12:40:41.958624",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "5/10",

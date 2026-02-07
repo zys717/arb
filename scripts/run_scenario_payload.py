@@ -7,7 +7,7 @@ Specialized script for S017 - Payload and Drop Restrictions
 - In-flight: Check drop zone restrictions and authorization
 
 Author: LAE-GPT Team
-Date: 2025-10-31
+Date: 
 Version: 1.0
 
 Usage:

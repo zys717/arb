@@ -2,7 +2,7 @@
   "scenario_id": "S038_CausalTemporal",
   "scenario_name": "Causal-Temporal Reasoning Breakdown",
   "version": "1.0",
-  "created": "2025-11-12",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE","CONDITIONAL_APPROVE","REJECT","UNCERTAIN","EXPLAIN_ONLY"],
   "summary": "Ten causal/temporal consistency checks: backwards narration, fork/collider requirements, counterfactual preconditions, and expiring inspections.",

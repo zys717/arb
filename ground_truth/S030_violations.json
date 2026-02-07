@@ -2,7 +2,7 @@
   "scenario_id": "S030_DynamicUTMScheduling",
   "scenario_name": "UTM Dynamic Scheduling",
   "version": "1.0",
-  "created": "2025-11-08",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["REJECT", "APPROVE", "CONDITIONAL_APPROVE", "UNCERTAIN"],
   "summary": "UTM coordinator must respect priority order, wind/charging/floor constraints, and conditional logic.",

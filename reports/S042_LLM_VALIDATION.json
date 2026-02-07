@@ -1,7 +1,6 @@
 {
   "scenario": "S042_FastSlowChargingStrategy",
   "scenario_type": "charging_strategy",
-  "timestamp": "2025-11-13T19:00:10.064281",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "6/8",

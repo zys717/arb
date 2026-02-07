@@ -2,7 +2,7 @@
   "id": "S049_EmergencyCapacity",
   "name": "Surge Capacity Dispatch: High-Stress Compliance Traps",
   "version": "2.1",
-  "created": "2025-02-10",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "scenario_type": "surge_capacity",
@@ -119,8 +119,8 @@
       "case_id": "TC07_LicenseExpiring",
       "title": "Pilot license expires tonight; mission spans midnight",
       "context": {
-        "current_time": "2025-12-10 22:30",
-        "license_valid_until": "2025-12-10 23:59",
+        "current_time": " 22:30",
+        "license_valid_until": " 23:59",
         "mission_eta": "90 minutes (crosses midnight)"
       },
       "signals": [

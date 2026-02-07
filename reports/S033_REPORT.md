@@ -2,7 +2,7 @@
 
 **Scenario**: `S033_DynamicPriority` (`scenarios/advanced/S033_dynamic_priority.jsonc`)  
 **Ground Truth**: `ground_truth/S033_violations.json`  
-**Run Timestamp**: 2025-11-11T17:48:38.722439  
+**Run Timestamp**: .722439  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 1/10 (10.0%)  
 **Report Version**: 1.0
@@ -78,6 +78,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

@@ -2,7 +2,7 @@
   "scenario_id": "S020_ApprovalTimeline",
   "description": "飞行申请时限规则 - Ground Truth",
   "version": "1.0",
-  "created": "2025-11-01",
+  "created": "",
   
   "test_cases": [
     {
@@ -12,9 +12,9 @@
       "violation_details": {
         "has_violation": true,
         "violation_type": "INSUFFICIENT_ADVANCE_NOTICE",
-        "current_time": "2024-10-20T10:00:00Z",
-        "application_time": "2024-10-21T09:00:00Z",
-        "planned_flight_time": "2024-10-21T15:00:00Z",
+        "current_time": "",
+        "application_time": "",
+        "planned_flight_time": "",
         "time_difference_hours": 6.0,
         "required_hours": 36.0,
         "shortage_hours": 30.0,
@@ -39,8 +39,8 @@
         "test_phases": [
           {
             "phase": "sufficient_advance",
-            "application_time": "2024-10-20T10:00:00Z",
-            "planned_flight_time": "2024-10-22T14:00:00Z",
+            "application_time": "",
+            "planned_flight_time": "",
             "time_difference_hours": 52.0,
             "required_hours": 36.0,
             "meets_requirement": true,
@@ -48,8 +48,8 @@
           },
           {
             "phase": "boundary_36hours",
-            "application_time": "2024-10-20T10:00:00Z",
-            "planned_flight_time": "2024-10-21T22:00:00Z",
+            "application_time": "",
+            "planned_flight_time": "",
             "time_difference_hours": 36.0,
             "required_hours": 36.0,
             "meets_requirement": true,
@@ -74,9 +74,9 @@
       "expected_reason": "紧急救援任务豁免时限要求，批准在30分钟后起飞",
       "violation_details": {
         "has_violation": false,
-        "current_time": "2024-10-20T10:00:00Z",
-        "application_time": "2024-10-20T10:00:00Z",
-        "planned_flight_time": "2024-10-20T10:30:00Z",
+        "current_time": "",
+        "application_time": "",
+        "planned_flight_time": "",
         "time_difference_hours": 0.5,
         "required_hours": 36.0,
         "flight_type": "emergency",
@@ -103,9 +103,9 @@
       "expected_reason": "适飞空域内飞行（高度50m<120m，非管制区域），无需提前申请",
       "violation_details": {
         "has_violation": false,
-        "current_time": "2024-10-20T10:00:00Z",
+        "current_time": "",
         "application_time": null,
-        "planned_flight_time": "2024-10-20T10:30:00Z",
+        "planned_flight_time": "",
         "time_difference_hours": 0.5,
         "required_hours": 0.0,
         "flight_type": "normal",

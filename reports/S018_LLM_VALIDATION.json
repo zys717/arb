@@ -1,7 +1,6 @@
 {
   "scenario": "S018_MultiDroneCoordination",
   "scenario_type": "multi_drone",
-  "timestamp": "2025-11-01T16:32:42.611771",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "8/8",

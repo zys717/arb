@@ -139,7 +139,7 @@ class WaiverSpec:
     source_type: SourceType
     source_ref: str
     condition: str
-    validity_window: Optional[str] = None  # e.g., "2025-01-01 to 2025-12-31" or "mission-specific"
+    validity_window: Optional[str] = None  # e.g., " to " or "mission-specific"
     required_evidence: List[str] = field(default_factory=list)
     applies_to: List[str] = field(default_factory=list)  # list of constraint_ids or concepts
     notes: Optional[str] = None

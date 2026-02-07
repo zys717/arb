@@ -7,12 +7,12 @@
     "美国LAANC系统：Low Altitude Authorization and Notification Capability支持实时授权"
   ],
   "version": "1.0",
-  "created": "2025-11-01",
+  "created": "",
   
   "clock": {
     "type": "steppable",
     "step-ns": 3000000,
-    "initial-datetime": "2024-10-20T10:00:00Z"
+    "initial-datetime": ""
   },
   
   "actors": [
@@ -99,9 +99,9 @@
     {
       "id": "TC1_ApprovalTooLate",
       "description": "申请时间过晚：距离飞行仅6小时，未满足36小时要求",
-      "current_time": "2024-10-20T10:00:00Z",
-      "application_time": "2024-10-21T09:00:00Z",
-      "planned_flight_time": "2024-10-21T15:00:00Z",
+      "current_time": "",
+      "application_time": "",
+      "planned_flight_time": "",
       "target": {"north": 1000.0, "east": 0.0, "altitude": 50.0},
       "flight_type": "normal",
       "in_controlled_zone": true,
@@ -122,17 +122,17 @@
       "test_phases": [
         {
           "phase": "sufficient_advance",
-          "current_time": "2024-10-20T10:00:00Z",
-          "application_time": "2024-10-20T10:00:00Z",
-          "planned_flight_time": "2024-10-22T14:00:00Z",
+          "current_time": "",
+          "application_time": "",
+          "planned_flight_time": "",
           "time_diff_hours": 52,
           "should_approve": true
         },
         {
           "phase": "boundary_36hours",
-          "current_time": "2024-10-20T10:00:00Z",
-          "application_time": "2024-10-20T10:00:00Z",
-          "planned_flight_time": "2024-10-21T22:00:00Z",
+          "current_time": "",
+          "application_time": "",
+          "planned_flight_time": "",
           "time_diff_hours": 36,
           "should_approve": true
         }
@@ -153,9 +153,9 @@
     {
       "id": "TC3_EmergencyExemption",
       "description": "紧急任务豁免：30分钟后起飞的紧急救援任务",
-      "current_time": "2024-10-20T10:00:00Z",
-      "application_time": "2024-10-20T10:00:00Z",
-      "planned_flight_time": "2024-10-20T10:30:00Z",
+      "current_time": "",
+      "application_time": "",
+      "planned_flight_time": "",
       "target": {"north": 1000.0, "east": 0.0, "altitude": 50.0},
       "flight_type": "emergency",
       "emergency_details": {
@@ -177,9 +177,9 @@
     {
       "id": "TC4_UncontrolledAirspaceExempt",
       "description": "适飞空域免申请：低空（<120m）非管制区域，无需提前申请",
-      "current_time": "2024-10-20T10:00:00Z",
+      "current_time": "",
       "application_time": null,
-      "planned_flight_time": "2024-10-20T10:30:00Z",
+      "planned_flight_time": "",
       "target": {"north": 300.0, "east": 0.0, "altitude": 50.0},
       "flight_type": "normal",
       "in_controlled_zone": false,

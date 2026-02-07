@@ -2,7 +2,7 @@
   "scenario_id": "S042_FastSlowChargingStrategy",
   "scenario_name": "Fast vs Slow Charging Strategy Optimization",
   "version": "1.0",
-  "created": "2025-11-14",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "CONDITIONAL_APPROVE", "REJECT", "UNCERTAIN", "EXPLAIN_ONLY"],
   "summary": "Eight charging strategies comparing 6C fast charge, 1C slow charge, medium-rate blends, leased batteries, and phased upgrades. Constraints cover capacity retention (≥80%), peak utilization (≥0.70), charger ratio (≤1.2), and grid penalties (≤0.15).",

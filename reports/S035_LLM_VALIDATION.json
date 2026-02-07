@@ -1,7 +1,6 @@
 {
   "scenario": "S035_AuthorityManipulation",
   "scenario_type": "authority_manipulation",
-  "timestamp": "2025-11-12T10:36:33.740843",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "4/10",

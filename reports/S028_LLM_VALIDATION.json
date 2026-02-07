@@ -1,7 +1,6 @@
 {
   "scenario": "S028_DynamicPriorityShift",
   "scenario_type": "dynamic_priority",
-  "timestamp": "2025-11-08T21:54:48.120066",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "5/8",

@@ -2,7 +2,7 @@
   "scenario_id": "S041_FleetSizingSpillTradeoff",
   "scenario_name": "Fleet Sizing vs Demand Spill Trade-off",
   "version": "1.0",
-  "created": "2025-11-13",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "CONDITIONAL_APPROVE", "REJECT", "UNCERTAIN", "EXPLAIN_ONLY"],
   "summary": "Eight operational test cases spanning zero-spill baselines, light spill acceptance, under/over provisioning, asymmetric demand rebalancing, spike contingencies, and medium-term planning envelopes.",

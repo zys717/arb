@@ -1,7 +1,6 @@
 {
   "scenario": "S024_ConflictingSources",
   "scenario_type": "conflict_sources",
-  "timestamp": "2025-11-07T19:15:00.192173",
   "summary": {
     "total_test_cases": 6,
     "llm_accuracy": "1/6",

@@ -460,7 +460,7 @@ def filter_active_geofences(
     
     Args:
         geofences: All geofences from scenario
-        simulated_time: ISO 8601 time string (e.g., "2024-01-15T15:00:00Z")
+        simulated_time: ISO 8601 time string (e.g., "")
     
     Returns:
         List of geofences that are active at the simulated time
@@ -1428,7 +1428,7 @@ Note:
     parser.add_argument(
         '--simulated-time', '-t',
         type=str,
-        help='Simulated current time for TFR testing (ISO 8601 format: "2024-01-15T15:00:00Z")'
+        help='Simulated current time for TFR testing (ISO 8601 format: "")'
     )
     
     args = parser.parse_args()

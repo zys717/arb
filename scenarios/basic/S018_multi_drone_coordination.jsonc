@@ -6,12 +6,12 @@
     "美国 Part 107.35: 一名操作员一次只能操作一架无人机"
   ],
   "version": "1.0",
-  "created": "2025-10-31",
+  "created": "",
   
   "clock": {
     "type": "steppable",
     "step-ns": 3000000,
-    "initial-datetime": "2024-10-20T10:00:00Z"
+    "initial-datetime": ""
   },
   
   "actors": [

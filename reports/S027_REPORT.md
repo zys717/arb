@@ -2,7 +2,7 @@
 
 **Scenario**: `S027_BusinessSafety` (`scenarios/intermediate/S027_business_safety.jsonc`)  
 **Ground Truth**: `ground_truth/S027_violations.json`  
-**Run Timestamp**: 2025-11-08T19:20:32.670573  
+**Run Timestamp**: .670573  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 5/8 (62.5%)  
 **Report Version**: 1.0
@@ -76,6 +76,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

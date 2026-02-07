@@ -1,7 +1,7 @@
 {
   "scenario_type": "violating",
   "description": "Mock trajectory for testing - violating scenario",
-  "generated_at": "2025-10-20T17:54:15.929920",
+  "generated_at": ".929920",
   "trajectory": [
     {
       "timestamp": 0.0,

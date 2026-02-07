@@ -1,7 +1,6 @@
 {
   "scenario": "S047_MultiOperatorFairness",
   "scenario_type": "multi_operator_fairness",
-  "timestamp": "2025-11-14T14:26:11.738129",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "5/8",

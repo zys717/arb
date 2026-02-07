@@ -2,7 +2,7 @@
   "scenario_id": "S031_SemanticDependencyCascade",
   "scenario_name": "Semantic & Ethical Dependency Cascade",
   "version": "8.0",
-  "created": "2025-11-15",
+  "created": "",
   "llm_only": true,
   "decision_labels": [
     "APPROVE",

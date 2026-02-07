@@ -15,20 +15,20 @@
     "test_phases": [
       {
         "phase": "sufficient_advance",
-        "application_time": "2024-10-21T11:00:00Z",
-        "planned_flight_time": "2024-10-22T15:00:00Z",
+        "application_time": "",
+        "planned_flight_time": "",
         "time_difference_hours": 28.0,
         "meets_requirement": false
       },
       {
         "phase": "boundary_36hours",
-        "application_time": "2024-10-20T10:00:00Z",
-        "planned_flight_time": "2024-10-21T22:00:00Z",
+        "application_time": "",
+        "planned_flight_time": "",
         "time_difference_hours": 36.0,
         "meets_requirement": true
       }
     ]
   },
-  "recorded_at": "2025-11-01T11:35:29.884285",
+  "recorded_at": ".884285",
   "trajectory": []
 }

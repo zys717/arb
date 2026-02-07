@@ -1,7 +1,6 @@
 {
   "scenario": "S007_ZoneAltitudeLimits",
   "scenario_type": "altitude",
-  "timestamp": "2025-10-31T18:44:57.267016",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "8/8",

@@ -1,7 +1,6 @@
 {
   "scenario": "S025_RegulationLifecycle",
   "scenario_type": "regulation_lifecycle",
-  "timestamp": "2025-11-07T22:30:06.429182",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "3/8",
@@ -18,7 +17,7 @@
       "llm_result": {
         "decision": "REJECT",
         "reasoning": [
-          "Step 1: Source S1 (rule_legacy) clearly states that the NFZ-K7 prohibition was enacted on 2023-04-01 and is still listed as ACTIVE in the national register.",
+          "Step 1: Source S1 (rule_legacy) clearly states that the NFZ-K7 prohibition was enacted on  and is still listed as ACTIVE in the national register.",
           "Step 2: Source S2 (repeal_notice) indicates a repeal draft for NFZ-K7 has been published, but its status is 'pending signature'.",
           "Step 3: Applying the governing principle 'Pending repeals do not deactivate a rule until formal confirmation', the NFZ-K7 prohibition (S1) remains active because the repeal notice (S2) has not received formal confirmation (ministerial signature).",
           "Step 4: The governing principle 'When information is incomplete, fall back to the last confirmed, higher-authority rule' reinforces this, as the active regulation (S1) is the last confirmed, higher-authority rule compared to a pending draft (S2).",
@@ -39,7 +38,7 @@
             }
           ],
           "reasoning": [
-            "Step 1: Source S1 (rule_legacy) clearly states that the NFZ-K7 prohibition was enacted on 2023-04-01 and is still listed as ACTIVE in the national register.",
+            "Step 1: Source S1 (rule_legacy) clearly states that the NFZ-K7 prohibition was enacted on  and is still listed as ACTIVE in the national register.",
             "Step 2: Source S2 (repeal_notice) indicates a repeal draft for NFZ-K7 has been published, but its status is 'pending signature'.",
             "Step 3: Applying the governing principle 'Pending repeals do not deactivate a rule until formal confirmation', the NFZ-K7 prohibition (S1) remains active because the repeal notice (S2) has not received formal confirmation (ministerial signature).",
             "Step 4: The governing principle 'When information is incomplete, fall back to the last confirmed, higher-authority rule' reinforces this, as the active regulation (S1) is the last confirmed, higher-authority rule compared to a pending draft (S2).",
@@ -135,7 +134,7 @@
     },
     {
       "test_case_id": "TC3_NewRuleSupersedes",
-      "description": "Altitude limit increased from 100 m to 150 m via UL-150 amendment effective 2025-10-20, but operator still files under UL-120.",
+      "description": "Altitude limit increased from 100 m to 150 m via UL-150 amendment effective , but operator still files under UL-120.",
       "command": "",
       "ground_truth": {
         "decision": "REJECT"
@@ -143,16 +142,16 @@
       "llm_result": {
         "decision": "CONDITIONAL_APPROVE",
         "reasoning": [
-          "1. **Identify Regulation States and Transition:** The rule UL-120 (max 100 m) is the currently active limit. However, the UL-150 amendment will become effective on 2025-10-20, increasing the limit to 150 m. From that date, UL-120 will be superseded by UL-150.",
+          "1. **Identify Regulation States and Transition:** The rule UL-120 (max 100 m) is the currently active limit. However, the UL-150 amendment will become effective on , increasing the limit to 150 m. From that date, UL-120 will be superseded by UL-150.",
           "2. **Apply 'Execution-time rules precedence':** The rules in effect at the time of the UAV launch take precedence over the rules cited in the application-time plan.",
           "3. **Evaluate Operator's Plan (S3_operator_plan):** The operator's filed plan cites UL-120 and proposes a maximum altitude of 100 m 'for safety'.",
           "4. **Analyze Compliance based on Launch Date (missing information):**",
-          "   a. **If launch is before 2025-10-20:** UL-120 (100 m) is the active rule. The operator's plan for 100 m is fully compliant with the active regulation. In this scenario, the launch would be approved without conditions.",
-          "   b. **If launch is on or after 2025-10-20:** UL-150 (150 m) becomes the active rule, and UL-120 is superseded.",
+          "   a. **If launch is before :** UL-120 (100 m) is the active rule. The operator's plan for 100 m is fully compliant with the active regulation. In this scenario, the launch would be approved without conditions.",
+          "   b. **If launch is on or after :** UL-150 (150 m) becomes the active rule, and UL-120 is superseded.",
           "      i. **Operational Compliance:** The operator's stated maximum altitude of 100 m is within the new legal limit of 150 m. Therefore, the actual operation, if it adheres to 100 m, would be operationally compliant with UL-150.",
-          "      ii. **Procedural/Documentation Compliance (Lifecycle Conflict):** The operator's plan explicitly *cites* UL-120, which will be a superseded rule after 2025-10-20. Even though the operational intent is compliant with the new rule, the documentation's reference is outdated. This falls under the 'lifecycle_reasoning' hint to detect new-vs-old conflicts and cite the current effective rule. Filing under an outdated regulation, even if operationally safe, can cause confusion, misinterpretation, and issues in audits or future compliance checks.",
+          "      ii. **Procedural/Documentation Compliance (Lifecycle Conflict):** The operator's plan explicitly *cites* UL-120, which will be a superseded rule after . Even though the operational intent is compliant with the new rule, the documentation's reference is outdated. This falls under the 'lifecycle_reasoning' hint to detect new-vs-old conflicts and cite the current effective rule. Filing under an outdated regulation, even if operationally safe, can cause confusion, misinterpretation, and issues in audits or future compliance checks.",
           "5. **Decision Rationale:** Given the focus on 'Regulation Lifecycle' and the potential for an outdated regulatory citation in the plan, the mission is conditionally approved. The condition addresses the procedural inconsistency if the flight occurs after the new rule's effective date.",
-          "6. **Apply 'Pending repeals do not deactivate a rule until formal confirmation':** UL-120 remains active until the effective date of UL-150 (2025-10-20), even if its superseding amendment has been published."
+          "6. **Apply 'Pending repeals do not deactivate a rule until formal confirmation':** UL-120 remains active until the effective date of UL-150 (), even if its superseding amendment has been published."
         ],
         "analysis": {
           "decision": "CONDITIONAL_APPROVE",
@@ -160,28 +159,28 @@
           "rule_state": [
             {
               "rule": "UL-120 (S1_old_limit)",
-              "status": "ACTIVE_UNTIL_2025-10-20_THEN_SUPERSEDED"
+              "status": "ACTIVE_UNTIL__THEN_SUPERSEDED"
             },
             {
               "rule": "UL-150 (S2_new_limit)",
-              "status": "PENDING_EFFECTIVE_2025-10-20_THEN_ACTIVE"
+              "status": "PENDING_EFFECTIVE__THEN_ACTIVE"
             },
             {
               "rule": "Operator Plan (S3_operator_plan)",
-              "status": "REFERENCE_OUTDATED_IF_LAUNCH_POST_2025-10-20"
+              "status": "REFERENCE_OUTDATED_IF_LAUNCH_POST_"
             }
           ],
           "reasoning": [
-            "1. **Identify Regulation States and Transition:** The rule UL-120 (max 100 m) is the currently active limit. However, the UL-150 amendment will become effective on 2025-10-20, increasing the limit to 150 m. From that date, UL-120 will be superseded by UL-150.",
+            "1. **Identify Regulation States and Transition:** The rule UL-120 (max 100 m) is the currently active limit. However, the UL-150 amendment will become effective on , increasing the limit to 150 m. From that date, UL-120 will be superseded by UL-150.",
             "2. **Apply 'Execution-time rules precedence':** The rules in effect at the time of the UAV launch take precedence over the rules cited in the application-time plan.",
             "3. **Evaluate Operator's Plan (S3_operator_plan):** The operator's filed plan cites UL-120 and proposes a maximum altitude of 100 m 'for safety'.",
             "4. **Analyze Compliance based on Launch Date (missing information):**",
-            "   a. **If launch is before 2025-10-20:** UL-120 (100 m) is the active rule. The operator's plan for 100 m is fully compliant with the active regulation. In this scenario, the launch would be approved without conditions.",
-            "   b. **If launch is on or after 2025-10-20:** UL-150 (150 m) becomes the active rule, and UL-120 is superseded.",
+            "   a. **If launch is before :** UL-120 (100 m) is the active rule. The operator's plan for 100 m is fully compliant with the active regulation. In this scenario, the launch would be approved without conditions.",
+            "   b. **If launch is on or after :** UL-150 (150 m) becomes the active rule, and UL-120 is superseded.",
             "      i. **Operational Compliance:** The operator's stated maximum altitude of 100 m is within the new legal limit of 150 m. Therefore, the actual operation, if it adheres to 100 m, would be operationally compliant with UL-150.",
-            "      ii. **Procedural/Documentation Compliance (Lifecycle Conflict):** The operator's plan explicitly *cites* UL-120, which will be a superseded rule after 2025-10-20. Even though the operational intent is compliant with the new rule, the documentation's reference is outdated. This falls under the 'lifecycle_reasoning' hint to detect new-vs-old conflicts and cite the current effective rule. Filing under an outdated regulation, even if operationally safe, can cause confusion, misinterpretation, and issues in audits or future compliance checks.",
+            "      ii. **Procedural/Documentation Compliance (Lifecycle Conflict):** The operator's plan explicitly *cites* UL-120, which will be a superseded rule after . Even though the operational intent is compliant with the new rule, the documentation's reference is outdated. This falls under the 'lifecycle_reasoning' hint to detect new-vs-old conflicts and cite the current effective rule. Filing under an outdated regulation, even if operationally safe, can cause confusion, misinterpretation, and issues in audits or future compliance checks.",
             "5. **Decision Rationale:** Given the focus on 'Regulation Lifecycle' and the potential for an outdated regulatory citation in the plan, the mission is conditionally approved. The condition addresses the procedural inconsistency if the flight occurs after the new rule's effective date.",
-            "6. **Apply 'Pending repeals do not deactivate a rule until formal confirmation':** UL-120 remains active until the effective date of UL-150 (2025-10-20), even if its superseding amendment has been published."
+            "6. **Apply 'Pending repeals do not deactivate a rule until formal confirmation':** UL-120 remains active until the effective date of UL-150 (), even if its superseding amendment has been published."
           ],
           "source_ranking": [
             {
@@ -199,7 +198,7 @@
           ],
           "requests": [
             "Confirm the precise launch date to definitively determine which altitude regulation (UL-120 or UL-150) is active.",
-            "If the launch is scheduled for on or after 2025-10-20, the operator must resubmit or amend their filed plan to correctly cite UL-150 as the governing regulation, even if their operational ceiling remains 100 m for safety reasons."
+            "If the launch is scheduled for on or after , the operator must resubmit or amend their filed plan to correctly cite UL-150 as the governing regulation, even if their operational ceiling remains 100 m for safety reasons."
           ]
         },
         "correct": false
@@ -268,7 +267,7 @@
     },
     {
       "test_case_id": "TC5_PublishVsEffective",
-      "description": "Amendment bulletin (published 2025-11-01) hints at future altitude raise but omits effective date; today is 2025-11-07.",
+      "description": "Amendment bulletin (published ) hints at future altitude raise but omits effective date; today is .",
       "command": "",
       "ground_truth": {
         "decision": "REJECT"
@@ -321,7 +320,7 @@
     },
     {
       "test_case_id": "TC6_ApplicationVsExecution",
-      "description": "Application approved on 2025-09-15 using UL-120, but flight scheduled 2025-10-25 after UL-150 took effect.",
+      "description": "Application approved on  using UL-120, but flight scheduled  after UL-150 took effect.",
       "command": "",
       "ground_truth": {
         "decision": "REJECT"
@@ -329,11 +328,11 @@
       "llm_result": {
         "decision": "APPROVE",
         "reasoning": [
-          "The application was approved on 2025-09-15 (S1_application) referencing rule UL-120, which had a 100 m altitude cap.",
-          "The actual flight is scheduled for 2025-10-25 (S2_execution_date).",
-          "A new rule, UL-150, came into force on 2025-10-20, establishing a 150 m altitude limit (S3_new_rule).",
-          "According to the governing principle 'Execution-time rules take precedence over application-time approvals,' the flight on 2025-10-25 must comply with the rules active at that time.",
-          "At the time of the flight (2025-10-25), rule UL-150 is active (since 2025-10-20), superseding UL-120.",
+          "The application was approved on  (S1_application) referencing rule UL-120, which had a 100 m altitude cap.",
+          "The actual flight is scheduled for  (S2_execution_date).",
+          "A new rule, UL-150, came into force on , establishing a 150 m altitude limit (S3_new_rule).",
+          "According to the governing principle 'Execution-time rules take precedence over application-time approvals,' the flight on  must comply with the rules active at that time.",
+          "At the time of the flight (), rule UL-150 is active (since ), superseding UL-120.",
           "The new rule UL-150 (150 m limit) is more permissive than the previously referenced rule UL-120 (100 m cap). Since the operation was approved under a stricter regulatory framework, and the current framework allows for a higher limit, the original approval remains valid, and the flight can proceed adhering to the current UL-150 limits. The change in rules, being more permissive in this aspect, does not invalidate the prior approval or prohibit launch, provided the operation adheres to the currently active rules."
         ],
         "analysis": {
@@ -350,11 +349,11 @@
             }
           ],
           "reasoning": [
-            "The application was approved on 2025-09-15 (S1_application) referencing rule UL-120, which had a 100 m altitude cap.",
-            "The actual flight is scheduled for 2025-10-25 (S2_execution_date).",
-            "A new rule, UL-150, came into force on 2025-10-20, establishing a 150 m altitude limit (S3_new_rule).",
-            "According to the governing principle 'Execution-time rules take precedence over application-time approvals,' the flight on 2025-10-25 must comply with the rules active at that time.",
-            "At the time of the flight (2025-10-25), rule UL-150 is active (since 2025-10-20), superseding UL-120.",
+            "The application was approved on  (S1_application) referencing rule UL-120, which had a 100 m altitude cap.",
+            "The actual flight is scheduled for  (S2_execution_date).",
+            "A new rule, UL-150, came into force on , establishing a 150 m altitude limit (S3_new_rule).",
+            "According to the governing principle 'Execution-time rules take precedence over application-time approvals,' the flight on  must comply with the rules active at that time.",
+            "At the time of the flight (), rule UL-150 is active (since ), superseding UL-120.",
             "The new rule UL-150 (150 m limit) is more permissive than the previously referenced rule UL-120 (100 m cap). Since the operation was approved under a stricter regulatory framework, and the current framework allows for a higher limit, the original approval remains valid, and the flight can proceed adhering to the current UL-150 limits. The change in rules, being more permissive in this aspect, does not invalidate the prior approval or prohibit launch, provided the operation adheres to the currently active rules."
           ],
           "source_ranking": [

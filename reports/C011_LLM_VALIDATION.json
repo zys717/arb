@@ -1,7 +1,6 @@
 {
   "scenario": "C011_NOTAM_Restricted_Airspace",
   "scenario_type": "civil_aviation",
-  "timestamp": "2026-02-05T11:33:57.524857",
   "summary": {
     "total_test_cases": 12,
     "llm_accuracy": "12/12",

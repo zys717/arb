@@ -1,7 +1,6 @@
 {
   "scenario": "S034_PragmaticIntent",
   "scenario_type": "pragmatic_intent",
-  "timestamp": "2025-11-12T09:20:51.308504",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "4/10",

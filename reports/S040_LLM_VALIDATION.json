@@ -1,7 +1,6 @@
 {
   "scenario": "S040_AdversarialLoopholes",
   "scenario_type": "adversarial_circumvention",
-  "timestamp": "2025-11-15T10:43:48.311726",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "5/10",

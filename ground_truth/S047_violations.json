@@ -2,7 +2,7 @@
   "scenario_id": "S047_MultiOperatorFairness",
   "scenario_name": "Multi-Operator Fairness & Governance",
   "version": "1.0",
-  "created": "2025-11-15",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "CONDITIONAL_APPROVE", "REJECT", "EXPLAIN_ONLY", "UNCERTAIN"],
   "summary": "Eight fairness/governance cases spanning utilitarian baselines, quota sharing, ethical priority, mechanism design, temporal fairness, Nash social welfare, incentive compatibility, and stress-frontier advisories.",

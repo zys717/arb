@@ -2,7 +2,7 @@
   "scenario_id": "S024_ConflictingSources",
   "scenario_name": "Multi-Source Conflict & Metacognition Test",
   "version": "1.0",
-  "created": "2025-11-05",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE", "REJECT", "UNCERTAIN", "CONDITIONAL_APPROVE", "EXPLAIN_ONLY"],
   "summary": "Assesses whether the LLM can stay cautious, enumerate conflicts, and revise conclusions when legal and sensor inputs disagree.",

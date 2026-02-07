@@ -2,7 +2,7 @@
   "id": "S025_RegulationLifecycle",
   "name": "Regulation Lifecycle & Priority Reasoning",
   "version": "1.0",
-  "created": "2025-11-07",
+  "created": "",
   "complexity_layer": 2,
   "llm_only": true,
   "description": "Stress-tests how an LLM handles rule repeals, temporary notices, conflicting jurisdictions, and incomplete lifecycle metadata.",
@@ -44,12 +44,12 @@
         {
           "id": "S1_rule_legacy",
           "type": "regulation",
-          "content": "NFZ-K7 prohibition, enacted 2023-04-01, still listed as ACTIVE in the national register."
+          "content": "NFZ-K7 prohibition, enacted , still listed as ACTIVE in the national register."
         },
         {
           "id": "S2_repeal_notice",
           "type": "bulletin",
-          "content": "Repeal draft for NFZ-K7 published 2025-10-01; status: pending signature."
+          "content": "Repeal draft for NFZ-K7 published ; status: pending signature."
         },
         {
           "id": "S3_sensor",
@@ -87,7 +87,7 @@
     {
       "case_id": "TC3_NewRuleSupersedes",
       "difficulty": "⭐⭐",
-      "description": "Altitude limit increased from 100 m to 150 m via UL-150 amendment effective 2025-10-20, but operator still files under UL-120.",
+      "description": "Altitude limit increased from 100 m to 150 m via UL-150 amendment effective , but operator still files under UL-120.",
       "provided_sources": [
         {
           "id": "S1_old_limit",
@@ -97,7 +97,7 @@
         {
           "id": "S2_new_limit",
           "type": "rulebook",
-          "content": "UL-150 amendment, effective 2025-10-20: max altitude 150 m."
+          "content": "UL-150 amendment, effective : max altitude 150 m."
         },
         {
           "id": "S3_operator_plan",
@@ -140,12 +140,12 @@
     {
       "case_id": "TC5_PublishVsEffective",
       "difficulty": "⭐⭐⭐⭐",
-      "description": "Amendment bulletin (published 2025-11-01) hints at future altitude raise but omits effective date; today is 2025-11-07.",
+      "description": "Amendment bulletin (published ) hints at future altitude raise but omits effective date; today is .",
       "provided_sources": [
         {
           "id": "S1_bulletin",
           "type": "bulletin",
-          "content": "Amendment A-882 published 2025-11-01, states 'upcoming altitude increase to 140 m', effective date TBD."
+          "content": "Amendment A-882 published , states 'upcoming altitude increase to 140 m', effective date TBD."
         },
         {
           "id": "S2_current_reg",
@@ -159,22 +159,22 @@
     {
       "case_id": "TC6_ApplicationVsExecution",
       "difficulty": "⭐⭐⭐",
-      "description": "Application approved on 2025-09-15 using UL-120, but flight scheduled 2025-10-25 after UL-150 took effect.",
+      "description": "Application approved on  using UL-120, but flight scheduled  after UL-150 took effect.",
       "provided_sources": [
         {
           "id": "S1_application",
           "type": "record",
-          "content": "Approval letter (2025-09-15) referencing UL-120 100 m cap."
+          "content": "Approval letter () referencing UL-120 100 m cap."
         },
         {
           "id": "S2_execution_date",
           "type": "timeline",
-          "content": "Actual flight planned 2025-10-25."
+          "content": "Actual flight planned ."
         },
         {
           "id": "S3_new_rule",
           "type": "rulebook",
-          "content": "UL-150 in force since 2025-10-20 (150 m limit)."
+          "content": "UL-150 in force since  (150 m limit)."
         }
       ],
       "expected_decision": "REJECT",

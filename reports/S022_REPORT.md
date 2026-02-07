@@ -2,7 +2,7 @@
 
 **Scenario**: `S022_RuleConflictPriority` (`scenarios/intermediate/S022_rule_conflict_priority.jsonc`)  
 **Ground Truth**: `ground_truth/S022_violations.json`  
-**Run Timestamp**: 2025-11-02T13:06:17.773986  
+**Run Timestamp**: .773986  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 6/8 (75.0%)  
 **Report Version**: 1.0
@@ -76,6 +76,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

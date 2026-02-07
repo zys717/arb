@@ -6,7 +6,7 @@ Validates LLM's ability to perform UAV compliance checking using specialized pro
 Compares LLM decisions against ground truth (rule engines already validated in AirSim tests).
 
 Author: LAE-GPT Team
-Date: 2025-10-31
+Date: 
 Version: 3.0 - LLM-Only Validation (Rule engine validation done via AirSim)
 
 Supported Scenario Types:

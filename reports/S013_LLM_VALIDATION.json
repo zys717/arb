@@ -1,7 +1,6 @@
 {
   "scenario": "S013_VLOS",
   "scenario_type": "vlos",
-  "timestamp": "2025-10-31T17:14:46.779017",
   "summary": {
     "total_test_cases": 5,
     "llm_accuracy": "5/5",

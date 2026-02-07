@@ -1,7 +1,6 @@
 {
   "scenario": "S031_SemanticDependencyCascade",
   "scenario_type": "semantic_dependency",
-  "timestamp": "2025-11-10T16:49:20.853264",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "3/10",

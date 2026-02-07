@@ -1,7 +1,6 @@
 {
   "scenario": "S019_AirspaceClassification",
   "scenario_type": "airspace",
-  "timestamp": "2025-11-01T16:39:22.490324",
   "summary": {
     "total_test_cases": 5,
     "llm_accuracy": "5/5",

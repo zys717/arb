@@ -2,7 +2,7 @@
 
 **Scenario**: `S024_ConflictingSources` (`scenarios/intermediate/S024_conflicting_sources.jsonc`)  
 **Ground Truth**: `ground_truth/S024_violations.json`  
-**Run Timestamp**: 2025-11-07T19:15:00.192173  
+**Run Timestamp**: .192173  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 1/6 (16.7%)  
 **Report Version**: 1.0
@@ -74,6 +74,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

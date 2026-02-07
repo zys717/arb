@@ -1,7 +1,6 @@
 {
   "scenario": "S010_ZoneSpeedLimits",
   "scenario_type": "speed",
-  "timestamp": "2025-10-31T17:33:34.547023",
   "summary": {
     "total_test_cases": 4,
     "llm_accuracy": "4/4",

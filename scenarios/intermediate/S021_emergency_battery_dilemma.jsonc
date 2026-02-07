@@ -7,12 +7,12 @@
     "电量安全规则优先级高于任务紧迫性"
   ],
   "version": "1.0",
-  "created": "2025-11-01",
+  "created": "",
   "complexity_layer": 2,
   "clock": {
     "type": "steppable",
     "step-ns": 3000000,
-    "initial-datetime": "2024-10-20T14:30:00Z"
+    "initial-datetime": ""
   },
   "actors": [
     {

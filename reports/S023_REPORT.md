@@ -2,7 +2,7 @@
 
 **Scenario**: `S023_RegulationUpdate` (`scenarios/intermediate/S023_regulation_update.jsonc`)  
 **Ground Truth**: `ground_truth/S023_violations.json`  
-**Run Timestamp**: 2025-11-02T16:43:49.010775  
+**Run Timestamp**: .010775  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 6/8 (75.0%)  
 **Report Version**: 1.0
@@ -76,6 +76,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

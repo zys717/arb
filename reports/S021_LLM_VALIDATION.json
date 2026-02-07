@@ -1,7 +1,6 @@
 {
   "scenario": "S021_EmergencyBatteryDilemma",
   "scenario_type": "battery",
-  "timestamp": "2025-11-14T20:51:55.454632",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "7/8",

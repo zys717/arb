@@ -1,7 +1,7 @@
 {
   "scenario_type": "violating_hospital_zone",
   "description": "Mock trajectory for S002 - flies from (400,400,50) toward hospital at (800,800,0)",
-  "generated_at": "2025-10-22T00:00:00",
+  "generated_at": "",
   "trajectory": [
     {
       "timestamp": 0.0,

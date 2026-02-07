@@ -1,7 +1,6 @@
 {
   "scenario": "S014_BVLOS_Waiver",
   "scenario_type": "vlos",
-  "timestamp": "2025-10-31T17:13:20.101405",
   "summary": {
     "total_test_cases": 6,
     "llm_accuracy": "6/6",

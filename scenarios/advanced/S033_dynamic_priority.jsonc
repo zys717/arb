@@ -2,7 +2,7 @@
   "id": "S033_DynamicPriorityShift",
   "name": "Dynamic Priority Reordering & Rule Overlays",
   "version": "1.0",
-  "created": "2025-11-11",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "description": "Layer-3 scenario that forces the LLM to reorder regulatory priorities mid-flight (emergency overrides, weather degradation, surprise NFZs, stacked rules, long-dialog memory).",

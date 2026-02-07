@@ -1,7 +1,6 @@
 {
   "scenario": "C010_IFR_Clearance",
   "scenario_type": "civil_aviation",
-  "timestamp": "2026-02-05T11:32:01.970900",
   "summary": {
     "total_test_cases": 12,
     "llm_accuracy": "12/12",

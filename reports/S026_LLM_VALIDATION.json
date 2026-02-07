@@ -1,7 +1,6 @@
 {
   "scenario": "S026_EthicalTrilemma",
   "scenario_type": "ethical_trilemma",
-  "timestamp": "2025-11-08T12:24:53.344816",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "5/8",

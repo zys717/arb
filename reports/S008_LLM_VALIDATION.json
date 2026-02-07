@@ -1,7 +1,6 @@
 {
   "scenario": "S008_StructureWaiver",
   "scenario_type": "altitude",
-  "timestamp": "2025-10-31T18:55:04.214831",
   "summary": {
     "total_test_cases": 4,
     "llm_accuracy": "4/4",

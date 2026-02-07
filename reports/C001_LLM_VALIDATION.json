@@ -1,7 +1,6 @@
 {
   "scenario": "C001_RouteChangeApproval",
   "scenario_type": "civil_aviation",
-  "timestamp": "2026-02-04T18:56:59.587928",
   "summary": {
     "total_test_cases": 12,
     "llm_accuracy": "12/12",

@@ -1,7 +1,6 @@
 {
   "scenario": "C015_Equipment_MEL",
   "scenario_type": "civil_aviation",
-  "timestamp": "2026-02-05T12:30:25.124942",
   "summary": {
     "total_test_cases": 12,
     "llm_accuracy": "12/12",

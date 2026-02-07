@@ -2,7 +2,7 @@
 
 **Scenario**: `S036_BoundaryProbing` (`scenarios/advanced/S036_boundary_probing.jsonc`)  
 **Ground Truth**: `ground_truth/S036_violations.json`  
-**Run Timestamp**: 2025-11-12T12:40:41.958624  
+**Run Timestamp**: .958624  
 **Model**: Gemini 2.5 Flash  
 **Accuracy**: 5/10 (50.0%)  
 **Report Version**: 1.0
@@ -78,6 +78,6 @@ For complete per-test case analysis including:
 
 ---
 
-**Report Generated**: 2025-11-13  
+**Report Generated**:   
 **Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

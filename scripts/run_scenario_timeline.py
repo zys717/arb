@@ -8,7 +8,7 @@ Specialized script for S020 - Flight Approval Timeline
 - Pure logic checks, no flight simulation required
 
 Author: LAE-GPT Team
-Date: 2025-11-01
+Date: 
 Version: 1.0
 
 Usage:

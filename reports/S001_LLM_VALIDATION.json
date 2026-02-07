@@ -1,7 +1,6 @@
 {
   "scenario": "S001_GeofenceBasic",
   "scenario_type": "nfz",
-  "timestamp": "2025-10-31T21:30:54.240414",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "8/8",

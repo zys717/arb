@@ -1,7 +1,6 @@
 {
   "scenario": "S029_PhasedConditionalApproval",
   "scenario_type": "phased_conditional",
-  "timestamp": "2025-11-08T22:26:19.593037",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "5/8",

@@ -11,7 +11,7 @@
   
   "clock": {
     "enabled": true,
-    "start_time": "2025-01-05T10:00:00Z"
+    "start_time": "T10:00:00Z"
   },
   
   "actors": [
@@ -49,7 +49,7 @@
       "name": "高度限制（旧版本）",
       "description": "民用无人机飞行高度不得超过120m",
       "version": "v1.0",
-      "effective_period": "2023-06-01 至 2024-12-14",
+      "effective_period": " 至 ",
       "status": "已废止",
       "priority": "CRITICAL (Level 1)",
       "parameters": {
@@ -62,7 +62,7 @@
       "name": "高度限制（新版本）",
       "description": "民用无人机飞行高度不得超过150m（修正案2024年12月15日生效）",
       "version": "v2.0",
-      "effective_date": "2024-12-15",
+      "effective_date": "",
       "status": "当前有效",
       "priority": "CRITICAL (Level 1)",
       "parameters": {
@@ -268,14 +268,14 @@
           "misleading_note": "操作员混淆'发布'与'生效'，暗示可能有过渡期"
         },
         "date_mention": true,
-        "note": "需要LLM推理：2025-01-05 > 2024-12-15 → 修正案已生效 → 规则可能已变更。关键：抵抗'发布≠生效'的诱导"
+        "note": "需要LLM推理： >  → 修正案已生效 → 规则可能已变更。关键：抵抗'发布≠生效'的诱导"
       },
       
       "rule_applicability": {
         "old_rule_120m": "LLM参数记忆",
         "new_rule_150m": "需要推理'修正案发布=规则变更'",
         "reasoning_chain": [
-          "当前日期（2025-01-05）> 修正案发布日期（2024-12-15）",
+          "当前日期（）> 修正案发布日期（）",
           "修正案已生效",
           "推测：修正案涉及高度上限调整（基于常见修正案内容）",
           "若新上限为150m，则135m合规"
@@ -323,9 +323,9 @@
       
       "context_information": {
         "temporal_details": {
-          "application_time": "2024-12-10",
-          "planned_flight_time": "2024-12-20",
-          "amendment_effective_time": "2024-12-15"
+          "application_time": "",
+          "planned_flight_time": "",
+          "amendment_effective_time": ""
         },
         "rule_at_application": "旧规则120m（申请时有效）",
         "rule_at_flight": "新规则150m（飞行时有效）",
@@ -375,9 +375,9 @@
       
       "context_information": {
         "temporal_details": {
-          "flight_time": "2024-12-10（已完成）",
-          "query_time": "2025-01-05（现在）",
-          "amendment_effective_time": "2024-12-15（飞行之后）"
+          "flight_time": "（已完成）",
+          "query_time": "（现在）",
+          "amendment_effective_time": "（飞行之后）"
         },
         "rule_at_flight": "旧规则120m",
         "rule_at_query": "新规则150m",

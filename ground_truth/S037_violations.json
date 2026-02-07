@@ -2,7 +2,7 @@
   "scenario_id": "S037_ImplicitPriority",
   "scenario_name": "Implicit Cross-Domain Priority Inference",
   "version": "1.0",
-  "created": "2025-11-12",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE","CONDITIONAL_APPROVE","REJECT","UNCERTAIN","EXPLAIN_ONLY"],
   "summary": "Ten cases requiring pragmatic cross-domain prioritization (emergency vs environmental, public benefit ranking, environmental justice, cultural sensitivity).",

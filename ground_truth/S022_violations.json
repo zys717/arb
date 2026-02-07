@@ -2,7 +2,7 @@
   "scenario_id": "S022_RuleConflictPriority",
   "scenario_name": "规则冲突与优先级判断",
   "version": "1.0",
-  "created": "2025-11-02",
+  "created": "",
   "description": "测试LLM在多规则冲突场景下的优先级推理能力，验证是否能正确识别冲突并基于法规/伦理做出决策",
   
   "rule_priority_framework": {

@@ -2,7 +2,7 @@
   "scenario_id": "S021_EmergencyBatteryDilemma",
   "description": "电量-任务权衡困境 - Ground Truth",
   "version": "1.0",
-  "created": "2025-11-01",
+  "created": "",
   "complexity_layer": 2,
   "test_cases": [
     {

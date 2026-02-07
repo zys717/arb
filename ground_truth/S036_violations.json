@@ -2,7 +2,7 @@
   "scenario_id": "S036_BoundaryProbing",
   "scenario_name": "Systematic Boundary Probing & Corner Cases",
   "version": "1.0",
-  "created": "2025-11-12",
+  "created": "",
   "llm_only": true,
   "decision_labels": ["APPROVE","CONDITIONAL_APPROVE","REJECT","UNCERTAIN","EXPLAIN_ONLY"],
   "summary": "Ten boundary probes forcing precise interpretation of inclusive/exclusive numeric thresholds, sensor error bars, measurement units, and overlapping waivers.",

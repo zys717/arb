@@ -2,7 +2,7 @@
   "id": "S036_BoundaryProbing",
   "name": "Systematic Boundary Probing & Corner Cases",
   "version": "1.0",
-  "created": "2025-11-12",
+  "created": "",
   "complexity_layer": 3,
   "llm_only": true,
   "description": "Layer-3 stress test that repeatedly targets regulatory cutoffs (altitude, SOC, distance, time, mass, VLOS, noise, waiver stacking). Each case forces the model to apply inclusive/exclusive comparisons, sensor error margins, or overlapping rules with exact arithmetic.",

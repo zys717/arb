@@ -2,7 +2,7 @@
   "scenario_id": "S034_PragmaticIntent",
   "scenario_name": "Pragmatic Ambiguity & Regulatory Intent",
   "version": "1.1",
-  "created": "2025-11-11",
+  "created": "",
   "llm_only": true,
   "decision_labels": [
     "APPROVE",

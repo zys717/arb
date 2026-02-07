@@ -21,7 +21,7 @@ Supported Scenario Types:
 - Dynamic Environment (S032): Dynamic state tracking and temporal reasoning
 
 Author: LAE-GPT Team
-Date: 2025-11-02
+Date: 
 Version: 1.3
 """
 

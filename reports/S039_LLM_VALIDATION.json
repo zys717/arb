@@ -1,7 +1,6 @@
 {
   "scenario": "S039_EpistemicConflict",
   "scenario_type": "epistemic_uncertainty",
-  "timestamp": "2025-11-12T17:15:06.811704",
   "summary": {
     "total_test_cases": 10,
     "llm_accuracy": "4/10",

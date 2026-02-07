@@ -1,7 +1,6 @@
 {
   "scenario": "S016_RealtimeObstacleAvoidance",
   "scenario_type": "nfz",
-  "timestamp": "2025-11-01T16:04:25.696617",
   "summary": {
     "total_test_cases": 6,
     "llm_accuracy": "6/6",

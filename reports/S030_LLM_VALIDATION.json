@@ -1,7 +1,6 @@
 {
   "scenario": "S030_DynamicUTMScheduling",
   "scenario_type": "utm_dynamic",
-  "timestamp": "2025-11-09T11:28:50.968324",
   "summary": {
     "total_test_cases": 8,
     "llm_accuracy": "4/8",
