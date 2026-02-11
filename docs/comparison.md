@@ -11,7 +11,7 @@ This report presents a comparative analysis of decision-making performance in a 
 | Metric                                    | Pure LLM         | RAG-Enhanced     | Improvement        |
 | ----------------------------------------- | ---------------- | ---------------- | ------------------ |
 | **Overall Accuracy**                | 241/368 (65.49%) | 226/254 (88.98%) | **+23.49pp** |
-| **Total Errors**                    | 127              | 24               | **-81.1%**   |
+| **Total Errors**                    | 127              | 28               | **-78.0%**   |
 | **Over-rejection (soft→REJECT)**   | 43 cases         | 18 cases         | **-58.1%**   |
 | **Scenarios with ≥50% error rate** | 15               | 1                | **-93.3%**   |
 
@@ -91,8 +91,8 @@ This report presents a comparative analysis of decision-making performance in a 
 ### 3.1 Overall Statistics
 
 * **Accuracy** : 226/254 correct decisions (88.98%)
-* **Error Count** : 24 mismatches (-81.1% vs. LLM baseline)
-* **Error Distribution** : Over-rejection remains dominant at 18/24 cases (75.0%), but absolute count reduced by 58.1%
+* **Error Count** : 28 mismatches (-78.0% vs. LLM baseline)
+* **Error Distribution** : Over-rejection remains dominant at 18/28 cases (64.3%), but absolute count reduced by 58.1%
 
 ### 3.2 场景表现（RAG）
 
@@ -143,7 +143,7 @@ This report presents a comparative analysis of decision-making performance in a 
 | `REJECT_WITH_ALTERNATIVE → REJECT`   | 1     | Alternative still occasionally lost  |
 | Other                                   | 3     | Minor misalignments                  |
 
-**Key Shift** : RAG reduces total over-rejection from 43 to 18 cases but does not eliminate the pattern. The ratio of soft-to-hard collapse (18/24 = 75%) is actually higher than in pure LLM (43/127 = 33.9%), suggesting RAG improves routine cases while edge cases remain brittle.
+**Key Shift** : RAG reduces total over-rejection from 43 to 18 cases but does not eliminate the pattern. The ratio of soft-to-hard collapse (18/28 = 64.3%) remains higher than in pure LLM (43/127 = 33.9%), suggesting RAG improves routine cases while edge cases remain brittle.
 
 ---
 
@@ -165,7 +165,7 @@ RAG demonstrates differential impact across failure types, with strongest improv
 
 * RAG eliminates 14 of 15 high-risk scenarios (≥50% error rate in LLM)
 * Remaining errors concentrate in S034 (adversarial rhetoric) where retrieved policy cannot override prompt manipulation
-* Over-rejection persists at 75% of RAG errors (18/24), suggesting factual grounding increases confidence but does not teach uncertainty expression
+* Over-rejection persists at 64.3% of RAG errors (18/28), suggesting factual grounding increases confidence but does not teach uncertainty expression
 
 ### 4.1 Failure Modes by Layer
 
@@ -190,7 +190,7 @@ Based on cross-scenario error patterns, we identify five fundamental failure mod
 **Quantitative Evidence** :
 
 * **LLM** : 43/127 errors (33.9%) involve soft→`REJECT` transitions
-* **RAG** : 18/24 errors (75.0%) involve soft→`REJECT` transitions
+* **RAG** : 18/28 errors (64.3%) involve soft→`REJECT` transitions
 * **Representative Cases** : S024 (uniform `UNCERTAIN` despite clear authority ranking), S034 (rhetoric triggers `REJECT` over `EXPLAIN_ONLY`), S035 (format constraints force binary choices)
 
 **Literature Grounding** :

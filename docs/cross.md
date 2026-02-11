@@ -16,11 +16,11 @@ We analyzed 254 test cases across 29 scenarios (S021-S049) containing FAA Part 1
 
 ## Key Finding
 
-**Of 24 RAG configuration errors analyzed, 0 (0%) were attributable to regulation-specific knowledge deficits. All failures traced to universal reasoning breakdowns.**
+**Of 28 RAG configuration errors analyzed, 0 (0%) were attributable to regulation-specific knowledge deficits. All failures traced to universal reasoning breakdowns.**
 
 | Error Attribution              | Count | Percentage |
 | ------------------------------ | ----- | ---------- |
-| Universal reasoning failures   | 24    | 100%       |
+| Universal reasoning failures   | 28    | 100%       |
 | FAA-specific misinterpretation | 0     | 0%         |
 | CN-specific misinterpretation  | 0     | 0%         |
 
@@ -32,7 +32,7 @@ We analyzed 254 test cases across 29 scenarios (S021-S049) containing FAA Part 1
 
 ## Failure Mode Classification (Cross-Regulatory Analysis)
 
-### 1. Conditional Reasoning Collapse (10 errors, 41.7%)
+### 1. Conditional Reasoning Collapse (10 errors, 35.7%)
 
 LLMs collapse soft states (UNCERTAIN, EXPLAIN_ONLY) to hard REJECT when facing ambiguous conditions, regardless of whether uncertainty stems from FAA waiver procedures (S029), Chinese approval timelines (S030), or general safety trade-offs (S026-S027).
 
@@ -40,7 +40,7 @@ LLMs collapse soft states (UNCERTAIN, EXPLAIN_ONLY) to hard REJECT when facing a
 
 **Cross-regulatory evidence:** S029 (FAA progressive enforcement, 0% errors post-RAG) vs. S026 (general multi-objective conflict, 37.5% errors post-RAG)—both involve conditional approval paths, but failures concentrate where conflicts lack regulatory anchoring.
 
-### 2. Alternative Solution Blindness (9 errors, 37.5%)
+### 2. Alternative Solution Blindness (9 errors, 32.1%)
 
 Failures to generate CONDITIONAL_APPROVE or REJECT_WITH_ALTERNATIVE occur across all regulatory contexts when problems admit multiple solutions with different constraint sets.
 
@@ -48,7 +48,7 @@ Failures to generate CONDITIONAL_APPROVE or REJECT_WITH_ALTERNATIVE occur across
 
 **Cross-regulatory evidence:** Both FAA-based S029 (phased approvals) and CN-based S021 (battery contingency planning) initially failed on alternative generation—RAG retrieval of procedural examples resolved both, confirming domain-agnostic solution generation deficit.
 
-### 3. Knowledge Conflict Arbitration Failure (4 errors, 16.7%)
+### 3. Knowledge Conflict Arbitration Failure (4 errors, 14.3%)
 
 When multiple sources (policies, updates, or cross-jurisdictional rules) conflict, LLMs lack systematic arbitration strategies. Occurs in FAA/CN mixed scenarios (S031), pure CN scenarios (S025 effective date disputes), and general multi-source cases (S024).
 
@@ -56,7 +56,7 @@ When multiple sources (policies, updates, or cross-jurisdictional rules) conflic
 
 **Universal pattern:** Failures occur regardless of whether conflict is FAA-vs-FAA (S029 progressive vs. immediate enforcement), CN-vs-CN (S025 provincial vs. national), or FAA-vs-CN (S031)—regulatory domain is irrelevant.
 
-### 4. Boundary Calibration Instability (2 errors, 8.3%)
+### 4. Boundary Calibration Instability (2 errors, 7.1%)
 
 Near decision thresholds (e.g., 10.5% battery SOC vs. 10% minimum), LLMs exhibit over-confidence or over-caution independent of whether thresholds derive from FAA Part 107 operational limits or Chinese battery safety standards.
 
@@ -64,7 +64,7 @@ Near decision thresholds (e.g., 10.5% battery SOC vs. 10% minimum), LLMs exhibit
 
 **Cross-regulatory evidence:** S021 (CN battery standards) and S028 (general reserve margins) both exhibit boundary errors—regulatory source doesn't determine failure.
 
-### 5. Adversarial Prompt Injection (8 errors, 33.3%)
+### 5. Adversarial Prompt Injection (8 errors, 28.6%)
 
 Sarcasm, loophole-seeking, authority appeals, and format suppression degrade structured decisions across all regulatory contexts.
 
