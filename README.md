@@ -11,7 +11,7 @@ LAE-Bench is a benchmark for safety-critical unmanned traffic management (UTM). 
 - 49 scenarios, 368 expert-annotated test cases across Basic → Operational layers
 - Cross-regulatory grounding (CN/FAA/mixed) with bilingual assets
 - Pure LLM baseline: 65.49% → RAG: 88.98% (+23.49pp)
-- **Critical finding:** 75% of remaining RAG errors are conditional reasoning collapses
+- **Critical finding:** 64.3% of remaining RAG errors are conditional reasoning collapses
 
 **Primary contribution:** Benchmark dataset + failure taxonomy
 **Secondary contribution:** LAE-GPT reference (raw/RAG/rules) for reproducible baselines

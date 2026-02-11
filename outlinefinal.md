@@ -402,7 +402,7 @@ Our validation follows a two-stage progression from procedural to adversarial re
 - **Error Analysis:** Directional mismatches (e.g., UNCERTAIN -> REJECT)
 
 #### 3.4.3 Cross-Regulatory Attribution Methodology
-- **For each RAG error (24 cases in S021-S049):**
+- **For each RAG error (28 cases in S021-S049):**
   1. Examine scenario regulatory context (CN/FAA/General)
   2. Determine if error traceable to:
      - CN-specific regulation misunderstanding
@@ -487,8 +487,8 @@ Our validation follows a two-stage progression from procedural to adversarial re
   - UNCERTAIN -> REJECT: 16 cases
   - EXPLAIN_ONLY -> REJECT: 16 cases
   - CONDITIONAL_APPROVE -> REJECT: 9 cases
-- **RAG configuration:** Error count reduced by 81.1% (127 -> 24)
-  - But soft -> hard collapse ratio increases to 75% (18/24)
+- **RAG configuration:** Error count reduced by 78.0% (127 -> 28)
+  - But soft -> hard collapse ratio is 64.3% (18/28)
   - Interpretation: RAG fixes routine cases but edge cases remain brittle
 
 ### 4.2 Systematic Failure Taxonomy
@@ -497,7 +497,7 @@ Our validation follows a two-stage progression from procedural to adversarial re
 - **Definition:** Multi-level decision space collapses to binary outcomes
 - **Quantitative Evidence:**
   - Raw LLM: 43/127 errors involve soft → REJECT
-  - RAG: 18/24 errors involve soft → REJECT
+  - RAG: 18/28 errors involve soft → REJECT
 - **Representative Scenarios:** S024, S034, S035, S027
 - **Literature Grounding:**
   - Puerto et al. (2024): LLMs struggle with conditional antecedents under uncertainty
@@ -557,11 +557,11 @@ Our validation follows a two-stage progression from procedural to adversarial re
 
 #### 4.3.1 Failure Attribution Analysis
 - **Research Question:** Do failures stem from regulatory knowledge gaps or universal reasoning limits?
-- **Method:** Attribute each of 24 RAG errors to CN-specific, FAA-specific, or universal reasoning failure
+- **Method:** Attribute each of 28 RAG errors to CN-specific, FAA-specific, or universal reasoning failure
 - **Result:**
   - CN-specific: 0 cases (0%)
   - FAA-specific: 0 cases (0%)
-  - Universal reasoning: 24 cases (100%)
+  - Universal reasoning: 28 cases (100%)
 
 #### 4.3.2 Representative Cross-Regulatory Cases
 - **S034 (FAA waiver processes):** 5 failures on adversarial prompts
@@ -813,7 +813,7 @@ This paper presents LAE-Bench, the first systematic benchmark for evaluating LLM
 
 3. **Generalizability Evidence:** Cross-regulatory analysis reveals 0% of RAG configuration errors attributable to jurisdiction-specific knowledge gaps, confirming failure patterns reflect universal reasoning limitations rather than domain knowledge deficits.
 
-4. **Practical Insights:** RAG enhancement improves accuracy from 65.49% to 88.98%, but 75% of remaining errors occur in edge cases requiring conditional reasoning or adversarial robustness.
+4. **Practical Insights:** RAG enhancement improves accuracy from 65.49% to 88.98%, but 64.3% of remaining errors occur in edge cases requiring conditional reasoning or adversarial robustness.
 
 ### 6.2 Implications for Policy and Practice
 

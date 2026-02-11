@@ -17,7 +17,7 @@ This report presents a comparative analysis of decision-making performance in a 
 
 **Primary Achievement** : RAG substantially reduces error rate while maintaining decision structure. However, five persistent failure patterns remain across both configurations, suggesting fundamental limitations in LLM reasoning under uncertainty, conflict, and adversarial conditions.
 
-**Critical Insight** : The dominant failure mode shifts from indiscriminate over-rejection (pure LLM) to selective collapse of nuanced decisions in edge cases (RAG), with 75% of remaining RAG errors occurring when ground truth expects `UNCERTAIN`, `EXPLAIN_ONLY`, or `CONDITIONAL_APPROVE`.
+**Critical Insight** : The dominant failure mode shifts from indiscriminate over-rejection (pure LLM) to selective collapse of nuanced decisions in edge cases (RAG), with 64.3% of remaining RAG errors occurring when ground truth expects `UNCERTAIN`, `EXPLAIN_ONLY`, or `CONDITIONAL_APPROVE`.
 
 ---
 
