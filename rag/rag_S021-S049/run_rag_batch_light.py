@@ -676,7 +676,7 @@ def call_llm(prompt: str, model: str, api_key: Optional[str]) -> Optional[str]:
     try:
         genai.configure(api_key=key)
         client = genai.GenerativeModel(model)
-        resp = client.generate_content(prompt)
+        resp = client.generate_content(prompt, generation_config={"temperature": 0.0})
         return resp.text
     except Exception as e:
         print(f"LLM call failed: {e}")
@@ -697,7 +697,7 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Lightweight RAG batch for S021–S040")
     p.add_argument("--scenarios", type=str, default=None, help="Comma-separated IDs, e.g., S021,S022")
     p.add_argument("scenario_list", nargs="*", help="Positional list of scenario IDs")
-    p.add_argument("--model", default="gemini-2.5-flash", help="LLM model name")
+    p.add_argument("--model", default="Qwen/Qwen2.5-32B-Instruct", help="LLM model name")
     p.add_argument("--api-key", default=None, help="API key (or set GEMINI_API_KEY)")
     p.add_argument("--output-dir", type=Path, default=Path("reports"), help="Where to write reports")
     p.add_argument("--no-call", action="store_true", help="Build prompts only")

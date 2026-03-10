@@ -70,7 +70,6 @@ python3 scripts/run_scenario_llm_validator.py \
     scenarios/basic/S020_application_deadline.jsonc \
     --ground-truth ground_truth/S020_violations.json \
     --output reports/S020_LLM_VALIDATION.json \
-    --model gemini-2.5-flash \
     --api-key "$GEMINI_API_KEY"
 ```
 

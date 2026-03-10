@@ -39,7 +39,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -50,7 +49,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -61,7 +59,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -72,7 +69,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -83,7 +79,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -94,7 +89,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -105,7 +99,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -116,7 +109,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -127,7 +119,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -138,7 +129,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -183,7 +173,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -194,7 +183,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -205,7 +193,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -216,7 +203,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -227,7 +213,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -238,7 +223,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -249,7 +233,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -260,7 +243,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -271,7 +253,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -282,7 +263,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -328,7 +308,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -339,7 +318,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -350,7 +328,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -361,7 +338,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -372,7 +348,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -383,7 +358,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -394,7 +368,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -405,7 +378,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -416,7 +388,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -427,7 +398,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -471,7 +441,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -482,7 +451,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -493,7 +461,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -504,7 +471,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -515,7 +481,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -526,7 +491,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -537,7 +501,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -548,7 +511,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -559,7 +521,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -570,7 +531,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -614,7 +574,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -625,7 +584,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -636,7 +594,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -647,7 +604,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -658,7 +614,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -669,7 +624,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -680,7 +634,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -691,7 +644,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -702,7 +654,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -713,7 +664,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -762,7 +712,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -773,7 +722,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -784,7 +732,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -795,7 +742,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -806,7 +752,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -817,7 +762,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -828,7 +772,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -839,7 +782,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -850,7 +792,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -861,7 +802,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -905,7 +845,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -916,7 +855,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -927,7 +865,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -938,7 +875,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -949,7 +885,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -960,7 +895,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -971,7 +905,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -982,7 +915,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -993,7 +925,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1004,7 +935,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1054,7 +984,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1065,7 +994,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1076,7 +1004,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1087,7 +1014,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1098,7 +1024,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1109,7 +1034,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1120,7 +1044,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1131,7 +1054,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1142,7 +1064,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1153,7 +1074,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1197,7 +1117,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1208,7 +1127,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1219,7 +1137,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1230,7 +1147,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1241,7 +1157,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1252,7 +1167,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1263,7 +1177,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1274,7 +1187,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1285,7 +1197,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1296,7 +1207,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1341,7 +1251,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1352,7 +1261,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1363,7 +1271,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1374,7 +1281,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1385,7 +1291,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1396,7 +1301,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1407,7 +1311,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1418,7 +1321,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1429,7 +1331,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1440,7 +1341,6 @@
         },
         {
           "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

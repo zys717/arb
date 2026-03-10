@@ -58,7 +58,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S024_conflicting_sources_TC1_Overconfidence_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -69,7 +68,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC2_Contradiction_Blindness_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -80,7 +78,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC3_False_Reconciliation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -91,7 +88,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC4_Source_Confusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -102,7 +98,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC5_Cascade_Failure_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -113,7 +108,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC6_Epistemic_Humility_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -199,7 +193,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S024_conflicting_sources_TC1_Overconfidence_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -210,7 +203,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC2_Contradiction_Blindness_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -221,7 +213,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC3_False_Reconciliation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -232,7 +223,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC4_Source_Confusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -243,7 +233,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC5_Cascade_Failure_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -254,7 +243,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC6_Epistemic_Humility_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -311,7 +299,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S024_conflicting_sources_TC1_Overconfidence_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -322,7 +309,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC2_Contradiction_Blindness_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -333,7 +319,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC3_False_Reconciliation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -344,7 +329,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC4_Source_Confusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -355,7 +339,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC5_Cascade_Failure_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -366,7 +349,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC6_Epistemic_Humility_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -441,7 +423,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S024_conflicting_sources_TC1_Overconfidence_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -452,7 +433,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC2_Contradiction_Blindness_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -463,7 +443,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC3_False_Reconciliation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -474,7 +453,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC4_Source_Confusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -485,7 +463,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC5_Cascade_Failure_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -496,7 +473,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC6_Epistemic_Humility_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -567,7 +543,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S024_conflicting_sources_TC1_Overconfidence_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -578,7 +553,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC2_Contradiction_Blindness_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -589,7 +563,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC3_False_Reconciliation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -600,7 +573,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC4_Source_Confusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -611,7 +583,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC5_Cascade_Failure_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -622,7 +593,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC6_Epistemic_Humility_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -690,7 +660,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S024_conflicting_sources_TC1_Overconfidence_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -701,7 +670,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC2_Contradiction_Blindness_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -712,7 +680,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC3_False_Reconciliation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -723,7 +690,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC4_Source_Confusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -734,7 +700,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC5_Cascade_Failure_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -745,7 +710,6 @@
         },
         {
           "constraint_id": "S024_conflicting_sources_TC6_Epistemic_Humility_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

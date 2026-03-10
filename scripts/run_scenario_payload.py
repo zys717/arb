@@ -6,7 +6,6 @@ Specialized script for S017 - Payload and Drop Restrictions
 - Pre-flight: Check payload weight limit
 - In-flight: Check drop zone restrictions and authorization
 
-Author: LAE-GPT Team
 Date: 
 Version: 1.0
 

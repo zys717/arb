@@ -51,7 +51,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -62,7 +61,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -73,7 +71,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -84,7 +81,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -95,7 +91,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -106,7 +101,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -117,7 +111,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -128,7 +121,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -139,7 +131,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -150,7 +141,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -161,7 +151,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -172,7 +161,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -183,7 +171,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -194,7 +181,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -205,7 +191,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -216,7 +201,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -227,7 +211,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -238,7 +221,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -293,7 +275,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -304,7 +285,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -315,7 +295,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -326,7 +305,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -337,7 +315,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -348,7 +325,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -359,7 +335,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -370,7 +345,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -381,7 +355,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -392,7 +365,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -403,7 +375,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -414,7 +385,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -425,7 +395,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -436,7 +405,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -447,7 +415,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -458,7 +425,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -469,7 +435,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -480,7 +445,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -538,7 +502,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -549,7 +512,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -560,7 +522,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -571,7 +532,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -582,7 +542,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -593,7 +552,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -604,7 +562,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -615,7 +572,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -626,7 +582,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -637,7 +592,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -648,7 +602,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -659,7 +612,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -670,7 +622,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -681,7 +632,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -692,7 +642,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -703,7 +652,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -714,7 +662,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -725,7 +672,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -783,7 +729,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -794,7 +739,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -805,7 +749,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -816,7 +759,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -827,7 +769,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -838,7 +779,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -849,7 +789,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -860,7 +799,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -871,7 +809,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -882,7 +819,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -893,7 +829,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -904,7 +839,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -915,7 +849,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -926,7 +859,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -937,7 +869,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -948,7 +879,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -959,7 +889,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -970,7 +899,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1028,7 +956,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1039,7 +966,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1050,7 +976,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1061,7 +986,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1072,7 +996,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1083,7 +1006,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1094,7 +1016,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1105,7 +1026,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1116,7 +1036,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1127,7 +1046,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1138,7 +1056,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1149,7 +1066,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1160,7 +1076,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1171,7 +1086,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1182,7 +1096,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1193,7 +1106,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1204,7 +1116,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1215,7 +1126,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1272,7 +1182,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1283,7 +1192,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1294,7 +1202,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1305,7 +1212,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1316,7 +1222,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1327,7 +1232,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1338,7 +1242,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1349,7 +1252,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1360,7 +1262,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1371,7 +1272,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1382,7 +1282,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1393,7 +1292,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1404,7 +1302,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1415,7 +1312,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1426,7 +1322,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1437,7 +1332,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1448,7 +1342,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1459,7 +1352,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1516,7 +1408,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1527,7 +1418,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1538,7 +1428,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1549,7 +1438,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1560,7 +1448,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1571,7 +1458,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1582,7 +1468,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1593,7 +1478,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1604,7 +1488,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1615,7 +1498,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1626,7 +1508,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1637,7 +1518,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1648,7 +1528,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1659,7 +1538,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1670,7 +1548,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1681,7 +1558,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1692,7 +1568,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1703,7 +1578,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1761,7 +1635,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1772,7 +1645,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1783,7 +1655,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1794,7 +1665,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1805,7 +1675,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1816,7 +1685,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1827,7 +1695,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1838,7 +1705,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1849,7 +1715,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1860,7 +1725,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1871,7 +1735,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1882,7 +1745,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1893,7 +1755,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1904,7 +1765,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1915,7 +1775,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1926,7 +1785,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1937,7 +1795,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1948,7 +1805,6 @@
         },
         {
           "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"

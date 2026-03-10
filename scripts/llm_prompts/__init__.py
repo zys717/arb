@@ -1,5 +1,4 @@
 """
-LLM Prompt Templates for LAE-GPT
 
 This module contains specialized prompt builders for different scenario types.
 Each scenario type has its own prompt builder to maintain clarity and modularity.
@@ -20,7 +19,6 @@ Supported Scenario Types:
 - Conflicting Sources (S024): Multi-source contradiction & epistemic humility
 - Dynamic Environment (S032): Dynamic state tracking and temporal reasoning
 
-Author: LAE-GPT Team
 Date: 
 Version: 1.3
 """

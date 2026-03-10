@@ -4,7 +4,6 @@ Generic RAG batch runner for scenarios using extracted constraints.
 Workflow:
 - Load constraints_by_scenario.json (from group_constraints.py).
 - For each scenario/test_case, build a mission input (heuristic) and select relevant constraints.
-- Build RAG prompt, optionally call Gemini, and save a report per scenario.
 
 Note: Heuristic mission extraction covers common numeric fields (speed/altitude/battery/payload/wind/time).
 """
@@ -1082,7 +1081,6 @@ def clean_json_text(text: str) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generic RAG batch runner for scenarios")
     parser.add_argument("--scenarios", type=str, help="Comma-separated scenario ids (e.g., S001,S002). Default: S001-S020.", default=None)
-    parser.add_argument("--model", default="gemini-2.5-flash", help="Gemini model name")
     parser.add_argument("--output-dir", type=Path, default=Path("reports"), help="Directory to save reports")
     parser.add_argument("--no-call", action="store_true", help="Only build prompts, do not call LLM")
     return parser.parse_args()

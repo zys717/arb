@@ -52,7 +52,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -63,7 +62,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -74,7 +72,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -85,7 +82,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -96,7 +92,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -107,7 +102,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -118,7 +112,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -129,7 +122,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -140,7 +132,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -151,7 +142,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -210,7 +200,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -221,7 +210,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -232,7 +220,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -243,7 +230,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -254,7 +240,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -265,7 +250,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -276,7 +260,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -287,7 +270,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -298,7 +280,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -309,7 +290,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -362,7 +342,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -373,7 +352,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -384,7 +362,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -395,7 +372,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -406,7 +382,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -417,7 +392,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -428,7 +402,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -439,7 +412,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -450,7 +422,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -461,7 +432,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -524,7 +494,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -535,7 +504,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -546,7 +514,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -557,7 +524,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -568,7 +534,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -579,7 +544,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -590,7 +554,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -601,7 +564,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -612,7 +574,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -623,7 +584,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -679,7 +639,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -690,7 +649,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -701,7 +659,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -712,7 +669,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -723,7 +679,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -734,7 +689,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -745,7 +699,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -756,7 +709,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -767,7 +719,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -778,7 +729,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -836,7 +786,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -847,7 +796,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -858,7 +806,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -869,7 +816,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -880,7 +826,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -891,7 +836,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -902,7 +846,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -913,7 +856,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -924,7 +866,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -935,7 +876,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -988,7 +928,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -999,7 +938,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1010,7 +948,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1021,7 +958,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1032,7 +968,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1043,7 +978,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1054,7 +988,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1065,7 +998,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1076,7 +1008,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1087,7 +1018,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1144,7 +1074,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1155,7 +1084,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1166,7 +1094,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1177,7 +1104,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1188,7 +1114,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1199,7 +1124,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1210,7 +1134,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1221,7 +1144,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1232,7 +1154,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1243,7 +1164,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1294,7 +1214,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1305,7 +1224,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1316,7 +1234,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1327,7 +1244,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1338,7 +1254,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1349,7 +1264,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1360,7 +1274,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1371,7 +1284,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1382,7 +1294,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1393,7 +1304,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1459,7 +1369,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1470,7 +1379,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1481,7 +1389,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1492,7 +1399,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1503,7 +1409,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1514,7 +1419,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1525,7 +1429,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1536,7 +1439,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1547,7 +1449,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1558,7 +1459,6 @@
         },
         {
           "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

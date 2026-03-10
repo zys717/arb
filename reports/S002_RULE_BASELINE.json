@@ -88,7 +88,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "100.0",
           "canonical_value": "100.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -97,7 +96,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "500.0",
           "canonical_value": "500.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -106,7 +104,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -115,7 +112,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         },
         {
@@ -124,7 +120,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "50.0",
           "canonical_value": "50.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -133,7 +128,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "300.0",
           "canonical_value": "300.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -142,7 +136,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -151,7 +144,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         }
       ]
@@ -237,7 +229,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "100.0",
           "canonical_value": "100.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -246,7 +237,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "500.0",
           "canonical_value": "500.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -255,7 +245,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -264,7 +253,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         },
         {
@@ -273,7 +261,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "50.0",
           "canonical_value": "50.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -282,7 +269,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "300.0",
           "canonical_value": "300.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -291,7 +277,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -300,7 +285,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         }
       ]
@@ -384,7 +368,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "100.0",
           "canonical_value": "100.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -393,7 +376,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "500.0",
           "canonical_value": "500.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -402,7 +384,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -411,7 +392,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         },
         {
@@ -420,7 +400,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "50.0",
           "canonical_value": "50.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -429,7 +408,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "300.0",
           "canonical_value": "300.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -438,7 +416,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -447,7 +424,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         }
       ]
@@ -535,7 +511,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "100.0",
           "canonical_value": "100.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -544,7 +519,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "500.0",
           "canonical_value": "500.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -553,7 +527,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -562,7 +535,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         },
         {
@@ -571,7 +543,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "50.0",
           "canonical_value": "50.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_radius"
         },
         {
@@ -580,7 +551,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "300.0",
           "canonical_value": "300.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_safety_margin"
         },
         {
@@ -589,7 +559,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "-1000.0",
           "canonical_value": "-1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_min"
         },
         {
@@ -598,7 +567,6 @@
           "source_ref": "S002_multi_geofence.jsonc",
           "raw_value": "1000.0",
           "canonical_value": "1000.0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
           "constraint_id": "S002_multi_geofence_geofences_height_max"
         }
       ]

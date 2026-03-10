@@ -53,7 +53,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -64,7 +63,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -75,7 +73,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -86,7 +83,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -97,7 +93,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -108,7 +103,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -119,7 +113,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -130,7 +123,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -141,7 +133,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -152,7 +143,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -163,7 +153,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -174,7 +163,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -185,7 +173,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -196,7 +183,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -207,7 +193,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -218,7 +203,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -229,7 +213,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -240,7 +223,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]
@@ -290,7 +272,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -301,7 +282,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -312,7 +292,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -323,7 +302,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -334,7 +312,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -345,7 +322,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -356,7 +332,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -367,7 +342,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -378,7 +352,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -389,7 +362,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -400,7 +372,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -411,7 +382,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -422,7 +392,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -433,7 +402,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -444,7 +412,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -455,7 +422,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -466,7 +432,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -477,7 +442,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]
@@ -528,7 +492,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -539,7 +502,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -550,7 +512,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -561,7 +522,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -572,7 +532,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -583,7 +542,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -594,7 +552,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -605,7 +562,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -616,7 +572,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -627,7 +582,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -638,7 +592,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -649,7 +602,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -660,7 +612,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -671,7 +622,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -682,7 +632,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -693,7 +642,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -704,7 +652,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -715,7 +662,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]
@@ -766,7 +712,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -777,7 +722,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -788,7 +732,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -799,7 +742,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -810,7 +752,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -821,7 +762,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -832,7 +772,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -843,7 +782,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -854,7 +792,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -865,7 +802,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -876,7 +812,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -887,7 +822,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -898,7 +832,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -909,7 +842,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -920,7 +852,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -931,7 +862,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -942,7 +872,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -953,7 +882,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]
@@ -1002,7 +930,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -1013,7 +940,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1024,7 +950,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1035,7 +960,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1046,7 +970,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1057,7 +980,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1068,7 +990,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -1079,7 +1000,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1090,7 +1010,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1101,7 +1020,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1112,7 +1030,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1123,7 +1040,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1134,7 +1050,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1145,7 +1060,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1156,7 +1070,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1167,7 +1080,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1178,7 +1090,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1189,7 +1100,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]
@@ -1240,7 +1150,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -1251,7 +1160,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1262,7 +1170,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1273,7 +1180,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1284,7 +1190,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1295,7 +1200,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1306,7 +1210,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -1317,7 +1220,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1328,7 +1230,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1339,7 +1240,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1350,7 +1250,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1361,7 +1260,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1372,7 +1270,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1383,7 +1280,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1394,7 +1290,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1405,7 +1300,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1416,7 +1310,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1427,7 +1320,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]
@@ -1478,7 +1370,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -1489,7 +1380,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1500,7 +1390,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1511,7 +1400,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1522,7 +1410,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1533,7 +1420,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1544,7 +1430,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -1555,7 +1440,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1566,7 +1450,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1577,7 +1460,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1588,7 +1470,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1599,7 +1480,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1610,7 +1490,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1621,7 +1500,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1632,7 +1510,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1643,7 +1520,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1654,7 +1530,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1665,7 +1540,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]
@@ -1714,7 +1588,6 @@
           "raw_unit": "m",
           "canonical_value": "1.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
         },
         {
@@ -1725,7 +1598,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1736,7 +1608,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1747,7 +1618,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1758,7 +1628,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1769,7 +1638,6 @@
           "raw_unit": "m",
           "canonical_value": "70.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1780,7 +1648,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
         },
         {
@@ -1791,7 +1658,6 @@
           "raw_unit": "m",
           "canonical_value": "80.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1802,7 +1668,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1813,7 +1678,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1824,7 +1688,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1835,7 +1698,6 @@
           "raw_unit": "m",
           "canonical_value": "110.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1846,7 +1708,6 @@
           "raw_unit": "m",
           "canonical_value": "10.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1857,7 +1718,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
         },
         {
@@ -1868,7 +1728,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
         },
         {
@@ -1879,7 +1738,6 @@
           "raw_unit": "m",
           "canonical_value": "60.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1890,7 +1748,6 @@
           "raw_unit": "m",
           "canonical_value": "90.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         },
         {
@@ -1901,7 +1758,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
           "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
         }
       ]

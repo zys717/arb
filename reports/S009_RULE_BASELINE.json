@@ -50,7 +50,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_kmh"
         },
         {
@@ -61,7 +60,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_ms"
         },
         {
@@ -72,7 +70,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -83,7 +80,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -94,7 +90,6 @@
           "raw_unit": "m/s",
           "canonical_value": "7.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -105,7 +100,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -116,7 +110,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -127,7 +120,6 @@
           "raw_unit": "m/s",
           "canonical_value": "1.777777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -138,7 +130,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -149,7 +140,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -160,7 +150,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -171,7 +160,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -182,7 +170,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -193,7 +180,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.7222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -204,7 +190,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -215,7 +200,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -226,7 +210,6 @@
           "raw_unit": "m/s",
           "canonical_value": "2.2222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -237,7 +220,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -248,7 +230,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -259,7 +240,6 @@
           "raw_unit": "m/s",
           "canonical_value": "12.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         }
       ]
@@ -306,7 +286,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_kmh"
         },
         {
@@ -317,7 +296,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_ms"
         },
         {
@@ -328,7 +306,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -339,7 +316,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -350,7 +326,6 @@
           "raw_unit": "m/s",
           "canonical_value": "7.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -361,7 +336,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -372,7 +346,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -383,7 +356,6 @@
           "raw_unit": "m/s",
           "canonical_value": "1.777777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -394,7 +366,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -405,7 +376,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -416,7 +386,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -427,7 +396,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -438,7 +406,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -449,7 +416,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.7222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -460,7 +426,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -471,7 +436,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -482,7 +446,6 @@
           "raw_unit": "m/s",
           "canonical_value": "2.2222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -493,7 +456,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -504,7 +466,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -515,7 +476,6 @@
           "raw_unit": "m/s",
           "canonical_value": "12.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         }
       ]
@@ -561,7 +521,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_kmh"
         },
         {
@@ -572,7 +531,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_ms"
         },
         {
@@ -583,7 +541,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -594,7 +551,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -605,7 +561,6 @@
           "raw_unit": "m/s",
           "canonical_value": "7.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -616,7 +571,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -627,7 +581,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -638,7 +591,6 @@
           "raw_unit": "m/s",
           "canonical_value": "1.777777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -649,7 +601,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -660,7 +611,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -671,7 +621,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -682,7 +631,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -693,7 +641,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -704,7 +651,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.7222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -715,7 +661,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -726,7 +671,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -737,7 +681,6 @@
           "raw_unit": "m/s",
           "canonical_value": "2.2222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -748,7 +691,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -759,7 +701,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -770,7 +711,6 @@
           "raw_unit": "m/s",
           "canonical_value": "12.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         }
       ]
@@ -816,7 +756,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_kmh"
         },
         {
@@ -827,7 +766,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_ms"
         },
         {
@@ -838,7 +776,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -849,7 +786,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -860,7 +796,6 @@
           "raw_unit": "m/s",
           "canonical_value": "7.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -871,7 +806,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -882,7 +816,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -893,7 +826,6 @@
           "raw_unit": "m/s",
           "canonical_value": "1.777777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -904,7 +836,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -915,7 +846,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -926,7 +856,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -937,7 +866,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -948,7 +876,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -959,7 +886,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.7222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -970,7 +896,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -981,7 +906,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -992,7 +916,6 @@
           "raw_unit": "m/s",
           "canonical_value": "2.2222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -1003,7 +926,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1014,7 +936,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1025,7 +946,6 @@
           "raw_unit": "m/s",
           "canonical_value": "12.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         }
       ]
@@ -1071,7 +991,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_kmh"
         },
         {
@@ -1082,7 +1001,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_ms"
         },
         {
@@ -1093,7 +1011,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1104,7 +1021,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1115,7 +1031,6 @@
           "raw_unit": "m/s",
           "canonical_value": "7.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -1126,7 +1041,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1137,7 +1051,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1148,7 +1061,6 @@
           "raw_unit": "m/s",
           "canonical_value": "1.777777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -1159,7 +1071,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1170,7 +1081,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1181,7 +1091,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -1192,7 +1101,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1203,7 +1111,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1214,7 +1121,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.7222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -1225,7 +1131,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1236,7 +1141,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1247,7 +1151,6 @@
           "raw_unit": "m/s",
           "canonical_value": "2.2222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -1258,7 +1161,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1269,7 +1171,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1280,7 +1181,6 @@
           "raw_unit": "m/s",
           "canonical_value": "12.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         }
       ]
@@ -1327,7 +1227,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_kmh"
         },
         {
@@ -1338,7 +1237,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_ms"
         },
         {
@@ -1349,7 +1247,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1360,7 +1257,6 @@
           "raw_unit": "m/s",
           "canonical_value": "20.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1371,7 +1267,6 @@
           "raw_unit": "m/s",
           "canonical_value": "7.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -1382,7 +1277,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1393,7 +1287,6 @@
           "raw_unit": "m/s",
           "canonical_value": "26.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1404,7 +1297,6 @@
           "raw_unit": "m/s",
           "canonical_value": "1.777777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -1415,7 +1307,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.78",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1426,7 +1317,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1437,7 +1327,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         },
         {
@@ -1448,7 +1337,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1459,7 +1347,6 @@
           "raw_unit": "m/s",
           "canonical_value": "28.5",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1470,7 +1357,6 @@
           "raw_unit": "m/s",
           "canonical_value": "0.7222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -1481,7 +1367,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1492,7 +1377,6 @@
           "raw_unit": "m/s",
           "canonical_value": "30.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1503,7 +1387,6 @@
           "raw_unit": "m/s",
           "canonical_value": "2.2222222222222223",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
         },
         {
@@ -1514,7 +1397,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
         },
         {
@@ -1525,7 +1407,6 @@
           "raw_unit": "m/s",
           "canonical_value": "15.0",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
         },
         {
@@ -1536,7 +1417,6 @@
           "raw_unit": "m/s",
           "canonical_value": "12.777777777777779",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
           "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
         }
       ]

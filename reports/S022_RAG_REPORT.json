@@ -83,7 +83,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -94,7 +93,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -105,7 +103,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -116,7 +113,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -127,7 +123,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -138,7 +133,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -149,7 +143,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -160,7 +153,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -171,7 +163,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -182,7 +173,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -193,7 +183,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -204,7 +193,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -215,7 +203,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -226,7 +213,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -237,7 +223,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -248,7 +233,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -259,7 +243,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -270,7 +253,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -281,7 +263,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -292,7 +273,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -303,7 +283,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -314,7 +293,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -325,7 +303,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -336,7 +313,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -347,7 +323,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -358,7 +333,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -369,7 +343,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -463,7 +436,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -474,7 +446,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -485,7 +456,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -496,7 +466,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -507,7 +476,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -518,7 +486,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -529,7 +496,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -540,7 +506,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -551,7 +516,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -562,7 +526,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -573,7 +536,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -584,7 +546,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -595,7 +556,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -606,7 +566,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -617,7 +576,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -628,7 +586,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -639,7 +596,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -650,7 +606,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -661,7 +616,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -672,7 +626,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -683,7 +636,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -694,7 +646,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -705,7 +656,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -716,7 +666,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -727,7 +676,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -738,7 +686,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -749,7 +696,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -822,7 +768,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -833,7 +778,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -844,7 +788,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -855,7 +798,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -866,7 +808,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -877,7 +818,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -888,7 +828,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -899,7 +838,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -910,7 +848,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -921,7 +858,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -932,7 +868,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -943,7 +878,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -954,7 +888,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -965,7 +898,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -976,7 +908,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -987,7 +918,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -998,7 +928,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1009,7 +938,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1020,7 +948,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -1031,7 +958,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1042,7 +968,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1053,7 +978,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1064,7 +988,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1075,7 +998,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1086,7 +1008,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1097,7 +1018,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1108,7 +1028,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1208,7 +1127,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1219,7 +1137,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1230,7 +1147,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1241,7 +1157,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1252,7 +1167,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1263,7 +1177,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1274,7 +1187,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1285,7 +1197,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1296,7 +1207,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1307,7 +1217,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1318,7 +1227,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1329,7 +1237,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1340,7 +1247,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1351,7 +1257,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1362,7 +1267,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -1373,7 +1277,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1384,7 +1287,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1395,7 +1297,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1406,7 +1307,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -1417,7 +1317,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1428,7 +1327,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1439,7 +1337,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1450,7 +1347,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1461,7 +1357,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1472,7 +1367,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1483,7 +1377,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1494,7 +1387,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1585,7 +1477,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1596,7 +1487,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1607,7 +1497,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1618,7 +1507,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1629,7 +1517,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1640,7 +1527,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1651,7 +1537,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1662,7 +1547,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1673,7 +1557,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1684,7 +1567,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1695,7 +1577,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1706,7 +1587,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1717,7 +1597,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1728,7 +1607,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1739,7 +1617,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -1750,7 +1627,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1761,7 +1637,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1772,7 +1647,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1783,7 +1657,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -1794,7 +1667,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1805,7 +1677,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1816,7 +1687,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1827,7 +1697,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1838,7 +1707,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1849,7 +1717,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1860,7 +1727,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1871,7 +1737,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -1947,7 +1812,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1958,7 +1822,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1969,7 +1832,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1980,7 +1842,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -1991,7 +1852,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2002,7 +1862,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2013,7 +1872,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2024,7 +1882,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2035,7 +1892,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2046,7 +1902,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2057,7 +1912,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2068,7 +1922,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2079,7 +1932,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2090,7 +1942,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2101,7 +1952,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -2112,7 +1962,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2123,7 +1972,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2134,7 +1982,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2145,7 +1992,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -2156,7 +2002,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2167,7 +2012,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2178,7 +2022,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2189,7 +2032,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2200,7 +2042,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2211,7 +2052,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2222,7 +2062,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2233,7 +2072,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2349,7 +2187,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2360,7 +2197,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2371,7 +2207,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2382,7 +2217,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2393,7 +2227,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2404,7 +2237,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2415,7 +2247,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2426,7 +2257,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2437,7 +2267,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2448,7 +2277,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2459,7 +2287,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2470,7 +2297,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2481,7 +2307,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2492,7 +2317,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2503,7 +2327,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -2514,7 +2337,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2525,7 +2347,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2536,7 +2357,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2547,7 +2367,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -2558,7 +2377,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2569,7 +2387,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2580,7 +2397,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2591,7 +2407,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2602,7 +2417,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2613,7 +2427,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2624,7 +2437,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2635,7 +2447,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2745,7 +2556,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S022_rule_conflict_priority_regref_0",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2756,7 +2566,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_1",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2767,7 +2576,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_2",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2778,7 +2586,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_3",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2789,7 +2596,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_regref_4",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "RegulationVersion",
           "concepts": [
             "RegulationVersion"
@@ -2800,7 +2606,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2811,7 +2616,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2822,7 +2626,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2833,7 +2636,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2844,7 +2646,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2855,7 +2656,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2866,7 +2666,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2877,7 +2676,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2888,7 +2686,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2899,7 +2696,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -2910,7 +2706,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2921,7 +2716,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2932,7 +2726,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2943,7 +2736,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "NoFlyZone",
           "concepts": [
             "NoFlyZone"
@@ -2954,7 +2746,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2965,7 +2756,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2976,7 +2766,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -2987,7 +2776,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -2998,7 +2786,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -3009,7 +2796,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"
@@ -3020,7 +2806,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -3031,7 +2816,6 @@
         },
         {
           "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
           "concept": "Ambiguity",
           "concepts": [
             "Ambiguity"

@@ -11,7 +11,6 @@ The original per-scenario READMEs were corrupted and removed. Use this file as t
 
 ## Notes on status
 - These 20 scenarios served as the original baseline; keep them unchanged for regression comparisons.
-- Brand: LAE-GPT (legacy references to prior names have been removed).
 
 ## Scenario index
 - S001 – `S001_geofence_basic.jsonc`

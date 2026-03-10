@@ -128,7 +128,6 @@
       "transfer_study",
       "no_layering"
     ],
-    "description": "Civil aviation runway incursion cases derived from ASRS reports for LAE-GPT transferability study.",
     "notes": "Standard scene config kept for format consistency; not intended for simulation. Decisions initially marked UNCERTAIN pending rule mapping."
   }
 }

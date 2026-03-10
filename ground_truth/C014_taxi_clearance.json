@@ -2,7 +2,6 @@
   "scenario_id": "C014",
   "scenario_name": "taxi_clearance",
   "test_rule": "CIVIL_TAXI_CLEARANCE",
-  "description": "taxi clearance cases (ASRS). Transferability study for LAE-GPT in mature civil aviation domain.",
   "initial_state": {
     "notes": "No simulation. Placeholder state for format consistency."
   },

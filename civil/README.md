@@ -1,11 +1,9 @@
 # Civil Aviation Extension (ASRS)
 
-This folder contains ASRS-derived civil aviation datasets used to validate LAE-GPT transferability in a mature, procedure-driven domain.
 
 ## Scope & Rationale
 
 Civil aviation approval tasks are more conditional, procedural, and standardized than low-altitude/eVTOL operations.
-We therefore **first** validate LAE-GPT on civil aviation tasks, then use the high success rate in this mature domain as transfer evidence for low-altitude approval experiments.
 
 ## Data Sources
 

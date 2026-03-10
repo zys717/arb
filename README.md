@@ -1,6 +1,5 @@
 # LAE-Bench: Evaluating LLM Decision-Making in Low-Altitude Traffic Management
 
-LAE-Bench is a benchmark for safety-critical unmanned traffic management (UTM). It stresses large language models with rule conflicts, dynamic constraints, and adversarial intent, and ships a reference implementation (LAE-GPT) plus RAG/rule baselines to reveal systematic reasoning limits.
 
 ---
 
@@ -14,7 +13,6 @@ LAE-Bench is a benchmark for safety-critical unmanned traffic management (UTM). 
 - **Critical finding:** 64.3% of remaining RAG errors are conditional reasoning collapses
 
 **Primary contribution:** Benchmark dataset + failure taxonomy
-**Secondary contribution:** LAE-GPT reference (raw/RAG/rules) for reproducible baselines
 
 Further reading: `docs/comparison.md`, `docs/cross.md`, `docs/capability.md`
 
@@ -23,7 +21,6 @@ Further reading: `docs/comparison.md`, `docs/cross.md`, `docs/capability.md`
 ## Civil Aviation Transfer Study
 
 Civil aviation approval tasks are more procedural and standardized than low-altitude operations.
-We therefore **first** validate LAE-GPT on ASRS-derived civil aviation approval scenarios and use the strong performance as transfer evidence for low-altitude/eVTOL task approval.
 
 Data and mapping live under `civil/`; scenario/GT files are in `scenarios/civil_aviation/` and `ground_truth/` (C001–C015). See `civil/README.md` for details.
 

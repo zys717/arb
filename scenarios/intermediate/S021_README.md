@@ -31,7 +31,6 @@ python3 scripts/run_scenario_llm_validator.py \
   scenarios/intermediate/S021_emergency_battery_dilemma.jsonc \
   --ground-truth ground_truth/S021_violations.json \
   --output reports/S021_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
   --api-key "$GEMINI_API_KEY"
 ```
 

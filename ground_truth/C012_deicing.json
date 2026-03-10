@@ -2,7 +2,6 @@
   "scenario_id": "C012",
   "scenario_name": "deicing",
   "test_rule": "CIVIL_DEICING",
-  "description": "deicing cases (ASRS). Transferability study for LAE-GPT in mature civil aviation domain.",
   "initial_state": {
     "notes": "No simulation. Placeholder state for format consistency."
   },

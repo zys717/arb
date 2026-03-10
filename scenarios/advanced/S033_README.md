@@ -34,7 +34,6 @@ python3 scripts/run_scenario_llm_validator.py \
  scenarios/advanced/S033_dynamic_priority.jsonc \
  --ground-truth ground_truth/S033_violations.json \
  --output reports/S033_LLM_VALIDATION.json \
- --model gemini-2.5-flash \
  --api-key "$GEMINI_API_KEY"
 ```
 

@@ -3,8 +3,8 @@
   "scenario_type": "nfz",
   "summary": {
     "total_test_cases": 4,
-    "llm_accuracy": "4/4",
-    "llm_accuracy_percent": "100.0%"
+    "llm_accuracy": "3/4",
+    "llm_accuracy_percent": "75.0%"
   },
   "results": [
     {

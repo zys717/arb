@@ -57,7 +57,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -68,7 +67,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -79,7 +77,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -90,7 +87,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -101,7 +97,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -112,7 +107,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -123,7 +117,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -134,7 +127,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -202,7 +194,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -213,7 +204,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -224,7 +214,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -235,7 +224,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -246,7 +234,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -257,7 +244,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -268,7 +254,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -279,7 +264,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -353,7 +337,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -364,7 +347,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -375,7 +357,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -386,7 +367,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -397,7 +377,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -408,7 +387,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -419,7 +397,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -430,7 +407,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -501,7 +477,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -512,7 +487,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -523,7 +497,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -534,7 +507,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -545,7 +517,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -556,7 +527,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -567,7 +537,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -578,7 +547,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -633,7 +601,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -644,7 +611,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -655,7 +621,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -666,7 +631,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -677,7 +641,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -688,7 +651,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -699,7 +661,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -710,7 +671,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -772,7 +732,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -783,7 +742,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -794,7 +752,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -805,7 +762,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -816,7 +772,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -827,7 +782,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -838,7 +792,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -849,7 +802,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -917,7 +869,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -928,7 +879,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -939,7 +889,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -950,7 +899,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -961,7 +909,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -972,7 +919,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -983,7 +929,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -994,7 +939,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1061,7 +1005,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1072,7 +1015,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1083,7 +1025,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1094,7 +1035,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1105,7 +1045,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1116,7 +1055,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1127,7 +1065,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1138,7 +1075,6 @@
         },
         {
           "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

@@ -3,7 +3,6 @@
 **Scenario**: `S029_PhasedConditional` (`scenarios/intermediate/S029_phased_conditional.jsonc`)  
 **Ground Truth**: `ground_truth/S029_violations.json`  
 **Run Timestamp**: .593037  
-**Model**: Gemini 2.5 Flash  
 **Accuracy**: 5/8 (62.5%)  
 **Report Version**: 1.0
 
@@ -77,5 +76,4 @@ For complete per-test case analysis including:
 ---
 
 **Report Generated**:   
-**Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

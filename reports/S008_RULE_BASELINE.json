@@ -60,7 +60,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S008_structure_waiver.jsonc",
           "constraint_id": "S008_structure_waiver_scenario_parameters_global_altitude_limit_agl"
         }
       ]
@@ -118,7 +117,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S008_structure_waiver.jsonc",
           "constraint_id": "S008_structure_waiver_scenario_parameters_global_altitude_limit_agl"
         }
       ]
@@ -176,7 +174,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S008_structure_waiver.jsonc",
           "constraint_id": "S008_structure_waiver_scenario_parameters_global_altitude_limit_agl"
         }
       ]
@@ -234,7 +231,6 @@
           "raw_unit": "m",
           "canonical_value": "120.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S008_structure_waiver.jsonc",
           "constraint_id": "S008_structure_waiver_scenario_parameters_global_altitude_limit_agl"
         }
       ]

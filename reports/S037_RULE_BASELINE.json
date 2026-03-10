@@ -46,7 +46,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -57,7 +56,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -68,7 +66,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -79,7 +76,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -90,7 +86,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -101,7 +96,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -112,7 +106,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -123,7 +116,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -134,7 +126,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -145,7 +136,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -193,7 +183,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -204,7 +193,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -215,7 +203,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -226,7 +213,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -237,7 +223,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -248,7 +233,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -259,7 +243,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -270,7 +253,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -281,7 +263,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -292,7 +273,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -343,7 +323,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -354,7 +333,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -365,7 +343,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -376,7 +353,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -387,7 +363,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -398,7 +373,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -409,7 +383,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -420,7 +393,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -431,7 +403,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -442,7 +413,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -489,7 +459,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -500,7 +469,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -511,7 +479,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -522,7 +489,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -533,7 +499,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -544,7 +509,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -555,7 +519,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -566,7 +529,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -577,7 +539,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -588,7 +549,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -645,7 +605,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -656,7 +615,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -667,7 +625,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -678,7 +635,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -689,7 +645,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -700,7 +655,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -711,7 +665,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -722,7 +675,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -733,7 +685,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -744,7 +695,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -794,7 +744,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -805,7 +754,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -816,7 +764,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -827,7 +774,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -838,7 +784,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -849,7 +794,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -860,7 +804,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -871,7 +814,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -882,7 +824,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -893,7 +834,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -937,7 +877,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -948,7 +887,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -959,7 +897,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -970,7 +907,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -981,7 +917,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -992,7 +927,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1003,7 +937,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1014,7 +947,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1025,7 +957,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1036,7 +967,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1089,7 +1019,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1100,7 +1029,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1111,7 +1039,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1122,7 +1049,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1133,7 +1059,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1144,7 +1069,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1155,7 +1079,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1166,7 +1089,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1177,7 +1099,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1188,7 +1109,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1245,7 +1165,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1256,7 +1175,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1267,7 +1185,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1278,7 +1195,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1289,7 +1205,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1300,7 +1215,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1311,7 +1225,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1322,7 +1235,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1333,7 +1245,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1344,7 +1255,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1403,7 +1313,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1414,7 +1323,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1425,7 +1333,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1436,7 +1343,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1447,7 +1353,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1458,7 +1363,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1469,7 +1373,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1480,7 +1383,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1491,7 +1393,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1502,7 +1403,6 @@
         },
         {
           "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

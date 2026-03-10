@@ -128,7 +128,6 @@
       "transfer_study",
       "no_layering"
     ],
-    "description": "Civil aviation notam restricted airspace cases derived from ASRS reports for LAE-GPT transferability study.",
     "notes": "Standard scene config kept for format consistency; not intended for simulation. Decisions initially marked UNCERTAIN pending rule mapping."
   }
 }

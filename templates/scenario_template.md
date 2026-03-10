@@ -1,4 +1,3 @@
-# Scenario Template for LAE-GPT
 
 Use this template to design new test scenarios for the benchmark.
 

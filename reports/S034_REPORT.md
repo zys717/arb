@@ -3,7 +3,6 @@
 **Scenario**: `S034_PragmaticIntent` (`scenarios/advanced/S034_pragmatic_intent.jsonc`)  
 **Ground Truth**: `ground_truth/S034_violations.json`  
 **Run Timestamp**: .308504  
-**Model**: Gemini 2.5 Flash  
 **Accuracy**: 4/10 (40.0%)  
 **Report Version**: 1.0
 
@@ -79,5 +78,4 @@ For complete per-test case analysis including:
 ---
 
 **Report Generated**:   
-**Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

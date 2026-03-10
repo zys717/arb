@@ -70,7 +70,6 @@ python3 scripts/run_scenario_llm_validator.py \
     scenarios/basic/S010_zoned_speed.jsonc \
     --ground-truth ground_truth/S010_violations.json \
     --output reports/S010_LLM_VALIDATION.json \
-    --model gemini-2.5-flash \
     --api-key "$GEMINI_API_KEY"
 ```
 

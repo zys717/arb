@@ -1,4 +1,3 @@
-# LAE-GPT Scenario Standard
 
 **Based on**: S002 Multi-Geofence Detection (Reference Implementation)  
 **Version**: 1.0  
@@ -8,7 +7,6 @@
 
 ## Overview
 
-This document defines the standard structure and requirements for all scenarios in LAE-GPT, based on lessons learned from S001 and S002.
 
 ---
 
@@ -311,7 +309,6 @@ python run_scenario.py \
 ### Local Analysis
 
 ```bash
-cd LAE-GPT/scripts
 
 python detect_violations.py \
     ../test_logs/trajectory_S00X_TC1.json \
@@ -428,6 +425,5 @@ Distance = sqrt((x1-x2)² + (y1-y2)² + (z1-z2)²) = X.Xm
 
 ---
 
-**Maintained by**: LAE-GPT Team  
 **Last Updated**: 
 

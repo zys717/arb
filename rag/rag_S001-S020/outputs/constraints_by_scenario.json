@@ -6,7 +6,6 @@
       "source_ref": "S001_geofence_basic.jsonc",
       "raw_value": "100.0",
       "canonical_value": "100.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S001_geofence_basic.jsonc",
       "constraint_id": "S001_geofence_basic_geofences_radius"
     },
     {
@@ -15,7 +14,6 @@
       "source_ref": "S001_geofence_basic.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S001_geofence_basic.jsonc",
       "constraint_id": "S001_geofence_basic_geofences_safety_margin"
     },
     {
@@ -24,7 +22,6 @@
       "source_ref": "S001_geofence_basic.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S001_geofence_basic.jsonc",
       "constraint_id": "S001_geofence_basic_geofences_height_min"
     },
     {
@@ -33,7 +30,6 @@
       "source_ref": "S001_geofence_basic.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S001_geofence_basic.jsonc",
       "constraint_id": "S001_geofence_basic_geofences_height_max"
     }
   ],
@@ -44,7 +40,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "100.0",
       "canonical_value": "100.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_radius"
     },
     {
@@ -53,7 +48,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "500.0",
       "canonical_value": "500.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_safety_margin"
     },
     {
@@ -62,7 +56,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_height_min"
     },
     {
@@ -71,7 +64,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_height_max"
     },
     {
@@ -80,7 +72,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "50.0",
       "canonical_value": "50.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_radius"
     },
     {
@@ -89,7 +80,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "300.0",
       "canonical_value": "300.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_safety_margin"
     },
     {
@@ -98,7 +88,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_height_min"
     },
     {
@@ -107,7 +96,6 @@
       "source_ref": "S002_multi_geofence.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S002_multi_geofence.jsonc",
       "constraint_id": "S002_multi_geofence_geofences_height_max"
     }
   ],
@@ -118,7 +106,6 @@
       "source_ref": "S003_path_crossing.jsonc",
       "raw_value": "100.0",
       "canonical_value": "100.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S003_path_crossing.jsonc",
       "constraint_id": "S003_path_crossing_geofences_radius"
     },
     {
@@ -127,7 +114,6 @@
       "source_ref": "S003_path_crossing.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S003_path_crossing.jsonc",
       "constraint_id": "S003_path_crossing_geofences_safety_margin"
     },
     {
@@ -136,7 +122,6 @@
       "source_ref": "S003_path_crossing.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S003_path_crossing.jsonc",
       "constraint_id": "S003_path_crossing_geofences_height_min"
     },
     {
@@ -145,7 +130,6 @@
       "source_ref": "S003_path_crossing.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S003_path_crossing.jsonc",
       "constraint_id": "S003_path_crossing_geofences_height_max"
     }
   ],
@@ -156,7 +140,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "500.0",
       "canonical_value": "500.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_radius"
     },
     {
@@ -165,7 +148,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "0.0",
       "canonical_value": "0.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_safety_margin"
     },
     {
@@ -174,7 +156,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_height_min"
     },
     {
@@ -183,7 +164,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_height_max"
     },
     {
@@ -192,7 +172,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "2000.0",
       "canonical_value": "2000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_radius"
     },
     {
@@ -201,7 +180,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "0.0",
       "canonical_value": "0.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_safety_margin"
     },
     {
@@ -210,7 +188,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_height_min"
     },
     {
@@ -219,7 +196,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_height_max"
     },
     {
@@ -228,7 +204,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "5000.0",
       "canonical_value": "5000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_radius"
     },
     {
@@ -237,7 +212,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "0.0",
       "canonical_value": "0.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_safety_margin"
     },
     {
@@ -246,7 +220,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_height_min"
     },
     {
@@ -255,7 +228,6 @@
       "source_ref": "S004_airport_zones.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S004_airport_zones.jsonc",
       "constraint_id": "S004_airport_zones_geofences_height_max"
     }
   ],
@@ -266,7 +238,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "2000.0",
       "canonical_value": "2000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_radius"
     },
     {
@@ -275,7 +246,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "500.0",
       "canonical_value": "500.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_safety_margin"
     },
     {
@@ -284,7 +254,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_height_min"
     },
     {
@@ -293,7 +262,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_height_max"
     },
     {
@@ -304,7 +272,6 @@
       "raw_unit": "hours",
       "canonical_value": "24.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_time_restriction_advance_notice_hours"
     },
     {
@@ -313,7 +280,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_radius"
     },
     {
@@ -322,7 +288,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "500.0",
       "canonical_value": "500.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_safety_margin"
     },
     {
@@ -331,7 +296,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "-1000.0",
       "canonical_value": "-1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_height_min"
     },
     {
@@ -340,7 +304,6 @@
       "source_ref": "S005_dynamic_tfr.jsonc",
       "raw_value": "1000.0",
       "canonical_value": "1000.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_height_max"
     },
     {
@@ -351,7 +314,6 @@
       "raw_unit": "minutes",
       "canonical_value": "30.0",
       "canonical_unit": "minutes",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S005_dynamic_tfr.jsonc",
       "constraint_id": "S005_dynamic_tfr_geofences_time_restriction_advance_notice_minutes"
     }
   ],
@@ -364,7 +326,6 @@
       "raw_unit": "m",
       "canonical_value": "120.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_scenario_parameters_altitude_limit_agl"
     },
     {
@@ -375,7 +336,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_target_altitude_agl"
     },
     {
@@ -386,7 +346,6 @@
       "raw_unit": "m",
       "canonical_value": "70.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_altitude_margin"
     },
     {
@@ -397,7 +356,6 @@
       "raw_unit": "m",
       "canonical_value": "119.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_target_altitude_agl"
     },
     {
@@ -408,7 +366,6 @@
       "raw_unit": "m",
       "canonical_value": "1.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_altitude_margin"
     },
     {
@@ -419,7 +376,6 @@
       "raw_unit": "m",
       "canonical_value": "120.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_target_altitude_agl"
     },
     {
@@ -430,7 +386,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_altitude_margin"
     },
     {
@@ -441,7 +396,6 @@
       "raw_unit": "m",
       "canonical_value": "125.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_target_altitude_agl"
     },
     {
@@ -452,7 +406,6 @@
       "raw_unit": "m",
       "canonical_value": "5.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_altitude_excess"
     },
     {
@@ -463,7 +416,6 @@
       "raw_unit": "m",
       "canonical_value": "150.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_target_altitude_agl"
     },
     {
@@ -474,7 +426,6 @@
       "raw_unit": "m",
       "canonical_value": "30.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_altitude_excess"
     },
     {
@@ -485,7 +436,6 @@
       "raw_unit": "m",
       "canonical_value": "100.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_target_altitude_agl"
     },
     {
@@ -496,7 +446,6 @@
       "raw_unit": "m",
       "canonical_value": "20.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S006_altitude_limit.jsonc",
       "constraint_id": "S006_altitude_limit_test_cases_test_points_altitude_margin"
     }
   ],
@@ -509,7 +458,6 @@
       "raw_unit": "m",
       "canonical_value": "1.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_scenario_parameters_zone_based_altitude_limits"
     },
     {
@@ -520,7 +468,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
     },
     {
@@ -531,7 +478,6 @@
       "raw_unit": "m",
       "canonical_value": "10.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
     },
     {
@@ -542,7 +488,6 @@
       "raw_unit": "m",
       "canonical_value": "60.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
     },
     {
@@ -553,7 +498,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
     },
     {
@@ -564,7 +508,6 @@
       "raw_unit": "m",
       "canonical_value": "70.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
     },
     {
@@ -575,7 +518,6 @@
       "raw_unit": "m",
       "canonical_value": "10.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_excess"
     },
     {
@@ -586,7 +528,6 @@
       "raw_unit": "m",
       "canonical_value": "80.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
     },
     {
@@ -597,7 +538,6 @@
       "raw_unit": "m",
       "canonical_value": "10.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
     },
     {
@@ -608,7 +548,6 @@
       "raw_unit": "m",
       "canonical_value": "90.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
     },
     {
@@ -619,7 +558,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
     },
     {
@@ -630,7 +568,6 @@
       "raw_unit": "m",
       "canonical_value": "110.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
     },
     {
@@ -641,7 +578,6 @@
       "raw_unit": "m",
       "canonical_value": "10.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
     },
     {
@@ -652,7 +588,6 @@
       "raw_unit": "m",
       "canonical_value": "120.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_target_altitude"
     },
     {
@@ -663,7 +598,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_test_cases_test_points_altitude_margin"
     },
     {
@@ -674,7 +608,6 @@
       "raw_unit": "m",
       "canonical_value": "60.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
     },
     {
@@ -685,7 +618,6 @@
       "raw_unit": "m",
       "canonical_value": "90.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
     },
     {
@@ -696,7 +628,6 @@
       "raw_unit": "m",
       "canonical_value": "120.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S007_zone_altitude_limits.jsonc",
       "constraint_id": "S007_zone_altitude_limits_altitude_zones_altitude_limit_agl"
     }
   ],
@@ -709,7 +640,6 @@
       "raw_unit": "m",
       "canonical_value": "120.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S008_structure_waiver.jsonc",
       "constraint_id": "S008_structure_waiver_scenario_parameters_global_altitude_limit_agl"
     }
   ],
@@ -722,7 +652,6 @@
       "raw_unit": "m/s",
       "canonical_value": "27.77777777777778",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_kmh"
     },
     {
@@ -733,7 +662,6 @@
       "raw_unit": "m/s",
       "canonical_value": "27.78",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_scenario_parameters_speed_limit_ms"
     },
     {
@@ -744,7 +672,6 @@
       "raw_unit": "m/s",
       "canonical_value": "20.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
     },
     {
@@ -755,7 +682,6 @@
       "raw_unit": "m/s",
       "canonical_value": "20.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
     },
     {
@@ -766,7 +692,6 @@
       "raw_unit": "m/s",
       "canonical_value": "7.777777777777779",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
     },
     {
@@ -777,7 +702,6 @@
       "raw_unit": "m/s",
       "canonical_value": "26.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
     },
     {
@@ -788,7 +712,6 @@
       "raw_unit": "m/s",
       "canonical_value": "26.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
     },
     {
@@ -799,7 +722,6 @@
       "raw_unit": "m/s",
       "canonical_value": "1.777777777777778",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
     },
     {
@@ -810,7 +732,6 @@
       "raw_unit": "m/s",
       "canonical_value": "27.78",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
     },
     {
@@ -821,7 +742,6 @@
       "raw_unit": "m/s",
       "canonical_value": "27.77777777777778",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
     },
     {
@@ -832,7 +752,6 @@
       "raw_unit": "m/s",
       "canonical_value": "0.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
     },
     {
@@ -843,7 +762,6 @@
       "raw_unit": "m/s",
       "canonical_value": "28.5",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
     },
     {
@@ -854,7 +772,6 @@
       "raw_unit": "m/s",
       "canonical_value": "28.5",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
     },
     {
@@ -865,7 +782,6 @@
       "raw_unit": "m/s",
       "canonical_value": "0.7222222222222223",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
     },
     {
@@ -876,7 +792,6 @@
       "raw_unit": "m/s",
       "canonical_value": "30.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
     },
     {
@@ -887,7 +802,6 @@
       "raw_unit": "m/s",
       "canonical_value": "30.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
     },
     {
@@ -898,7 +812,6 @@
       "raw_unit": "m/s",
       "canonical_value": "2.2222222222222223",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_speed_excess_kmh"
     },
     {
@@ -909,7 +822,6 @@
       "raw_unit": "m/s",
       "canonical_value": "15.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_ms"
     },
     {
@@ -920,7 +832,6 @@
       "raw_unit": "m/s",
       "canonical_value": "15.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_target_velocity_kmh"
     },
     {
@@ -931,7 +842,6 @@
       "raw_unit": "m/s",
       "canonical_value": "12.777777777777779",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S009_speed_limit.jsonc",
       "constraint_id": "S009_speed_limit_test_cases_test_points_speed_margin_kmh"
     }
   ],
@@ -944,7 +854,6 @@
       "raw_unit": "m/s",
       "canonical_value": "27.77777777777778",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S010_zone_speed_limits.jsonc",
       "constraint_id": "S010_zone_speed_limits_scenario_parameters_global_speed_limit_kmh"
     }
   ],
@@ -957,7 +866,6 @@
       "raw_unit": "m",
       "canonical_value": "-120.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_scenario_parameters_restricted_zone_height_min"
     },
     {
@@ -968,7 +876,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_scenario_parameters_restricted_zone_height_max"
     },
     {
@@ -979,7 +886,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_target_position_altitude"
     },
     {
@@ -990,7 +896,6 @@
       "raw_unit": "m/s",
       "canonical_value": "0.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_is_in_time_window"
     },
     {
@@ -1001,7 +906,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1012,7 +916,6 @@
       "raw_unit": "m/s",
       "canonical_value": "0.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_is_in_time_window"
     },
     {
@@ -1023,7 +926,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1034,7 +936,6 @@
       "raw_unit": "m/s",
       "canonical_value": "1.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_is_in_time_window"
     },
     {
@@ -1045,7 +946,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1056,7 +956,6 @@
       "raw_unit": "m/s",
       "canonical_value": "1.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_is_in_time_window"
     },
     {
@@ -1067,7 +966,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1078,7 +976,6 @@
       "raw_unit": "m/s",
       "canonical_value": "1.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S012_time_window.jsonc",
       "constraint_id": "S012_time_window_test_cases_test_points_is_in_time_window"
     }
   ],
@@ -1091,7 +988,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_scenario_parameters_vlos_configuration_operator_position_altitude"
     },
     {
@@ -1102,7 +998,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
     },
     {
@@ -1113,7 +1008,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1124,7 +1018,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
     },
     {
@@ -1135,7 +1028,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1146,7 +1038,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
     },
     {
@@ -1157,7 +1048,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1168,7 +1058,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
     },
     {
@@ -1179,7 +1068,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1190,7 +1078,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
     },
     {
@@ -1201,7 +1088,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
       "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
     }
   ],
@@ -1214,7 +1100,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_scenario_parameters_vlos_configuration_operator_position_altitude"
     },
     {
@@ -1225,7 +1110,6 @@
       "raw_unit": "m",
       "canonical_value": "0.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_scenario_parameters_bvlos_waiver_config_visual_observer_position_altitude"
     },
     {
@@ -1236,7 +1120,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1247,7 +1130,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1258,7 +1140,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1269,7 +1150,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1280,7 +1160,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_test_cases_test_points_target_position_altitude"
     },
     {
@@ -1291,7 +1170,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S014_bvlos_waiver.jsonc",
       "constraint_id": "S014_bvlos_waiver_test_cases_test_points_target_position_altitude"
     }
   ],
@@ -1302,7 +1180,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "300.0",
       "canonical_value": "300.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_test_cases_conflict_analysis_closest_nfz_safe_margin"
     },
     {
@@ -1311,7 +1188,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_radius"
     },
     {
@@ -1320,7 +1196,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "100.0",
       "canonical_value": "100.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_safety_margin"
     },
     {
@@ -1329,7 +1204,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "-200.0",
       "canonical_value": "-200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_height_min"
     },
     {
@@ -1338,7 +1212,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_height_max"
     },
     {
@@ -1347,7 +1220,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "250.0",
       "canonical_value": "250.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_radius"
     },
     {
@@ -1356,7 +1228,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "150.0",
       "canonical_value": "150.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_safety_margin"
     },
     {
@@ -1365,7 +1236,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "-200.0",
       "canonical_value": "-200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_height_min"
     },
     {
@@ -1374,7 +1244,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_height_max"
     },
     {
@@ -1383,7 +1252,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "300.0",
       "canonical_value": "300.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_radius"
     },
     {
@@ -1392,7 +1260,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_safety_margin"
     },
     {
@@ -1401,7 +1268,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "-200.0",
       "canonical_value": "-200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_height_min"
     },
     {
@@ -1410,7 +1276,6 @@
       "source_ref": "S015_dynamic_nfz_avoidance.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S015_dynamic_nfz_avoidance.jsonc",
       "constraint_id": "S015_dynamic_nfz_avoidance_geofences_height_max"
     }
   ],
@@ -1421,7 +1286,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "30.0",
       "canonical_value": "30.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_radius"
     },
     {
@@ -1430,7 +1294,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "50.0",
       "canonical_value": "50.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_safety_margin"
     },
     {
@@ -1439,7 +1302,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "-150.0",
       "canonical_value": "-150.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_height_min"
     },
     {
@@ -1448,7 +1310,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "150.0",
       "canonical_value": "150.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_height_max"
     },
     {
@@ -1457,7 +1318,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "20.0",
       "canonical_value": "20.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_radius"
     },
     {
@@ -1466,7 +1326,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "60.0",
       "canonical_value": "60.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_safety_margin"
     },
     {
@@ -1475,7 +1334,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "-200.0",
       "canonical_value": "-200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_height_min"
     },
     {
@@ -1484,7 +1342,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_height_max"
     },
     {
@@ -1493,7 +1350,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "25.0",
       "canonical_value": "25.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_radius"
     },
     {
@@ -1502,7 +1358,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "75.0",
       "canonical_value": "75.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_safety_margin"
     },
     {
@@ -1511,7 +1366,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "-120.0",
       "canonical_value": "-120.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_height_min"
     },
     {
@@ -1520,7 +1374,6 @@
       "source_ref": "S016_realtime_obstacle_avoidance.jsonc",
       "raw_value": "120.0",
       "canonical_value": "120.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S016_realtime_obstacle_avoidance.jsonc",
       "constraint_id": "S016_realtime_obstacle_avoidance_geofences_height_max"
     }
   ],
@@ -1533,7 +1386,6 @@
       "raw_unit": "kg",
       "canonical_value": "8.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1544,7 +1396,6 @@
       "raw_unit": "kg",
       "canonical_value": "3.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1555,7 +1406,6 @@
       "raw_unit": "kg",
       "canonical_value": "2.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1566,7 +1416,6 @@
       "raw_unit": "kg",
       "canonical_value": "2.5",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1577,7 +1426,6 @@
       "raw_unit": "hours",
       "canonical_value": "1.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_has_drop_approval"
     },
     {
@@ -1588,7 +1436,6 @@
       "raw_unit": "kg",
       "canonical_value": "2.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1599,7 +1446,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_has_drop_approval"
     },
     {
@@ -1610,7 +1456,6 @@
       "raw_unit": "kg",
       "canonical_value": "5.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1621,7 +1466,6 @@
       "raw_unit": "kg",
       "canonical_value": "3.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1632,7 +1476,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_has_drop_approval"
     },
     {
@@ -1643,7 +1486,6 @@
       "raw_unit": "kg",
       "canonical_value": "1.5",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
     },
     {
@@ -1654,7 +1496,6 @@
       "raw_unit": "hours",
       "canonical_value": "1.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
       "constraint_id": "S017_payload_and_drop_restrictions_test_cases_has_drop_approval"
     }
   ],
@@ -1667,7 +1508,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     },
     {
@@ -1678,7 +1518,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     },
     {
@@ -1689,7 +1528,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     },
     {
@@ -1700,7 +1538,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     },
     {
@@ -1711,7 +1548,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     },
     {
@@ -1722,7 +1558,6 @@
       "raw_unit": "hours",
       "canonical_value": "1.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     },
     {
@@ -1733,7 +1568,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     },
     {
@@ -1744,7 +1578,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S018_multi_drone_coordination.jsonc",
       "constraint_id": "S018_multi_drone_coordination_test_cases_has_approval"
     }
   ],
@@ -1757,7 +1590,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S019_airspace_classification.jsonc",
       "constraint_id": "S019_airspace_classification_test_cases_has_approval"
     },
     {
@@ -1768,7 +1600,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S019_airspace_classification.jsonc",
       "constraint_id": "S019_airspace_classification_test_cases_has_approval"
     },
     {
@@ -1779,7 +1610,6 @@
       "raw_unit": "hours",
       "canonical_value": "1.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S019_airspace_classification.jsonc",
       "constraint_id": "S019_airspace_classification_test_cases_has_approval"
     },
     {
@@ -1790,7 +1620,6 @@
       "raw_unit": "hours",
       "canonical_value": "0.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S019_airspace_classification.jsonc",
       "constraint_id": "S019_airspace_classification_test_cases_has_approval"
     },
     {
@@ -1801,7 +1630,6 @@
       "raw_unit": "hours",
       "canonical_value": "1.0",
       "canonical_unit": "hours",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S019_airspace_classification.jsonc",
       "constraint_id": "S019_airspace_classification_test_cases_has_approval"
     }
   ],
@@ -1814,7 +1642,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S020_approval_timeline.jsonc",
       "constraint_id": "S020_approval_timeline_test_cases_target_altitude"
     },
     {
@@ -1825,7 +1652,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S020_approval_timeline.jsonc",
       "constraint_id": "S020_approval_timeline_test_cases_target_altitude"
     },
     {
@@ -1836,7 +1662,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S020_approval_timeline.jsonc",
       "constraint_id": "S020_approval_timeline_test_cases_target_altitude"
     },
     {
@@ -1847,7 +1672,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S020_approval_timeline.jsonc",
       "constraint_id": "S020_approval_timeline_test_cases_target_altitude"
     },
     {
@@ -1858,7 +1682,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S020_approval_timeline.jsonc",
       "constraint_id": "S020_approval_timeline_test_cases_altitude"
     }
   ],
@@ -1871,7 +1694,6 @@
       "raw_unit": "percent",
       "canonical_value": "35.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -1882,7 +1704,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -1893,7 +1714,6 @@
       "raw_unit": "percent",
       "canonical_value": "35.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -1904,7 +1724,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -1915,7 +1734,6 @@
       "raw_unit": "percent",
       "canonical_value": "35.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -1926,7 +1744,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -1937,7 +1754,6 @@
       "raw_unit": "percent",
       "canonical_value": "4.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_distance_calculations_landing_battery_percent"
     },
     {
@@ -1948,7 +1764,6 @@
       "raw_unit": "percent",
       "canonical_value": "20.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_distance_calculations_rtl_threshold_percent"
     },
     {
@@ -1959,7 +1774,6 @@
       "raw_unit": "percent",
       "canonical_value": "35.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -1970,7 +1784,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -1981,7 +1794,6 @@
       "raw_unit": "m/s",
       "canonical_value": "4.166666666666667",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_weather_forecast_current_wind_kmh"
     },
     {
@@ -1992,7 +1804,6 @@
       "raw_unit": "m/s",
       "canonical_value": "11.11111111111111",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_weather_forecast_forecast_30min_wind_kmh"
     },
     {
@@ -2003,7 +1814,6 @@
       "raw_unit": "percent",
       "canonical_value": "50.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_mission_brief_alternatives_fast_charge_target_charge_percent"
     },
     {
@@ -2014,7 +1824,6 @@
       "raw_unit": "percent",
       "canonical_value": "40.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -2025,7 +1834,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -2036,7 +1844,6 @@
       "raw_unit": "percent",
       "canonical_value": "15.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_mission_brief_alternatives_charge_time_minutes"
     },
     {
@@ -2047,7 +1854,6 @@
       "raw_unit": "percent",
       "canonical_value": "60.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_mission_brief_alternatives_target_charge_percent"
     },
     {
@@ -2058,7 +1864,6 @@
       "raw_unit": "percent",
       "canonical_value": "35.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -2069,7 +1874,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -2080,7 +1884,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_charging_station_altitude"
     },
     {
@@ -2091,7 +1894,6 @@
       "raw_unit": "percent",
       "canonical_value": "60.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_distance_calculations_post_charge_percent"
     },
     {
@@ -2102,7 +1904,6 @@
       "raw_unit": "percent",
       "canonical_value": "57.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_distance_calculations_total_after_charge_percent"
     },
     {
@@ -2113,7 +1914,6 @@
       "raw_unit": "percent",
       "canonical_value": "3.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_distance_calculations_landing_battery_percent"
     },
     {
@@ -2124,7 +1924,6 @@
       "raw_unit": "percent",
       "canonical_value": "20.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_distance_calculations_rtl_threshold_percent"
     },
     {
@@ -2135,7 +1934,6 @@
       "raw_unit": "percent",
       "canonical_value": "45.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -2146,7 +1944,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -2157,7 +1954,6 @@
       "raw_unit": "m",
       "canonical_value": "1500.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_target_location_altitude"
     },
     {
@@ -2168,7 +1964,6 @@
       "raw_unit": "percent",
       "canonical_value": "50.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_current_battery_percent"
     },
     {
@@ -2179,7 +1974,6 @@
       "raw_unit": "percent",
       "canonical_value": "1.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
       "constraint_id": "S021_emergency_battery_dilemma_test_cases_distance_calculations_option_A_rtl_compliant"
     }
   ],
@@ -2192,7 +1986,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2203,7 +1996,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2212,7 +2004,6 @@
       "source_ref": "S022_rule_conflict_priority.jsonc",
       "raw_value": "500.0",
       "canonical_value": "500.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_nfz_details_radius"
     },
     {
@@ -2223,7 +2014,6 @@
       "raw_unit": "m",
       "canonical_value": "80.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2234,7 +2024,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2245,7 +2034,6 @@
       "raw_unit": "m/s",
       "canonical_value": "14.5",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_weather_conditions_wind_speed_ms"
     },
     {
@@ -2254,7 +2042,6 @@
       "source_ref": "S022_rule_conflict_priority.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_nfz_proximity_radius"
     },
     {
@@ -2265,7 +2052,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2276,7 +2062,6 @@
       "raw_unit": "m",
       "canonical_value": "80.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2287,7 +2072,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2298,7 +2082,6 @@
       "raw_unit": "m",
       "canonical_value": "50.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_target_location_altitude"
     },
     {
@@ -2309,7 +2092,6 @@
       "raw_unit": "m/s",
       "canonical_value": "15.8",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_weather_conditions_wind_speed_ms"
     },
     {
@@ -2320,7 +2102,6 @@
       "raw_unit": "m/s",
       "canonical_value": "15.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_weather_conditions_wind_threshold"
     },
     {
@@ -2329,7 +2110,6 @@
       "source_ref": "S022_rule_conflict_priority.jsonc",
       "raw_value": "200.0",
       "canonical_value": "200.0",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_nfz_proximity_radius"
     },
     {
@@ -2340,7 +2120,6 @@
       "raw_unit": "m/s",
       "canonical_value": "1.2",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
       "constraint_id": "S022_rule_conflict_priority_test_cases_battery_status_wind_multiplier"
     }
   ],
@@ -2353,7 +2132,6 @@
       "raw_unit": "m",
       "canonical_value": "120.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_rules_R_HEIGHT_OLD_parameters_max_altitude_m"
     },
     {
@@ -2364,7 +2142,6 @@
       "raw_unit": "m",
       "canonical_value": "150.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_rules_R_HEIGHT_NEW_parameters_max_altitude_m"
     },
     {
@@ -2375,7 +2152,6 @@
       "raw_unit": "m",
       "canonical_value": "100.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2386,7 +2162,6 @@
       "raw_unit": "m",
       "canonical_value": "100.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     },
     {
@@ -2397,7 +2172,6 @@
       "raw_unit": "m",
       "canonical_value": "130.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2408,7 +2182,6 @@
       "raw_unit": "m",
       "canonical_value": "130.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     },
     {
@@ -2419,7 +2192,6 @@
       "raw_unit": "m",
       "canonical_value": "140.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2430,7 +2202,6 @@
       "raw_unit": "m",
       "canonical_value": "140.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     },
     {
@@ -2441,7 +2212,6 @@
       "raw_unit": "m",
       "canonical_value": "145.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2452,7 +2222,6 @@
       "raw_unit": "m",
       "canonical_value": "145.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     },
     {
@@ -2463,7 +2232,6 @@
       "raw_unit": "m",
       "canonical_value": "135.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2474,7 +2242,6 @@
       "raw_unit": "m",
       "canonical_value": "135.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     },
     {
@@ -2485,7 +2252,6 @@
       "raw_unit": "m",
       "canonical_value": "125.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2496,7 +2262,6 @@
       "raw_unit": "m",
       "canonical_value": "125.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     },
     {
@@ -2507,7 +2272,6 @@
       "raw_unit": "m",
       "canonical_value": "125.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2518,7 +2282,6 @@
       "raw_unit": "m",
       "canonical_value": "125.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     },
     {
@@ -2529,7 +2292,6 @@
       "raw_unit": "m",
       "canonical_value": "140.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_target_location_altitude"
     },
     {
@@ -2540,7 +2302,6 @@
       "raw_unit": "m",
       "canonical_value": "140.0",
       "canonical_unit": "m",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
       "constraint_id": "S023_regulation_update_test_cases_mission_details_requested_altitude_m"
     }
   ],
@@ -2553,7 +2314,6 @@
       "raw_unit": "count",
       "canonical_value": "10.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc",
       "constraint_id": "S041_fleet_sizing_spill_tradeoff_test_cases_fleet_size"
     },
     {
@@ -2564,7 +2324,6 @@
       "raw_unit": "count",
       "canonical_value": "6.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc",
       "constraint_id": "S041_fleet_sizing_spill_tradeoff_test_cases_fleet_size"
     },
     {
@@ -2575,7 +2334,6 @@
       "raw_unit": "count",
       "canonical_value": "4.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc",
       "constraint_id": "S041_fleet_sizing_spill_tradeoff_test_cases_fleet_size"
     },
     {
@@ -2586,7 +2344,6 @@
       "raw_unit": "count",
       "canonical_value": "12.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc",
       "constraint_id": "S041_fleet_sizing_spill_tradeoff_test_cases_fleet_size"
     },
     {
@@ -2597,7 +2354,6 @@
       "raw_unit": "count",
       "canonical_value": "8.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc",
       "constraint_id": "S041_fleet_sizing_spill_tradeoff_test_cases_fleet_size"
     },
     {
@@ -2608,7 +2364,6 @@
       "raw_unit": "count",
       "canonical_value": "6.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc",
       "constraint_id": "S041_fleet_sizing_spill_tradeoff_test_cases_fleet_size"
     },
     {
@@ -2619,7 +2374,6 @@
       "raw_unit": "count",
       "canonical_value": "8.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc",
       "constraint_id": "S041_fleet_sizing_spill_tradeoff_test_cases_fleet_size"
     }
   ],
@@ -2632,7 +2386,6 @@
       "raw_unit": "count",
       "canonical_value": "0.72",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention"
     },
     {
@@ -2643,7 +2396,6 @@
       "raw_unit": "percent",
       "canonical_value": "5.1",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_battery_replacements_3yr"
     },
     {
@@ -2654,7 +2406,6 @@
       "raw_unit": "percent",
       "canonical_value": "1.05",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_to_fleet_ratio"
     },
     {
@@ -2665,7 +2416,6 @@
       "raw_unit": "count",
       "canonical_value": "0.91",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention"
     },
     {
@@ -2676,7 +2426,6 @@
       "raw_unit": "percent",
       "canonical_value": "2.1",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_battery_replacements_3yr"
     },
     {
@@ -2687,7 +2436,6 @@
       "raw_unit": "percent",
       "canonical_value": "0.6",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_to_fleet_ratio"
     },
     {
@@ -2698,7 +2446,6 @@
       "raw_unit": "count",
       "canonical_value": "0.83",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention"
     },
     {
@@ -2709,7 +2456,6 @@
       "raw_unit": "percent",
       "canonical_value": "3.2",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_battery_replacements_3yr"
     },
     {
@@ -2720,7 +2466,6 @@
       "raw_unit": "percent",
       "canonical_value": "1.1",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_to_fleet_ratio"
     },
     {
@@ -2731,7 +2476,6 @@
       "raw_unit": "count",
       "canonical_value": "0.84",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention"
     },
     {
@@ -2742,7 +2486,6 @@
       "raw_unit": "percent",
       "canonical_value": "2.6",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_battery_replacements_3yr"
     },
     {
@@ -2753,7 +2496,6 @@
       "raw_unit": "percent",
       "canonical_value": "1.35",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_to_fleet_ratio"
     },
     {
@@ -2764,7 +2506,6 @@
       "raw_unit": "count",
       "canonical_value": "0.81",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention"
     },
     {
@@ -2775,7 +2516,6 @@
       "raw_unit": "percent",
       "canonical_value": "3.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_battery_replacements_3yr"
     },
     {
@@ -2786,7 +2526,6 @@
       "raw_unit": "percent",
       "canonical_value": "1.12",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_to_fleet_ratio"
     },
     {
@@ -2797,7 +2536,6 @@
       "raw_unit": "count",
       "canonical_value": "0.78",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention"
     },
     {
@@ -2808,7 +2546,6 @@
       "raw_unit": "percent",
       "canonical_value": "4.8",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_battery_replacements_3yr"
     },
     {
@@ -2819,7 +2556,6 @@
       "raw_unit": "percent",
       "canonical_value": "1.05",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_to_fleet_ratio"
     },
     {
@@ -2830,7 +2566,6 @@
       "raw_unit": "count",
       "canonical_value": "0.86",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention"
     },
     {
@@ -2841,7 +2576,6 @@
       "raw_unit": "percent",
       "canonical_value": "2.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_battery_replacements_3yr"
     },
     {
@@ -2852,7 +2586,6 @@
       "raw_unit": "percent",
       "canonical_value": "1.08",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_to_fleet_ratio"
     },
     {
@@ -2863,7 +2596,6 @@
       "raw_unit": "count",
       "canonical_value": "0.88",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_capacity_retention_after_phase2"
     },
     {
@@ -2874,7 +2606,6 @@
       "raw_unit": "percent",
       "canonical_value": "120000.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S042_fast_slow_charging_strategy.jsonc",
       "constraint_id": "S042_fast_slow_charging_strategy_test_cases_metrics_charger_capex_plan_usd"
     }
   ],
@@ -2887,7 +2618,6 @@
       "raw_unit": "percent",
       "canonical_value": "0.18",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S043_peak_valley_dynamic_repositioning.jsonc",
       "constraint_id": "S043_peak_valley_dynamic_repositioning_test_cases_metrics_battery_soc_recovered_pct"
     }
   ],
@@ -2900,7 +2630,6 @@
       "raw_unit": "kg",
       "canonical_value": "5.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -2911,7 +2640,6 @@
       "raw_unit": "m/s",
       "canonical_value": "4.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -2922,7 +2650,6 @@
       "raw_unit": "percent",
       "canonical_value": "10.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     },
     {
@@ -2933,7 +2660,6 @@
       "raw_unit": "kg",
       "canonical_value": "3.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -2944,7 +2670,6 @@
       "raw_unit": "m/s",
       "canonical_value": "3.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -2955,7 +2680,6 @@
       "raw_unit": "percent",
       "canonical_value": "6.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     },
     {
@@ -2966,7 +2690,6 @@
       "raw_unit": "kg",
       "canonical_value": "4.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -2977,7 +2700,6 @@
       "raw_unit": "m/s",
       "canonical_value": "10.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -2988,7 +2710,6 @@
       "raw_unit": "percent",
       "canonical_value": "8.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     },
     {
@@ -2999,7 +2720,6 @@
       "raw_unit": "kg",
       "canonical_value": "2.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -3010,7 +2730,6 @@
       "raw_unit": "m/s",
       "canonical_value": "9.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -3021,7 +2740,6 @@
       "raw_unit": "percent",
       "canonical_value": "14.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     },
     {
@@ -3032,7 +2750,6 @@
       "raw_unit": "kg",
       "canonical_value": "1.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -3043,7 +2760,6 @@
       "raw_unit": "m/s",
       "canonical_value": "5.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -3054,7 +2770,6 @@
       "raw_unit": "percent",
       "canonical_value": "4.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     },
     {
@@ -3065,7 +2780,6 @@
       "raw_unit": "kg",
       "canonical_value": "3.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -3076,7 +2790,6 @@
       "raw_unit": "m/s",
       "canonical_value": "2.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -3087,7 +2800,6 @@
       "raw_unit": "percent",
       "canonical_value": "9.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     },
     {
@@ -3098,7 +2810,6 @@
       "raw_unit": "kg",
       "canonical_value": "1.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -3109,7 +2820,6 @@
       "raw_unit": "m/s",
       "canonical_value": "8.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -3120,7 +2830,6 @@
       "raw_unit": "percent",
       "canonical_value": "15.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     },
     {
@@ -3131,7 +2840,6 @@
       "raw_unit": "kg",
       "canonical_value": "6.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_mission_payload_kg"
     },
     {
@@ -3142,7 +2850,6 @@
       "raw_unit": "m/s",
       "canonical_value": "2.0",
       "canonical_unit": "m/s",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_wind_speed_mps"
     },
     {
@@ -3153,7 +2860,6 @@
       "raw_unit": "percent",
       "canonical_value": "6.0",
       "canonical_unit": "percent",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S044_battery_emergency_decision.jsonc",
       "constraint_id": "S044_battery_emergency_decision_test_cases_environment_nearest_charger_km"
     }
   ],
@@ -3166,7 +2872,6 @@
       "raw_unit": "kg",
       "canonical_value": "195.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3177,7 +2882,6 @@
       "raw_unit": "kg",
       "canonical_value": "143.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     },
     {
@@ -3188,7 +2892,6 @@
       "raw_unit": "kg",
       "canonical_value": "193.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3199,7 +2902,6 @@
       "raw_unit": "kg",
       "canonical_value": "193.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     },
     {
@@ -3210,7 +2912,6 @@
       "raw_unit": "kg",
       "canonical_value": "310.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3221,7 +2922,6 @@
       "raw_unit": "kg",
       "canonical_value": "252.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     },
     {
@@ -3232,7 +2932,6 @@
       "raw_unit": "kg",
       "canonical_value": "90.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3243,7 +2942,6 @@
       "raw_unit": "kg",
       "canonical_value": "97.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     },
     {
@@ -3254,7 +2952,6 @@
       "raw_unit": "kg",
       "canonical_value": "236.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3265,7 +2962,6 @@
       "raw_unit": "kg",
       "canonical_value": "242.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     },
     {
@@ -3276,7 +2972,6 @@
       "raw_unit": "kg",
       "canonical_value": "381.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3287,7 +2982,6 @@
       "raw_unit": "kg",
       "canonical_value": "195.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     },
     {
@@ -3298,7 +2992,6 @@
       "raw_unit": "kg",
       "canonical_value": "12.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_CARGO_1"
     },
     {
@@ -3309,7 +3002,6 @@
       "raw_unit": "kg",
       "canonical_value": "11.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_CARGO_2"
     },
     {
@@ -3320,7 +3012,6 @@
       "raw_unit": "kg",
       "canonical_value": "10.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_CARGO_3"
     },
     {
@@ -3331,7 +3022,6 @@
       "raw_unit": "kg",
       "canonical_value": "9.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_CARGO_4"
     },
     {
@@ -3342,7 +3032,6 @@
       "raw_unit": "kg",
       "canonical_value": "8.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_CARGO_5"
     },
     {
@@ -3353,7 +3042,6 @@
       "raw_unit": "kg",
       "canonical_value": "100.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3364,7 +3052,6 @@
       "raw_unit": "kg",
       "canonical_value": "150.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     },
     {
@@ -3375,7 +3062,6 @@
       "raw_unit": "kg",
       "canonical_value": "100.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_medical_weight_each"
     },
     {
@@ -3386,7 +3072,6 @@
       "raw_unit": "kg",
       "canonical_value": "30.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_delivery_weight_each"
     },
     {
@@ -3397,7 +3082,6 @@
       "raw_unit": "kg",
       "canonical_value": "10.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_weights_inspection_weight_each"
     },
     {
@@ -3408,7 +3092,6 @@
       "raw_unit": "kg",
       "canonical_value": "370.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_candidate_total_weight"
     },
     {
@@ -3419,7 +3102,6 @@
       "raw_unit": "kg",
       "canonical_value": "420.0",
       "canonical_unit": "kg",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S045_airspace_conflict_resolution.jsonc",
       "constraint_id": "S045_airspace_conflict_resolution_test_cases_metrics_optimal_feasible_weight"
     }
   ],
@@ -3432,7 +3114,6 @@
       "raw_unit": "count",
       "canonical_value": "0.82",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S046_vertiport_capacity.jsonc",
       "constraint_id": "S046_vertiport_capacity_test_cases_candidate_plan_objective_metrics_throughput_pct"
     },
     {
@@ -3443,7 +3124,6 @@
       "raw_unit": "count",
       "canonical_value": "0.78",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S046_vertiport_capacity.jsonc",
       "constraint_id": "S046_vertiport_capacity_test_cases_candidate_plan_objective_metrics_throughput_pct"
     },
     {
@@ -3454,7 +3134,6 @@
       "raw_unit": "count",
       "canonical_value": "0.74",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S046_vertiport_capacity.jsonc",
       "constraint_id": "S046_vertiport_capacity_test_cases_candidate_plan_objective_metrics_throughput_pct"
     },
     {
@@ -3465,7 +3144,6 @@
       "raw_unit": "count",
       "canonical_value": "0.82",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S046_vertiport_capacity.jsonc",
       "constraint_id": "S046_vertiport_capacity_test_cases_candidate_plan_objective_metrics_throughput_pct"
     },
     {
@@ -3476,7 +3154,6 @@
       "raw_unit": "count",
       "canonical_value": "0.8",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S046_vertiport_capacity.jsonc",
       "constraint_id": "S046_vertiport_capacity_test_cases_candidate_plan_objective_metrics_throughput_pct"
     },
     {
@@ -3487,7 +3164,6 @@
       "raw_unit": "count",
       "canonical_value": "0.62",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S046_vertiport_capacity.jsonc",
       "constraint_id": "S046_vertiport_capacity_test_cases_candidate_plan_objective_metrics_throughput_pct"
     },
     {
@@ -3498,7 +3174,6 @@
       "raw_unit": "count",
       "canonical_value": "0.58",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S046_vertiport_capacity.jsonc",
       "constraint_id": "S046_vertiport_capacity_test_cases_candidate_plan_objective_metrics_throughput_pct"
     }
   ],
@@ -3511,7 +3186,6 @@
       "raw_unit": "count",
       "canonical_value": "250.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S047_multi_operator_fairness.jsonc",
       "constraint_id": "S047_multi_operator_fairness_test_cases_scenario_notes_capacity"
     },
     {
@@ -3522,7 +3196,6 @@
       "raw_unit": "count",
       "canonical_value": "250.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S047_multi_operator_fairness.jsonc",
       "constraint_id": "S047_multi_operator_fairness_test_cases_scenario_notes_capacity"
     }
   ],
@@ -3535,7 +3208,6 @@
       "raw_unit": "count",
       "canonical_value": "350000.0",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S049_capital_allocation.jsonc",
       "constraint_id": "S049_capital_allocation_test_cases_metrics_npv_partial_fleet"
     },
     {
@@ -3546,7 +3218,6 @@
       "raw_unit": "count",
       "canonical_value": "0.19",
       "canonical_unit": "count",
-      "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/operational/S049_capital_allocation.jsonc",
       "constraint_id": "S049_capital_allocation_test_cases_metrics_irr_partial_fleet"
     }
   ]

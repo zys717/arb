@@ -55,7 +55,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S010_zone_speed_limits.jsonc",
           "constraint_id": "S010_zone_speed_limits_scenario_parameters_global_speed_limit_kmh"
         }
       ]
@@ -107,7 +106,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S010_zone_speed_limits.jsonc",
           "constraint_id": "S010_zone_speed_limits_scenario_parameters_global_speed_limit_kmh"
         }
       ]
@@ -157,7 +155,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S010_zone_speed_limits.jsonc",
           "constraint_id": "S010_zone_speed_limits_scenario_parameters_global_speed_limit_kmh"
         }
       ]
@@ -211,7 +208,6 @@
           "raw_unit": "m/s",
           "canonical_value": "27.77777777777778",
           "canonical_unit": "m/s",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S010_zone_speed_limits.jsonc",
           "constraint_id": "S010_zone_speed_limits_scenario_parameters_global_speed_limit_kmh"
         }
       ]

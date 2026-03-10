@@ -45,7 +45,6 @@
 
 ### LLM Validator
 
-- **Model**: gemini-2.5-flash
 - **Success Rate**: 8/8 (100%)
 - **Performance**: All decisions matched ground truth
 - **Reasoning Quality**: Accurate regulatory citations and compliance analysis

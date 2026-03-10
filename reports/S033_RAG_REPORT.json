@@ -48,7 +48,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -59,7 +58,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -70,7 +68,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -81,7 +78,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -92,7 +88,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -103,7 +98,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -114,7 +108,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -125,7 +118,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -136,7 +128,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -147,7 +138,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -197,7 +187,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -208,7 +197,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -219,7 +207,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -230,7 +217,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -241,7 +227,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -252,7 +237,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -263,7 +247,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -274,7 +257,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -285,7 +267,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -296,7 +277,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -357,7 +337,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -368,7 +347,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -379,7 +357,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -390,7 +367,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -401,7 +377,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -412,7 +387,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -423,7 +397,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -434,7 +407,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -445,7 +417,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -456,7 +427,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -506,7 +476,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -517,7 +486,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -528,7 +496,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -539,7 +506,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -550,7 +516,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -561,7 +526,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -572,7 +536,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -583,7 +546,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -594,7 +556,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -605,7 +566,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -654,7 +614,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -665,7 +624,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -676,7 +634,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -687,7 +644,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -698,7 +654,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -709,7 +664,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -720,7 +674,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -731,7 +684,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -742,7 +694,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -753,7 +704,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -814,7 +764,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -825,7 +774,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -836,7 +784,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -847,7 +794,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -858,7 +804,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -869,7 +814,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -880,7 +824,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -891,7 +834,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -902,7 +844,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -913,7 +854,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -962,7 +902,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -973,7 +912,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -984,7 +922,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -995,7 +932,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1006,7 +942,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1017,7 +952,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1028,7 +962,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1039,7 +972,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1050,7 +982,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1061,7 +992,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1109,7 +1039,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1120,7 +1049,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1131,7 +1059,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1142,7 +1069,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1153,7 +1079,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1164,7 +1089,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1175,7 +1099,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1186,7 +1109,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1197,7 +1119,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1208,7 +1129,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1264,7 +1184,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1275,7 +1194,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1286,7 +1204,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1297,7 +1214,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1308,7 +1224,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1319,7 +1234,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1330,7 +1244,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1341,7 +1254,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1352,7 +1264,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1363,7 +1274,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1415,7 +1325,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1426,7 +1335,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1437,7 +1345,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1448,7 +1355,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1459,7 +1365,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1470,7 +1375,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1481,7 +1385,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1492,7 +1395,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1503,7 +1405,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1514,7 +1415,6 @@
         },
         {
           "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Motion Parameter Scenario Runner for LAE-GPT (S009-S012)
 
 This script handles scenarios involving speed and time restrictions.
 It is a simplified version of run_scenario.py focused on motion parameters
@@ -1320,7 +1319,6 @@ async def run_scenario_async(
 def main():
     """Command-line interface."""
     parser = argparse.ArgumentParser(
-        description="Run LAE-GPT motion parameter test scenarios (S009-S012)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:

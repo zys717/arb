@@ -6,7 +6,6 @@ Specialized script for S015-S016 - Avoidance Scenarios
 - S015: Pre-flight path conflict detection (path geometry analysis)
 - S016: In-flight obstacle avoidance (real-time distance monitoring)
 
-Author: LAE-GPT Team
 Date: 
 Version: 2.0
 

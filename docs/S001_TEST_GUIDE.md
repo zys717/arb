@@ -114,7 +114,6 @@ python3 scripts/run_scenario_llm_validator.py \
     scenarios/basic/S001_geofence_basic.jsonc \
     --ground-truth ground_truth/S001_violations.json \
     --output reports/S001_LLM_VALIDATION.json \
-    --model gemini-2.5-flash \
     --api-key "$GEMINI_API_KEY"
 ```
 

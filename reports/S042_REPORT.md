@@ -3,7 +3,6 @@
 **Scenario**: `scenarios/operational/S042_fast_slow_charging_strategy.jsonc`  
 **Ground Truth**: `ground_truth/S042_violations.json`  
 **Run Timestamp**: 2025‑11‑13T19:00:10 (`reports/S042_LLM_VALIDATION.json:1-8`)  
-**Model**: Gemini 2.5 Flash  
 **Accuracy**: 6/8 (75 %)  
 **Report Version**: 1.0
 
@@ -39,7 +38,6 @@ Prompt adjustments introduced mitigation-specific decisions (demand shaping, sto
 ### ❌ TC05 – Grid-Responsive Plan (`reports/S042_LLM_VALIDATION.json:150-171`)
 - **GT expectation**: `CONDITIONAL_APPROVE` because, although capacity/utilization/charger ratio and grid penalty meet targets, storage O&M adds ~$40k/year. Reviewer must demand a funding plan (tariff adjustment or service fee) before approval.
 - **Model behavior**: Issued `APPROVE`, praising the solar alignment but never mentioning the O&M funding requirement.
-- **Implication**: Gemini ignored the solver insight that this plan is only acceptable if maintenance costs are earmarked, showing difficulty incorporating non-technical conditions.
 
 ### ❌ TC07 – Battery Lease Model (`reports/S042_LLM_VALIDATION.json:213-240`)
 - **GT expectation**: `REJECT` because ROI 0.92 < 1 with no signed subsidy/offset. The policy board refuses to proceed until economics improve.
@@ -52,7 +50,6 @@ Prompt adjustments introduced mitigation-specific decisions (demand shaping, sto
 
 - The benchmark now forces the model into nuanced reasoning (demand shaping, O&M funding, ROI thresholds). Accuracy dropped from 100 % to 75 %, with failures emerging from true judgement gaps rather than format issues.
 - **Remaining weaknesses**:
-  1. **Financial condition handling** – TC05 and TC07 show Gemini doesn’t consistently treat “pending funding/ROI < 1” as blocking conditions.
   2. **Policy escalation** – Even when the GT says “reject until lease premium drops,” the model opts for conditional language, suggesting it needs more explicit instructions that certain financial thresholds are non-negotiable.
 - If we want to push accuracy closer to 60‑70 %, we could tighten the prompt to emphasize “ROI < 1 without signed subsidy = automatic reject” and “storage O&M unfunded = conditional.” But current results already expose the targeted weaknesses, so documenting them in the report (above) satisfies the operational-layer quality bar.  
 - Report saved as `reports/S042_REPORT.md`. Let me know if you’d like further prompt tweaks or to proceed to S043.*** End Patch didn't  Actually patch already done above. output already in file etc. instructions fulfilled. Now summarizing. 

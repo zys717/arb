@@ -61,7 +61,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_scenario_parameters_vlos_configuration_operator_position_altitude"
         },
         {
@@ -72,7 +71,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -83,7 +81,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -94,7 +91,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -105,7 +101,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -116,7 +111,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -127,7 +121,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -138,7 +131,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -149,7 +141,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -160,7 +151,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -171,7 +161,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         }
       ]
@@ -233,7 +222,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_scenario_parameters_vlos_configuration_operator_position_altitude"
         },
         {
@@ -244,7 +232,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -255,7 +242,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -266,7 +252,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -277,7 +262,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -288,7 +272,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -299,7 +282,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -310,7 +292,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -321,7 +302,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -332,7 +312,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -343,7 +322,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         }
       ]
@@ -404,7 +382,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_scenario_parameters_vlos_configuration_operator_position_altitude"
         },
         {
@@ -415,7 +392,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -426,7 +402,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -437,7 +412,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -448,7 +422,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -459,7 +432,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -470,7 +442,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -481,7 +452,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -492,7 +462,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -503,7 +472,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -514,7 +482,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         }
       ]
@@ -568,7 +535,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_scenario_parameters_vlos_configuration_operator_position_altitude"
         },
         {
@@ -579,7 +545,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -590,7 +555,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -601,7 +565,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -612,7 +575,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -623,7 +585,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -634,7 +595,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -645,7 +605,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -656,7 +615,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -667,7 +625,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -678,7 +635,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         }
       ]
@@ -733,7 +689,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_scenario_parameters_vlos_configuration_operator_position_altitude"
         },
         {
@@ -744,7 +699,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -755,7 +709,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -766,7 +719,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -777,7 +729,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -788,7 +739,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -799,7 +749,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -810,7 +759,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -821,7 +769,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         },
         {
@@ -832,7 +779,6 @@
           "raw_unit": "m",
           "canonical_value": "0.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_operator_position_altitude"
         },
         {
@@ -843,7 +789,6 @@
           "raw_unit": "m",
           "canonical_value": "50.0",
           "canonical_unit": "m",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S013_vlos_requirement.jsonc",
           "constraint_id": "S013_vlos_requirement_test_cases_test_points_target_position_altitude"
         }
       ]

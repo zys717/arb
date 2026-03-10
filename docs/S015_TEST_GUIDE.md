@@ -92,7 +92,6 @@ python3 scripts/run_scenario_llm_validator.py \
     scenarios/basic/S015_dynamic_nfz_avoidance.jsonc \
     --ground-truth ground_truth/S015_violations.json \
     --output reports/S015_LLM_VALIDATION.json \
-    --model gemini-2.5-flash \
     --api-key "$GEMINI_API_KEY"
 ```
 

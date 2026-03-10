@@ -3,7 +3,6 @@
 **Scenario**: `scenarios/operational/S044_battery_emergency_decision.jsonc`  
 **Ground Truth**: `ground_truth/S044_violations.json`  
 **Run Timestamp**: 2025‑11‑14T09:17:52 (`reports/S044_LLM_VALIDATION.json:1-8`)  
-**Model**: Gemini 2.5 Flash  
 **Accuracy**: 6/8 (75 %)  
 **Report Version**: 1.0
 
@@ -32,7 +31,6 @@ Scenario JSON, GT, and prompt routing were spot-checked against the run log; no 
 Model computed the worst-case SOC (44 %) and margin (14 %) and approved the sortie while naming fallback chargers and landing pads. This matches GT’s expectation that low-uncertainty, low-urgency missions with >10 % reserve should continue.
 
 ### TC02 – Hard Reserve Breach (`reports/S044_LLM_VALIDATION.json:32-51`)
-Gemini correctly flagged the −24 % safety margin and initiated an immediate emergency landing, quoting the “medical urgency cannot override reserve rules” clause verbatim.
 
 ### ❌ TC03 – Corridor Waiver Logic (`reports/S044_LLM_VALIDATION.json:52-83`)
 Ground truth requires `CONDITIONAL_CONTINUE`: the aircraft may proceed only after the crew performs and logs a fresh lidar bias check that reactivates the corridor’s 3 % consumption credit. The LLM acknowledged the waiver rule but still issued `REJECT_DIVERT`, claiming the missing log makes the credit unusable, without considering that the crew can execute the bias check before entering the corridor as described in the scenario. This shows a tendency to stop at the first constraint instead of planning the required mitigation.
@@ -44,7 +42,6 @@ The model combined the 22 s uplink gap with the 5 % worst-case margin and co
 Decision `REJECT_DIVERT` was justified by citing memo L‑144 and the lack of counterpart liability acceptance. The model also noted the nearby charger for the swap team, aligning with GT’s expectation.
 
 ### ❌ TC06 – Conditional Monitoring Procedure (`reports/S044_LLM_VALIDATION.json:124-153`)
-This case intentionally sits on the 10 % reserve boundary but allows continuation if the crew performs live SOC call-outs until the telemetry backlog clears. Gemini treated the backlog and congested frequency as blockers and commanded a divert, disregarding the documented mitigation path. Like TC03, it fails to follow the “continue but only if you execute the listed procedure” framing, collapsing nuanced conditions into a binary rejection.
 
 ### TC07 – Thermal Runaway Watch (`reports/S044_LLM_VALIDATION.json:154-173`)
 Model cited the 39.2 °C temperature trend, the degraded pack bulletin, and City_park as the emergency field, then rejected the mission. Matches GT.

@@ -2,7 +2,6 @@
   "scenario_id": "C001",
   "scenario_name": "route_change_approval",
   "test_rule": "CIVIL_ROUTE_CHANGE",
-  "description": "Route change approval cases (ASRS). Transferability study for LAE-GPT in mature civil aviation domain.",
   "initial_state": {
     "notes": "No simulation. Placeholder state for format consistency."
   },

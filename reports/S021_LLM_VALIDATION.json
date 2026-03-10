@@ -3,8 +3,8 @@
   "scenario_type": "battery",
   "summary": {
     "total_test_cases": 8,
-    "llm_accuracy": "7/8",
-    "llm_accuracy_percent": "87.5%"
+    "llm_accuracy": "5/8",
+    "llm_accuracy_percent": "62.5%"
   },
   "results": [
     {

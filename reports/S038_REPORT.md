@@ -3,7 +3,6 @@
 **Scenario**: `S038_CausalTemporal` (`scenarios/advanced/S038_causal_temporal.jsonc`)  
 **Ground Truth**: `ground_truth/S038_violations.json`  
 **Run Timestamp**: .205051  
-**Model**: Gemini 2.5 Flash  
 **Accuracy**: 3/10 (30.0%)  
 **Report Version**: 1.0
 
@@ -79,5 +78,4 @@ For complete per-test case analysis including:
 ---
 
 **Report Generated**:   
-**Framework**: LAE-GPT v1.0  
 **Validation Tool**: `scripts/run_scenario_llm_validator.py`

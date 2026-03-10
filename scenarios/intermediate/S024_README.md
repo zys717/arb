@@ -37,7 +37,6 @@ python3 scripts/run_scenario_llm_validator.py \
   scenarios/intermediate/S024_conflicting_sources.jsonc \
   --ground-truth ground_truth/S024_violations.json \
   --output reports/S024_LLM_VALIDATION.json \
-  --model gemini-2.5-flash \
   --api-key "$GEMINI_API_KEY"
 ```
 

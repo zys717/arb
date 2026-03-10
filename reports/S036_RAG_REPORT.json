@@ -45,7 +45,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -56,7 +55,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -67,7 +65,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -78,7 +75,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -89,7 +85,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -100,7 +95,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -111,7 +105,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -122,7 +115,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -133,7 +125,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -144,7 +135,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -198,7 +188,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -209,7 +198,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -220,7 +208,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -231,7 +218,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -242,7 +228,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -253,7 +238,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -264,7 +248,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -275,7 +258,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -286,7 +268,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -297,7 +278,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -349,7 +329,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -360,7 +339,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -371,7 +349,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -382,7 +359,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -393,7 +369,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -404,7 +379,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -415,7 +389,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -426,7 +399,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -437,7 +409,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -448,7 +419,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -499,7 +469,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -510,7 +479,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -521,7 +489,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -532,7 +499,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -543,7 +509,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -554,7 +519,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -565,7 +529,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -576,7 +539,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -587,7 +549,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -598,7 +559,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -650,7 +610,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -661,7 +620,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -672,7 +630,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -683,7 +640,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -694,7 +650,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -705,7 +660,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -716,7 +670,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -727,7 +680,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -738,7 +690,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -749,7 +700,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -808,7 +758,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -819,7 +768,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -830,7 +778,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -841,7 +788,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -852,7 +798,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -863,7 +808,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -874,7 +818,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -885,7 +828,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -896,7 +838,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -907,7 +848,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -952,7 +892,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -963,7 +902,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -974,7 +912,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -985,7 +922,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -996,7 +932,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1007,7 +942,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1018,7 +952,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1029,7 +962,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1040,7 +972,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1051,7 +982,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1100,7 +1030,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1111,7 +1040,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1122,7 +1050,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1133,7 +1060,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1144,7 +1070,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1155,7 +1080,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1166,7 +1090,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1177,7 +1100,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1188,7 +1110,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1199,7 +1120,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1243,7 +1163,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1254,7 +1173,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1265,7 +1183,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1276,7 +1193,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1287,7 +1203,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1298,7 +1213,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1309,7 +1223,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1320,7 +1233,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1331,7 +1243,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1342,7 +1253,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1400,7 +1310,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1411,7 +1320,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1422,7 +1330,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1433,7 +1340,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1444,7 +1350,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1455,7 +1360,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1466,7 +1370,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1477,7 +1380,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1488,7 +1390,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1499,7 +1400,6 @@
         },
         {
           "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

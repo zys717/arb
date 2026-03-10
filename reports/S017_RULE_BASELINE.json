@@ -48,7 +48,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -59,7 +58,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -70,7 +68,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -81,7 +78,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -92,7 +88,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -103,7 +98,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -114,7 +108,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -125,7 +118,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]
@@ -173,7 +165,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -184,7 +175,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -195,7 +185,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -206,7 +195,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -217,7 +205,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -228,7 +215,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -239,7 +225,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -250,7 +235,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]
@@ -320,7 +304,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -331,7 +314,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -342,7 +324,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -353,7 +334,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -364,7 +344,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -375,7 +354,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -386,7 +364,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -397,7 +374,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]
@@ -469,7 +445,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -480,7 +455,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -491,7 +465,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -502,7 +475,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -513,7 +485,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -524,7 +495,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -535,7 +505,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -546,7 +515,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]
@@ -616,7 +584,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -627,7 +594,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -638,7 +604,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -649,7 +614,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -660,7 +624,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -671,7 +634,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -682,7 +644,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -693,7 +654,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]
@@ -738,7 +698,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -749,7 +708,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -760,7 +718,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -771,7 +728,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -782,7 +738,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -793,7 +748,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -804,7 +758,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -815,7 +768,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]
@@ -888,7 +840,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -899,7 +850,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -910,7 +860,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -921,7 +870,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -932,7 +880,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -943,7 +890,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -954,7 +900,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -965,7 +910,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]
@@ -1034,7 +978,6 @@
           "raw_unit": "kg",
           "canonical_value": "8.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -1045,7 +988,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -1056,7 +998,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -1067,7 +1008,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -1078,7 +1018,6 @@
           "raw_unit": "kg",
           "canonical_value": "2.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -1089,7 +1028,6 @@
           "raw_unit": "kg",
           "canonical_value": "5.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -1100,7 +1038,6 @@
           "raw_unit": "kg",
           "canonical_value": "3.0",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         },
         {
@@ -1111,7 +1048,6 @@
           "raw_unit": "kg",
           "canonical_value": "1.5",
           "canonical_unit": "kg",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/basic/S017_payload_and_drop_restrictions.jsonc",
           "constraint_id": "S017_payload_and_drop_restrictions_test_cases_payload_kg"
         }
       ]

@@ -65,7 +65,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -76,7 +75,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -87,7 +85,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -98,7 +95,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -109,7 +105,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -120,7 +115,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -131,7 +125,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -142,7 +135,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -153,7 +145,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -164,7 +155,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -214,7 +204,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -225,7 +214,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -236,7 +224,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -247,7 +234,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -258,7 +244,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -269,7 +254,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -280,7 +264,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -291,7 +274,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -302,7 +284,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -313,7 +294,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -365,7 +345,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -376,7 +355,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -387,7 +365,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -398,7 +375,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -409,7 +385,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -420,7 +395,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -431,7 +405,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -442,7 +415,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -453,7 +425,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -464,7 +435,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -521,7 +491,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -532,7 +501,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -543,7 +511,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -554,7 +521,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -565,7 +531,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -576,7 +541,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -587,7 +551,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -598,7 +561,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -609,7 +571,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -620,7 +581,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -668,7 +628,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -679,7 +638,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -690,7 +648,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -701,7 +658,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -712,7 +668,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -723,7 +678,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -734,7 +688,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -745,7 +698,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -756,7 +708,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -767,7 +718,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -822,7 +772,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -833,7 +782,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -844,7 +792,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -855,7 +802,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -866,7 +812,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -877,7 +822,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -888,7 +832,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -899,7 +842,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -910,7 +852,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -921,7 +862,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -971,7 +911,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -982,7 +921,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -993,7 +931,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1004,7 +941,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1015,7 +951,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1026,7 +961,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1037,7 +971,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1048,7 +981,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1059,7 +991,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1070,7 +1001,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1128,7 +1058,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1139,7 +1068,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1150,7 +1078,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1161,7 +1088,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1172,7 +1098,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1183,7 +1108,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1194,7 +1118,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1205,7 +1128,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1216,7 +1138,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1227,7 +1148,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1299,7 +1219,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1310,7 +1229,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1321,7 +1239,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1332,7 +1249,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1343,7 +1259,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1354,7 +1269,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1365,7 +1279,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1376,7 +1289,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1387,7 +1299,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1398,7 +1309,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1465,7 +1375,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1476,7 +1385,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1487,7 +1395,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1498,7 +1405,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1509,7 +1415,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1520,7 +1425,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1531,7 +1435,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1542,7 +1445,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1553,7 +1455,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1564,7 +1465,6 @@
         },
         {
           "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

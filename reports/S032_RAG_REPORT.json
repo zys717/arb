@@ -37,7 +37,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -48,7 +47,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -59,7 +57,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -70,7 +67,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -81,7 +77,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -92,7 +87,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -103,7 +97,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -114,7 +107,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -125,7 +117,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -136,7 +127,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -176,7 +166,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -187,7 +176,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -198,7 +186,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -209,7 +196,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -220,7 +206,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -231,7 +216,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -242,7 +226,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -253,7 +236,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -264,7 +246,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -275,7 +256,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -317,7 +297,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -328,7 +307,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -339,7 +317,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -350,7 +327,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -361,7 +337,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -372,7 +347,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -383,7 +357,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -394,7 +367,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -405,7 +377,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -416,7 +387,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -461,7 +431,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -472,7 +441,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -483,7 +451,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -494,7 +461,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -505,7 +471,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -516,7 +481,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -527,7 +491,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -538,7 +501,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -549,7 +511,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -560,7 +521,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -602,7 +562,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -613,7 +572,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -624,7 +582,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -635,7 +592,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -646,7 +602,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -657,7 +612,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -668,7 +622,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -679,7 +632,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -690,7 +642,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -701,7 +652,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -745,7 +695,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -756,7 +705,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -767,7 +715,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -778,7 +725,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -789,7 +735,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -800,7 +745,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -811,7 +755,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -822,7 +765,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -833,7 +775,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -844,7 +785,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -885,7 +825,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -896,7 +835,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -907,7 +845,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -918,7 +855,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -929,7 +865,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -940,7 +875,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -951,7 +885,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -962,7 +895,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -973,7 +905,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -984,7 +915,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1028,7 +958,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1039,7 +968,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1050,7 +978,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1061,7 +988,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1072,7 +998,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1083,7 +1008,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1094,7 +1018,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1105,7 +1028,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1116,7 +1038,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1127,7 +1048,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1168,7 +1088,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1179,7 +1098,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1190,7 +1108,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1201,7 +1118,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1212,7 +1128,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1223,7 +1138,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1234,7 +1148,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1245,7 +1158,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1256,7 +1168,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1267,7 +1178,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1309,7 +1219,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1320,7 +1229,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1331,7 +1239,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1342,7 +1249,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1353,7 +1259,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1364,7 +1269,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1375,7 +1279,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1386,7 +1289,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1397,7 +1299,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1408,7 +1309,6 @@
         },
         {
           "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

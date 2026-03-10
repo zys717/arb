@@ -1,7 +1,6 @@
 [
   {
     "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -12,7 +11,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -23,7 +21,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -34,7 +31,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -45,7 +41,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -56,7 +51,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -67,7 +61,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -78,7 +71,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -89,7 +81,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -100,7 +91,6 @@
   },
   {
     "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -111,7 +101,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC01_BorderlineSchoolDistance_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -122,7 +111,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC02_SafetyMarginDebate_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -133,7 +121,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC03_NecessaryLowAltitude_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -144,7 +131,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC04_NoiseNecessity_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -155,7 +141,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC05_DaylightIntent_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -166,7 +151,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC06_LowAltitudeFiling_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -177,7 +161,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC07_FrequencyVague_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -188,7 +171,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC08_ReasonableHours_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -199,7 +181,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC09_WildlifeImpact_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -210,7 +191,6 @@
   },
   {
     "constraint_id": "S032_pragmatic_ambiguity_TC10_CommercialIntent_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S032_pragmatic_ambiguity.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -221,7 +201,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC01_EmergencyBatterySwap_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -232,7 +211,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC02_WeatherForcesReturn_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -243,7 +221,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC03_TemporaryNFZReroute_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -254,7 +231,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC04_MultiShiftCascade_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -265,7 +241,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC05_TimeboxedNFZ_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -276,7 +251,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC06_PriorityInversionTrap_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -287,7 +261,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC07_StackedRuleAdvisory_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -298,7 +271,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC08_SensorFaultBeforeEmergency_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -309,7 +281,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC09_DualWindowPredictive_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -320,7 +291,6 @@
   },
   {
     "constraint_id": "S033_dynamic_priority_TC10_PriorityMemory_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S033_dynamic_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -331,7 +301,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC01_ScalarNear_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -342,7 +311,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC02_EvaluativeAppropriate_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -353,7 +321,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC03_NecessaryDescend_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -364,7 +331,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC04_UnnecessaryNoise_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -375,7 +341,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC05_DeicticThisArea_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -386,7 +351,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC06_Sarcasm_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -397,7 +361,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC07_IndirectSpeech_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -408,7 +371,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC08_PrivacyComparison_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -419,7 +381,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC09_TemporalDeixis_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -430,7 +391,6 @@
   },
   {
     "constraint_id": "S034_pragmatic_intent_TC10_LoopholeIntent_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S034_pragmatic_intent.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -441,7 +401,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC01_AuthorityImpersonation_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -452,7 +411,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC02_ProgressiveExpert_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -463,7 +421,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC03_HierarchyChain_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -474,7 +431,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC04_MultiVector_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -485,7 +441,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC05_RolePlayTraining_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -496,7 +451,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC06_TranslationBypass_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -507,7 +461,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC07_PrefixInjection_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -518,7 +471,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC08_FormatSuppression_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -529,7 +481,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC09_PrecedentPoisoning_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -540,7 +491,6 @@
   },
   {
     "constraint_id": "S035_authority_manipulation_TC10_UltimateAdaptive_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S035_authority_manipulation.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -551,7 +501,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC01_Altitude1199_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -562,7 +511,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC02_Altitude12000001_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -573,7 +521,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC03_Battery40Exact_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -584,7 +531,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC04_BatterySensorOverlap_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -595,7 +541,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC05_NFZDistance_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -606,7 +551,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC06_CurfewLanding_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -617,7 +561,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC07_WeightMargin_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -628,7 +571,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC08_VLOSFog_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -639,7 +581,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC09_Noise552_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -650,7 +591,6 @@
   },
   {
     "constraint_id": "S036_boundary_probing_TC10_WaiverConflict_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S036_boundary_probing.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -661,7 +601,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC01_BirdSanctuaryVsEmergency_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -672,7 +611,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC02_NoiseOrdinanceVsFire_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -683,7 +621,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC03_AirportVsSchool_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -694,7 +631,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC04_PublicBenefitQueue_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -705,7 +641,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC05_WeddingExpedite_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -716,7 +651,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC06_ExpertOverride_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -727,7 +661,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC07_ExpiredMilZone_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -738,7 +671,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC08_EnvironmentalJustice_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -749,7 +681,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC09_RGBLights_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -760,7 +691,6 @@
   },
   {
     "constraint_id": "S037_ImplicitPriority_TC10_HeritageRespect_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S037_ImplicitPriority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -771,7 +701,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC01_BackwardsWeather_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -782,7 +711,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC02_ForkATC_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -793,7 +721,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC03_ColliderHighRisk_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -804,7 +731,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC04_CounterintuitiveMaintenance_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -815,7 +741,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC05_ChainDistance_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -826,7 +751,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC06_BackupWithoutAssessment_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -837,7 +761,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC07_TransitiveBattery_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -848,7 +771,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC08_NightAND_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -859,7 +781,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC09_NFZTiming_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -870,7 +791,6 @@
   },
   {
     "constraint_id": "S038_CausalTemporal_TC10_LoopInsurance_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S038_CausalTemporal.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -881,7 +801,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC01_TimeWindowConflict_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -892,7 +811,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC02_InspectionMuddle_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -903,7 +821,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC03_NightExperienceGap_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -914,7 +831,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC04_PathGeometryMismatch_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -925,7 +841,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC05_CommercialOpacity_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -936,7 +851,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC06_VagueWeatherGate_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -947,7 +861,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC07_MassMathFailure_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -958,7 +871,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC08_LandownerAssertion_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -969,7 +881,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC09_PostApprovalConflict_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -980,7 +891,6 @@
   },
   {
     "constraint_id": "S039_epistemic_conflict_TC10_LocationVagueness_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S039_epistemic_conflict.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -991,7 +901,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC01_RoleEscalation_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1002,7 +911,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC02_RegimeRollback_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1013,7 +921,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC03_CommercialDefinition_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1024,7 +931,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC04_FragmentedNFZ_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1035,7 +941,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC05_HoverIsFlight_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1046,7 +951,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC06_ConditionalSmuggling_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1057,7 +961,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC07_InjectionSuffix_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1068,7 +971,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC08_RuleConfusion_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1079,7 +981,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC09_FakeEmergency_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1090,7 +991,6 @@
   },
   {
     "constraint_id": "S040_adversarial_loopholes_TC10_MultiRoundProbe_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S040_adversarial_loopholes.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1101,7 +1001,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_regref_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -1112,7 +1011,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_regref_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -1123,7 +1021,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_regref_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -1134,7 +1031,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_critical_rtl_threshold",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1149,7 +1045,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_critical_rtl_threshold_desc",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1161,7 +1056,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_emergency_reserve",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1176,7 +1070,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_emergency_reserve_desc",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1188,7 +1081,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_consumption_rate",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "OperationalPolicy",
     "concepts": [],
     "source_type": "SOP",
@@ -1200,7 +1092,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_consumption_rate_desc",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1211,7 +1102,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_takeoff_landing_overhead",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "OperationalPolicy",
     "concepts": [],
     "source_type": "SOP",
@@ -1223,7 +1113,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_takeoff_landing_overhead_desc",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1234,7 +1123,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_R021_battery_safety_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1247,7 +1135,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1262,7 +1149,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_battery_required",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1277,7 +1163,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1288,7 +1173,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1299,7 +1183,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1310,7 +1193,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1321,7 +1203,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1332,7 +1213,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1343,7 +1223,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1354,7 +1233,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -1365,7 +1243,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC1_EmotionalManipulation_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -1376,7 +1253,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1391,7 +1267,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_battery_required",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1406,7 +1281,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1417,7 +1291,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1429,7 +1302,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1440,7 +1312,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1451,7 +1322,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BVLOS",
     "concepts": [
       "BVLOS",
@@ -1465,7 +1335,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Waiver",
     "concepts": [
       "Waiver"
@@ -1476,7 +1345,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1487,7 +1355,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -1498,7 +1365,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC2_AuthorityPressure_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -1509,7 +1375,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1524,7 +1389,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_battery_required",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1539,7 +1403,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1550,7 +1413,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1561,7 +1423,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1572,7 +1433,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "SafetyMargin",
     "concepts": [
       "SafetyMargin"
@@ -1583,7 +1443,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1594,7 +1453,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1605,7 +1463,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1616,7 +1473,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -1627,7 +1483,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC3_PartialCompliance_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -1638,7 +1493,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1653,7 +1507,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_battery_required",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1668,7 +1521,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1679,7 +1531,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "WeatherWind",
     "concepts": [
       "WeatherWind"
@@ -1690,7 +1541,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1701,7 +1551,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1712,7 +1561,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1723,7 +1571,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Waiver",
     "concepts": [
       "Waiver"
@@ -1734,7 +1581,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1745,7 +1591,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -1756,7 +1601,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC4_WeatherDeteriorating_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -1767,7 +1611,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1782,7 +1625,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_battery_required",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1797,7 +1639,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1808,7 +1649,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "WeatherWind",
     "concepts": [
       "WeatherWind"
@@ -1819,7 +1659,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1831,7 +1670,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1842,7 +1680,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1854,7 +1691,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1865,7 +1701,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1876,7 +1711,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -1887,7 +1721,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -1898,7 +1731,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC5_BoundaryCase_alternatives",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1909,7 +1741,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -1924,7 +1755,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -1935,7 +1765,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BVLOS",
     "concepts": [
       "BVLOS",
@@ -1951,7 +1780,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1962,7 +1790,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Charging",
     "concepts": [
       "Charging"
@@ -1973,7 +1800,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -1985,7 +1811,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -1996,7 +1821,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Charging",
     "concepts": [
       "Charging",
@@ -2009,7 +1833,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -2020,7 +1843,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -2031,7 +1853,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC6_AlternativeSolution_alternatives",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2042,7 +1863,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -2057,7 +1877,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_battery_required",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -2072,7 +1891,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2083,7 +1901,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "NoFlyZone",
     "concepts": [
       "NoFlyZone",
@@ -2095,7 +1912,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "NoFlyZone",
     "concepts": [
       "NoFlyZone"
@@ -2106,7 +1922,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2117,7 +1932,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "NoFlyZone",
     "concepts": [
       "NoFlyZone",
@@ -2129,7 +1943,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AuthorityVerification",
     "concepts": [
       "AuthorityVerification",
@@ -2141,7 +1954,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2152,7 +1964,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -2163,7 +1974,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC7_FalseEmergency_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -2174,7 +1984,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_battery",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve"
@@ -2189,7 +1998,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_option_A",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2200,7 +2008,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_option_B",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2211,7 +2018,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2222,7 +2028,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "BatteryReserve",
     "concepts": [
       "BatteryReserve",
@@ -2234,7 +2039,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_reasoning_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2245,7 +2049,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_reasoning_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2256,7 +2059,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_reasoning_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2267,7 +2069,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_reasoning_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -2278,7 +2079,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_reasoning_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2289,7 +2089,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_llm_trap",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "AdversarialPrompt",
     "concepts": [
       "AdversarialPrompt"
@@ -2300,7 +2099,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_mission_brief",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "EmergencyEvacuation",
     "concepts": [
       "EmergencyEvacuation"
@@ -2311,7 +2109,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_option_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2322,7 +2119,6 @@
   },
   {
     "constraint_id": "S021_emergency_battery_dilemma_TC8_TradeoffAnalysis_option_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S021_emergency_battery_dilemma.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2333,7 +2129,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_regref_0",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -2344,7 +2139,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_regref_1",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -2355,7 +2149,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_regref_2",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -2366,7 +2159,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_regref_3",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -2377,7 +2169,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_regref_4",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "RegulationVersion",
     "concepts": [
       "RegulationVersion"
@@ -2388,7 +2179,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_R001_NFZ_absolute_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2399,7 +2189,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_R002_emergency_exemption_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2410,7 +2199,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_R003_noise_restriction_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2421,7 +2209,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_R004_privacy_protection_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2432,7 +2219,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_R005_weather_safety_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2443,7 +2229,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_R006_mission_priority_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2454,7 +2239,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2465,7 +2249,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC1_EmergencyVsNoise_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2476,7 +2259,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2487,7 +2269,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC2_EmergencyVsAbsoluteNFZ_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "NoFlyZone",
     "concepts": [
       "NoFlyZone"
@@ -2498,7 +2279,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2509,7 +2289,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC3_PrivacyVsLawEnforcement_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2520,7 +2299,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2531,7 +2309,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC4_ThreeWayConflict_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "NoFlyZone",
     "concepts": [
       "NoFlyZone"
@@ -2542,7 +2319,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2553,7 +2329,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC5_CommercialVsEmergency_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2564,7 +2339,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2575,7 +2349,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC6_PrivacyVsNewsFreedom_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2586,7 +2359,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2597,7 +2369,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC7_FakeEmergency_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2608,7 +2379,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2619,7 +2389,6 @@
   },
   {
     "constraint_id": "S022_rule_conflict_priority_TC8_ComplexChainConflict_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S022_rule_conflict_priority.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2630,7 +2399,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_R_HEIGHT_OLD_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2641,7 +2409,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_R_HEIGHT_NEW_description",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2652,7 +2419,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC1_Baseline_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2663,7 +2429,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC1_Baseline_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2674,7 +2439,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2685,7 +2449,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC2_Old_Rule_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2696,7 +2459,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2707,7 +2469,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC3_New_Rule_Explicit_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2718,7 +2479,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2729,7 +2489,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC4_Conflict_Explicit_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2740,7 +2499,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2751,7 +2509,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC5_Implicit_Date_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2762,7 +2519,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2773,7 +2529,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC6_Temporal_Boundary_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2784,7 +2539,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2795,7 +2549,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC7_Retroactive_Application_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2806,7 +2559,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2817,7 +2569,6 @@
   },
   {
     "constraint_id": "S023_regulation_update_TC8_Multiple_Updates_expected_reason",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S023_regulation_update.jsonc",
     "concept": "Ambiguity",
     "concepts": [
       "Ambiguity"
@@ -2828,7 +2579,6 @@
   },
   {
     "constraint_id": "S024_conflicting_sources_TC1_Overconfidence_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2839,7 +2589,6 @@
   },
   {
     "constraint_id": "S024_conflicting_sources_TC2_Contradiction_Blindness_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2850,7 +2599,6 @@
   },
   {
     "constraint_id": "S024_conflicting_sources_TC3_False_Reconciliation_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2861,7 +2609,6 @@
   },
   {
     "constraint_id": "S024_conflicting_sources_TC4_Source_Confusion_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2872,7 +2619,6 @@
   },
   {
     "constraint_id": "S024_conflicting_sources_TC5_Cascade_Failure_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2883,7 +2629,6 @@
   },
   {
     "constraint_id": "S024_conflicting_sources_TC6_Epistemic_Humility_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S024_conflicting_sources.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2894,7 +2639,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC1_PendingRepeal_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2905,7 +2649,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC2_TemporaryOrder_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2916,7 +2659,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC3_NewRuleSupersedes_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2927,7 +2669,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC4_MultiSourceConflict_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2938,7 +2679,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC5_PublishVsEffective_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2949,7 +2689,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC6_ApplicationVsExecution_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2960,7 +2699,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC7_RepealPlusWaiver_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"
@@ -2971,7 +2709,6 @@
   },
   {
     "constraint_id": "S025_regulation_lifecycle_TC8_CrossRegion_expected_decision",
-    "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/intermediate/S025_regulation_lifecycle.jsonc",
     "concept": "Priority",
     "concepts": [
       "Priority"

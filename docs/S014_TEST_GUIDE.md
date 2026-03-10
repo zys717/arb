@@ -92,7 +92,6 @@ python3 scripts/run_scenario_llm_validator.py \
     scenarios/basic/S014_bvlos_waiver.jsonc \
     --ground-truth ground_truth/S014_violations.json \
     --output reports/S014_LLM_VALIDATION.json \
-    --model gemini-2.5-flash \
     --api-key "$GEMINI_API_KEY"
 ```
 

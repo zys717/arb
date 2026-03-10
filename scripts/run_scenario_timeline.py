@@ -7,7 +7,6 @@ Specialized script for S020 - Flight Approval Timeline
 - Exemptions: Emergency missions and uncontrolled airspace
 - Pure logic checks, no flight simulation required
 
-Author: LAE-GPT Team
 Date: 
 Version: 1.0
 

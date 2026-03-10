@@ -1,11 +1,9 @@
 """
-Run a RAG-style prompt for S009/S021 and optionally call a Gemini model.
 
 Usage examples:
   # Just print the prompt (no network call)
   python rag/run_rag_llm.py --scenario S009 --speed-mps 28.5
 
-  # Call Gemini if google-generativeai is installed and GEMINI_API_KEY is set
   GEMINI_API_KEY=your_key python rag/run_rag_llm.py --scenario S021 --battery-percent 35
 """
 
@@ -56,9 +54,7 @@ def build_rag_prompt(mission: Dict, retrieved: Dict[str, List[Constraint]]) -> s
     )
 
 
-def call_gemini(prompt: str, model: str = "gemini-2.0-flash") -> Optional[str]:
     """
-    Call Gemini if google-generativeai is available and GEMINI_API_KEY is set.
     Returns text or None on failure.
     """
     api_key = os.getenv("GEMINI_API_KEY")
@@ -85,7 +81,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--scenario", choices=["S009", "S021"], required=True, help="Scenario id")
     parser.add_argument("--speed-mps", type=float, help="Planned speed (m/s) for S009")
     parser.add_argument("--battery-percent", type=float, help="Current battery percent for S021")
-    parser.add_argument("--model", default="gemini-2.0-flash", help="Gemini model name")
     parser.add_argument("--no-call", action="store_true", help="Only print prompt, do not call LLM")
     parser.add_argument("--output", type=Path, help="Save LLM response and context to JSON file")
     parser.add_argument("--batch", action="store_true", help="Run all test_cases from scenario file and save aggregated JSON")
@@ -109,7 +104,6 @@ def run_single(mission: Dict, constraints: List[Constraint], model: str, do_call
     llm_text = None
     parsed = None
     if do_call:
-        llm_text = call_gemini(prompt, model=model)
         if llm_text is not None:
             print("\n=== LLM Response ===")
             print(llm_text)

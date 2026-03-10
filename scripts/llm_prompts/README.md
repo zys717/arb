@@ -1,6 +1,5 @@
 # LLM Prompt Templates
 
-Scenario-specific prompt builders for LAE-GPT's dispatch decisions (LLM + tools).
 
 ## Module Structure
 
@@ -98,6 +97,5 @@ from llm_prompts import build_nfz_prompt
 "
 ```
 
-Author: LAE-GPT Team 
 Date:  
 Version: 1.0

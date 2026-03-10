@@ -2,7 +2,6 @@
   "scenario_id": "C013",
   "scenario_name": "low_visibility",
   "test_rule": "CIVIL_LOW_VISIBILITY",
-  "description": "low visibility cases (ASRS). Transferability study for LAE-GPT in mature civil aviation domain.",
   "initial_state": {
     "notes": "No simulation. Placeholder state for format consistency."
   },

@@ -40,7 +40,6 @@
 5. **Performance**: Zero false positives/negatives
 
 ### LLM Validator
-- **Model**: gemini-2.5-flash
 - **Success Rate**: 5/5 (100%)
 - **Performance**: All decisions matched ground truth
 - **Reasoning Quality**: Accurate regulatory citations and compliance analysis

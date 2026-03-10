@@ -3,11 +3,9 @@
 **Scenario**: `scenarios/operational/S043_peak_valley_dynamic_repositioning.jsonc`
 **Ground Truth**: `ground_truth/S043_violations.json`
 **Run Timestamp**: 2025‑11‑13T20:42:11 (`reports/S043_LLM_VALIDATION.json:1-8`)
-**Model**: Gemini 2.5 Flash
 **Accuracy**: 5/8 (62.5 %)
 **Report Version**: 1.0
 
-Prompt + validator behaved correctly; the remaining errors stem from Gemini’s judgement on mitigation vs. outright approval/rejection in ambiguous dispatch scenarios.
 
 ---
 
@@ -46,7 +44,6 @@ Prompt + validator behaved correctly; the remaining errors stem from Gemini’s 
 
 - **GT**: `CONDITIONAL_APPROVE` only if a documented dynamic-pricing pilot (with monitoring + rollback triggers to cut spill to 6 %) is in place.
 - **Model output**: `REJECT`. It flagged the spill and waits but dismissed the possibility of a pilot, contrary to GT instructions to allow a conditional experiment when documentation exists.
-- **Implication**: Gemini still defaults to binary rejection rather than reading the nuanced “pilot allowed with safeguards” cue.
 
 ### ❌ TC06 – Evening Shift Plan (`…:185-215`)
 

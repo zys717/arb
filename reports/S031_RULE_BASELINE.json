@@ -67,7 +67,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -78,7 +77,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -89,7 +87,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -100,7 +97,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -111,7 +107,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -122,7 +117,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -133,7 +127,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -144,7 +137,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -155,7 +147,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -166,7 +157,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -214,7 +204,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -225,7 +214,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -236,7 +224,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -247,7 +234,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -258,7 +244,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -269,7 +254,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -280,7 +264,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -291,7 +274,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -302,7 +284,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -313,7 +294,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -359,7 +339,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -370,7 +349,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -381,7 +359,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -392,7 +369,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -403,7 +379,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -414,7 +389,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -425,7 +399,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -436,7 +409,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -447,7 +419,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -458,7 +429,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -547,7 +517,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -558,7 +527,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -569,7 +537,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -580,7 +547,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -591,7 +557,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -602,7 +567,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -613,7 +577,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -624,7 +587,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -635,7 +597,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -646,7 +607,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -691,7 +651,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -702,7 +661,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -713,7 +671,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -724,7 +681,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -735,7 +691,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -746,7 +701,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -757,7 +711,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -768,7 +721,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -779,7 +731,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -790,7 +741,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -837,7 +787,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -848,7 +797,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -859,7 +807,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -870,7 +817,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -881,7 +827,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -892,7 +837,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -903,7 +847,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -914,7 +857,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -925,7 +867,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -936,7 +877,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1012,7 +952,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1023,7 +962,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1034,7 +972,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1045,7 +982,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1056,7 +992,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1067,7 +1002,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1078,7 +1012,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1089,7 +1022,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1100,7 +1032,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1111,7 +1042,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1157,7 +1087,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1168,7 +1097,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1179,7 +1107,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1190,7 +1117,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1201,7 +1127,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1212,7 +1137,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1223,7 +1147,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1234,7 +1157,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1245,7 +1167,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1256,7 +1177,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1307,7 +1227,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1318,7 +1237,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1329,7 +1247,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1340,7 +1257,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1351,7 +1267,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1362,7 +1277,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1373,7 +1287,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1384,7 +1297,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1395,7 +1307,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1406,7 +1317,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1481,7 +1391,6 @@
       "retrieved_constraints": [
         {
           "constraint_id": "S031_medical_nested_conditionals_TC01_BilingualTimestamp_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1492,7 +1401,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC02_PrivacyVideo_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1503,7 +1411,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC03_HeritageNoiseDouble_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1514,7 +1421,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC04_SourceRanking_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1525,7 +1431,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC05_RetroactiveApproval_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1536,7 +1441,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC06_ValidatedRerouteConditional_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1547,7 +1451,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC07_TranslationPanelDispute_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1558,7 +1461,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC08_PrivacyWindowLimit_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1569,7 +1471,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC09_HandshakeExpiry_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"
@@ -1580,7 +1481,6 @@
         },
         {
           "constraint_id": "S031_medical_nested_conditionals_TC10_ATCHoldConflict_expected_decision",
-          "file": "/Users/zhangyunshi/Desktop/实习/airsim/LAE-GPT/scenarios/advanced/S031_medical_nested_conditionals.jsonc",
           "concept": "Priority",
           "concepts": [
             "Priority"

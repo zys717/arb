@@ -3,7 +3,6 @@
 **Scenario**: `scenarios/operational/S041_fleet_sizing_spill_tradeoff.jsonc`  
 **Ground Truth**: `ground_truth/S041_fleet_sizing.json`  
 **Run Timestamp**: 2025‑11‑13T18:21:55 (`reports/S041_LLM_VALIDATION.json:1-8`)  
-**Model**: Gemini 2.5 Flash  
 **Accuracy**: 6/8 (75 %)  
 **Report Version**: 1.0
 
@@ -61,4 +60,3 @@ Although the model produced the required “7‑9 aircraft” interval and risk 
   1. **Tolerance handling** – The model treats any metric outside the target (even marginally) as requiring conditional approval. We could soften this by explicitly stating “utilization between 0.68–0.70 during off-peak is acceptable → APPROVE” in the prompt, but current errors already demonstrate the nuance challenge we wanted.
   2. **EXPLAIN_ONLY differentiation** – Even after emphasizing range outputs, the LLM still tags TC08 as conditional. Additional prompt emphasis (“EXPLAIN_ONLY for TC08; do NOT approve/condition”) might push accuracy down into the 60 % band, but 75 % is acceptable if we document the behavior.
 
-Given operational Layer targets (30‑60 % exploratory range), 75 % is slightly high yet still exposes meaningful failure modes (tolerance + advisory outputs). If we want stricter difficulty, we can tighten the policy text around TC06/TC08, but from a reporting perspective the current run already shows that Gemini struggles with near-threshold utilization and advisory-only cases.
